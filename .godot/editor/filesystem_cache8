@@ -1,4 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1736543933
+::res://::1737137768
 icon.svg::CompressedTexture2D::5444470902607116904::1736542904::1736542915::1::::<><>::
 main.tscn::PackedScene::5619238585554540481::1736542964::0::1::::<><>::
+::res://Assets/::1737137814
+whitecircle.png::CompressedTexture2D::2488507408932611410::1722727034::1737137817::1::::<><>::
+whitesquare.png::CompressedTexture2D::3808830213380153737::1723734142::1737137816::1::::<><>::
+::res://Boss Scenes/::1737137636
+::res://Bullet Scenes/::1737137670
+::res://Character Scenes/::1737137701
+::res://Enemy Scenes/::1737137646
+::res://Object Scenes/::1737137681
+::res://Overworld Scenes/::1737137687
+::res://Player Scenes/::1737137760
+cigil.tscn::PackedScene::537478706619329816::1737137760::0::1::::<><>::
+::res://Room Scenes/::1737137661
+::res://UI Scenes/::1737137652
