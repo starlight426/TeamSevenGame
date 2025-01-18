@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsuemvj7deagq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_su7xf"]
+
+[node name="Circlebullet" type="CharacterBody2D"]
+
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+shape = SubResource("CircleShape2D_su7xf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
