@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbppmat8qe4r3"
-path="res://.godot/imported/whitecircle.png-4cc495e0708dfa818ab7eaca65fd2b02.ctex"
+path="res://.godot/imported/whitecircle.png-2320669c7acc31f1795d807f78f300a7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/whitecircle.png"
-dest_files=["res://.godot/imported/whitecircle.png-4cc495e0708dfa818ab7eaca65fd2b02.ctex"]
+source_file="res://Assets/Shapes/whitecircle.png"
+dest_files=["res://.godot/imported/whitecircle.png-2320669c7acc31f1795d807f78f300a7.ctex"]
 
 [params]
 

@@ -1,17 +1,26 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1737156648
-icon.svg::CompressedTexture2D::5444470902607116904::1736542904::1736542915::1::::<><>::
-main.tscn::PackedScene::5619238585554540481::1736542964::0::1::::<><>::
-::res://Assets/::1737137817
-whitecircle.png::CompressedTexture2D::2488507408932611410::1722727034::1737137817::1::::<><>::
-whitesquare.png::CompressedTexture2D::3808830213380153737::1723734142::1737137816::1::::<><>::
-::res://Boss Scenes/::1737137636
-::res://Bullet Scenes/::1737137670
-::res://Character Scenes/::1737137701
-::res://Enemy Scenes/::1737137646
-::res://Object Scenes/::1737137681
-::res://Overworld Scenes/::1737137687
-::res://Player Scenes/::1737137964
-cigil.tscn::PackedScene::537478706619329816::1737137964::0::1::::<><>::uid://bbppmat8qe4r3::::res://Assets/whitecircle.png
-::res://Room Scenes/::1737137661
+::res://::1737830864
+main.tscn::PackedScene::5619238585554540481::1737829799::0::1::::<><>::
+::res://Assets/::1737830864
+icon.svg::CompressedTexture2D::5444470902607116904::1736542904::1737830864::1::::<><>::
+::res://Assets/Shapes/::1737830261
+whitecircle.png::CompressedTexture2D::2488507408932611410::1722727034::1737830257::1::::<><>::
+whitesquare.png::CompressedTexture2D::3808830213380153737::1723734142::1737830261::1::::<><>::
+::res://Combat Scenes/::1737830292
+::res://Combat Scenes/Boss Scenes/::1737137636
+::res://Combat Scenes/Bullet Scenes/::1737829910
+circle_bullet.tscn::PackedScene::3691372840108496876::1737164206::0::1::::<><>::
+::res://Combat Scenes/Enemy Scenes/::1737137646
+::res://Dialogue/::1737830822
+::res://Overworld Scenes/::1737830847
+::res://Overworld Scenes/Character Scenes/::1737137701
+::res://Overworld Scenes/Object Scenes/::1737137681
+::res://Overworld Scenes/Player Scenes/::1737830255
+cigil.tscn::PackedScene::537478706619329816::1737830255::0::1::::<><>::uid://bbppmat8qe4r3::::res://Assets/Shapes/whitecircle.png
+::res://Overworld Scenes/Room Scenes/::1737829852
+::res://Overworld Scenes/Room Scenes/Circle Area/::1737829780
+::res://Overworld Scenes/Room Scenes/Square Area/::1737829852
+::res://Overworld Scenes/Room Scenes/Triangle Area/::1737829844
+::res://Scripts/::1737830888
+::res://Scripts/Global/::1737830888
 ::res://UI Scenes/::1737137652
