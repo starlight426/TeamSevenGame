@@ -1,2 +1,9 @@
-res://Player Scenes/cigil.tscn
-res://Overworld Scenes/Player Scenes/cigil.tscn
+res://AI Modules/Detectors/target_detector.tscn
+res://AI Modules/Detectors/target_detector.gd
+res://Scripts/Global/AttackSpawner.gd
+res://Combat Scenes/Bullet Scenes/bullet_patterner.tscn
+res://Scripts/Combat/bullet_patterner.gd
+res://Combat Scenes/System Scenes/bullet_patterner.tscn
+res://Combat Scenes/System Scenes/solid_patterner.tscn
+res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn
+res://main.tscn

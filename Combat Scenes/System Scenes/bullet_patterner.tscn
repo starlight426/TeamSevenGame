@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://78p6i5iex5wi"]
+
+[ext_resource type="Script" path="res://Scripts/Combat/bullet_patterner.gd" id="1_ucdup"]
+
+[node name="BulletPatterner" type="Node2D"]
+script = ExtResource("1_ucdup")

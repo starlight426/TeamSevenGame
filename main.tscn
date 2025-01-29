@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://cmcabksd0f3yj"]
+[gd_scene load_steps=2 format=3 uid="uid://cmcabksd0f3yj"]
+
+[ext_resource type="PackedScene" uid="uid://hwmgwkumra7q" path="res://Overworld Scenes/Player Scenes/player.tscn" id="1_fmlmq"]
 
 [node name="Main" type="Node2D"]
+
+[node name="Cigil" parent="." instance=ExtResource("1_fmlmq")]
