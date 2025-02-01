@@ -1,8 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://bsuemvj7deagq"]
+[gd_scene load_steps=4 format=3 uid="uid://bsuemvj7deagq"]
+
+[ext_resource type="Script" path="res://Scripts/Combat/bullet_circle.gd" id="1_1e0va"]
+[ext_resource type="Texture2D" uid="uid://bbppmat8qe4r3" path="res://Assets/Shapes/whitecircle.png" id="1_v6bto"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_su7xf"]
+radius = 50.0
 
 [node name="Circlebullet" type="CharacterBody2D"]
+script = ExtResource("1_1e0va")
 
 [node name="Hitbox" type="Area2D" parent="."]
 
@@ -10,3 +15,5 @@
 shape = SubResource("CircleShape2D_su7xf")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.047, 0.047)
+texture = ExtResource("1_v6bto")

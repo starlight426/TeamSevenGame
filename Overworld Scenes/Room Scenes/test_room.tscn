@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://cowpe2yb80ahw"]
+
+[ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="1_lmvfl"]
+
+[node name="TestRoom" type="Node2D"]
+
+[node name="WallSquare" parent="." instance=ExtResource("1_lmvfl")]
+position = Vector2(308, 1971)
+scale = Vector2(15, 1)
+
+[node name="WallSquare2" parent="." instance=ExtResource("1_lmvfl")]
+position = Vector2(2473, 211)
+scale = Vector2(1, 15)
+
+[node name="WallSquare3" parent="." instance=ExtResource("1_lmvfl")]
+position = Vector2(320, -1653)
+scale = Vector2(15, 1)
+
+[node name="WallSquare4" parent="." instance=ExtResource("1_lmvfl")]
+position = Vector2(-2398, 79)
+scale = Vector2(1, 15)

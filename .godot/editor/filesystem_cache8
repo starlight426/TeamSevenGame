@@ -1,38 +1,52 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1738096801
-main.tscn::PackedScene::5619238585554540481::1737829799::0::1::::<><>::
+::res://::1738436869
+main.gd::GDScript::-1::1738180807::0::1::::<>Node2D<>::
+main.tscn::PackedScene::5619238585554540481::1738181808::0::1::::<><>::uid://hwmgwkumra7q::::res://Overworld Scenes/Player Scenes/player.tscn<>res://main.gd<>uid://cowpe2yb80ahw::::res://Overworld Scenes/Room Scenes/test_room.tscn<>uid://4i7rpstg74wt::::res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn
 ::res://AI Modules/::1738089791
-::res://AI Modules/Detectors/::1738094798
+::res://AI Modules/Detectors/::1738179981
 target_detector.gd::GDScript::-1::1738093410::0::1::::<>Area2D<>::
-target_detector.tscn::PackedScene::1305836003602175822::1738094798::0::1::::<><>::res://AI Modules/Detectors/target_detector.gd
+target_detector.tscn::PackedScene::1305836003602175822::1738179981::0::1::::<><>::res://AI Modules/Detectors/target_detector.gd
 ::res://Assets/::1737830864
 icon.svg::CompressedTexture2D::5444470902607116904::1736542904::1737830864::1::::<><>::
 ::res://Assets/Shapes/::1737830261
 whitecircle.png::CompressedTexture2D::2488507408932611410::1722727034::1737830257::1::::<><>::
 whitesquare.png::CompressedTexture2D::3808830213380153737::1723734142::1737830261::1::::<><>::
-::res://Combat Scenes/::1738096794
+::res://Combat Scenes/::1738096813
 ::res://Combat Scenes/Boss Scenes/::1737137636
-::res://Combat Scenes/Bullet Scenes/::1738096801
-bullet_circle.tscn::PackedScene::3691372840108496876::1737164206::0::1::::<><>::
-::res://Combat Scenes/Enemy Scenes/::1737137646
-::res://Combat Scenes/System Scenes/::1738096801
-bullet_patterner.tscn::PackedScene::2315134043704259428::1738096379::0::1::::<><>::res://Scripts/Combat/bullet_patterner.gd
-solid_patterner.tscn::PackedScene::3579868799478722750::1738095468::0::1::::<><>::
+::res://Combat Scenes/Bullet Scenes/::1738179317
+bullet_circle.tscn::PackedScene::3691372840108496876::1738179317::0::1::::<><>::res://Scripts/Combat/bullet_circle.gd<>uid://bbppmat8qe4r3::::res://Assets/Shapes/whitecircle.png
+::res://Combat Scenes/Enemy Scenes/::1738181803
+enemy_circle_basic.tscn::PackedScene::2053965606329642163::1738181803::0::1::::<><>::uid://bbppmat8qe4r3::::res://Assets/Shapes/whitecircle.png
+::res://Combat Scenes/Solid Scenes/::1738096813
+::res://Combat Scenes/System Scenes/::1738108802
+bullet_patterner.tscn::PackedScene::2315134043704259428::1738098650::0::1::::<><>::res://Scripts/Combat/bullet_patterner.gd
+bullet_spawner.tscn::PackedScene::8680883145345190008::1738096843::0::1::::<><>::
+solid_patterner.tscn::PackedScene::3579868799478722750::1738108802::0::1::::<><>::res://Scripts/Combat/solid_patterner.gd
+solid_spawner.tscn::PackedScene::2484852791737106147::1738096854::0::1::::<><>::
 ::res://Dialogue/::1737830822
 ::res://Overworld Scenes/::1737830847
 ::res://Overworld Scenes/Character Scenes/::1737137701
-::res://Overworld Scenes/Object Scenes/::1737137681
-::res://Overworld Scenes/Player Scenes/::1738090911
-player.tscn::PackedScene::537478706619329816::1738040908::0::1::::<><>::uid://bbppmat8qe4r3::::res://Assets/Shapes/whitecircle.png
-::res://Overworld Scenes/Room Scenes/::1737829852
+::res://Overworld Scenes/Object Scenes/::1738181253
+wall_square.tscn::PackedScene::8458494857368978959::1738181253::0::1::::<><>::uid://buja428afyam8::::res://Assets/Shapes/whitesquare.png
+::res://Overworld Scenes/Player Scenes/::1738183380
+player.tscn::PackedScene::537478706619329816::1738183380::0::1::::<><>::uid://bbppmat8qe4r3::::res://Assets/Shapes/whitecircle.png
+::res://Overworld Scenes/Room Scenes/::1738182021
+test_room.tscn::PackedScene::5801820842271364348::1738182021::0::1::::<><>::uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn
 ::res://Overworld Scenes/Room Scenes/Circle Area/::1737829780
 ::res://Overworld Scenes/Room Scenes/Square Area/::1737829852
 ::res://Overworld Scenes/Room Scenes/Triangle Area/::1737829844
 ::res://Saves/::1737831364
 ::res://Scripts/::1738095757
-::res://Scripts/Combat/::1738096685
-bullet_patterner.gd::GDScript::-1::1738095760::0::1::::<>Node2D<>::
+::res://Scripts/Combat/::1738179302
+bullet_circle.gd::GDScript::-1::1738179302::0::1::::<>CharacterBody2D<>::
+bullet_patterner.gd::GDScript::-1::1738105190::0::1::::<>Node2D<>::
 solid_patterner.gd::GDScript::-1::1738096685::0::1::::<>Node2D<>::
-::res://Scripts/Global/::1738095441
-AttackSpawner.gd::GDScript::-1::1738095441::0::1::::<>Node<>::
+::res://Scripts/Global/::1738179267
+AttackSpawner.gd::GDScript::-1::1738179267::0::1::::<>Node<>::
+::res://spritePNGs/::1738436869
+Cigil_1.0.png::CompressedTexture2D::4186231211040653379::1738436869::1738436888::1::::<><>::
+Circle_Bullet_N2.0.png::CompressedTexture2D::86834325576795826::1738436869::1738436887::1::::<><>::
+Square_Bullet_N.png::CompressedTexture2D::2106094893103869597::1738436869::1738436887::1::::<><>::
+Triangle_Bullet_N copy.png::CompressedTexture2D::7892358200316629153::1738436869::1738436887::1::::<><>::
+Zigzag_Bullet_N.png::CompressedTexture2D::6051827823931333841::1738436869::1738436887::1::::<><>::
 ::res://UI Scenes/::1737137652

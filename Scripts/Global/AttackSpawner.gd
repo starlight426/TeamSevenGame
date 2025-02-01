@@ -10,8 +10,6 @@ func _ready() -> void:
 #examples of calls:
 #spawn_bullets(global_position,global_rotation-PI/2,"3cone",1,"circle","arc","default",1.5,30,"player","purple",PI/6,0,0)
 
-
-
 #pattern: bullet pattern passed to the next node
 #pattern_scale: the size modifier of the pattern, input 1 for default
 #shape: shape of the bullet
