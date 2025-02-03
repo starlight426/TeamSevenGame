@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://bsuemvj7deagq"]
+
+[ext_resource type="Script" path="res://Scripts/Combat/bullet.gd" id="1_kvwl7"]
+[ext_resource type="Texture2D" uid="uid://bicfb303bke1" path="res://spritePNGs/Circle_Bullet_N2.0.png" id="2_2enel"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_su7xf"]
+radius = 27.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ovupw"]
+radius = 27.0
+
+[node name="Circlebullet" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_kvwl7")
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+shape = SubResource("CircleShape2D_su7xf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -8)
+scale = Vector2(0.492, 0.492)
+texture = ExtResource("2_2enel")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ovupw")

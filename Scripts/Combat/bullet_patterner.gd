@@ -1,6 +1,6 @@
 extends Node2D
 
-var bullet_spawner = preload("res://Combat Scenes/System Scenes/bullet_spawner.tscn")
+var bullet_scn = preload("res://Combat Scenes/Bullet Scenes/bullet.tscn")
 
 var shape_to_spawn #self explanatory
 var type_to_spawn #movement pattern of spawned bullets
@@ -97,8 +97,18 @@ func sp(pos,dir,delay_num):
 	if(anim_to_spawn != "default"):
 		#anim code
 		pass
-	var bspawner = bullet_spawner.instantiate()
-	add_sibling(bspawner)
-	bspawner.shoot(btype,pos,dir,bspeed,bsize,bdmg,bteam,bcolor)
+		
+	var new_bullet = bullet_scn.instantiate()
+	new_bullet.glboal_position = pos
+	new_bullet.global_rotation = dir
+	new_bullet.type = type_to_spawn
+	new_bullet.speed = speed_to_spawn
+	new_bullet.scale = Vector2(size_to_spawn,size_to_spawn)
+	new_bullet.contact_dmg = dmg_to_spawn
+	new_bullet.team = team_to_spawn
+	new_bullet.color = color_to_spawn
+
+	add_sibling(new_bullet)
+	new_bullet.start_moving()
 	
 	

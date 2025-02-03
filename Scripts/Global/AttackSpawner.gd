@@ -9,7 +9,7 @@ func _ready() -> void:
 
 #examples of calls (feel free to make more to copy paste):
 #spawn_bullets(global_position,global_rotation-PI/2,"3cone",1,0.1,"default",circle","arc","default",1.5,30,"player","purple",PI/6,0,0)
-
+spawn_bullets(global_position,global_rotation-PI/2,"single",1,0,"default","circle","straight","default",1,30,"player","purple",0,0,0)
 #pattern: bullet pattern passed to the next node
 #pattern_scale: the size modifier of the pattern, input 1 for default
 #pattern_delay: the delay between each spawned bullet, input 0 for none
