@@ -22,10 +22,12 @@ func _ready():
 func spawn_pattern(passed_pos,passed_dir,pattern,passed_pattern_scale,passed_delay,passed_anim,passed_shape,passed_type,passed_speed,passed_size,passed_dmg,passed_team,passed_color,passed_mod1,passed_mod2,passed_mod3):
 	
 	#these variables are static and have to be edited between spawns of bullets if you want them to change
+	shape_to_spawn = passed_shape
 	speed_to_spawn = passed_speed
 	size_to_spawn = passed_size
 	dmg_to_spawn = passed_dmg
 	team_to_spawn = passed_team
+	type_to_spawn = passed_type
 	color_to_spawn = passed_color
 	delay_to_spawn = passed_delay
 	shape_to_spawn = passed_shape

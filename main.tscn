@@ -16,4 +16,4 @@ script = ExtResource("1_ipmiu")
 position = Vector2(377, -300)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(0.2, 0.2)
+zoom = Vector2(0.25, 0.25)

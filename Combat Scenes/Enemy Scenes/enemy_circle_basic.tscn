@@ -9,6 +9,7 @@
 radius = 100.0
 
 [node name="EnemyCircleBasic" type="CharacterBody2D"]
+rotation = 1.5708
 script = ExtResource("1_akfuv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
