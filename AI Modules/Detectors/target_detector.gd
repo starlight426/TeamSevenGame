@@ -6,12 +6,11 @@ signal update_parent_target(new_target)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	team = get_parent().team
 
 func _physics_process(delta):
 	if(enemies_in_area.size() > 1):
 		update_target(calculate_closest_enemy())
-		
 	if(enemies_in_area.size() == 1 && target != enemies_in_area[0]):
 		update_target(enemies_in_area[0])
 	

@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://hwmgwkumra7q"]
+[gd_scene load_steps=4 format=3 uid="uid://hwmgwkumra7q"]
 
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_2lqq4"]
 [ext_resource type="Texture2D" uid="uid://bbppmat8qe4r3" path="res://Assets/Shapes/whitecircle.png" id="1_7xexo"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_w0ggq"]
 radius = 109.165
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_2lqq4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_w0ggq")

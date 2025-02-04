@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://dsrmf6yrx14yl"]
+[gd_scene load_steps=4 format=3 uid="uid://dsrmf6yrx14yl"]
 
+[ext_resource type="Script" path="res://Scripts/wall_square.gd" id="1_50iou"]
 [ext_resource type="Texture2D" uid="uid://buja428afyam8" path="res://Assets/Shapes/whitesquare.png" id="1_qq3i5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_830on"]
 size = Vector2(500, 500)
 
 [node name="WallSquare" type="CharacterBody2D"]
+script = ExtResource("1_50iou")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_830on")

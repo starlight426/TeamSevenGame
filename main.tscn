@@ -8,9 +8,12 @@
 [node name="Main" type="Node2D"]
 script = ExtResource("1_ipmiu")
 
-[node name="Cigil" parent="." instance=ExtResource("1_fmlmq")]
+[node name="Player" parent="." instance=ExtResource("1_fmlmq")]
 
 [node name="TestRoom" parent="." instance=ExtResource("3_f1wwc")]
 
 [node name="EnemyCircleBasic" parent="." instance=ExtResource("4_yqcyb")]
 position = Vector2(377, -300)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.2, 0.2)

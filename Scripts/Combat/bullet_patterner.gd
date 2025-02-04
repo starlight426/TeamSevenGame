@@ -11,12 +11,15 @@ var team_to_spawn #team of bullets
 var color_to_spawn #color of bullets
 var delay_to_spawn #delay of bullets
 var anim_to_spawn #anim for bullets
+var mod1
+var mod2
+var mod3
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
 
-func spawn_pattern(passed_pos,passed_dir,pattern,passed_pattern_scale,passed_delay,passed_anim,passed_type,passed_speed,passed_size,passed_dmg,passed_team,passed_color):
+func spawn_pattern(passed_pos,passed_dir,pattern,passed_pattern_scale,passed_delay,passed_anim,passed_shape,passed_type,passed_speed,passed_size,passed_dmg,passed_team,passed_color,passed_mod1,passed_mod2,passed_mod3):
 	
 	#these variables are static and have to be edited between spawns of bullets if you want them to change
 	speed_to_spawn = passed_speed
@@ -25,6 +28,10 @@ func spawn_pattern(passed_pos,passed_dir,pattern,passed_pattern_scale,passed_del
 	team_to_spawn = passed_team
 	color_to_spawn = passed_color
 	delay_to_spawn = passed_delay
+	shape_to_spawn = passed_shape
+	mod1 = passed_mod1
+	mod2 = passed_mod2
+	mod2 = passed_mod3
 	
 	#these variables are passed to the spawn function every time because they change a lot
 	var pos = passed_pos
@@ -99,14 +106,16 @@ func sp(pos,dir,delay_num):
 		pass
 		
 	var new_bullet = bullet_scn.instantiate()
-	new_bullet.glboal_position = pos
+	new_bullet.global_position = pos
 	new_bullet.global_rotation = dir
+	new_bullet.shape = shape_to_spawn
 	new_bullet.type = type_to_spawn
 	new_bullet.speed = speed_to_spawn
 	new_bullet.scale = Vector2(size_to_spawn,size_to_spawn)
 	new_bullet.contact_dmg = dmg_to_spawn
 	new_bullet.team = team_to_spawn
 	new_bullet.color = color_to_spawn
+	new_bullet.mod1 = mod1
 
 	add_sibling(new_bullet)
 	new_bullet.start_moving()
