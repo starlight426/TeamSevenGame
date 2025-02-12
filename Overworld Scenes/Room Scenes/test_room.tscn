@@ -9,13 +9,13 @@ position = Vector2(308, 1971)
 scale = Vector2(15, 1)
 
 [node name="WallSquare2" parent="." instance=ExtResource("1_lmvfl")]
-position = Vector2(2473, 211)
+position = Vector2(1818, 47)
 scale = Vector2(1, 15)
 
 [node name="WallSquare3" parent="." instance=ExtResource("1_lmvfl")]
-position = Vector2(320, -1653)
+position = Vector2(726, -2096)
 scale = Vector2(15, 1)
 
 [node name="WallSquare4" parent="." instance=ExtResource("1_lmvfl")]
-position = Vector2(-2398, 79)
+position = Vector2(-2092, 37)
 scale = Vector2(1, 15)

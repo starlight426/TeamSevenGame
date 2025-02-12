@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://qidap6rptoca"]
 
 [ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="1_aprv1"]
-[ext_resource type="PackedScene" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="2_p3ldc"]
+[ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="2_p3ldc"]
 
 [node name="CigilRoom" type="Node2D"]
 
