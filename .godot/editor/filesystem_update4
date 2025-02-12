@@ -1,1 +1,5 @@
 res://Combat Scenes/System Scenes/bullet_patterner.tscn
+res://Scripts/Combat/bullet_patterner.gd
+res://Scripts/Global/RoomLoader.gd
+res://UI Scenes/transition_screen.tscn
+res://Overworld Scenes/Room Scenes/Circle Area/Houses/cigil_room.tscn

@@ -45,7 +45,6 @@ func spawn_pattern(passed_pos,passed_dir,pattern,passed_pattern_scale,passed_del
 	
 	#ADD ALL NEW PATTERNS HERE
 	match pattern:
-		
 		"single":
 			sp(pos,dir,1)
 			
@@ -118,6 +117,8 @@ func sp(pos,dir,delay_num):
 	new_bullet.team = team_to_spawn
 	new_bullet.color = color_to_spawn
 	new_bullet.mod1 = mod1
+	new_bullet.mod2 = mod2
+	new_bullet.mod3 = mod3
 
 	add_sibling(new_bullet)
 	new_bullet.start_moving()

@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://qidap6rptoca"]
+
+[ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="1_aprv1"]
+[ext_resource type="PackedScene" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="2_p3ldc"]
+
+[node name="CigilRoom" type="Node2D"]
+
+[node name="WallSquare" parent="." instance=ExtResource("1_aprv1")]
+position = Vector2(-111, -2887)
+scale = Vector2(10, 10)
+
+[node name="WallSquare2" parent="." instance=ExtResource("1_aprv1")]
+position = Vector2(4810, 1220)
+scale = Vector2(10, 10)
+
+[node name="WallSquare3" parent="." instance=ExtResource("1_aprv1")]
+position = Vector2(125, 4204)
+scale = Vector2(10, 10)
+
+[node name="exit" parent="." instance=ExtResource("2_p3ldc")]
+position = Vector2(-2374, 18)
