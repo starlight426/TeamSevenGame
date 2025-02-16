@@ -40,8 +40,8 @@ func load_room(room_to_load):
 	main_node.call_deferred("add_child", new_room_loaded)
 	current_room = new_room_loaded
 	
-	main_node.set_camera(new_room_loaded.get_node("left_limit_marker").position.x,new_room_loaded.get_node("right_limit_marker").position.x,
-	new_room_loaded.get_node("top_limit_marker").position.y,new_room_loaded.get_node("bottom_limit_marker").position.y)
+	main_node.set_camera(new_room_loaded.get_node("left_camera_limit").position.x,new_room_loaded.get_node("right_camera_limit").position.x,
+	new_room_loaded.get_node("top_camera_limit").position.y,new_room_loaded.get_node("bottom_camera_limit").position.y)
 	
 	room_has_loaded.emit()
 	

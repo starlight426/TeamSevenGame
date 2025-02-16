@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3dnk0kgcede3"]
+
+[ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="1_dxy12"]
+[ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_olnia"]
+
+[node name="TemplateRoom" type="Node2D"]
+
+[node name="exit" parent="." instance=ExtResource("1_olnia")]
+position = Vector2(-4000, 0)
+target_room = ""
+target_entrance = "from_right"
+
+[node name="exit4" parent="." instance=ExtResource("1_olnia")]
+position = Vector2(0, 4000)
+target_room = ""
+target_entrance = "from_top"
+
+[node name="exit2" parent="." instance=ExtResource("1_olnia")]
+position = Vector2(0, -4000)
+target_room = ""
+target_entrance = "from_bottom"
+
+[node name="exit3" parent="." instance=ExtResource("1_olnia")]
+position = Vector2(4000, 0)
+target_room = ""
+target_entrance = "from_left"
+
+[node name="WallSquare" parent="." instance=ExtResource("1_dxy12")]
+position = Vector2(-3000, -4000)
+scale = Vector2(10, 6)
+
+[node name="WallSquare7" parent="." instance=ExtResource("1_dxy12")]
+position = Vector2(-3000, 4000)
+scale = Vector2(10, 6)
+
+[node name="WallSquare8" parent="." instance=ExtResource("1_dxy12")]
+position = Vector2(3000, 4000)
+scale = Vector2(10, 6)
+
+[node name="WallSquare3" parent="." instance=ExtResource("1_dxy12")]
+position = Vector2(3000, -4000)
+scale = Vector2(10, 6)
+
+[node name="WallSquare2" parent="." instance=ExtResource("1_dxy12")]
+position = Vector2(4000, -3000)
+scale = Vector2(6, 10)
+
+[node name="WallSquare5" parent="." instance=ExtResource("1_dxy12")]
+position = Vector2(-4000, -3000)
+scale = Vector2(6, 10)
+
+[node name="WallSquare6" parent="." instance=ExtResource("1_dxy12")]
+position = Vector2(-4000, 3000)
+scale = Vector2(6, 10)
+
+[node name="WallSquare4" parent="." instance=ExtResource("1_dxy12")]
+position = Vector2(4000, 3000)
+scale = Vector2(6, 10)
+
+[node name="Marker2D" type="Marker2D" parent="."]

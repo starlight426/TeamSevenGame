@@ -27,11 +27,11 @@ func _ready() -> void:
 
 func spawn_bullets(pos,dir,pattern,pattern_scale,pattern_delay,anim,shape,type,speed,size,dmg,team,color,mod1,mod2,mod3):
 	var patterner = bullet_patterner_scn.instantiate()
-	add_sibling(patterner)
+	RoomLoader.current_room.add_child(patterner)
 	return patterner.spawn_pattern(pos,dir,pattern,pattern_scale,pattern_delay,anim,shape,type,speed,size,dmg,team,color,mod1,mod2,mod3)
 
 
 func spawn_solids(pos,dir,pattern,pattern_scale,shape,type,speed,size,dmg,team,color,mod1,mod2,mod3,hp):
 	var patterner = solid_patterner_scn.instantiate()
-	add_sibling(patterner)
+	RoomLoader.current_room.add_child(patterner)
 	return patterner.spawn_pattern(pos,dir,pattern,pattern_scale,shape,type,speed,size,dmg,team,color,mod1,mod2,mod3,hp)
