@@ -7,6 +7,7 @@ signal room_has_loaded
 
 
 func set_checkpoint(passed_checkpoint):
+	# change this later
 	load_room(passed_checkpoint.get_parent().get_path())
 	await room_has_loaded
 	teleport_player(passed_checkpoint.global_postion)
@@ -17,7 +18,7 @@ func player_die():
 	
 
 func load_room_from_exit(target_group,target_room,target_entrance):
-	var room_to_load = "res://Overworld Scenes/Room scenes/" +target_group + "/" +target_room + ".tscn"
+	var room_to_load = "res://Overworld Scenes/Room scenes/" + target_group + "/" +target_room + ".tscn"
 	load_room(room_to_load)
 	await room_has_loaded
 	teleport_player(new_room_loaded.get_node(target_entrance).global_position)
@@ -38,8 +39,10 @@ func load_room(room_to_load):
 	
 	main_node.call_deferred("add_child", new_room_loaded)
 	current_room = new_room_loaded
+	
 	main_node.set_camera(new_room_loaded.get_node("left_limit_marker").position.x,new_room_loaded.get_node("right_limit_marker").position.x,
 	new_room_loaded.get_node("top_limit_marker").position.y,new_room_loaded.get_node("bottom_limit_marker").position.y)
+	
 	room_has_loaded.emit()
 	
 func teleport_player(new_pos):

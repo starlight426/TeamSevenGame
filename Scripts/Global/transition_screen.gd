@@ -9,6 +9,7 @@ func _ready() -> void:
 
 func _on_animation_finished(anim_name):
 	if(anim_name == "fade_to_black"):
+		#transition finished actually means screen is black
 		on_transition_finished.emit()
 		await get_tree().create_timer(0.1).timeout
 		animation_player.play("fade_to_normal")

@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://hwmgwkumra7q" path="res://Overworld Scenes/Player Scenes/player.tscn" id="1_fmlmq"]
 [ext_resource type="Script" path="res://main.gd" id="1_ipmiu"]
-[ext_resource type="PackedScene" uid="uid://cowpe2yb80ahw" path="res://Overworld Scenes/Room Scenes/test_room.tscn" id="3_f1wwc"]
+[ext_resource type="PackedScene" uid="uid://cowpe2yb80ahw" path="res://Overworld Scenes/Room Scenes/Dev/test_room.tscn" id="3_f1wwc"]
 [ext_resource type="PackedScene" uid="uid://4i7rpstg74wt" path="res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn" id="4_yqcyb"]
 
 [node name="Main" type="Node2D"]

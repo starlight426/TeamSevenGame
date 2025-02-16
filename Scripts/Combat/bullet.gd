@@ -16,11 +16,10 @@ var mod3 = 0
 
 func _ready():
 	$Hitbox.body_entered.connect(on_bullet_hit)
-	print(type)
 	#start_decay()
 	match type:
 		"straight":
-			print("type is straight")
+			pass
 	#play_this_sound()
 
 func start_moving():
@@ -31,7 +30,6 @@ func start_moving():
 	# Move the character
 	match type:
 		"straight":
-			print("type is straight")
 			velocity = movement*speed
 		"arc":
 			velocity = movement*speed

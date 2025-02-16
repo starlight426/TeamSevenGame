@@ -15,12 +15,10 @@ func _ready():
 func _process(delta):
 	pass
 
-
-
 #only on layer 4
 
 #target room and group are separate for convenience in the editor
 func _on_body_entered(body):
 	if(exit_ready):
-		RoomHandler.load_room_from_exit(target_group,target_room,target_entrance)
+		RoomLoader.load_room_from_exit(target_group,target_room,target_entrance)
 		
