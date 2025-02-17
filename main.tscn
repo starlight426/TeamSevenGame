@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cmcabksd0f3yj"]
+[gd_scene load_steps=5 format=3 uid="uid://cmcabksd0f3yj"]
 
 [ext_resource type="PackedScene" uid="uid://hwmgwkumra7q" path="res://Overworld Scenes/Player Scenes/player.tscn" id="1_fmlmq"]
 [ext_resource type="Script" path="res://main.gd" id="1_ipmiu"]
+[ext_resource type="Script" path="res://Scripts/camera.gd" id="4_w7dd5"]
 [ext_resource type="PackedScene" uid="uid://4i7rpstg74wt" path="res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn" id="4_yqcyb"]
 
 [node name="Main" type="Node2D"]
@@ -14,3 +15,4 @@ position = Vector2(377, -300)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.25, 0.25)
+script = ExtResource("4_w7dd5")
