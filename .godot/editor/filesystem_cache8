@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1739765170
-main.gd::GDScript::-1::1739741889::0::1::::<>Node2D<>::
-main.tscn::PackedScene::5619238585554540481::1739734330::0::1::::<><>::uid://hwmgwkumra7q::::res://Overworld Scenes/Player Scenes/player.tscn<>res://main.gd<>uid://4i7rpstg74wt::::res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn
+::res://::1739991144
+main.gd::GDScript::-1::1739821933::0::1::::<>Node2D<>::
+main.tscn::PackedScene::5619238585554540481::1739821933::0::1::::<><>::uid://hwmgwkumra7q::::res://Overworld Scenes/Player Scenes/player.tscn<>res://main.gd<>res://Scripts/camera.gd<>uid://4i7rpstg74wt::::res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn
 ::res://AI Modules/::1738089791
 ::res://AI Modules/Detectors/::1739665390
 target_detector.gd::GDScript::-1::1739665390::0::1::::<>Area2D<>::
@@ -29,12 +29,13 @@ solid_spawner.tscn::PackedScene::2484852791737106147::1738096854::0::1::::<><>::
 ::res://Overworld Scenes/Object Scenes/::1739731737
 exit.tscn::PackedScene::8578358213318671069::1739731737::0::1::::<><>::res://Scripts/exit.gd
 wall_square.tscn::PackedScene::8458494857368978959::1739731722::0::1::::<><>::res://Scripts/wall_square.gd<>uid://buja428afyam8::::res://Assets/Shapes/whitesquare.png
-::res://Overworld Scenes/Player Scenes/::1739733506
-player.tscn::PackedScene::537478706619329816::1739733506::0::1::::<><>::res://Scripts/player.gd<>uid://bbppmat8qe4r3::::res://Assets/Shapes/whitecircle.png
-::res://Overworld Scenes/Room Scenes/::1739741889
-template_room.tscn::PackedScene::6745130630165545008::1739741889::0::1::::<><>::uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn
-::res://Overworld Scenes/Room Scenes/Circle City/::1739733506
-cigil_room.tscn::PackedScene::1139719507751695076::1739733506::0::1::::<><>::uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn
+::res://Overworld Scenes/Player Scenes/::1739905142
+player.tscn::PackedScene::537478706619329816::1739905142::0::1::::<><>::res://Scripts/player.gd<>uid://bbppmat8qe4r3::::res://Assets/Shapes/whitecircle.png
+::res://Overworld Scenes/Room Scenes/::1739915464
+template_room.tscn::PackedScene::6745130630165545008::1739901743::0::1::::<><>::uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn
+::res://Overworld Scenes/Room Scenes/Circle City/::1739944021
+cigil_room.tscn::PackedScene::2668005533816128570::1739904221::0::1::::<><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn
+circle_corridor.tscn::PackedScene::5764270827928797293::1739944021::0::1::::<><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn
 ::res://Overworld Scenes/Room Scenes/Circle Temple/::1739666722
 ::res://Overworld Scenes/Room Scenes/Danger Zone/::1739666511
 ::res://Overworld Scenes/Room Scenes/Dev/::1739733506
@@ -46,7 +47,8 @@ test_room.tscn::PackedScene::5801820842271364348::1739733506::0::1::::<><>::uid:
 ::res://Overworld Scenes/Room Scenes/Triangle Fortress/::1739666715
 ::res://Overworld Scenes/Room Scenes/Triangle Town/::1739666529
 ::res://Saves/::1737831364
-::res://Scripts/::1739665390
+::res://Scripts/::1739770590
+camera.gd::GDScript::-1::1739770590::0::1::::<>Camera2D<>::
 exit.gd::GDScript::-1::1739665390::0::1::::<>Area2D<>::
 player.gd::GDScript::-1::1739665390::0::1::::<>CharacterBody2D<>::
 wall_square.gd::GDScript::-1::1739665390::0::1::::<>CharacterBody2D<>::
@@ -59,15 +61,18 @@ solid_patterner.gd::GDScript::-1::1739665390::0::1::::<>Node2D<>::
 AttackSpawner.gd::GDScript::-1::1739733506::0::1::::<>Node<>::
 RoomLoader.gd::GDScript::-1::1739741882::0::1::::<>Node<>::
 transition_screen.gd::GDScript::-1::1739667166::0::1::::<>CanvasLayer<>::
-::res://spritePNGs/::1739741940
+::res://spritePNGs/::1739829380
 Cigil_1.0.png::CompressedTexture2D::4186231211040653379::1738436869::1738436888::1::::<><>::
 Circle_Bullet_N2.0.png::CompressedTexture2D::86834325576795826::1738436869::1738436887::1::::<><>::
 Enemy_8Shot_Circ.png::CompressedTexture2D::7155498009605647390::1739665383::1739665387::1::::<><>::
+Enemy_Assass_Tri copy.png::CompressedTexture2D::7783682563698606897::1739770622::1739821162::1::::<><>::
 Enemy_Basic_Circ.png::CompressedTexture2D::8290876671900890581::1739313364::1739313661::1::::<><>::
 Enemy_Chaser_Circ.png::CompressedTexture2D::5482447808221813239::1739487420::1739665194::1::::<><>::
 Enemy_Corrupted_Circ copy.png::CompressedTexture2D::8385087432465267995::1739487420::1739665194::1::::<><>::
 Enemy_Dasher_Tri.png::CompressedTexture2D::6439259088550784930::1739741940::1739765171::1::::<><>::
 Enemy_Ram_Tri.png::CompressedTexture2D::2958991647394690044::1739741940::1739765171::1::::<><>::
+Enemy_Summoner_Tri.png::CompressedTexture2D::5093688946603642703::1739829380::1739829380::1::::<><>::
+Enemy_Warrior_Tri.png::CompressedTexture2D::1337264024950228297::1739770622::1739821162::1::::<><>::
 Square_Bullet_N.png::CompressedTexture2D::2106094893103869597::1738436869::1738436887::1::::<><>::
 Triangle_Bullet_N copy.png::CompressedTexture2D::7892358200316629153::1738436869::1738436887::1::::<><>::
 Zigzag_Bullet_N.png::CompressedTexture2D::6051827823931333841::1738436869::1738436887::1::::<><>::

@@ -46,7 +46,7 @@ func load_room(room_to_load):
 	room_has_loaded.emit()
 	
 func teleport_player(new_pos):
-	main_node.get_node("xara").position = new_pos
+	main_node.get_node("Player").position = new_pos
 
 func trigger(trigger_id):
 	pass

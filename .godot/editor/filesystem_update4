@@ -1,3 +1,5 @@
-res://main.tscn
-res://Scripts/camera.gd
-res://main.gd
+res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn
+res://Overworld Scenes/Player Scenes/player.tscn
+res://Overworld Scenes/Room Scenes/Circle City/circle_corridor.tscn
+res://Overworld Scenes/Room Scenes/Circle City/cigil_room.tscn
+res://Scripts/Global/RoomLoader.gd

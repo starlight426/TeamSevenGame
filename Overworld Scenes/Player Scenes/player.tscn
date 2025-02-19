@@ -1,17 +1,19 @@
 [gd_scene load_steps=4 format=3 uid="uid://hwmgwkumra7q"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_2lqq4"]
-[ext_resource type="Texture2D" uid="uid://bbppmat8qe4r3" path="res://Assets/Shapes/whitecircle.png" id="1_7xexo"]
+[ext_resource type="Texture2D" uid="uid://b0v3u7ufltkm2" path="res://spritePNGs/Cigil_1.0.png" id="2_drssv"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_w0ggq"]
 radius = 109.165
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 9
+collision_mask = 9
 script = ExtResource("1_2lqq4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_w0ggq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("1_7xexo")
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_drssv")

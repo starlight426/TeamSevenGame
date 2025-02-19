@@ -57,4 +57,26 @@ scale = Vector2(6, 10)
 position = Vector2(4000, 3000)
 scale = Vector2(6, 10)
 
-[node name="Marker2D" type="Marker2D" parent="."]
+[node name="left_camera_limit" type="Marker2D" parent="."]
+position = Vector2(-3500, 0)
+
+[node name="from_left" type="Marker2D" parent="."]
+position = Vector2(-3000, 0)
+
+[node name="from_right" type="Marker2D" parent="."]
+position = Vector2(3000, 0)
+
+[node name="from_bottom" type="Marker2D" parent="."]
+position = Vector2(0, 3000)
+
+[node name="from_top" type="Marker2D" parent="."]
+position = Vector2(0, -3000)
+
+[node name="right_camera_limit" type="Marker2D" parent="."]
+position = Vector2(3500, 0)
+
+[node name="top_camera_limit" type="Marker2D" parent="."]
+position = Vector2(0, -3500)
+
+[node name="bottom_camera_limit" type="Marker2D" parent="."]
+position = Vector2(0, 3500)
