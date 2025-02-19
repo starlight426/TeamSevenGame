@@ -60,7 +60,7 @@ func spawn_pattern(passed_pos,passed_dir,pattern,passed_pattern_scale,passed_del
 			sp(pos,dir-PI/6,1)
 			sp(pos,dir+PI/4,2)
 			sp(pos,dir-PI/4,2)
-			
+		
 		"7cone":
 			sp(pos,dir,0)
 			sp(pos,dir+PI/6,1)
@@ -86,7 +86,7 @@ func spawn_pattern(passed_pos,passed_dir,pattern,passed_pattern_scale,passed_del
 			off_angle = dir + (PI / 2)
 			boffset = Vector2(spacing * cos(off_angle), spacing * sin(off_angle))
 			sp(pos+boffset,dir,1)
-	
+			
 		"2spread":
 			spacing = 300
 			off_angle = dir - (PI / 2)

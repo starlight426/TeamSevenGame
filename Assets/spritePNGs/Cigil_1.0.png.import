@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drp2fuwwbrm16"
-path="res://.godot/imported/Enemy_Corrupted_Circ copy.png-461e9b3845a8ae3988aa7da86aa69fb7.ctex"
+uid="uid://b0v3u7ufltkm2"
+path="res://.godot/imported/Cigil_1.0.png-a4e737786f7fe745a326b5378bfc2bfb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spritePNGs/Enemy_Corrupted_Circ copy.png"
-dest_files=["res://.godot/imported/Enemy_Corrupted_Circ copy.png-461e9b3845a8ae3988aa7da86aa69fb7.ctex"]
+source_file="res://Assets/spritePNGs/Cigil_1.0.png"
+dest_files=["res://.godot/imported/Cigil_1.0.png-a4e737786f7fe745a326b5378bfc2bfb.ctex"]
 
 [params]
 

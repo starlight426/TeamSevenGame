@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bifmfpdkd7ts3"
-path="res://.godot/imported/Enemy_Ram_Tri.png-61b9e0b51e15e6009b18080666acee1d.ctex"
+uid="uid://ckd0d5iusnqbn"
+path="res://.godot/imported/Enemy_Chaser_Circ.png-c921355f45b451b8c8a9764e3f7ae6f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spritePNGs/Enemy_Ram_Tri.png"
-dest_files=["res://.godot/imported/Enemy_Ram_Tri.png-61b9e0b51e15e6009b18080666acee1d.ctex"]
+source_file="res://Assets/spritePNGs/Enemy_Chaser_Circ.png"
+dest_files=["res://.godot/imported/Enemy_Chaser_Circ.png-c921355f45b451b8c8a9764e3f7ae6f1.ctex"]
 
 [params]
 

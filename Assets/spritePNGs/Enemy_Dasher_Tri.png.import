@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c87gah30r70lu"
-path="res://.godot/imported/Enemy_8Shot_Circ.png-e836a2fed171ca5c85604bd06d4178c7.ctex"
+uid="uid://cx0hwk2gfoe0a"
+path="res://.godot/imported/Enemy_Dasher_Tri.png-7f84a18328dbfe528aa730a78ec2f457.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spritePNGs/Enemy_8Shot_Circ.png"
-dest_files=["res://.godot/imported/Enemy_8Shot_Circ.png-e836a2fed171ca5c85604bd06d4178c7.ctex"]
+source_file="res://Assets/spritePNGs/Enemy_Dasher_Tri.png"
+dest_files=["res://.godot/imported/Enemy_Dasher_Tri.png-7f84a18328dbfe528aa730a78ec2f457.ctex"]
 
 [params]
 

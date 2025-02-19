@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cetokvspqqs2r"
-path="res://.godot/imported/Enemy_Summoner_Tri.png-6c5a38a6df1888c946eb7f29d70de860.ctex"
+uid="uid://drp2fuwwbrm16"
+path="res://.godot/imported/Enemy_Corrupted_Circ copy.png-d9ba1742b31b3da96eb22c3fce0d01d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spritePNGs/Enemy_Summoner_Tri.png"
-dest_files=["res://.godot/imported/Enemy_Summoner_Tri.png-6c5a38a6df1888c946eb7f29d70de860.ctex"]
+source_file="res://Assets/spritePNGs/Enemy_Corrupted_Circ copy.png"
+dest_files=["res://.godot/imported/Enemy_Corrupted_Circ copy.png-d9ba1742b31b3da96eb22c3fce0d01d8.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cshsyqn54s3pd"
-path="res://.godot/imported/Zigzag_Bullet_N.png-ea5c51eeaeaac3e5af96a137c6cb286d.ctex"
+uid="uid://5ahcs6ctfwk0"
+path="res://.godot/imported/Square_Bullet_N.png-f19bf38e30303092a1665015382d61f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spritePNGs/Zigzag_Bullet_N.png"
-dest_files=["res://.godot/imported/Zigzag_Bullet_N.png-ea5c51eeaeaac3e5af96a137c6cb286d.ctex"]
+source_file="res://Assets/spritePNGs/Square_Bullet_N.png"
+dest_files=["res://.godot/imported/Square_Bullet_N.png-f19bf38e30303092a1665015382d61f6.ctex"]
 
 [params]
 

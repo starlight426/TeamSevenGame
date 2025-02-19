@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkpd8smjbsw1v"
-path="res://.godot/imported/Triangle_Bullet_N copy.png-27642444de22752520be7034edac0563.ctex"
+uid="uid://tb1sp3tcpwo4"
+path="res://.godot/imported/Enemy_Warrior_Tri.png-e6bcf841a24ec43108e65b5fa05f8199.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spritePNGs/Triangle_Bullet_N copy.png"
-dest_files=["res://.godot/imported/Triangle_Bullet_N copy.png-27642444de22752520be7034edac0563.ctex"]
+source_file="res://Assets/spritePNGs/Enemy_Warrior_Tri.png"
+dest_files=["res://.godot/imported/Enemy_Warrior_Tri.png-e6bcf841a24ec43108e65b5fa05f8199.ctex"]
 
 [params]
 

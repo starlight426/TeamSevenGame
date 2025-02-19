@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cx0hwk2gfoe0a"
-path="res://.godot/imported/Enemy_Dasher_Tri.png-dd95d97785a6a59ebe0f31269c2b012e.ctex"
+uid="uid://cetokvspqqs2r"
+path="res://.godot/imported/Enemy_Summoner_Tri.png-f73dfdfb1615e2b823beb3b60a10cf8c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spritePNGs/Enemy_Dasher_Tri.png"
-dest_files=["res://.godot/imported/Enemy_Dasher_Tri.png-dd95d97785a6a59ebe0f31269c2b012e.ctex"]
+source_file="res://Assets/spritePNGs/Enemy_Summoner_Tri.png"
+dest_files=["res://.godot/imported/Enemy_Summoner_Tri.png-f73dfdfb1615e2b823beb3b60a10cf8c.ctex"]
 
 [params]
 

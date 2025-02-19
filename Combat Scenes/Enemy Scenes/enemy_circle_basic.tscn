@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://4i7rpstg74wt"]
 
 [ext_resource type="Script" path="res://Scripts/Combat/enemy_circle_basic.gd" id="1_akfuv"]
-[ext_resource type="Texture2D" uid="uid://dqefr603pkrej" path="res://spritePNGs/Enemy_Basic_Circ.png" id="2_cr1ln"]
+[ext_resource type="Texture2D" uid="uid://dqefr603pkrej" path="res://Assets/spritePNGs/Enemy_Basic_Circ.png" id="2_cr1ln"]
 [ext_resource type="PackedScene" uid="uid://sus6s80ptul7" path="res://AI Modules/Detectors/target_detector.tscn" id="3_bwdb7"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fybhy"]

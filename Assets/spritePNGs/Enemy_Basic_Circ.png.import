@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckd0d5iusnqbn"
-path="res://.godot/imported/Enemy_Chaser_Circ.png-eab591b2f4d8587e37ac143ccc55a4dc.ctex"
+uid="uid://dqefr603pkrej"
+path="res://.godot/imported/Enemy_Basic_Circ.png-96dc20b7b03984665e5cbdad0d107354.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spritePNGs/Enemy_Chaser_Circ.png"
-dest_files=["res://.godot/imported/Enemy_Chaser_Circ.png-eab591b2f4d8587e37ac143ccc55a4dc.ctex"]
+source_file="res://Assets/spritePNGs/Enemy_Basic_Circ.png"
+dest_files=["res://.godot/imported/Enemy_Basic_Circ.png-96dc20b7b03984665e5cbdad0d107354.ctex"]
 
 [params]
 

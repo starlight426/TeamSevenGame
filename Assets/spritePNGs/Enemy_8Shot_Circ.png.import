@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5ahcs6ctfwk0"
-path="res://.godot/imported/Square_Bullet_N.png-f516d5c9a9b2cccab9b9bd1b92dfb246.ctex"
+uid="uid://c87gah30r70lu"
+path="res://.godot/imported/Enemy_8Shot_Circ.png-3a93c3805e7632698dbc0c9647148760.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spritePNGs/Square_Bullet_N.png"
-dest_files=["res://.godot/imported/Square_Bullet_N.png-f516d5c9a9b2cccab9b9bd1b92dfb246.ctex"]
+source_file="res://Assets/spritePNGs/Enemy_8Shot_Circ.png"
+dest_files=["res://.godot/imported/Enemy_8Shot_Circ.png-3a93c3805e7632698dbc0c9647148760.ctex"]
 
 [params]
 

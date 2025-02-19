@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tb1sp3tcpwo4"
-path="res://.godot/imported/Enemy_Warrior_Tri.png-3780c448d9f332195b91f97519f26869.ctex"
+uid="uid://bifmfpdkd7ts3"
+path="res://.godot/imported/Enemy_Ram_Tri.png-359986a50302ac68d917f59c8502d8d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spritePNGs/Enemy_Warrior_Tri.png"
-dest_files=["res://.godot/imported/Enemy_Warrior_Tri.png-3780c448d9f332195b91f97519f26869.ctex"]
+source_file="res://Assets/spritePNGs/Enemy_Ram_Tri.png"
+dest_files=["res://.godot/imported/Enemy_Ram_Tri.png-359986a50302ac68d917f59c8502d8d5.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqefr603pkrej"
-path="res://.godot/imported/Enemy_Basic_Circ.png-cb69f846f422f3927e8647a6eb4283c4.ctex"
+uid="uid://bicfb303bke1"
+path="res://.godot/imported/Circle_Bullet_N2.0.png-3e07b706e19e4a7ed72c1ffab0f7d242.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spritePNGs/Enemy_Basic_Circ.png"
-dest_files=["res://.godot/imported/Enemy_Basic_Circ.png-cb69f846f422f3927e8647a6eb4283c4.ctex"]
+source_file="res://Assets/spritePNGs/Circle_Bullet_N2.0.png"
+dest_files=["res://.godot/imported/Circle_Bullet_N2.0.png-3e07b706e19e4a7ed72c1ffab0f7d242.ctex"]
 
 [params]
 
