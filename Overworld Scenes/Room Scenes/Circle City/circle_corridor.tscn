@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://hwmgwkumra7q" path="res://Overworld Scenes/Player Scenes/player.tscn" id="4_83pq7"]
 
 [node name="TemplateRoom" type="Node2D"]
+position = Vector2(-6750, -1500)
 
 [node name="exit" parent="." instance=ExtResource("1_ds34k")]
 position = Vector2(-4000, 0)
