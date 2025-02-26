@@ -1,7 +1,2 @@
-res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn
-res://Overworld Scenes/Player Scenes/player.tscn
+res://Overworld Scenes/Object Scenes/wall_circle.tscn
 res://Overworld Scenes/Room Scenes/Circle City/circle_corridor.tscn
-res://Overworld Scenes/Room Scenes/Circle City/cigil_room.tscn
-res://Scripts/Global/RoomLoader.gd
-res://Overworld Scenes/Room Scenes/template_room.tscn
-res://Scripts/Combat/bullet_patterner.gd

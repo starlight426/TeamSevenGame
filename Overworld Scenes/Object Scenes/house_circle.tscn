@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cl0mb30qykt7j"]
+
+[ext_resource type="Texture2D" uid="uid://bbppmat8qe4r3" path="res://Assets/Shapes/whitecircle.png" id="1_e1qdo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_604i7"]
+radius = 500.0
+
+[node name="WallCircle" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.47, 0.47)
+texture = ExtResource("1_e1qdo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_604i7")

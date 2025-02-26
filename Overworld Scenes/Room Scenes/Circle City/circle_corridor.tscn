@@ -23,12 +23,12 @@ target_room = ""
 target_entrance = "from_bottom"
 
 [node name="exit3" parent="." instance=ExtResource("1_ds34k")]
-position = Vector2(4000, 0)
+position = Vector2(4750, 0)
 target_room = ""
 target_entrance = "from_left"
 
 [node name="WallSquare" parent="." instance=ExtResource("2_nh6fj")]
-position = Vector2(-5000, -8750)
+position = Vector2(-5250, -13250)
 scale = Vector2(10, 6)
 
 [node name="WallSquare7" parent="." instance=ExtResource("2_nh6fj")]
@@ -44,19 +44,19 @@ position = Vector2(5000, -11750)
 scale = Vector2(10, 6)
 
 [node name="WallSquare2" parent="." instance=ExtResource("2_nh6fj")]
-position = Vector2(4000, -5500)
+position = Vector2(5500, -5500)
 scale = Vector2(6, 20)
 
 [node name="WallSquare5" parent="." instance=ExtResource("2_nh6fj")]
-position = Vector2(-4000, -2250)
-scale = Vector2(6, 20)
+position = Vector2(-5750, -2250)
+scale = Vector2(6, 40)
 
 [node name="WallSquare6" parent="." instance=ExtResource("2_nh6fj")]
 position = Vector2(-4000, 3000)
 scale = Vector2(6, 10)
 
 [node name="WallSquare4" parent="." instance=ExtResource("2_nh6fj")]
-position = Vector2(4000, 3000)
+position = Vector2(4500, 3000)
 scale = Vector2(6, 10)
 
 [node name="left_camera_limit" type="Marker2D" parent="."]
@@ -66,7 +66,7 @@ position = Vector2(-3500, 0)
 position = Vector2(-3000, 0)
 
 [node name="from_right" type="Marker2D" parent="."]
-position = Vector2(3000, 0)
+position = Vector2(3750, 0)
 
 [node name="from_bottom" type="Marker2D" parent="."]
 position = Vector2(0, 3000)
@@ -75,7 +75,7 @@ position = Vector2(0, 3000)
 position = Vector2(0, -3000)
 
 [node name="right_camera_limit" type="Marker2D" parent="."]
-position = Vector2(3500, 0)
+position = Vector2(4250, 0)
 
 [node name="top_camera_limit" type="Marker2D" parent="."]
 position = Vector2(0, -3500)
