@@ -3,13 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_ds34k"]
 [ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="2_nh6fj"]
 [ext_resource type="PackedScene" uid="uid://4i7rpstg74wt" path="res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn" id="3_axvfw"]
-[ext_resource type="PackedScene" uid="uid://hwmgwkumra7q" path="res://Overworld Scenes/Player Scenes/player.tscn" id="4_83pq7"]
+[ext_resource type="PackedScene" uid="uid://c1w5jhxknb674" path="res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn" id="5_pe2aq"]
 
 [node name="TemplateRoom" type="Node2D"]
-position = Vector2(-6750, -1500)
 
 [node name="exit" parent="." instance=ExtResource("1_ds34k")]
-position = Vector2(-4000, 0)
+position = Vector2(-9250, -24000)
 target_room = ""
 target_entrance = "from_right"
 
@@ -18,50 +17,41 @@ position = Vector2(0, 4000)
 target_room = ""
 target_entrance = "from_top"
 
-[node name="exit2" parent="." instance=ExtResource("1_ds34k")]
-position = Vector2(0, -4000)
-target_room = ""
-target_entrance = "from_bottom"
-
 [node name="exit3" parent="." instance=ExtResource("1_ds34k")]
 position = Vector2(4750, 0)
 target_room = ""
 target_entrance = "from_left"
 
-[node name="WallSquare" parent="." instance=ExtResource("2_nh6fj")]
-position = Vector2(-5250, -13250)
-scale = Vector2(10, 6)
-
 [node name="WallSquare7" parent="." instance=ExtResource("2_nh6fj")]
-position = Vector2(-3000, 4000)
-scale = Vector2(10, 6)
+position = Vector2(-5250, 4000)
+scale = Vector2(20, 6)
 
 [node name="WallSquare8" parent="." instance=ExtResource("2_nh6fj")]
 position = Vector2(2000, 4000)
 scale = Vector2(10, 6)
 
-[node name="WallSquare3" parent="." instance=ExtResource("2_nh6fj")]
-position = Vector2(5000, -11750)
-scale = Vector2(10, 6)
-
 [node name="WallSquare2" parent="." instance=ExtResource("2_nh6fj")]
-position = Vector2(5500, -5500)
-scale = Vector2(6, 20)
+position = Vector2(5750, -13000)
+scale = Vector2(10, 50)
+
+[node name="WallSquare3" parent="." instance=ExtResource("2_nh6fj")]
+position = Vector2(-9250, -9500)
+scale = Vector2(10, 50)
 
 [node name="WallSquare5" parent="." instance=ExtResource("2_nh6fj")]
-position = Vector2(-5750, -2250)
-scale = Vector2(6, 40)
+position = Vector2(-8750, -38500)
+scale = Vector2(10, 50)
 
 [node name="WallSquare6" parent="." instance=ExtResource("2_nh6fj")]
-position = Vector2(-4000, 3000)
-scale = Vector2(6, 10)
+position = Vector2(5750, -44500)
+scale = Vector2(10, 50)
 
 [node name="WallSquare4" parent="." instance=ExtResource("2_nh6fj")]
 position = Vector2(4500, 3000)
 scale = Vector2(6, 10)
 
 [node name="left_camera_limit" type="Marker2D" parent="."]
-position = Vector2(-3500, 0)
+position = Vector2(-8750, 0)
 
 [node name="from_left" type="Marker2D" parent="."]
 position = Vector2(-3000, 0)
@@ -73,21 +63,23 @@ position = Vector2(3750, 0)
 position = Vector2(0, 3000)
 
 [node name="from_top" type="Marker2D" parent="."]
-position = Vector2(0, -3000)
+position = Vector2(-1750, -5000)
 
 [node name="right_camera_limit" type="Marker2D" parent="."]
 position = Vector2(4250, 0)
 
 [node name="top_camera_limit" type="Marker2D" parent="."]
-position = Vector2(0, -3500)
+position = Vector2(-250, -24500)
 
 [node name="bottom_camera_limit" type="Marker2D" parent="."]
-position = Vector2(0, 3500)
+position = Vector2(-2250, 4500)
 
 [node name="TileMap" type="TileMap" parent="."]
+position = Vector2(-2250, 1500)
 format = 2
 
 [node name="EnemyCircleBasic" parent="." instance=ExtResource("3_axvfw")]
 position = Vector2(0, -7750)
 
-[node name="Player" parent="." instance=ExtResource("4_83pq7")]
+[node name="EnemyCircleCorrupted" parent="." instance=ExtResource("5_pe2aq")]
+position = Vector2(-2500, -3500)

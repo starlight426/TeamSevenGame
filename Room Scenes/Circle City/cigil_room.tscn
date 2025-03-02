@@ -7,8 +7,9 @@
 
 [node name="exit" parent="." instance=ExtResource("1_yabxm")]
 position = Vector2(-4000, 0)
-target_room = ""
+target_room = "circle_corridor"
 target_entrance = "from_right"
+target_group = "Circle City"
 
 [node name="exit4" parent="." instance=ExtResource("1_yabxm")]
 position = Vector2(-120, 6862)
@@ -64,7 +65,7 @@ position = Vector2(-3500, 0)
 position = Vector2(-3000, 0)
 
 [node name="from_right" type="Marker2D" parent="."]
-position = Vector2(9500, 250)
+position = Vector2(2620, -30)
 
 [node name="from_bottom" type="Marker2D" parent="."]
 position = Vector2(0, 3000)

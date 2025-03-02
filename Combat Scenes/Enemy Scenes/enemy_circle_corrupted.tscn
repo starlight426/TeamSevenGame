@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1w5jhxknb674"]
+
+[ext_resource type="Script" path="res://Scripts/Combat/enemy_circle_corrupted.gd" id="1_1rgqo"]
+[ext_resource type="Texture2D" uid="uid://drqvvhiamgfcu" path="res://Assets/spritePNGs/Enemy_Corrupted_Circ.png" id="2_nywh3"]
+[ext_resource type="PackedScene" uid="uid://sus6s80ptul7" path="res://AI Modules/Detectors/target_detector.tscn" id="3_uds4y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fybhy"]
+radius = 100.0
+
+[node name="EnemyCircleCorrupted" type="CharacterBody2D"]
+rotation = 1.5708
+script = ExtResource("1_1rgqo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("CircleShape2D_fybhy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 3.14159
+texture = ExtResource("2_nywh3")
+
+[node name="TargetDetector" parent="." instance=ExtResource("3_uds4y")]
+visible = false
+scale = Vector2(10, 10)
