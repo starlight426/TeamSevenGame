@@ -1,0 +1,86 @@
+[gd_scene load_steps=3 format=3 uid="uid://bao5te6xbvhv4"]
+
+[ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_rlf4h"]
+[ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="2_1c5qf"]
+
+[node name="TemplateRoom" type="Node2D"]
+
+[node name="exit" parent="." instance=ExtResource("1_rlf4h")]
+position = Vector2(-4000, 0)
+target_room = ""
+target_entrance = "from_right"
+
+[node name="exit4" parent="." instance=ExtResource("1_rlf4h")]
+position = Vector2(0, 4000)
+target_room = ""
+target_entrance = "from_top"
+
+[node name="exit2" parent="." instance=ExtResource("1_rlf4h")]
+position = Vector2(0, -4000)
+target_room = ""
+target_entrance = "from_bottom"
+
+[node name="exit3" parent="." instance=ExtResource("1_rlf4h")]
+position = Vector2(4000, 0)
+target_room = ""
+target_entrance = "from_left"
+
+[node name="left_camera_limit" type="Marker2D" parent="."]
+position = Vector2(-3500, 0)
+
+[node name="from_left" type="Marker2D" parent="."]
+position = Vector2(-3000, 0)
+
+[node name="from_right" type="Marker2D" parent="."]
+position = Vector2(3000, 0)
+
+[node name="from_bottom" type="Marker2D" parent="."]
+position = Vector2(0, 3000)
+
+[node name="from_top" type="Marker2D" parent="."]
+position = Vector2(0, -3000)
+
+[node name="right_camera_limit" type="Marker2D" parent="."]
+position = Vector2(3500, 0)
+
+[node name="top_camera_limit" type="Marker2D" parent="."]
+position = Vector2(0, -3500)
+
+[node name="bottom_camera_limit" type="Marker2D" parent="."]
+position = Vector2(0, 3500)
+
+[node name="WallMantle" parent="." instance=ExtResource("2_1c5qf")]
+position = Vector2(-4125, -3447)
+scale = Vector2(5, 5)
+
+[node name="WallMantle2" parent="." instance=ExtResource("2_1c5qf")]
+position = Vector2(-328.001, -3413)
+scale = Vector2(5, 5)
+
+[node name="WallMantle3" parent="." instance=ExtResource("2_1c5qf")]
+position = Vector2(-5176, 3198)
+scale = Vector2(5, 5)
+
+[node name="WallMantle4" parent="." instance=ExtResource("2_1c5qf")]
+position = Vector2(-2995, 3933)
+scale = Vector2(5, 5)
+
+[node name="WallMantle5" parent="." instance=ExtResource("2_1c5qf")]
+position = Vector2(3966, -3288)
+scale = Vector2(5, 5)
+
+[node name="WallMantle6" parent="." instance=ExtResource("2_1c5qf")]
+position = Vector2(6870, -293)
+scale = Vector2(5, 5)
+
+[node name="WallMantle7" parent="." instance=ExtResource("2_1c5qf")]
+position = Vector2(5932, 3233)
+scale = Vector2(5, 5)
+
+[node name="WallMantle9" parent="." instance=ExtResource("2_1c5qf")]
+position = Vector2(-7539, -248)
+scale = Vector2(5, 5)
+
+[node name="WallMantle8" parent="." instance=ExtResource("2_1c5qf")]
+position = Vector2(3366, 3968)
+scale = Vector2(5, 5)

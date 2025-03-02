@@ -1,15 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://bmjd5v53b4g8t"]
+[gd_scene load_steps=3 format=3 uid="uid://3p1a3i1jkvbd"]
 
-[ext_resource type="Texture2D" uid="uid://bbppmat8qe4r3" path="res://Assets/Shapes/whitecircle.png" id="1_sijxn"]
+[ext_resource type="Texture2D" uid="uid://bbppmat8qe4r3" path="res://Assets/Shapes/whitecircle.png" id="1_jvr7a"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_604i7"]
 radius = 500.0
 
-[node name="WallCircle" type="CharacterBody2D"]
+[node name="WallMantle" type="CharacterBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_604i7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.47, 0.47)
-texture = ExtResource("1_sijxn")
+texture = ExtResource("1_jvr7a")
