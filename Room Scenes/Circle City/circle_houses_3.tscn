@@ -1,59 +1,60 @@
-[gd_scene load_steps=3 format=3 uid="uid://cq88p4x1lvp1"]
+[gd_scene load_steps=3 format=3 uid="uid://sa23jm0hevja"]
 
-[ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_psflg"]
-[ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="2_ledtx"]
+[ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_gh20l"]
+[ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="2_yu36y"]
 
 [node name="TemplateRoom" type="Node2D"]
 
-[node name="exit" parent="." instance=ExtResource("1_psflg")]
+[node name="exit" parent="." instance=ExtResource("1_gh20l")]
 position = Vector2(-4000, 0)
 target_room = ""
 target_entrance = "from_right"
 
-[node name="exit4" parent="." instance=ExtResource("1_psflg")]
+[node name="exit4" parent="." instance=ExtResource("1_gh20l")]
 position = Vector2(0, 4000)
 target_room = ""
 target_entrance = "from_top"
 
-[node name="exit2" parent="." instance=ExtResource("1_psflg")]
+[node name="exit2" parent="." instance=ExtResource("1_gh20l")]
 position = Vector2(0, -4000)
 target_room = ""
 target_entrance = "from_bottom"
 
-[node name="exit3" parent="." instance=ExtResource("1_psflg")]
+[node name="exit3" parent="." instance=ExtResource("1_gh20l")]
 position = Vector2(4000, 0)
-target_room = ""
-target_entrance = "from_left"
+target_room = "circle_corridor"
+target_entrance = "from_topleft"
+target_group = "Circle City"
 
-[node name="WallSquare" parent="." instance=ExtResource("2_ledtx")]
+[node name="WallSquare" parent="." instance=ExtResource("2_yu36y")]
 position = Vector2(-3000, -4000)
 scale = Vector2(10, 6)
 
-[node name="WallSquare7" parent="." instance=ExtResource("2_ledtx")]
+[node name="WallSquare7" parent="." instance=ExtResource("2_yu36y")]
 position = Vector2(-3000, 4000)
 scale = Vector2(10, 6)
 
-[node name="WallSquare8" parent="." instance=ExtResource("2_ledtx")]
+[node name="WallSquare8" parent="." instance=ExtResource("2_yu36y")]
 position = Vector2(3000, 4000)
-scale = Vector2(10, 6)
+scale = Vector2(20, 6)
 
-[node name="WallSquare3" parent="." instance=ExtResource("2_ledtx")]
+[node name="WallSquare3" parent="." instance=ExtResource("2_yu36y")]
 position = Vector2(3000, -4000)
-scale = Vector2(10, 6)
+scale = Vector2(20, 6)
 
-[node name="WallSquare2" parent="." instance=ExtResource("2_ledtx")]
+[node name="WallSquare2" parent="." instance=ExtResource("2_yu36y")]
 position = Vector2(4000, -3000)
 scale = Vector2(6, 10)
 
-[node name="WallSquare5" parent="." instance=ExtResource("2_ledtx")]
+[node name="WallSquare5" parent="." instance=ExtResource("2_yu36y")]
 position = Vector2(-4000, -3000)
-scale = Vector2(6, 10)
+scale = Vector2(6, 20)
 
-[node name="WallSquare6" parent="." instance=ExtResource("2_ledtx")]
+[node name="WallSquare6" parent="." instance=ExtResource("2_yu36y")]
 position = Vector2(-4000, 3000)
 scale = Vector2(6, 10)
 
-[node name="WallSquare4" parent="." instance=ExtResource("2_ledtx")]
+[node name="WallSquare4" parent="." instance=ExtResource("2_yu36y")]
 position = Vector2(4000, 3000)
 scale = Vector2(6, 10)
 

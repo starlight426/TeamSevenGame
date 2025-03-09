@@ -1,11 +1,13 @@
 extends CharacterBody2D
 
 @export var hp = 1000
+var max_hp = hp
 @export var team = "circle"
 var target = null
 var last_shot_angle = 0.0
 var fire_ready = false
-@export var fire_rate = 1.0
+var passive_fire_rate = 0.3
+var firing_passive_bullets = false
 var rotation_speed = PI / 32
 var color = "default"
 var type = "default"
@@ -16,16 +18,16 @@ var move_speed = 1000
 @export var bullet_count = 8
 
 var phase = 1  # Tracks the current phase
-var mode_switch_timer = 0.0  # Timer for switching movement modes
-@export var mode_switch_interval = 3.0  # Interval for movement mode change
 
 # Called when the node enters the scene
 func _ready() -> void:
 	$TargetDetector.update_parent_target.connect(update_target)
 	await get_tree().create_timer(0.5).timeout
 	fire_ready = true
-	mode_switch_timer = mode_switch_interval
-
+	
+func start_battle():
+	pass
+	
 # Called every frame
 func _physics_process(delta: float) -> void:
 	if target:
@@ -33,14 +35,14 @@ func _physics_process(delta: float) -> void:
 		move_based_on_mode(delta)
 		global_rotation = lerp_angle(global_rotation, (target.global_position - global_position).angle(), rotation_speed)
 
-		if fire_ready:
-			fire()
+	if fire_ready:
+		passive_fire()
 
 		# Handle mode switching
-		mode_switch_timer -= delta
-		if mode_switch_timer <= 0:
-			choose_random_move_mode()
-			mode_switch_timer = mode_switch_interval
+		#mode_switch_timer -= delta
+		#if mode_switch_timer <= 0:
+		#	choose_random_move_mode()
+		#	mode_switch_timer = mode_switch_interval
 
 		# Check phase changes based on HP
 		check_phase()
@@ -63,24 +65,13 @@ func move_based_on_mode(delta: float) -> void:
 		velocity = Vector2.ZERO
 
 # Shooting function
-func fire() -> void:
-	var random_angle = randf_range(PI, 2 * PI) + last_shot_angle
+func passive_fire() -> void:
+	var random_angle = randf_range(PI/2, 3 * PI/2) + last_shot_angle
 	last_shot_angle = random_angle
-	
-	# Fire based on the current phase
-	match phase:
-		1:
-			fire_basic_bullets()
-		2:
-			fire_aggressive_bullets()
-		3:
-			fire_artillery_bullets()
-		4:
-			fire_chaos_bullets()
 
 	# Reset fire readiness after cooldown
 	fire_ready = false
-	await get_tree().create_timer(1 / fire_rate).timeout
+	await get_tree().create_timer(1/passive_fire_rate).timeout
 	fire_ready = true
 
 # Fire basic bullets in a simple circle pattern
@@ -110,25 +101,29 @@ func fire_chaos_bullets():
 func check_phase():
 	if hp <= 750 and phase == 1:
 		phase = 2
-		fire_rate = 1.5
+		passive_fire_rate = 1.5
 		move_speed *= 1.2
 	elif hp <= 500 and phase == 2:
 		phase = 3
-		fire_rate = 1.2
+		passive_fire_rate = 1.2
 		move_speed *= 0.8
 	elif hp <= 250 and phase == 3:
 		phase = 4
-		fire_rate = 2.0
+		passive_fire_rate = 2.0
 		move_speed *= 1.5
 
 # Choose a random movement mode
-func choose_random_move_mode():
-	var random_choice = randi() % 3
-	match random_choice:
-		0:
-			move_mode = "chase"
-		1:
-			move_mode = "strafe"
-			strafe_direction = "clockwise" if randi() % 2 == 0 else "counterclockwise"
-		2:
-			move_mode = "stay"
+#func choose_random_move_mode():
+#	var random_choice = randi() % 3
+#	match random_choice:
+#		0:
+#			move_mode = "chase"
+#		1:
+#			move_mode = "strafe"
+#			strafe_direction = "clockwise" if randi() % 2 == 0 else "counterclockwise"
+#		2:
+#			move_mode = "stay"
+			
+func update_target(body):
+	target = body
+	

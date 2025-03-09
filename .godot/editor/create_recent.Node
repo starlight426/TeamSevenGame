@@ -1,9 +1,9 @@
+Marker2D
 CollisionShape2D
 Sprite2D
 CharacterBody2D
 TileMap
 Label
-Marker2D
 Camera2D
 Area2D
 Node2D

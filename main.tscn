@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://cmcabksd0f3yj"]
 
 [ext_resource type="PackedScene" uid="uid://hwmgwkumra7q" path="res://Overworld Scenes/Player Scenes/player.tscn" id="1_fmlmq"]
-[ext_resource type="Script" path="res://main.gd" id="1_ipmiu"]
-[ext_resource type="Script" path="res://Scripts/camera.gd" id="4_w7dd5"]
+[ext_resource type="Script" uid="uid://cd33jeg0w0g2c" path="res://main.gd" id="1_ipmiu"]
+[ext_resource type="Script" uid="uid://te0qb4altvbs" path="res://Scripts/camera.gd" id="4_w7dd5"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_ipmiu")
@@ -11,5 +11,5 @@ script = ExtResource("1_ipmiu")
 scale = Vector2(0.7, 0.7)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(0.25, 0.25)
+zoom = Vector2(0.2, 0.2)
 script = ExtResource("4_w7dd5")

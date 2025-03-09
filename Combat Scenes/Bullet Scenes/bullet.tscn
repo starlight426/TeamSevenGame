@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bsuemvj7deagq"]
 
-[ext_resource type="Script" path="res://Scripts/Combat/bullet.gd" id="1_kvwl7"]
+[ext_resource type="Script" uid="uid://dt6anicttmxex" path="res://Scripts/Combat/bullet.gd" id="1_kvwl7"]
 [ext_resource type="Texture2D" uid="uid://bicfb303bke1" path="res://Assets/spritePNGs/Circle_Bullet_N2.0.png" id="2_2enel"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_su7xf"]
@@ -10,6 +10,9 @@ radius = 27.0
 radius = 27.0
 
 [node name="Circlebullet" type="CharacterBody2D"]
+light_mask = 2
+visibility_layer = 2
+z_index = -1
 collision_layer = 0
 collision_mask = 0
 script = ExtResource("1_kvwl7")
@@ -21,6 +24,8 @@ collision_layer = 0
 shape = SubResource("CircleShape2D_su7xf")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+light_mask = 2
+visibility_layer = 2
 texture_filter = 1
 position = Vector2(12, -1)
 rotation = 1.5708

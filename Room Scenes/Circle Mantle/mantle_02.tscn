@@ -6,12 +6,12 @@
 [node name="TemplateRoom" type="Node2D"]
 
 [node name="exit" parent="." instance=ExtResource("1_tommf")]
-position = Vector2(-4000, 0)
+position = Vector2(-5500, 0)
 target_room = ""
 target_entrance = "from_right"
 
 [node name="exit4" parent="." instance=ExtResource("1_tommf")]
-position = Vector2(0, 4000)
+position = Vector2(0, 7000)
 target_room = ""
 target_entrance = "from_top"
 
@@ -26,16 +26,16 @@ target_room = ""
 target_entrance = "from_left"
 
 [node name="left_camera_limit" type="Marker2D" parent="."]
-position = Vector2(-3500, 0)
+position = Vector2(-6000, 0)
 
 [node name="from_left" type="Marker2D" parent="."]
-position = Vector2(-3000, 0)
+position = Vector2(-5000, 0)
 
 [node name="from_right" type="Marker2D" parent="."]
 position = Vector2(3000, 0)
 
 [node name="from_bottom" type="Marker2D" parent="."]
-position = Vector2(0, 3000)
+position = Vector2(0, 5500)
 
 [node name="from_top" type="Marker2D" parent="."]
 position = Vector2(0, -3000)
@@ -47,10 +47,10 @@ position = Vector2(3500, 0)
 position = Vector2(0, -3500)
 
 [node name="bottom_camera_limit" type="Marker2D" parent="."]
-position = Vector2(0, 3500)
+position = Vector2(0, 6500)
 
 [node name="WallMantle" parent="." instance=ExtResource("2_6glk7")]
-position = Vector2(-4125, -3447)
+position = Vector2(-5000, -3500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle2" parent="." instance=ExtResource("2_6glk7")]
@@ -62,7 +62,7 @@ position = Vector2(-5176, 3198)
 scale = Vector2(5, 5)
 
 [node name="WallMantle4" parent="." instance=ExtResource("2_6glk7")]
-position = Vector2(-2995, 3933)
+position = Vector2(-3000, 7000)
 scale = Vector2(5, 5)
 
 [node name="WallMantle5" parent="." instance=ExtResource("2_6glk7")]
@@ -78,9 +78,9 @@ position = Vector2(5932, 3233)
 scale = Vector2(5, 5)
 
 [node name="WallMantle9" parent="." instance=ExtResource("2_6glk7")]
-position = Vector2(-7539, -248)
+position = Vector2(-8500, -3.05176e-05)
 scale = Vector2(5, 5)
 
 [node name="WallMantle8" parent="." instance=ExtResource("2_6glk7")]
-position = Vector2(3366, 3968)
+position = Vector2(3000, 6500)
 scale = Vector2(5, 5)

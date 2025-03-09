@@ -7,8 +7,9 @@
 
 [node name="exit" parent="." instance=ExtResource("1_a1ptf")]
 position = Vector2(-4000, 0)
-target_room = ""
+target_room = "circle_corridor"
 target_entrance = "from_right"
+target_group = "Circle City"
 
 [node name="exit4" parent="." instance=ExtResource("1_a1ptf")]
 position = Vector2(0, 4000)
@@ -22,8 +23,9 @@ target_entrance = "from_bottom"
 
 [node name="exit3" parent="." instance=ExtResource("1_a1ptf")]
 position = Vector2(4000, 0)
-target_room = ""
-target_entrance = "from_left"
+target_room = "circle_corridor"
+target_entrance = "from_bottomleft"
+target_group = "Circle City"
 
 [node name="WallSquare" parent="." instance=ExtResource("2_nspbo")]
 position = Vector2(-3000, -4000)
@@ -35,19 +37,19 @@ scale = Vector2(10, 6)
 
 [node name="WallSquare8" parent="." instance=ExtResource("2_nspbo")]
 position = Vector2(3000, 4000)
-scale = Vector2(10, 6)
+scale = Vector2(20, 6)
 
 [node name="WallSquare3" parent="." instance=ExtResource("2_nspbo")]
 position = Vector2(3000, -4000)
-scale = Vector2(10, 6)
+scale = Vector2(20, 6)
 
 [node name="WallSquare2" parent="." instance=ExtResource("2_nspbo")]
 position = Vector2(4000, -3000)
 scale = Vector2(6, 10)
 
 [node name="WallSquare5" parent="." instance=ExtResource("2_nspbo")]
-position = Vector2(-4000, -3000)
-scale = Vector2(6, 10)
+position = Vector2(-4000, -4000)
+scale = Vector2(6, 20)
 
 [node name="WallSquare6" parent="." instance=ExtResource("2_nspbo")]
 position = Vector2(-4000, 3000)
