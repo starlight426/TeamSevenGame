@@ -9,6 +9,7 @@ extends Control
 func _ready():
 	resume_button.button_down.connect(on_resume_pressed)
 	quit_button.button_down.connect(on_quit_pressed)
+	set_process(false)
 
 func on_resume_pressed() -> void:
 	main.pauseMenu()

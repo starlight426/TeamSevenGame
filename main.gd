@@ -22,9 +22,11 @@ func pauseMenu():
 		pause_menu.hide()
 		player_node.is_paused = false
 		Engine.time_scale = 1
+		pause_menu.set_process_input(false)
 	else:
 		pause_menu.show()
 		player_node.is_paused = true
 		Engine.time_scale = 0
+		pause_menu.set_process_input(true)
 		
 	paused = !paused

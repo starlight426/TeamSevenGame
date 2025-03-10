@@ -13,7 +13,7 @@ script = ExtResource("1_ipmiu")
 
 [node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("5_lquwl")]
 visible = false
-z_index = 1
+z_index = 10
 
 [node name="PlayerUI" parent="CanvasLayer" instance=ExtResource("4_1bvp3")]
 
