@@ -1,0 +1,77 @@
+[gd_scene load_steps=2 format=3 uid="uid://cc7vstslog23o"]
+
+[ext_resource type="Texture2D" uid="uid://c4m82to15c03o" path="res://Assets/UI Sprites/Icon_Border.png" id="1_k4ew6"]
+
+[node name="PlayerUI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -2880.0
+offset_top = -1620.0
+offset_right = 2880.0
+offset_bottom = 1620.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 3243.0
+offset_top = 2150.0
+offset_right = 3667.0
+offset_bottom = 2170.0
+alignment = 2
+
+[node name="EnergyBar" type="TextureProgressBar" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="EnergyLabel" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "Energy: 100/100"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 3243.0
+offset_top = 2115.0
+offset_right = 3667.0
+offset_bottom = 2138.0
+alignment = 2
+
+[node name="HealthBar" type="TextureProgressBar" parent="HBoxContainer2"]
+layout_mode = 2
+
+[node name="HealthLabel" type="Label" parent="HBoxContainer2"]
+layout_mode = 2
+text = "Health: 100/100"
+
+[node name="MoveIconsBar" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 363.0
+offset_top = -1060.0
+offset_right = 1423.0
+offset_bottom = -860.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.4, 0.4)
+theme_override_constants/separation = 15
+
+[node name="Action1" type="TextureButton" parent="MoveIconsBar"]
+layout_mode = 2
+texture_normal = ExtResource("1_k4ew6")
+
+[node name="Action2" type="TextureButton" parent="MoveIconsBar"]
+layout_mode = 2
+texture_normal = ExtResource("1_k4ew6")
+
+[node name="Action3" type="TextureButton" parent="MoveIconsBar"]
+layout_mode = 2
+texture_normal = ExtResource("1_k4ew6")
+
+[node name="Action4" type="TextureButton" parent="MoveIconsBar"]
+layout_mode = 2
+texture_normal = ExtResource("1_k4ew6")
+
+[node name="Action5" type="TextureButton" parent="MoveIconsBar"]
+layout_mode = 2
+texture_normal = ExtResource("1_k4ew6")

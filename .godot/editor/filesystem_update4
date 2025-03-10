@@ -1,26 +1,21 @@
-res://Room Scenes/Circle City/circle_houses_3.tscn
-res://Scripts/Combat/enemy_circle_basic.gd
-res://Overworld Scenes/Player Scenes/player.tscn
 res://main.tscn
+res://Overworld Scenes/Player Scenes/player.tscn
 res://Room Scenes/Dev/test_room.tscn
 res://Room Scenes/template_room.tscn
 res://UI Scenes/transition_screen.tscn
 res://Overworld Scenes/Object Scenes/wall_square.tscn
-res://Overworld Scenes/Object Scenes/exit.tscn
-res://Room Scenes/Circle City/cigil_room.tscn
 res://Room Scenes/Circle City/circle_corridor.tscn
 res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn
 res://Overworld Scenes/Object Scenes/wall_circle.tscn
 res://Overworld Scenes/Object Scenes/unlockable.tscn
-res://Room Scenes/Circle Mantle/mantle_-20.tscn
 res://Overworld Scenes/Object Scenes/wall_mantle.tscn
-res://Room Scenes/Circle Mantle/mantle_00.tscn
-res://Room Scenes/Circle Mantle/mantle_20.tscn
-res://Room Scenes/Circle Mantle/mantle_02.tscn
 res://Room Scenes/Circle City/circle_houses_2.tscn
 res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn
-res://Room Scenes/Circle City/circle_houses_1.tscn
 res://Combat Scenes/Bullet Scenes/bullet.tscn
 res://Combat Scenes/Enemy Scenes/enemy_circle_wave.tscn
-res://Scripts/Combat/enemy_circle_wave.gd
-res://Scripts/Combat/enemy_circle_corrupted.gd
+res://UI Scenes/player_ui.tscn
+res://UI Scenes/player_ui.gd
+res://UI Scenes/main_menu.tscn
+res://UI Scenes/main_menu.gd
+res://UI Scenes/options_menu.tscn
+res://UI Scenes/options_menu.gd
