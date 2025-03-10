@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://0hsjjl80a3dl"]
+[gd_scene load_steps=5 format=3 uid="uid://0hsjjl80a3dl"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_x8nhq"]
 [ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="2_lptlu"]
+[ext_resource type="PackedScene" uid="uid://cdfypqi8cem6m" path="res://Combat Scenes/Enemy Scenes/enemy_circle_wave.tscn" id="3_qwpdw"]
+[ext_resource type="PackedScene" uid="uid://dd7qwjqktm7b2" path="res://Combat Scenes/Enemy Scenes/enemy_circle_eightshooter.tscn" id="4_86yei"]
 
 [node name="TemplateRoom" type="Node2D"]
 
 [node name="exit" parent="." instance=ExtResource("1_x8nhq")]
-position = Vector2(4104, 850)
+position = Vector2(7000, 1750)
 target_room = "mantle_00"
 target_entrance = "from_left"
 target_group = "Circle Mantle"
@@ -17,13 +19,13 @@ target_room = ""
 target_entrance = "from_bottom"
 
 [node name="exit3" parent="." instance=ExtResource("1_x8nhq")]
-position = Vector2(5134, -9028)
+position = Vector2(8500, -9750)
 target_room = "mantle_02"
 target_entrance = "from_bottom"
 target_group = "Circle Mantle"
 
 [node name="left_camera_limit" type="Marker2D" parent="."]
-position = Vector2(-3500, 0)
+position = Vector2(-6500, -3750)
 
 [node name="from_left" type="Marker2D" parent="."]
 position = Vector2(-3000, 0)
@@ -32,16 +34,16 @@ position = Vector2(-3000, 0)
 position = Vector2(3000, 0)
 
 [node name="from_bottom" type="Marker2D" parent="."]
-position = Vector2(3118, 841)
+position = Vector2(5750, 1750)
 
 [node name="from_top" type="Marker2D" parent="."]
-position = Vector2(2692, -6336)
+position = Vector2(7000, -9750)
 
 [node name="right_camera_limit" type="Marker2D" parent="."]
-position = Vector2(3500, 0)
+position = Vector2(8500, -2500)
 
 [node name="top_camera_limit" type="Marker2D" parent="."]
-position = Vector2(0, -3500)
+position = Vector2(1000, -11500)
 
 [node name="bottom_camera_limit" type="Marker2D" parent="."]
 position = Vector2(0, 3500)
@@ -83,11 +85,11 @@ position = Vector2(3838, -2840)
 scale = Vector2(5, 5)
 
 [node name="WallMantle7" parent="." instance=ExtResource("2_lptlu")]
-position = Vector2(6691, 3967)
+position = Vector2(6750, 4750)
 scale = Vector2(5, 5)
 
 [node name="WallMantle13" parent="." instance=ExtResource("2_lptlu")]
-position = Vector2(7706, -91.9998)
+position = Vector2(7452, -1284)
 scale = Vector2(5, 5)
 
 [node name="WallMantle14" parent="." instance=ExtResource("2_lptlu")]
@@ -99,11 +101,11 @@ position = Vector2(4560, -13081)
 scale = Vector2(5, 5)
 
 [node name="WallMantle16" parent="." instance=ExtResource("2_lptlu")]
-position = Vector2(9253, -8159)
+position = Vector2(9000, -6750)
 scale = Vector2(5, 5)
 
 [node name="WallMantle17" parent="." instance=ExtResource("2_lptlu")]
-position = Vector2(8847, -11863)
+position = Vector2(8500, -12500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle9" parent="." instance=ExtResource("2_lptlu")]
@@ -113,3 +115,12 @@ scale = Vector2(5, 5)
 [node name="WallMantle8" parent="." instance=ExtResource("2_lptlu")]
 position = Vector2(2738, 4758)
 scale = Vector2(5, 5)
+
+[node name="EnemyCircleWave" parent="." instance=ExtResource("3_qwpdw")]
+position = Vector2(250, 500)
+
+[node name="EnemyCircleEightShooter" parent="." instance=ExtResource("4_86yei")]
+position = Vector2(1250, -8000)
+
+[node name="EnemyCircleWave2" parent="." instance=ExtResource("3_qwpdw")]
+position = Vector2(-4250, -4250)

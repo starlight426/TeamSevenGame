@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://h60law7gr2x7"]
+[gd_scene load_steps=6 format=3 uid="uid://h60law7gr2x7"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_c8m3u"]
 [ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="2_ipupw"]
+[ext_resource type="PackedScene" uid="uid://dwsnmdabrmlo8" path="res://Combat Scenes/Enemy Scenes/enemy_circle_chaser.tscn" id="3_ao24b"]
+[ext_resource type="PackedScene" uid="uid://4i7rpstg74wt" path="res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn" id="4_e3tr1"]
+[ext_resource type="PackedScene" uid="uid://cdfypqi8cem6m" path="res://Combat Scenes/Enemy Scenes/enemy_circle_wave.tscn" id="5_e2r61"]
 
 [node name="TemplateRoom" type="Node2D"]
 
@@ -19,8 +22,9 @@ target_group = "Circle Mantle"
 
 [node name="exit2" parent="." instance=ExtResource("1_c8m3u")]
 position = Vector2(-10500, -4500)
-target_room = ""
+target_room = "mantle_18"
 target_entrance = "from_bottom"
+target_group = "Circle Mantle"
 
 [node name="exit3" parent="." instance=ExtResource("1_c8m3u")]
 position = Vector2(18500, -6500)
@@ -37,7 +41,7 @@ position = Vector2(-3500, 0)
 position = Vector2(-3000, 0)
 
 [node name="from_right" type="Marker2D" parent="."]
-position = Vector2(3000, 0)
+position = Vector2(16500, -8000)
 
 [node name="from_bottom" type="Marker2D" parent="."]
 position = Vector2(0, 3000)
@@ -46,10 +50,10 @@ position = Vector2(0, 3000)
 position = Vector2(0, -3000)
 
 [node name="right_camera_limit" type="Marker2D" parent="."]
-position = Vector2(3500, 0)
+position = Vector2(17500, -9000)
 
 [node name="top_camera_limit" type="Marker2D" parent="."]
-position = Vector2(0, -3500)
+position = Vector2(5500, -15500)
 
 [node name="bottom_camera_limit" type="Marker2D" parent="."]
 position = Vector2(0, 3500)
@@ -141,3 +145,21 @@ scale = Vector2(5, 5)
 [node name="WallMantle8" parent="." instance=ExtResource("2_ipupw")]
 position = Vector2(3366, 3968)
 scale = Vector2(5, 5)
+
+[node name="EnemyCircleChaser" parent="." instance=ExtResource("3_ao24b")]
+position = Vector2(0, 500)
+
+[node name="EnemyCircleBasic" parent="." instance=ExtResource("4_e3tr1")]
+position = Vector2(15000, -10500)
+
+[node name="EnemyCircleBasic2" parent="." instance=ExtResource("4_e3tr1")]
+position = Vector2(11500, -10000)
+
+[node name="EnemyCircleBasic3" parent="." instance=ExtResource("4_e3tr1")]
+position = Vector2(7500, -13000)
+
+[node name="EnemyCircleWave" parent="." instance=ExtResource("5_e2r61")]
+position = Vector2(10500, -12000)
+
+[node name="EnemyCircleChaser2" parent="." instance=ExtResource("3_ao24b")]
+position = Vector2(1000, -5500)

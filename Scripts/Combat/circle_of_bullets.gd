@@ -3,6 +3,8 @@ extends CharacterBody2D
 
 func _ready() -> void:
 	velocity = Vector2(speed,0).rotated(global_rotation)
+	for current_child in get_children():
+		current_child.start_moving
 	await get_tree().create_timer(10.0).timeout
 	queue_free()
 func _physics_process(delta):

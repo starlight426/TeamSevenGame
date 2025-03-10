@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bc4pe41rb62na"]
+[gd_scene load_steps=4 format=3 uid="uid://bc4pe41rb62na"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_7ur5v"]
 [ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="2_m4mpu"]
+[ext_resource type="PackedScene" uid="uid://papvh6mjcv7y" path="res://Combat Scenes/Enemy Scenes/enemy_circle_clidean.tscn" id="3_57x4n"]
 
 [node name="TemplateRoom" type="Node2D"]
 
@@ -11,50 +12,82 @@ target_room = ""
 target_entrance = "from_right"
 
 [node name="exit4" parent="." instance=ExtResource("1_7ur5v")]
-position = Vector2(0, 4000)
+position = Vector2(0, 7000)
 target_room = ""
 target_entrance = "from_top"
 
 [node name="exit2" parent="." instance=ExtResource("1_7ur5v")]
-position = Vector2(0, -4000)
+position = Vector2(-14500, -3500)
 target_room = ""
 target_entrance = "from_bottom"
 
 [node name="exit3" parent="." instance=ExtResource("1_7ur5v")]
-position = Vector2(4000, 0)
+position = Vector2(13500, -2000)
 target_room = ""
 target_entrance = "from_left"
 
 [node name="WallSquare" parent="." instance=ExtResource("2_m4mpu")]
-position = Vector2(-3000, -4000)
+position = Vector2(-17500, -8500)
 scale = Vector2(10, 6)
 
 [node name="WallSquare7" parent="." instance=ExtResource("2_m4mpu")]
-position = Vector2(-3000, 4000)
+position = Vector2(-5500, 8000)
 scale = Vector2(10, 6)
 
 [node name="WallSquare8" parent="." instance=ExtResource("2_m4mpu")]
-position = Vector2(3000, 4000)
-scale = Vector2(10, 6)
+position = Vector2(3000, 8500)
+scale = Vector2(10, 10)
+
+[node name="WallSquare9" parent="." instance=ExtResource("2_m4mpu")]
+position = Vector2(5000, 8500)
+scale = Vector2(10, 10)
+
+[node name="WallSquare10" parent="." instance=ExtResource("2_m4mpu")]
+position = Vector2(-3000, 8500)
+scale = Vector2(10, 10)
+
+[node name="WallSquare11" parent="." instance=ExtResource("2_m4mpu")]
+position = Vector2(-8000, 8500)
+scale = Vector2(10, 10)
+
+[node name="WallSquare12" parent="." instance=ExtResource("2_m4mpu")]
+position = Vector2(-12000, 8000)
+scale = Vector2(10, 10)
+
+[node name="WallSquare13" parent="." instance=ExtResource("2_m4mpu")]
+position = Vector2(-12000, 4000)
+scale = Vector2(10, 10)
+
+[node name="WallSquare14" parent="." instance=ExtResource("2_m4mpu")]
+position = Vector2(-12000, -500)
+scale = Vector2(10, 10)
+
+[node name="WallSquare15" parent="." instance=ExtResource("2_m4mpu")]
+position = Vector2(-12000, -5000)
+scale = Vector2(10, 10)
+
+[node name="WallSquare16" parent="." instance=ExtResource("2_m4mpu")]
+position = Vector2(-12000, -7500)
+scale = Vector2(10, 10)
 
 [node name="WallSquare3" parent="." instance=ExtResource("2_m4mpu")]
-position = Vector2(3000, -4000)
-scale = Vector2(10, 6)
+position = Vector2(1500, -9500)
+scale = Vector2(50, 6)
 
 [node name="WallSquare2" parent="." instance=ExtResource("2_m4mpu")]
-position = Vector2(4000, -3000)
-scale = Vector2(6, 10)
+position = Vector2(8000, -4500)
+scale = Vector2(6, 50)
 
 [node name="WallSquare5" parent="." instance=ExtResource("2_m4mpu")]
-position = Vector2(-4000, -3000)
+position = Vector2(-24500, -2000)
 scale = Vector2(6, 10)
 
 [node name="WallSquare6" parent="." instance=ExtResource("2_m4mpu")]
-position = Vector2(-4000, 3000)
+position = Vector2(-19000, 6000)
 scale = Vector2(6, 10)
 
 [node name="WallSquare4" parent="." instance=ExtResource("2_m4mpu")]
-position = Vector2(4000, 3000)
+position = Vector2(8000, 500)
 scale = Vector2(6, 10)
 
 [node name="left_camera_limit" type="Marker2D" parent="."]
@@ -76,7 +109,10 @@ position = Vector2(0, -3000)
 position = Vector2(3500, 0)
 
 [node name="top_camera_limit" type="Marker2D" parent="."]
-position = Vector2(0, -3500)
+position = Vector2(0, -6000)
 
 [node name="bottom_camera_limit" type="Marker2D" parent="."]
-position = Vector2(0, 3500)
+position = Vector2(0, 6500)
+
+[node name="EnemyCircleClidean" parent="." instance=ExtResource("3_57x4n")]
+position = Vector2(-1000, -4000)

@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://cpfpuogb7y1jk"]
+[gd_scene load_steps=7 format=3 uid="uid://cpfpuogb7y1jk"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_ysbn3"]
 [ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="2_5hhqp"]
+[ext_resource type="PackedScene" uid="uid://c1w5jhxknb674" path="res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn" id="3_meqsk"]
+[ext_resource type="PackedScene" uid="uid://dd7qwjqktm7b2" path="res://Combat Scenes/Enemy Scenes/enemy_circle_eightshooter.tscn" id="4_fjc4r"]
+[ext_resource type="PackedScene" uid="uid://4i7rpstg74wt" path="res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn" id="5_gfjjr"]
+[ext_resource type="PackedScene" uid="uid://dwsnmdabrmlo8" path="res://Combat Scenes/Enemy Scenes/enemy_circle_chaser.tscn" id="6_fjc4r"]
 
 [node name="TemplateRoom" type="Node2D"]
 
@@ -125,3 +129,21 @@ scale = Vector2(5, 5)
 [node name="WallMantle8" parent="." instance=ExtResource("2_5hhqp")]
 position = Vector2(3366, 3968)
 scale = Vector2(5, 5)
+
+[node name="EnemyCircleCorrupted" parent="." instance=ExtResource("3_meqsk")]
+position = Vector2(3000, -1500)
+
+[node name="EnemyCircleEightShooter" parent="." instance=ExtResource("4_fjc4r")]
+position = Vector2(500, -8000)
+
+[node name="EnemyCircleBasic" parent="." instance=ExtResource("5_gfjjr")]
+position = Vector2(-3000, -7500)
+
+[node name="EnemyCircleBasic2" parent="." instance=ExtResource("5_gfjjr")]
+position = Vector2(5000, -7500)
+
+[node name="EnemyCircleEightShooter2" parent="." instance=ExtResource("4_fjc4r")]
+position = Vector2(-3500, -4000)
+
+[node name="EnemyCircleChaser" parent="." instance=ExtResource("6_fjc4r")]
+position = Vector2(1000, -6500)
