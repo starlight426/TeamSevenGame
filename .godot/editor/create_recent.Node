@@ -1,4 +1,4 @@
-CanvasLayer
+CharacterBody2D
 Sprite2D
 HBoxContainer
 Control
@@ -10,5 +10,6 @@ TabBar
 TabContainer
 Button
 TextureRect
+CanvasLayer
 TextureButton
 Marker2D

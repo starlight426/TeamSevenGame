@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var team = "none"
-@export var speed = 1500.0
+@export var speed = 1000.0
 @export var contact_dmg = 10
 @export var color = "default"
 @export var type = "straight"

@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://b4nif1pt6vbt"]
+[gd_scene load_steps=5 format=3 uid="uid://b4nif1pt6vbt"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_wfm67"]
 [ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="2_d3v04"]
+[ext_resource type="PackedScene" uid="uid://dd7qwjqktm7b2" path="res://Combat Scenes/Enemy Scenes/enemy_circle_eightshooter.tscn" id="3_ap6iu"]
+[ext_resource type="PackedScene" uid="uid://c1w5jhxknb674" path="res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn" id="4_a8y5n"]
 
 [node name="TemplateRoom" type="Node2D"]
 
@@ -12,14 +14,15 @@ target_entrance = "from_right"
 
 [node name="exit4" parent="." instance=ExtResource("1_wfm67")]
 position = Vector2(0, 4000)
-target_room = ""
+target_room = "mantle_07"
 target_entrance = "from_top"
 target_group = "Circle Mantle"
 
 [node name="exit2" parent="." instance=ExtResource("1_wfm67")]
 position = Vector2(3000, -12000)
-target_room = ""
-target_entrance = "from_bottom"
+target_room = "clidean_room"
+target_entrance = "from_right"
+target_group = "Circle Temple"
 
 [node name="exit3" parent="." instance=ExtResource("1_wfm67")]
 position = Vector2(-11500, -2500)
@@ -125,3 +128,18 @@ scale = Vector2(5, 5)
 [node name="WallMantle8" parent="." instance=ExtResource("2_d3v04")]
 position = Vector2(-0.00012207, 7000)
 scale = Vector2(5, 5)
+
+[node name="EnemyCircleEightShooter" parent="." instance=ExtResource("3_ap6iu")]
+position = Vector2(10000, 3000)
+
+[node name="EnemyCircleEightShooter2" parent="." instance=ExtResource("3_ap6iu")]
+position = Vector2(3500, -7000)
+
+[node name="EnemyCircleEightShooter3" parent="." instance=ExtResource("3_ap6iu")]
+position = Vector2(10500, -6000)
+
+[node name="EnemyCircleCorrupted" parent="." instance=ExtResource("4_a8y5n")]
+position = Vector2(7500, -5500)
+
+[node name="EnemyCircleCorrupted2" parent="." instance=ExtResource("4_a8y5n")]
+position = Vector2(9500, -1500)
