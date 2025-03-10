@@ -1,5 +1,4 @@
 res://Overworld Scenes/Player Scenes/player.tscn
-res://UI Scenes/main_menu.gd
 res://main.tscn
 res://Room Scenes/Dev/test_room.tscn
 res://Room Scenes/template_room.tscn
@@ -33,11 +32,13 @@ res://Overworld Scenes/Object Scenes/exit.tscn
 res://Overworld Scenes/Object Scenes/house_circle.tscn
 res://Room Scenes/clidean_room.tscn
 res://UI Scenes/options_menu.tscn
-res://Scripts/Global/RoomLoader.gd
 res://Scripts/player.gd
+<<<<<<< Updated upstream
 res://UI Scenes/player_ui.gd
 res://UI Scenes/pause_menu.tscn
 res://main.gd
 res://UI Scenes/pause_menu.gd
 res://UI Scenes/options_menu.gd
 res://UI Scenes/pause_menu.gdshader
+=======
+>>>>>>> Stashed changes
