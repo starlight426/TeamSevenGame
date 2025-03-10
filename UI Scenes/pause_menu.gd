@@ -12,7 +12,7 @@ func _ready():
 	set_process(false)
 
 func on_resume_pressed() -> void:
-	main.pauseMenu()
+	get_parent().get_parent().pauseMenu()
 
 func on_quit_pressed() -> void:
 	get_tree().quit()

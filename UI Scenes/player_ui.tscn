@@ -113,6 +113,7 @@ texture = ExtResource("8_07fkh")
 [node name="Action5" type="TextureProgressBar" parent="MoveIconsBar"]
 layout_mode = 2
 value = 100.0
+fill_mode = 4
 texture_under = ExtResource("1_k4ew6")
 texture_progress = ExtResource("7_07fkh")
 
