@@ -10,25 +10,21 @@ script = ExtResource("1_1yeb7")
 
 [node name="Circlebullet2" parent="." instance=ExtResource("1_qb88k")]
 rotation = 0.785398
-scale = Vector2(1, 1)
 
 [node name="Circlebullet3" parent="." instance=ExtResource("1_qb88k")]
 rotation = 1.5708
 
 [node name="Circlebullet4" parent="." instance=ExtResource("1_qb88k")]
 rotation = 2.35619
-scale = Vector2(1, 1)
 
 [node name="Circlebullet5" parent="." instance=ExtResource("1_qb88k")]
 rotation = -3.14159
 
 [node name="Circlebullet6" parent="." instance=ExtResource("1_qb88k")]
 rotation = -0.785398
-scale = Vector2(1, 1)
 
 [node name="Circlebullet7" parent="." instance=ExtResource("1_qb88k")]
 rotation = -1.5708
 
 [node name="Circlebullet8" parent="." instance=ExtResource("1_qb88k")]
 rotation = -2.35619
-scale = Vector2(1, 1)

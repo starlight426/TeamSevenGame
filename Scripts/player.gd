@@ -5,7 +5,7 @@ extends CharacterBody2D
 @export var energy = 0
 @export var team = "cigil"
 var move_readiness = [true,true,true,true,true]
-var move_cooldowns = [0.2,0.3,0.4,1.0,1.0]
+var move_cooldowns = [0.4,0.6,0.8,1.0,1.0]
 var move_cooldown_percentages = [100, 100, 100, 100, 100]
 var energy_ready = true
 var is_paused = false
@@ -53,26 +53,26 @@ func use_attack(attack):
 	match attack:
 		"circle_basic":
 			if(energy >= 20 && move_readiness[0]):
-					AttackSpawner.spawn_bullets(global_position,global_rotation,"single",1,0,"default","circle","straight",3500,3,30,"cigil","cigil",0,0,0)
+					AttackSpawner.spawn_bullets(global_position,global_rotation,"single",1,0,"default","circle","straight",3500,3,10,"cigil","cigil",0,0,0)
 					move_cooldown(0)
 					energy -= 20
 		"circle_wave":
 			if(energy >= 40 && move_readiness[1]):
-					AttackSpawner.spawn_bullets(global_position,global_rotation,"single",1,0,"default","circle","straight",3000,3,30,"cigil","cigil",0,0,0)
-					AttackSpawner.spawn_bullets(global_position,global_rotation+PI/6,"single",1,0,"default","circle","straight",3000,3,30,"cigil","cigil",0,0,0)
-					AttackSpawner.spawn_bullets(global_position,global_rotation-PI/6,"single",1,0,"default","circle","straight",3000,3,30,"cigil","cigil",0,0,0)
+					AttackSpawner.spawn_bullets(global_position,global_rotation,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
+					AttackSpawner.spawn_bullets(global_position,global_rotation+PI/6,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
+					AttackSpawner.spawn_bullets(global_position,global_rotation-PI/6,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
 					move_cooldown(1)
 					energy -= 40
 		"circle_spread":
 			if(energy >= 80 && move_readiness[2]):
-					AttackSpawner.spawn_bullets(global_position,global_rotation,"single",1,0,"default","circle","straight",3000,3,30,"cigil","cigil",0,0,0)
-					AttackSpawner.spawn_bullets(global_position,global_rotation,"single",1,0,"default","circle","straight",3000,3,30,"cigil","cigil",0,0,0)
-					AttackSpawner.spawn_bullets(global_position,global_rotation+PI/4,"single",1,0,"default","circle","straight",3000,3,30,"cigil","cigil",0,0,0)
-					AttackSpawner.spawn_bullets(global_position,global_rotation-PI/4,"single",1,0,"default","circle","straight",3000,3,30,"cigil","cigil",0,0,0)
-					AttackSpawner.spawn_bullets(global_position,global_rotation+PI/2,"single",1,0,"default","circle","straight",3000,3,30,"cigil","cigil",0,0,0)
-					AttackSpawner.spawn_bullets(global_position,global_rotation-PI/2,"single",1,0,"default","circle","straight",3000,3,30,"cigil","cigil",0,0,0)
-					AttackSpawner.spawn_bullets(global_position,global_rotation+3*PI/4,"single",1,0,"default","circle","straight",3000,3,30,"cigil","cigil",0,0,0)
-					AttackSpawner.spawn_bullets(global_position,global_rotation-3*PI/4,"single",1,0,"default","circle","straight",3000,3,30,"cigil","cigil",0,0,0)
+					AttackSpawner.spawn_bullets(global_position,global_rotation,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
+					AttackSpawner.spawn_bullets(global_position,global_rotation,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
+					AttackSpawner.spawn_bullets(global_position,global_rotation+PI/4,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
+					AttackSpawner.spawn_bullets(global_position,global_rotation-PI/4,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
+					AttackSpawner.spawn_bullets(global_position,global_rotation+PI/2,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
+					AttackSpawner.spawn_bullets(global_position,global_rotation-PI/2,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
+					AttackSpawner.spawn_bullets(global_position,global_rotation+3*PI/4,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
+					AttackSpawner.spawn_bullets(global_position,global_rotation-3*PI/4,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
 					move_cooldown(2)
 					energy -= 80
 		"speedup":
@@ -109,11 +109,11 @@ func speedup():
 func add_energy():
 	energy_ready = false
 	if(energy < 100):
-		energy += 10
+		energy += 5
 	if(energy < 300):
-		energy += 10
+		energy += 5
 	if(energy < 500):
-		energy += 10
+		energy += 5
 	await get_tree().create_timer(0.5).timeout
 	energy_ready = true
 	

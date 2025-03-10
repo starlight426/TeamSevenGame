@@ -33,7 +33,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 func fire():
 	fire_ready = false
-	AttackSpawner.spawn_bullets(global_position,global_rotation,"single",1,0,"default","circle","straight",2000,3,30,"cigil","cigil",0,0,0)
+	AttackSpawner.spawn_bullets(global_position,global_rotation,"single",1,0,"default","circle","straight",2000,3,10,"cigil","cigil",0,0,0)
 	await get_tree().create_timer(1/fire_rate).timeout
 	fire_ready = true
 	

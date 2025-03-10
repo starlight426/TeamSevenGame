@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 res://main.tscn
 res://Room Scenes/Circle City/circle_corridor.tscn
 res://Overworld Scenes/Object Scenes/wall_circle.tscn
@@ -13,3 +14,6 @@ res://UI Scenes/player_ui.tscn
 res://UI Scenes/main_menu.tscn
 res://UI Scenes/pause_menu.tscn
 res://UI Scenes/options_menu.tscn
+=======
+res://Room Scenes/Circle City/cigil_room.tscn
+>>>>>>> Stashed changes

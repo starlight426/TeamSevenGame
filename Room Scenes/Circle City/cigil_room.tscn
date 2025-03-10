@@ -39,8 +39,8 @@ position = Vector2(3750, 4000)
 scale = Vector2(10, 6)
 
 [node name="WallSquare3" parent="." instance=ExtResource("2_oigo2")]
-position = Vector2(4250, -4000)
-scale = Vector2(10, 6)
+position = Vector2(4000, -4000)
+scale = Vector2(15, 6)
 
 [node name="WallSquare2" parent="." instance=ExtResource("2_oigo2")]
 position = Vector2(7750, -2250)
@@ -83,18 +83,19 @@ position = Vector2(1250, -3500)
 position = Vector2(0, 3500)
 
 [node name="DEVICE HERE" type="Label" parent="."]
-offset_left = 4500.0
-offset_right = 4540.0
-offset_bottom = 23.0
+offset_left = 7433.0
+offset_top = -192.0
+offset_right = 9014.0
+offset_bottom = 509.0
 theme_override_font_sizes/font_size = 256
 text = "DEVICE HERE
 "
 
 [node name="DEV ROOMS" type="Label" parent="."]
-offset_left = 500.0
-offset_top = -2250.0
-offset_right = 2081.0
-offset_bottom = -1901.0
+offset_left = 3593.0
+offset_top = -4533.0
+offset_right = 5174.0
+offset_bottom = -3480.0
 theme_override_font_sizes/font_size = 256
 text = "DEV ROOMS
 
