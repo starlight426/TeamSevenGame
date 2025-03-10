@@ -6,27 +6,32 @@
 [node name="TemplateRoom" type="Node2D"]
 
 [node name="exit" parent="." instance=ExtResource("1_ysbn3")]
-position = Vector2(-4000, 0)
+position = Vector2(-7000, 500)
 target_room = ""
 target_entrance = "from_right"
 
 [node name="exit4" parent="." instance=ExtResource("1_ysbn3")]
-position = Vector2(0, 4000)
-target_room = ""
-target_entrance = "from_top"
+position = Vector2(0, 4500)
+scale = Vector2(4, 2)
+target_room = "mantle_05"
+target_entrance = "from_left"
+target_group = "Circle Mantle"
 
 [node name="exit2" parent="." instance=ExtResource("1_ysbn3")]
-position = Vector2(0, -4000)
-target_room = ""
+position = Vector2(10000, -10500)
+rotation = 0.764454
+scale = Vector2(4, 2)
+target_room = "mantle_06"
 target_entrance = "from_bottom"
+target_group = "Circle Mantle"
 
 [node name="exit3" parent="." instance=ExtResource("1_ysbn3")]
-position = Vector2(4000, 0)
+position = Vector2(10000, 0)
 target_room = ""
 target_entrance = "from_left"
 
 [node name="left_camera_limit" type="Marker2D" parent="."]
-position = Vector2(-3500, 0)
+position = Vector2(-7000, -3000)
 
 [node name="from_left" type="Marker2D" parent="."]
 position = Vector2(-3000, 0)
@@ -38,23 +43,39 @@ position = Vector2(3000, 0)
 position = Vector2(0, 3000)
 
 [node name="from_top" type="Marker2D" parent="."]
-position = Vector2(0, -3000)
+position = Vector2(8500, -9500)
 
 [node name="right_camera_limit" type="Marker2D" parent="."]
-position = Vector2(3500, 0)
+position = Vector2(11500, -2500)
 
 [node name="top_camera_limit" type="Marker2D" parent="."]
-position = Vector2(0, -3500)
+position = Vector2(500, -11500)
 
 [node name="bottom_camera_limit" type="Marker2D" parent="."]
-position = Vector2(0, 3500)
-
-[node name="WallMantle" parent="." instance=ExtResource("2_5hhqp")]
-position = Vector2(-4125, -3447)
-scale = Vector2(5, 5)
+position = Vector2(0, 4000)
 
 [node name="WallMantle2" parent="." instance=ExtResource("2_5hhqp")]
-position = Vector2(-328.001, -3413)
+position = Vector2(9500, -6000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle15" parent="." instance=ExtResource("2_5hhqp")]
+position = Vector2(12000, -8000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle16" parent="." instance=ExtResource("2_5hhqp")]
+position = Vector2(7500, -13000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle12" parent="." instance=ExtResource("2_5hhqp")]
+position = Vector2(5000, -11000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle13" parent="." instance=ExtResource("2_5hhqp")]
+position = Vector2(500, -11000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle14" parent="." instance=ExtResource("2_5hhqp")]
+position = Vector2(-3500, -11000)
 scale = Vector2(5, 5)
 
 [node name="WallMantle3" parent="." instance=ExtResource("2_5hhqp")]
@@ -66,7 +87,19 @@ position = Vector2(-2995, 3933)
 scale = Vector2(5, 5)
 
 [node name="WallMantle5" parent="." instance=ExtResource("2_5hhqp")]
-position = Vector2(3966, -3288)
+position = Vector2(7500, -4000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle17" parent="." instance=ExtResource("2_5hhqp")]
+position = Vector2(10000, -3000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle18" parent="." instance=ExtResource("2_5hhqp")]
+position = Vector2(10500, 500)
+scale = Vector2(5, 5)
+
+[node name="WallMantle19" parent="." instance=ExtResource("2_5hhqp")]
+position = Vector2(9500, 3000)
 scale = Vector2(5, 5)
 
 [node name="WallMantle6" parent="." instance=ExtResource("2_5hhqp")]
@@ -78,7 +111,15 @@ position = Vector2(5932, 3233)
 scale = Vector2(5, 5)
 
 [node name="WallMantle9" parent="." instance=ExtResource("2_5hhqp")]
-position = Vector2(-7539, -248)
+position = Vector2(-7500, -500)
+scale = Vector2(5, 5)
+
+[node name="WallMantle10" parent="." instance=ExtResource("2_5hhqp")]
+position = Vector2(-7500, -5000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle11" parent="." instance=ExtResource("2_5hhqp")]
+position = Vector2(-7500, -9500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle8" parent="." instance=ExtResource("2_5hhqp")]

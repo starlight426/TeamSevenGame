@@ -27,10 +27,12 @@ shape = SubResource("CircleShape2D_su7xf")
 light_mask = 2
 visibility_layer = 2
 texture_filter = 1
-position = Vector2(12, -1)
+position = Vector2(9, -1)
 rotation = 1.5708
-scale = Vector2(0.492, 0.492)
+scale = Vector2(0.492, 0.372)
 texture = ExtResource("2_2enel")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ovupw")
+
+[connection signal="body_entered" from="Hitbox" to="." method="on_bullet_hit"]

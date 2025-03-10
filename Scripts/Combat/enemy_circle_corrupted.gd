@@ -36,6 +36,7 @@ func _physics_process(delta: float) -> void:
 			home_position = global_position
 			turn_angle = (target.global_position - global_position).angle()+rng.randf_range(-PI/2,PI/2)
 		else:
+			pass
 			if(global_position.distance_to(home_position) > 2000):
 				# turns sharply towards home if far away
 				turn_angle = (home_position - global_position).angle()+rng.randf_range(-PI/6,PI/6)

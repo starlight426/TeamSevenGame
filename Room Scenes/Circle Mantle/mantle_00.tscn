@@ -70,7 +70,7 @@ position = Vector2(3966, -3288)
 scale = Vector2(5, 5)
 
 [node name="WallMantle6" parent="." instance=ExtResource("2_lptlu")]
-position = Vector2(6870, -293)
+position = Vector2(5336, -309)
 scale = Vector2(5, 5)
 
 [node name="WallMantle7" parent="." instance=ExtResource("2_lptlu")]

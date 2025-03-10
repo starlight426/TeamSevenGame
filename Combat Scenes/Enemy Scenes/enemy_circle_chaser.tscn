@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://dwsnmdabrmlo8"]
+
+[ext_resource type="Script" uid="uid://dql38fdhmfd83" path="res://Scripts/Combat/enemy_circle_chaser.gd" id="1_gy7nl"]
+[ext_resource type="Texture2D" uid="uid://ckd0d5iusnqbn" path="res://Assets/spritePNGs/Enemy_Chaser_Circ.png" id="2_gy7nl"]
+[ext_resource type="PackedScene" uid="uid://sus6s80ptul7" path="res://AI Modules/Detectors/target_detector.tscn" id="3_dg0or"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fybhy"]
+radius = 304.081
+
+[node name="EnemyCircleChaser" type="CharacterBody2D"]
+script = ExtResource("1_gy7nl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10, 0)
+scale = Vector2(0.53, 0.53)
+shape = SubResource("CircleShape2D_fybhy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(11, 1)
+rotation = 1.5708
+texture = ExtResource("2_gy7nl")
+
+[node name="TargetDetector" parent="." instance=ExtResource("3_dg0or")]
+visible = false
+scale = Vector2(20, 20)
+
+[node name="bullet_marker_1" type="Marker2D" parent="."]
+position = Vector2(80, -140)
+
+[node name="bullet_marker_2" type="Marker2D" parent="."]
+position = Vector2(200, 0)
+
+[node name="bullet_marker_3" type="Marker2D" parent="."]
+position = Vector2(80, 140)
