@@ -1,11 +1,11 @@
 extends CharacterBody2D
 
-@export var speed = 3000
+@export var speed = 2000
 @export var hp = 100
 @export var energy = 0
 @export var team = "cigil"
 var move_readiness = [true,true,true,true,true]
-var move_cooldowns = [0.1,0.2,0.2,1.0,1.0]
+var move_cooldowns = [0.2,0.3,0.4,1.0,1.0]
 var move_cooldown_percentages = [100, 100, 100, 100, 100]
 var energy_ready = true
 var is_paused = false
@@ -13,7 +13,6 @@ var is_paused = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
@@ -83,9 +82,10 @@ func use_attack(attack):
 				energy -= 100
 		"circle_summon":
 			if(energy >= 180 && move_readiness[4]):
-				var new_summon = load("res://Combat Scenes/Enemy Scenes/circle_turret_summon.tscn").instantiate()
+				var new_summon = load("res://Combat Scenes/Solid Scenes/circle_turret_summon.tscn").instantiate()
 				new_summon.position = position
 				new_summon.global_rotation = global_rotation
+				add_sibling(new_summon)
 				move_cooldown(4)
 				energy -= 180
 			
