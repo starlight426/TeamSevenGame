@@ -1,12 +1,10 @@
-res://Combat Scenes/Enemy Scenes/enemy_circle_eightshooter.tscn
-res://Room Scenes/Circle City/circle_corridor.tscn
-res://Scripts/Combat/enemy_circle_eightshooter.gd
 res://Overworld Scenes/Player Scenes/player.tscn
 res://main.tscn
 res://Room Scenes/Dev/test_room.tscn
 res://Room Scenes/template_room.tscn
 res://UI Scenes/transition_screen.tscn
 res://Overworld Scenes/Object Scenes/wall_square.tscn
+res://Room Scenes/Circle City/circle_corridor.tscn
 res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn
 res://Overworld Scenes/Object Scenes/wall_circle.tscn
 res://Overworld Scenes/Object Scenes/unlockable.tscn
@@ -14,12 +12,10 @@ res://Combat Scenes/Enemy Scenes/enemy_circle_wave.tscn
 res://Overworld Scenes/Object Scenes/wall_mantle.tscn
 res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn
 res://Combat Scenes/Bullet Scenes/bullet.tscn
-res://Scripts/Combat/enemy_circle_corrupted.gd
+res://Combat Scenes/Enemy Scenes/enemy_circle_eightshooter.tscn
 res://Room Scenes/Circle City/circle_houses_1.tscn
 res://Combat Scenes/Enemy Scenes/enemy_circle_chaser.tscn
-res://Scripts/Combat/bullet.gd
 res://Room Scenes/Circle Mantle/mantle_00.tscn
-res://Scripts/Combat/enemy_circle_chaser.gd
 res://Room Scenes/Circle Mantle/mantle_-20.tscn
 res://Room Scenes/Circle Mantle/mantle_-23.tscn
 res://Room Scenes/Circle Mantle/mantle_04.tscn
@@ -29,4 +25,7 @@ res://Room Scenes/Circle Mantle/mantle_-15.tscn
 res://Room Scenes/Circle Mantle/mantle_06.tscn
 res://Room Scenes/Circle Mantle/mantle_07.tscn
 res://Room Scenes/Circle Mantle/mantle_18.tscn
-res://Scripts/Combat/clidean_ai.gd
+res://UI Scenes/main_menu.tscn
+res://UI Scenes/player_ui.tscn
+res://Scripts/player.gd
+res://UI Scenes/player_ui.gd

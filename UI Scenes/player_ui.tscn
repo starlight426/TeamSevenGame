@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://cc7vstslog23o"]
+[gd_scene load_steps=3 format=3 uid="uid://cc7vstslog23o"]
 
+[ext_resource type="Script" uid="uid://b3bwwb3yp2s6r" path="res://UI Scenes/player_ui.gd" id="1_8wq4l"]
 [ext_resource type="Texture2D" uid="uid://c4m82to15c03o" path="res://Assets/UI Sprites/Icon_Border.png" id="1_k4ew6"]
 
 [node name="PlayerUI" type="Control"]
@@ -9,6 +10,7 @@ offset_left = -2880.0
 offset_top = -1620.0
 offset_right = 2880.0
 offset_bottom = 1620.0
+script = ExtResource("1_8wq4l")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 0

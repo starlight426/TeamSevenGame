@@ -2,7 +2,9 @@ extends CharacterBody2D
 
 @export var speed = 3000
 @export var hp = 100
+@export var energy = 0
 @export var team = "cigil"
+var energy_ready = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -11,15 +13,13 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
+	if(energy_ready):
+		add_energy()
+		
+	# set the player's rotation towards the mouse
+	global_rotation = (get_global_mouse_position() - global_position).angle()
 	
-	# Get the global mouse position
-	var mouse_position = get_global_mouse_position()
-	# Calculate the angle between the player and the mouse
-	var angle_to_mouse = (mouse_position - global_position).angle()
-	# Set the player's rotation to face towards the mouse
-	global_rotation = angle_to_mouse
-	
-	# Check for movement keys and set movement vector accordingly
+	# check for movement keys and set movement vector accordingly
 	var movement = Vector2.ZERO
 	if Input.is_action_pressed("d_press"):
 		movement.x += 1
@@ -31,13 +31,19 @@ func _physics_process(delta: float) -> void:
 		movement.y -= 1
 	if movement != Vector2.ZERO:
 		movement = movement.normalized()
-	# Move the character
 	velocity = movement * speed
 	move_and_slide()
 
-
-
-
+func add_energy():
+	energy_ready = false
+	if(energy < 100):
+		energy += 10
+	if(energy < 300):
+		energy += 10
+	if(energy < 500):
+		energy += 10
+	await get_tree().create_timer(0.5).timeout
+	energy_ready = true
 
 func take_damage(dmg):
 	hp -= dmg
