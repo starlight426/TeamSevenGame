@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dwsnmdabrmlo8"]
+[gd_scene load_steps=6 format=3 uid="uid://dwsnmdabrmlo8"]
 
 [ext_resource type="Script" uid="uid://dql38fdhmfd83" path="res://Scripts/Combat/enemy_circle_chaser.gd" id="1_gy7nl"]
 [ext_resource type="Texture2D" uid="uid://ckd0d5iusnqbn" path="res://Assets/spritePNGs/Enemy_Chaser_Circ.png" id="2_gy7nl"]
@@ -6,6 +6,9 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fybhy"]
 radius = 304.081
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gy7nl"]
+radius = 140.0
 
 [node name="EnemyCircleChaser" type="CharacterBody2D"]
 script = ExtResource("1_gy7nl")
@@ -32,3 +35,9 @@ position = Vector2(200, 0)
 
 [node name="bullet_marker_3" type="Marker2D" parent="."]
 position = Vector2(80, 140)
+
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(80, 0)
+shape = SubResource("CircleShape2D_gy7nl")

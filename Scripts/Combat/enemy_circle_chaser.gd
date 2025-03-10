@@ -10,6 +10,7 @@ var fire_ready = false
 var rotation_speed = PI/32
 var color = "default"
 var type = "default"
+var angle_to_target
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -21,9 +22,13 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	
 	if(target):
-		velocity = Vector2(speed,0).rotated(global_rotation)
-		# smoothly turns to target if it exists
+		
+		
+		
 		global_rotation = lerp_angle(global_rotation,(target.global_position - global_position).angle(),rotation_speed)
+		velocity = Vector2(speed,0).rotated(global_rotation)
+		
+		
 		# fires if target exists
 		if(fire_ready):
 			fire()
