@@ -83,7 +83,7 @@ func use_attack(attack):
 				energy -= 100
 		"circle_summon":
 			if(energy >= 180 && move_readiness[4]):
-				var new_summon = load("res://Combat Scenes/Enemy Scenes/circle_turret_summon.tscn")
+				var new_summon = load("res://Combat Scenes/Enemy Scenes/circle_turret_summon.tscn").instantiate()
 				new_summon.position = position
 				new_summon.global_rotation = global_rotation
 				move_cooldown(4)
