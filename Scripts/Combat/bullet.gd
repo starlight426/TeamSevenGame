@@ -20,6 +20,10 @@ func _ready():
 	match type:
 		"straight":
 			pass
+			
+	match color:
+		"cigil":
+			$Sprite2D.modulate = Color.BLACK
 	#play_this_sound()
 
 func start_moving():

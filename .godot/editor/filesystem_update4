@@ -29,3 +29,6 @@ res://UI Scenes/main_menu.tscn
 res://UI Scenes/player_ui.tscn
 res://Scripts/player.gd
 res://UI Scenes/player_ui.gd
+res://Scripts/Combat/bullet.gd
+res://Combat Scenes/Enemy Scenes/circle_turret_summon.tscn
+res://Scripts/Combat/circle_turret_summon.gd
