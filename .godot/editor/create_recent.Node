@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Button
 Label
 VBoxContainer
@@ -10,6 +11,8 @@ CanvasLayer
 TextureProgressBar
 TextureButton
 Marker2D
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 CollisionShape2D
