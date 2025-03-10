@@ -1,12 +1,14 @@
-[gd_scene load_steps=11 format=3 uid="uid://cc7vstslog23o"]
+[gd_scene load_steps=13 format=3 uid="uid://cc7vstslog23o"]
 
 [ext_resource type="Script" uid="uid://b3bwwb3yp2s6r" path="res://UI Scenes/player_ui.gd" id="1_8wq4l"]
 [ext_resource type="Texture2D" uid="uid://c4m82to15c03o" path="res://Assets/UI Sprites/Icon_Border.png" id="1_k4ew6"]
 [ext_resource type="Texture2D" uid="uid://bkmcx2w6oyhds" path="res://Assets/UI Sprites/Icon_Single_Circ.png" id="3_nul7f"]
 [ext_resource type="Texture2D" uid="uid://qjp3e0fpnfgi" path="res://Assets/UI Sprites/Icon_3Shot_Circ.png" id="4_2cns7"]
+[ext_resource type="Texture2D" uid="uid://gbfacsfumxad" path="res://Assets/leftclickz.png" id="4_ope4c"]
 [ext_resource type="Texture2D" uid="uid://c3mcklesdfoax" path="res://Assets/UI Sprites/Icon_8Shot_Circ.png" id="5_0ct5d"]
 [ext_resource type="Texture2D" uid="uid://dsdsy4mxcy3pf" path="res://Assets/DarkKeys/E-Key.png" id="6_0ct5d"]
 [ext_resource type="Texture2D" uid="uid://cf12ploul43cq" path="res://Assets/UI Sprites/Icon_SpeedUp_Circ.png" id="6_57t0v"]
+[ext_resource type="Texture2D" uid="uid://ted40m5ovrw6" path="res://Assets/rightclickz.png" id="6_rutr5"]
 [ext_resource type="Texture2D" uid="uid://b4mxva3chakxb" path="res://Assets/UI Sprites/Icon_Turret_Circ.png" id="7_07fkh"]
 [ext_resource type="Texture2D" uid="uid://2t5ptb6l5vvd" path="res://Assets/DarkKeys/Shift-Key.png" id="8_07fkh"]
 [ext_resource type="Texture2D" uid="uid://c7sabdv3d8an" path="res://Assets/DarkKeys/Q-Key.png" id="8_57t0v"]
@@ -74,6 +76,9 @@ texture_under = ExtResource("1_k4ew6")
 texture_progress = ExtResource("3_nul7f")
 
 [node name="Sprite2D" type="Sprite2D" parent="MoveIconsBar/Action1"]
+position = Vector2(100, 240)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_ope4c")
 
 [node name="Action2" type="TextureProgressBar" parent="MoveIconsBar"]
 layout_mode = 2
@@ -83,6 +88,9 @@ texture_under = ExtResource("1_k4ew6")
 texture_progress = ExtResource("4_2cns7")
 
 [node name="Sprite2D" type="Sprite2D" parent="MoveIconsBar/Action2"]
+position = Vector2(107.5, 242.5)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("6_rutr5")
 
 [node name="Action3" type="TextureProgressBar" parent="MoveIconsBar"]
 layout_mode = 2

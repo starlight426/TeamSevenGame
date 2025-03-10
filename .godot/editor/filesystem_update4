@@ -1,2 +1,7 @@
 res://Room Scenes/Circle City/circle_corridor.tscn
 res://UI Scenes/player_ui.tscn
+res://Combat Scenes/Bullet Scenes/circle_of_bullets.tscn
+res://Room Scenes/Circle Mantle/mantle_00.tscn
+res://Scripts/Combat/circle_of_bullets.gd
+res://Scripts/Combat/bullet.gd
+res://Room Scenes/Circle Mantle/mantle_02.tscn
