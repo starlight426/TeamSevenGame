@@ -5,7 +5,6 @@ var current_room = null
 var new_room_loaded = null
 signal room_has_loaded
 
-
 func set_checkpoint(passed_checkpoint):
 	# change this later
 	load_room(passed_checkpoint.get_parent().get_path())

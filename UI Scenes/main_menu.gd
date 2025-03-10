@@ -9,19 +9,18 @@ extends Control
 @onready var margin_container: MarginContainer = $MarginContainer
 
 # Currently directly to start of demo, later will go to a file select screen
-# @onready var start_level = preload("") as PackedScene
+@onready var start_level = preload("res://main.tscn")
 
 
 func _ready():
-	start_button.button_down.connect(on_start_pressed)
+	start_button.button_up.connect(on_start_pressed)
 	options_button.button_down.connect(on_options_pressed)
 	exit_button.button_down.connect(on_exit_pressed)
 	options_menu.exit_options_menu.connect(on_exit_options_menu)
 
 
 func on_start_pressed() -> void:
-	pass
-#	get_tree().change_scene_to_packed(start_level)
+	get_tree().change_scene_to_packed(start_level)
 
 func on_options_pressed() -> void:
 	margin_container.visible = false

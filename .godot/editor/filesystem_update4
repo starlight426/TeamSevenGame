@@ -1,4 +1,5 @@
 res://Overworld Scenes/Player Scenes/player.tscn
+res://UI Scenes/main_menu.gd
 res://main.tscn
 res://Room Scenes/Dev/test_room.tscn
 res://Room Scenes/template_room.tscn
@@ -27,8 +28,10 @@ res://Room Scenes/Circle Mantle/mantle_07.tscn
 res://Room Scenes/Circle Mantle/mantle_18.tscn
 res://UI Scenes/main_menu.tscn
 res://UI Scenes/player_ui.tscn
-res://Scripts/player.gd
-res://UI Scenes/player_ui.gd
-res://Scripts/Combat/bullet.gd
 res://Combat Scenes/Enemy Scenes/circle_turret_summon.tscn
-res://Scripts/Combat/circle_turret_summon.gd
+res://Overworld Scenes/Object Scenes/exit.tscn
+res://Overworld Scenes/Object Scenes/house_circle.tscn
+res://Room Scenes/clidean_room.tscn
+res://UI Scenes/options_menu.tscn
+res://Scripts/Global/RoomLoader.gd
+res://Scripts/player.gd

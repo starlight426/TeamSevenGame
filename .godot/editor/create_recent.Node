@@ -1,29 +1,14 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-Button
 Label
 VBoxContainer
 MarginContainer
-HBoxContainer
+TabBar
+TabContainer
 Control
+Button
+HBoxContainer
 TextureRect
 CanvasLayer
 TextureProgressBar
 TextureButton
 Marker2D
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 CollisionShape2D
-Area2D
-Marker2D
-Sprite2D
-CharacterBody2D
-<<<<<<< Updated upstream
-=======
-TileMap
-Label
-Camera2D
-Node2D
->>>>>>> Stashed changes

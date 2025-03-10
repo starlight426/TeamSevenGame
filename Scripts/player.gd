@@ -61,7 +61,7 @@ func use_attack(attack):
 					AttackSpawner.spawn_bullets(global_position,global_rotation-PI/6,"single",1,0,"default","circle","straight",3000,3,30,"cigil","cigil",0,0,0)
 					move_cooldown(1)
 					energy -= 40
-		"circle_wave":
+		"circle_spread":
 			if(energy >= 80 && move_readiness[2]):
 					AttackSpawner.spawn_bullets(global_position,global_rotation,"single",1,0,"default","circle","straight",3000,3,30,"cigil","cigil",0,0,0)
 					AttackSpawner.spawn_bullets(global_position,global_rotation,"single",1,0,"default","circle","straight",3000,3,30,"cigil","cigil",0,0,0)
