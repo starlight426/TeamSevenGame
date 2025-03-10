@@ -121,3 +121,5 @@ func add_energy():
 	
 func take_damage(dmg):
 	hp -= dmg
+	if(hp <= 0):
+		RoomLoader.player_die()
