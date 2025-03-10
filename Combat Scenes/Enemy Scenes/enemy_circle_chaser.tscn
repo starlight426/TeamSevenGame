@@ -11,6 +11,7 @@ radius = 304.081
 radius = 140.0
 
 [node name="EnemyCircleChaser" type="CharacterBody2D"]
+collision_mask = 2
 script = ExtResource("1_gy7nl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -28,15 +29,16 @@ visible = false
 scale = Vector2(20, 20)
 
 [node name="bullet_marker_1" type="Marker2D" parent="."]
-position = Vector2(80, -140)
+position = Vector2(-100, -140)
 
 [node name="bullet_marker_2" type="Marker2D" parent="."]
 position = Vector2(200, 0)
 
 [node name="bullet_marker_3" type="Marker2D" parent="."]
-position = Vector2(80, 140)
+position = Vector2(-100, 140)
 
 [node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
 position = Vector2(80, 0)

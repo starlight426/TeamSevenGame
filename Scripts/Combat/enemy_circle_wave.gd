@@ -19,7 +19,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
-	
+	if (hp <= 0):
+		queue_free()
 	if(target):
 		velocity = Vector2(speed,0).rotated(global_rotation)
 		# smoothly turns to target if it exists

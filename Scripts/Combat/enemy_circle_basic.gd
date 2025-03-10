@@ -19,16 +19,17 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
-	
+	if (hp <= 0):
+		queue_free()
 	if(target):
 		velocity = Vector2(speed,0).rotated(global_rotation)
 		# smoothly turns to target if it exists
 		global_rotation = lerp_angle(global_rotation,(target.global_position - global_position).angle(),rotation_speed)
 		# fires if target exists
 		if(fire_ready):
-			fire()
-			
+			fire()		
 	move_and_slide()
+	
 func fire():
 	fire_ready = false
 	AttackSpawner.spawn_bullets(global_position,global_rotation,"single",1,0,"default","circle","straight",2000,3,30,"circle","purple",0,0,0)

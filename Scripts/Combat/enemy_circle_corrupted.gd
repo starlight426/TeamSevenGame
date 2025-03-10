@@ -27,6 +27,8 @@ func _ready() -> void:
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
+	if (hp <= 0):
+		queue_free()
 	if(fire_ready):
 		fire()
 	#TODO: make it actually move towards target angle, will fix

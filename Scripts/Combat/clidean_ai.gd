@@ -35,6 +35,8 @@ func start_strafe_cycle():
 		await get_tree().create_timer(strafe_interval).timeout
 
 func _physics_process(delta: float) -> void:
+	if (hp <= 0):
+		queue_free()
 	if target:
 		# Strafe movement
 		var direction_to_player = (target.global_position - global_position).normalized()
