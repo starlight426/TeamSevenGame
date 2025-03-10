@@ -35,3 +35,4 @@ res://Room Scenes/clidean_room.tscn
 res://UI Scenes/options_menu.tscn
 res://Scripts/Global/RoomLoader.gd
 res://Scripts/player.gd
+res://UI Scenes/player_ui.gd

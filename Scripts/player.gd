@@ -6,6 +6,7 @@ extends CharacterBody2D
 @export var team = "cigil"
 var move_readiness = [true,true,true,true,true]
 var move_cooldowns = [0.1,0.2,0.2,1.0,1.0]
+var move_cooldown_percentages = [100, 100, 100, 100, 100]
 var energy_ready = true
 
 # Called when the node enters the scene tree for the first time.
@@ -88,8 +89,15 @@ func use_attack(attack):
 			
 func move_cooldown(move_num):
 	move_readiness[move_num] = false
-	await get_tree().create_timer(move_cooldowns[move_num]).timeout
-	move_readiness[move_num] = false
+	var timer = get_tree().create_timer(move_cooldowns[move_num])
+	var percentage_completed = 0.0
+	var time_passed = 0.0
+	while timer.time_left > 0:
+		time_passed = move_cooldowns[move_num] - timer.time_left
+		move_cooldown_percentages[move_num] = (time_passed / move_cooldowns[move_num]) * 100
+		await get_tree().create_timer(0).timeout
+	
+	move_readiness[move_num] = true
 	
 func speedup():
 	speed *= 1.7
