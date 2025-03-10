@@ -30,7 +30,7 @@ layout_mode = 2
 
 [node name="EnergyLabel" type="Label" parent="HBoxContainer"]
 layout_mode = 2
-text = "Energy: 100/100"
+text = "Energy: 0/500"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="."]
 layout_mode = 0

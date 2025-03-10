@@ -8,6 +8,7 @@ var move_readiness = [true,true,true,true,true]
 var move_cooldowns = [0.1,0.2,0.2,1.0,1.0]
 var move_cooldown_percentages = [100, 100, 100, 100, 100]
 var energy_ready = true
+var is_paused = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -19,34 +20,35 @@ func _physics_process(delta: float) -> void:
 	if(energy_ready):
 		add_energy()
 		
-	# set the player's rotation towards the mouse
-	global_rotation = (get_global_mouse_position() - global_position).angle()
-	
-	# check for movement keys and set movement vector accordingly
-	var movement = Vector2.ZERO
-	if Input.is_action_pressed("d_press"):
-		movement.x += 1
-	if Input.is_action_pressed("a_press"):
-		movement.x -= 1
-	if Input.is_action_pressed("s_press"):
-		movement.y += 1
-	if Input.is_action_pressed("w_press"):
-		movement.y -= 1
+	if !is_paused:
+		# set the player's rotation towards the mouse
+		global_rotation = (get_global_mouse_position() - global_position).angle()
 		
-	if movement != Vector2.ZERO:
-		movement = movement.normalized()
-	velocity = movement * speed
-	if Input.is_action_pressed("left_click"):
-		use_attack("circle_basic")
-	if Input.is_action_pressed("right_click"):
-		use_attack("circle_wave")
-	if Input.is_action_pressed("e_press"):
-		use_attack("circle_spread")
-	if Input.is_action_pressed("shift_press"):
-		use_attack("speedup")
-	if Input.is_action_pressed("q_press"):
-		use_attack("circle_summon")
-	move_and_slide()
+		# check for movement keys and set movement vector accordingly
+		var movement = Vector2.ZERO
+		if Input.is_action_pressed("d_press"):
+			movement.x += 1
+		if Input.is_action_pressed("a_press"):
+			movement.x -= 1
+		if Input.is_action_pressed("s_press"):
+			movement.y += 1
+		if Input.is_action_pressed("w_press"):
+			movement.y -= 1
+			
+		if movement != Vector2.ZERO:
+			movement = movement.normalized()
+		velocity = movement * speed
+		if Input.is_action_pressed("left_click"):
+			use_attack("circle_basic")
+		if Input.is_action_pressed("right_click"):
+			use_attack("circle_wave")
+		if Input.is_action_pressed("e_press"):
+			use_attack("circle_spread")
+		if Input.is_action_pressed("shift_press"):
+			use_attack("speedup")
+		if Input.is_action_pressed("q_press"):
+			use_attack("circle_summon")
+		move_and_slide()
 	
 func use_attack(attack):
 	match attack:

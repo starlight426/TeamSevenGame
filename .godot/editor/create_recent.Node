@@ -1,12 +1,12 @@
+HBoxContainer
+Control
+VBoxContainer
 TextureProgressBar
 Label
-VBoxContainer
 MarginContainer
 TabBar
 TabContainer
-Control
 Button
-HBoxContainer
 TextureRect
 CanvasLayer
 TextureButton
