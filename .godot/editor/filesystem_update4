@@ -1,19 +1,2 @@
-<<<<<<< Updated upstream
-res://main.tscn
-res://Room Scenes/Circle City/circle_corridor.tscn
-res://Overworld Scenes/Object Scenes/wall_circle.tscn
-res://Overworld Scenes/Object Scenes/wall_mantle.tscn
-res://Overworld Scenes/Object Scenes/wall_square.tscn
-res://Overworld Scenes/Player Scenes/player.tscn
-res://Combat Scenes/Enemy Scenes/enemy_circle_wave.tscn
-res://Combat Scenes/Enemy Scenes/enemy_circle_eightshooter.tscn
-res://Combat Scenes/Bullet Scenes/bullet.tscn
-res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn
-res://Combat Scenes/Solid Scenes/circle_turret_summon.tscn
-res://UI Scenes/player_ui.tscn
 res://UI Scenes/main_menu.tscn
-res://UI Scenes/pause_menu.tscn
-res://UI Scenes/options_menu.tscn
-=======
-res://Room Scenes/Circle City/cigil_room.tscn
->>>>>>> Stashed changes
+res://Room Scenes/Circle City/circle_houses_1.tscn

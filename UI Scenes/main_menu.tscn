@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dydu2yo827jh2"]
 
-[ext_resource type="Script" uid="uid://ddilyb162jofo" path="res://UI Scenes/main_menu.gd" id="1_gbjot"]
+[ext_resource type="Script" path="res://UI Scenes/main_menu.gd" id="1_gbjot"]
 [ext_resource type="PackedScene" uid="uid://dygqbwlpf7sx3" path="res://UI Scenes/options_menu.tscn" id="2_5r6gu"]
 
 [node name="MainMenu" type="Control"]
@@ -41,10 +41,10 @@ theme_override_constants/separation = 80
 [node name="SpacerNode" type="Control" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="GameTitle" type="Label" parent="MarginContainer/VBoxContainer"]
+[node name="Game Time" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 56
-text = "Game Title :)"
+text = "Shape Incursion"
 horizontal_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
