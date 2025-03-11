@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dv0lfkuedqrkn"]
+[gd_scene load_steps=4 format=3 uid="uid://dv0lfkuedqrkn"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_w2ptu"]
 [ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="2_60dey"]
+[ext_resource type="Texture2D" uid="uid://cjsueo0vnhbkv" path="res://Assets/spritePNGs/Environment_Cir_House.png" id="3_gqqlh"]
 
 [node name="TemplateRoom2" type="Node2D"]
 
@@ -82,3 +83,35 @@ position = Vector2(0, -3500)
 
 [node name="bottom_camera_limit" type="Marker2D" parent="."]
 position = Vector2(0, 3500)
+
+[node name="EnvironmentCirHouse" type="Sprite2D" parent="."]
+position = Vector2(3000, -155.051)
+rotation = 1.5708
+scale = Vector2(3.26971, 3.32822)
+skew = -0.359538
+texture = ExtResource("3_gqqlh")
+
+[node name="EnvironmentCirHouse2" type="Sprite2D" parent="."]
+position = Vector2(2533.36, -2354.99)
+rotation = 0.972148
+scale = Vector2(2.83944, 3.52336)
+skew = -0.44855
+texture = ExtResource("3_gqqlh")
+
+[node name="EnvironmentCirHouse3" type="Sprite2D" parent="."]
+position = Vector2(2674.05, 1748.94)
+rotation = 2.22879
+scale = Vector2(3.21412, 3.37764)
+skew = -0.865683
+texture = ExtResource("3_gqqlh")
+
+[node name="EnvironmentCirHouse4" type="Sprite2D" parent="."]
+position = Vector2(500, -3500)
+scale = Vector2(3.75, 4.08163)
+texture = ExtResource("3_gqqlh")
+
+[node name="EnvironmentCirHouse5" type="Sprite2D" parent="."]
+position = Vector2(168.317, 3036.05)
+rotation = 3.14159
+scale = Vector2(3.85816, 2.52181)
+texture = ExtResource("3_gqqlh")

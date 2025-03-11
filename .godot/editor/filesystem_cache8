@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1741653344
+::res://::1741710536
 main.gd::GDScript::-1::1741652903::0::1::::<>Node2D<><><>::
 main.tscn::PackedScene::5619238585554540481::1741652903::0::1::::<><><><>::uid://hwmgwkumra7q::::res://Overworld Scenes/Player Scenes/player.tscn<>uid://cd33jeg0w0g2c::::res://main.gd<>uid://cc7vstslog23o::::res://UI Scenes/player_ui.tscn<>uid://te0qb4altvbs::::res://Scripts/camera.gd<>uid://blb7rs1uwuo2s::::res://UI Scenes/pause_menu.tscn
 ::res://AI Modules/::1741652903
@@ -124,10 +124,10 @@ wall_square.tscn::PackedScene::8458494857368978959::1741652903::0::1::::<><><><>
 player.tscn::PackedScene::537478706619329816::1741652903::0::1::::<><><><>::uid://nd5ld3cd0fqo::::res://Scripts/player.gd<>uid://b0v3u7ufltkm2::::res://Assets/spritePNGs/Cigil_1.0.png
 ::res://Room Scenes/::1741652903
 template_room.tscn::PackedScene::6745130630165545008::1741652903::0::1::::<><><><>::uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn
-::res://Room Scenes/Circle City/::1741652903
+::res://Room Scenes/Circle City/::1741657123
 cigil_room.tscn::PackedScene::2668005533816128570::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn
 circle_corridor.tscn::PackedScene::5764270827928797293::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://4i7rpstg74wt::::res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn
-circle_houses_1.tscn::PackedScene::2769744006822376990::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn
+circle_houses_1.tscn::PackedScene::2769744006822376990::1741657123::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://cjsueo0vnhbkv::::res://Assets/spritePNGs/Environment_Cir_House.png
 circle_houses_2.tscn::PackedScene::8685514583535422549::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn
 circle_houses_3.tscn::PackedScene::1265089038911840566::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn
 ::res://Room Scenes/Circle Mantle/::1741652903
@@ -184,9 +184,9 @@ solid_patterner.gd::GDScript::-1::1741652903::0::1::::<>Node2D<><><>::
 AttackSpawner.gd::GDScript::-1::1741652903::0::1::::<>Node<><><>::
 RoomLoader.gd::GDScript::-1::1741652903::0::1::::<>Node<><><>::
 transition_screen.gd::GDScript::-1::1741652903::0::1::::<>CanvasLayer<><><>::
-::res://UI Scenes/::1741652903
+::res://UI Scenes/::1741653426
 main_menu.gd::GDScript::-1::1741652903::0::1::::MainMenu<>Control<><><>::
-main_menu.tscn::PackedScene::8851251271669404925::1741652903::0::1::::<><><><>::uid://ddilyb162jofo::::res://UI Scenes/main_menu.gd<>uid://dygqbwlpf7sx3::::res://UI Scenes/options_menu.tscn
+main_menu.tscn::PackedScene::8851251271669404925::1741653426::0::1::::<><><><>::res://UI Scenes/main_menu.gd<>uid://dygqbwlpf7sx3::::res://UI Scenes/options_menu.tscn
 options_menu.gd::GDScript::-1::1741652903::0::1::::OptionsMenu<>Control<><><>::
 options_menu.tscn::PackedScene::8857154995790651490::1741652903::0::1::::<><><><>::uid://ddvyk82t8r61m::::res://UI Scenes/options_menu.gd
 pause_menu.gd::GDScript::-1::1741652903::0::1::::PauseMenu<>Control<><><>::

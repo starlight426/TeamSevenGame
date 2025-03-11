@@ -1,2 +1,4 @@
-res://UI Scenes/main_menu.tscn
 res://Room Scenes/Circle City/circle_houses_1.tscn
+res://main.gd
+res://UI Scenes/main_menu.gd
+res://Room Scenes/Circle City/circle_houses_2.tscn
