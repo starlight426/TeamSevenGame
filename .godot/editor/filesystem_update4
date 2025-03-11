@@ -1,4 +1,3 @@
-res://Room Scenes/Circle City/circle_houses_1.tscn
-res://main.gd
-res://UI Scenes/main_menu.gd
-res://Room Scenes/Circle City/circle_houses_2.tscn
+res://Room Scenes/Circle City/circle_corridor.tscn
+res://Scripts/player.gd
+res://Scripts/Global/RoomLoader.gd

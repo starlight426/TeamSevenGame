@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1741710536
-main.gd::GDScript::-1::1741652903::0::1::::<>Node2D<><><>::
+::res://::1741721244
+main.gd::GDScript::-1::1741711167::0::1::::<>Node2D<><><>::
 main.tscn::PackedScene::5619238585554540481::1741652903::0::1::::<><><><>::uid://hwmgwkumra7q::::res://Overworld Scenes/Player Scenes/player.tscn<>uid://cd33jeg0w0g2c::::res://main.gd<>uid://cc7vstslog23o::::res://UI Scenes/player_ui.tscn<>uid://te0qb4altvbs::::res://Scripts/camera.gd<>uid://blb7rs1uwuo2s::::res://UI Scenes/pause_menu.tscn
 ::res://AI Modules/::1741652903
 ::res://AI Modules/Detectors/::1741652903
@@ -124,11 +124,11 @@ wall_square.tscn::PackedScene::8458494857368978959::1741652903::0::1::::<><><><>
 player.tscn::PackedScene::537478706619329816::1741652903::0::1::::<><><><>::uid://nd5ld3cd0fqo::::res://Scripts/player.gd<>uid://b0v3u7ufltkm2::::res://Assets/spritePNGs/Cigil_1.0.png
 ::res://Room Scenes/::1741652903
 template_room.tscn::PackedScene::6745130630165545008::1741652903::0::1::::<><><><>::uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn
-::res://Room Scenes/Circle City/::1741657123
+::res://Room Scenes/Circle City/::1741721066
 cigil_room.tscn::PackedScene::2668005533816128570::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn
-circle_corridor.tscn::PackedScene::5764270827928797293::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://4i7rpstg74wt::::res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn
-circle_houses_1.tscn::PackedScene::2769744006822376990::1741657123::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://cjsueo0vnhbkv::::res://Assets/spritePNGs/Environment_Cir_House.png
-circle_houses_2.tscn::PackedScene::8685514583535422549::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn
+circle_corridor.tscn::PackedScene::5764270827928797293::1741721066::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://4i7rpstg74wt::::res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn
+circle_houses_1.tscn::PackedScene::2769744006822376990::1741711167::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://cjsueo0vnhbkv::::res://Assets/spritePNGs/Environment_Cir_House.png
+circle_houses_2.tscn::PackedScene::8685514583535422549::1741712508::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://cjsueo0vnhbkv::::res://Assets/spritePNGs/Environment_Cir_House.png
 circle_houses_3.tscn::PackedScene::1265089038911840566::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn
 ::res://Room Scenes/Circle Mantle/::1741652903
 mantle_00.tscn::PackedScene::6393782624428518876::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn<>uid://c1w5jhxknb674::::res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn
@@ -162,10 +162,10 @@ mantle_-43.tscn::PackedScene::7095155155408687281::1741652903::0::1::::<><><><>:
 clidean_room.tscn::PackedScene::2587584788021073486::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://papvh6mjcv7y::::res://Combat Scenes/Enemy Scenes/enemy_circle_clidean.tscn
 ::res://Room Scenes/Dev/::1741652903
 test_room.tscn::PackedScene::5801820842271364348::1741652903::0::1::::<><><><>::uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn
-::res://Scripts/::1741653150
+::res://Scripts/::1741721066
 camera.gd::GDScript::-1::1741652903::0::1::::<>Camera2D<><><>::
 exit.gd::GDScript::-1::1741652903::0::1::::<>Area2D<><><>::
-player.gd::GDScript::-1::1741653150::0::1::::<>CharacterBody2D<><><>::
+player.gd::GDScript::-1::1741721066::0::1::::<>CharacterBody2D<><><>::
 wall_square.gd::GDScript::-1::1741652903::0::1::::<>CharacterBody2D<><><>::
 ::res://Scripts/Combat/::1741652903
 bullet.gd::GDScript::-1::1741652903::0::1::::<>CharacterBody2D<><><>::
@@ -180,12 +180,12 @@ enemy_circle_eightshooter.gd::GDScript::-1::1741652903::0::1::::<>CharacterBody2
 enemy_circle_octoshot.gd::GDScript::-1::1741652903::0::1::::<>CharacterBody2D<><><>::
 enemy_circle_wave.gd::GDScript::-1::1741652903::0::1::::<>CharacterBody2D<><><>::
 solid_patterner.gd::GDScript::-1::1741652903::0::1::::<>Node2D<><><>::
-::res://Scripts/Global/::1741652903
+::res://Scripts/Global/::1741721067
 AttackSpawner.gd::GDScript::-1::1741652903::0::1::::<>Node<><><>::
-RoomLoader.gd::GDScript::-1::1741652903::0::1::::<>Node<><><>::
+RoomLoader.gd::GDScript::-1::1741721067::0::1::::<>Node<><><>::
 transition_screen.gd::GDScript::-1::1741652903::0::1::::<>CanvasLayer<><><>::
-::res://UI Scenes/::1741653426
-main_menu.gd::GDScript::-1::1741652903::0::1::::MainMenu<>Control<><><>::
+::res://UI Scenes/::1741711168
+main_menu.gd::GDScript::-1::1741711168::0::1::::MainMenu<>Control<><><>::
 main_menu.tscn::PackedScene::8851251271669404925::1741653426::0::1::::<><><><>::res://UI Scenes/main_menu.gd<>uid://dygqbwlpf7sx3::::res://UI Scenes/options_menu.tscn
 options_menu.gd::GDScript::-1::1741652903::0::1::::OptionsMenu<>Control<><><>::
 options_menu.tscn::PackedScene::8857154995790651490::1741652903::0::1::::<><><><>::uid://ddvyk82t8r61m::::res://UI Scenes/options_menu.gd
