@@ -25,6 +25,7 @@ rotation = 1.5708
 texture = ExtResource("2_gy7nl")
 
 [node name="TargetDetector" parent="." instance=ExtResource("3_dg0or")]
+visible = false
 scale = Vector2(25, 25)
 
 [node name="bullet_marker_1" type="Marker2D" parent="."]
@@ -40,5 +41,7 @@ position = Vector2(-100, 140)
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
-position = Vector2(80, 0)
+position = Vector2(105, 0)
 shape = SubResource("CircleShape2D_gy7nl")
+
+[connection signal="body_entered" from="Hitbox" to="." method="on_hitbox_entered"]

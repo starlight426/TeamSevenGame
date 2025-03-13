@@ -1,6 +1,7 @@
 extends Node2D
 
-@onready var pause_menu: PauseMenu = $CanvasLayer2/PauseMenu
+#@onready var pause_menu: PauseMenu = $CanvasLayer2/PauseMenu
+@onready var pause_menu = $CanvasLayer2/PauseMenu
 var paused = false
 var player_node
 

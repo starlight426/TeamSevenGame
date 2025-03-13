@@ -1,12 +1,12 @@
 extends CharacterBody2D
 
-@export var hp = 100
+@export var hp = 120
 @export var team = "cigil"
 @export var speed = 0
 var target = null
 var closest_danger = null
 var fire_ready = false
-@export var fire_rate = 1.0
+@export var fire_rate = 2.0
 var rotation_speed = PI/32
 var color = "default"
 var type = "default"

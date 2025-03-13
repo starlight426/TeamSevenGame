@@ -4,7 +4,9 @@ var current_checkpoint: Node2D
 var current_room = null
 var new_room_loaded = null
 signal room_has_loaded
-
+var last_entrance = "from_left"
+var last_group = "Circle City"
+var last_room = "cigil_room.tscn"
 func set_checkpoint(passed_checkpoint):
 	# change this later
 	load_room(passed_checkpoint.get_parent().get_path())
@@ -12,11 +14,16 @@ func set_checkpoint(passed_checkpoint):
 	teleport_player(passed_checkpoint.global_postion)
 	
 func player_die():
-	TransitionScreen.transition()
-	await TransitionScreen.on_transition_finished
+	#TransitionScreen.transition()
+	#await TransitionScreen.on_transition_finished
+	load_room_from_exit(last_group,last_room,last_entrance)
 	
 
 func load_room_from_exit(target_group,target_room,target_entrance):
+	print(target_group,target_room,target_entrance)
+	last_entrance = target_entrance
+	last_group = target_group
+	last_room = target_room
 	var room_to_load = "res://Room Scenes/" + target_group + "/" +target_room + ".tscn"
 	load_room(room_to_load)
 	await room_has_loaded

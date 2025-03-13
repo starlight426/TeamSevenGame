@@ -3,7 +3,7 @@ extends CharacterBody2D
 @export var hp = 1000
 @export var team = "circle"
 @export var speed = 600  # Strafe speed
-@export var passive_fire_rate = 1.5  # Time between passive bullet bursts
+@export var passive_fire_rate = 4.0  # Time between passive bullet bursts
 @export var strafe_interval = 3.0  # Time before switching strafe direction
 @export var attack_cooldown = 1  # Time between attacks
 

@@ -25,7 +25,7 @@ target_entrance = "from_bottom"
 [node name="exit3" parent="." instance=ExtResource("1_a1ptf")]
 position = Vector2(4000, 0)
 target_room = "circle_corridor"
-target_entrance = "from_bottomleft"
+target_entrance = "from_left"
 target_group = "Circle City"
 
 [node name="WallSquare" parent="." instance=ExtResource("2_nspbo")]

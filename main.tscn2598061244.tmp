@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://cmcabksd0f3yj"]
+
+[ext_resource type="PackedScene" uid="uid://hwmgwkumra7q" path="res://Overworld Scenes/Player Scenes/player.tscn" id="1_fmlmq"]
+[ext_resource type="Script" uid="uid://cd33jeg0w0g2c" path="res://main.gd" id="1_ipmiu"]
+[ext_resource type="PackedScene" uid="uid://cc7vstslog23o" path="res://UI Scenes/player_ui.tscn" id="4_1bvp3"]
+[ext_resource type="Script" uid="uid://te0qb4altvbs" path="res://Scripts/camera.gd" id="4_w7dd5"]
+[ext_resource type="PackedScene" uid="uid://blb7rs1uwuo2s" path="res://UI Scenes/pause_menu.tscn" id="5_lquwl"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_ipmiu")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+layer = 100
+
+[node name="PauseMenu" parent="CanvasLayer2" instance=ExtResource("5_lquwl")]
+visible = false
+z_index = 10
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PlayerUI" parent="CanvasLayer" instance=ExtResource("4_1bvp3")]
+
+[node name="Player" parent="." instance=ExtResource("1_fmlmq")]
+scale = Vector2(0.7, 0.7)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.22, 0.22)
+script = ExtResource("4_w7dd5")

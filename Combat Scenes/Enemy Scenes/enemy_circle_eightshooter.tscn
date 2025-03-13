@@ -8,7 +8,7 @@
 radius = 881.274
 
 [node name="EnemyCircleEightShooter" type="CharacterBody2D"]
-scale = Vector2(1.4, 1.4)
+scale = Vector2(1.8, 1.8)
 script = ExtResource("1_e2pae")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -20,6 +20,7 @@ rotation = -1.5708
 texture = ExtResource("2_ytvma")
 
 [node name="TargetDetector" parent="." instance=ExtResource("3_taj74")]
+visible = false
 scale = Vector2(20, 20)
 
 [node name="bullet_marker_1" type="Marker2D" parent="."]

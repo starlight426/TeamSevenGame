@@ -8,8 +8,8 @@
 
 [node name="exit" parent="." instance=ExtResource("1_x8nhq")]
 position = Vector2(-7500, -500)
-target_room = "mantle_02"
-target_entrance = "from_bottm"
+target_room = "mantle_-20"
+target_entrance = "from_bottom"
 target_group = "Circle Mantle"
 
 [node name="exit4" parent="." instance=ExtResource("1_x8nhq")]

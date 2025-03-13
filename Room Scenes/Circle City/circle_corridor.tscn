@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://coeix0ks6w2t2"]
+[gd_scene load_steps=6 format=3 uid="uid://coeix0ks6w2t2"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_ds34k"]
 [ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="2_nh6fj"]
 [ext_resource type="PackedScene" uid="uid://4i7rpstg74wt" path="res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn" id="3_axvfw"]
 [ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="4_lem1q"]
+[ext_resource type="PackedScene" uid="uid://c1w5jhxknb674" path="res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn" id="5_ji2d8"]
 
 [node name="TemplateRoom" type="Node2D"]
 
@@ -21,8 +22,9 @@ target_entrance = "from_top"
 
 [node name="exit3" parent="." instance=ExtResource("1_ds34k")]
 position = Vector2(4750, 0)
-target_room = ""
+target_room = "cigil_room"
 target_entrance = "from_left"
+target_group = "Circle City"
 
 [node name="WallSquare7" parent="." instance=ExtResource("2_nh6fj")]
 position = Vector2(-5250, 4000)
@@ -60,7 +62,7 @@ scale = Vector2(6, 10)
 position = Vector2(-8750, 0)
 
 [node name="from_left" type="Marker2D" parent="."]
-position = Vector2(-3000, 0)
+position = Vector2(-7273, -22683)
 
 [node name="from_right" type="Marker2D" parent="."]
 position = Vector2(3750, 0)
@@ -84,19 +86,19 @@ position = Vector2(-2000, 4500)
 position = Vector2(-4500, -7500)
 
 [node name="EnemyCircleBasic2" parent="." instance=ExtResource("3_axvfw")]
-position = Vector2(500, -13000)
+position = Vector2(500, -13678)
 
 [node name="EnemyCircleBasic3" parent="." instance=ExtResource("3_axvfw")]
-position = Vector2(-4000, -14500)
+position = Vector2(-4059, -17444)
 
 [node name="EnemyCircleBasic4" parent="." instance=ExtResource("3_axvfw")]
-position = Vector2(-500, -19500)
+position = Vector2(1352, -23826)
 
 [node name="EnemyCircleBasic5" parent="." instance=ExtResource("3_axvfw")]
-position = Vector2(-3500, -19000)
+position = Vector2(-353, -39968)
 
 [node name="EnemyCircleBasic6" parent="." instance=ExtResource("3_axvfw")]
-position = Vector2(-7000, -21000)
+position = Vector2(-4207, -38117)
 
 [node name="WallMantle" parent="." instance=ExtResource("4_lem1q")]
 position = Vector2(9000, -53000)
@@ -112,3 +114,6 @@ scale = Vector2(5, 5)
 target_room = "mantle_00"
 target_entrance = "from_bottom"
 target_group = "Circle Mantle"
+
+[node name="EnemyCircleCorrupted" parent="." instance=ExtResource("5_ji2d8")]
+position = Vector2(-2063, -28693)

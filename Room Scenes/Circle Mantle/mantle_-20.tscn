@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_x8nhq"]
 [ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="2_lptlu"]
 [ext_resource type="PackedScene" uid="uid://cdfypqi8cem6m" path="res://Combat Scenes/Enemy Scenes/enemy_circle_wave.tscn" id="3_qwpdw"]
-[ext_resource type="PackedScene" uid="uid://dd7qwjqktm7b2" path="res://Combat Scenes/Enemy Scenes/enemy_circle_eightshooter.tscn" id="4_86yei"]
+[ext_resource type="PackedScene" uid="uid://c1w5jhxknb674" path="res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn" id="4_qwpdw"]
 
 [node name="TemplateRoom" type="Node2D"]
 
@@ -119,8 +119,8 @@ scale = Vector2(5, 5)
 [node name="EnemyCircleWave" parent="." instance=ExtResource("3_qwpdw")]
 position = Vector2(250, 500)
 
-[node name="EnemyCircleEightShooter" parent="." instance=ExtResource("4_86yei")]
-position = Vector2(1250, -8000)
-
 [node name="EnemyCircleWave2" parent="." instance=ExtResource("3_qwpdw")]
 position = Vector2(-4250, -4250)
+
+[node name="EnemyCircleCorrupted" parent="." instance=ExtResource("4_qwpdw")]
+position = Vector2(2500, -8750)

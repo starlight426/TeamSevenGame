@@ -15,8 +15,7 @@ var mod3 = 0
 # Called when the node enters the scene tree for the first time.
 
 func _ready():
-	$Hitbox.body_entered.connect(on_bullet_hit)
-	#start_decay()
+	#$Hitbox.body_entered.connect(on_bullet_hit)
 	match type:
 		"straight":
 			pass

@@ -1,3 +1,32 @@
 res://Room Scenes/Circle City/circle_corridor.tscn
+res://main.tscn
+res://Overworld Scenes/Object Scenes/wall_mantle.tscn
+res://Scripts/Combat/bullet.gd
+res://Overworld Scenes/Object Scenes/wall_circle.tscn
+res://Overworld Scenes/Object Scenes/wall_square.tscn
+res://Room Scenes/Circle Mantle/mantle_02.tscn
+res://Room Scenes/Circle Mantle/mantle_00.tscn
+res://Room Scenes/Circle Mantle/mantle_-20.tscn
+res://Room Scenes/Circle Mantle/mantle_-23.tscn
+res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn
+res://Scripts/Combat/enemy_circle_basic.gd
 res://Scripts/player.gd
+res://Combat Scenes/Enemy Scenes/enemy_circle_eightshooter.tscn
+res://Scripts/Combat/enemy_circle_eightshooter.gd
+res://Room Scenes/Circle Mantle/mantle_04.tscn
+res://Combat Scenes/Enemy Scenes/enemy_circle_wave.tscn
+res://Scripts/Combat/enemy_circle_wave.gd
+res://Room Scenes/Circle Mantle/mantle_12.tscn
+res://Overworld Scenes/Player Scenes/player.tscn
+res://Combat Scenes/Bullet Scenes/bullet.tscn
+res://Combat Scenes/Enemy Scenes/enemy_circle_chaser.tscn
+res://Scripts/Combat/enemy_circle_chaser.gd
+res://Room Scenes/Circle City/cigil_room.tscn
 res://Scripts/Global/RoomLoader.gd
+res://Combat Scenes/Solid Scenes/circle_turret_summon.tscn
+res://Scripts/Combat/circle_turret_summon.gd
+res://Room Scenes/Circle City/circle_houses_1.tscn
+res://Combat Scenes/Enemy Scenes/enemy_circle_clidean.tscn
+res://Scripts/Combat/clidean_ai.gd
+res://Room Scenes/Circle Mantle/mantle_14.tscn
+res://UI Scenes/player_ui.gd

@@ -27,7 +27,7 @@ target_entrance = "from_bottom"
 [node name="exit3" parent="." instance=ExtResource("1_4omew")]
 position = Vector2(11000, -2500)
 scale = Vector2(4, 4)
-target_room = "mantle_04"
+target_room = "mantle_14"
 target_entrance = "from_bottom"
 target_group = "Circle Mantle"
 

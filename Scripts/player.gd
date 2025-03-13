@@ -1,21 +1,28 @@
 extends CharacterBody2D
 
 @export var speed = 2000
-@export var hp = 100
+@export var hp = 200
+@export var max_hp = hp
 @export var energy = 0
 @export var team = "cigil"
 var move_readiness = [true,true,true,true,true]
-var move_cooldowns = [0.4,0.6,0.8,1.0,1.0]
+var move_cooldowns = [0.4,0.6,0.8,3.0,3.0]
 var move_cooldown_percentages = [100, 100, 100, 100, 100]
 var energy_ready = true
 var is_paused = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	scale = Vector2(0.6,0.6)
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
+	if(hp <= 0):
+		hp = max_hp
+		die()
+		
+	
 	if(energy_ready):
 		add_energy()
 		
@@ -57,16 +64,16 @@ func use_attack(attack):
 					move_cooldown(0)
 					energy -= 20
 		"circle_wave":
-			if(energy >= 40 && move_readiness[1]):
+			if(energy >= 30 && move_readiness[1]):
 					AttackSpawner.spawn_bullets(global_position,global_rotation,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
 					AttackSpawner.spawn_bullets(global_position,global_rotation+PI/6,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
 					AttackSpawner.spawn_bullets(global_position,global_rotation-PI/6,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
 					move_cooldown(1)
-					energy -= 40
+					energy -= 30
 		"circle_spread":
-			if(energy >= 80 && move_readiness[2]):
+			if(energy >= 45 && move_readiness[2]):
 					AttackSpawner.spawn_bullets(global_position,global_rotation,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
-					AttackSpawner.spawn_bullets(global_position,global_rotation,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
+					AttackSpawner.spawn_bullets(global_position,global_rotation-PI,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
 					AttackSpawner.spawn_bullets(global_position,global_rotation+PI/4,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
 					AttackSpawner.spawn_bullets(global_position,global_rotation-PI/4,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
 					AttackSpawner.spawn_bullets(global_position,global_rotation+PI/2,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
@@ -74,20 +81,20 @@ func use_attack(attack):
 					AttackSpawner.spawn_bullets(global_position,global_rotation+3*PI/4,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
 					AttackSpawner.spawn_bullets(global_position,global_rotation-3*PI/4,"single",1,0,"default","circle","straight",3000,3,10,"cigil","cigil",0,0,0)
 					move_cooldown(2)
-					energy -= 80
+					energy -= 45
 		"speedup":
 			if(energy >= 100 && move_readiness[3]):
 				speedup()
 				move_cooldown(3)
 				energy -= 100
 		"circle_summon":
-			if(energy >= 180 && move_readiness[4]):
+			if(energy >= 80 && move_readiness[4]):
 				var new_summon = load("res://Combat Scenes/Solid Scenes/circle_turret_summon.tscn").instantiate()
 				new_summon.position = position
 				new_summon.global_rotation = global_rotation
-				add_sibling(new_summon)
+				RoomLoader.current_room.add_child(new_summon)
 				move_cooldown(4)
-				energy -= 180
+				energy -= 80
 			
 func move_cooldown(move_num):
 	move_readiness[move_num] = false
@@ -102,22 +109,24 @@ func move_cooldown(move_num):
 	move_readiness[move_num] = true
 	
 func speedup():
-	speed *= 1.7
+	speed *= 2.0
 	await get_tree().create_timer(3).timeout
-	speed /= 1.7
+	speed /= 2.0
 	
 func add_energy():
 	energy_ready = false
+
 	if(energy < 100):
 		energy += 5
 	if(energy < 300):
 		energy += 5
 	if(energy < 500):
-		energy += 5
+		energy += 10
 	await get_tree().create_timer(0.5).timeout
 	energy_ready = true
 	
-
+func die():
+	RoomLoader.player_die()
 	
 func take_damage(dmg):
 	hp -= dmg
