@@ -1,6 +1,7 @@
-ea4bc82a6ad023ab7ee23ee620429895
-::res://::1741721244
-main.gd::GDScript::-1::1741711167::0::1::::<>Node2D<><><>::
+bdbec74c6e5bd72edee867077d70896c
+::res://::1741907397
+export_presets.cfg::TextFile::-1::1741879306::0::1::::<><><><>::
+main.gd::GDScript::-1::1741879306::0::1::::<>Node2D<><><>::
 main.tscn::PackedScene::5619238585554540481::1741652903::0::1::::<><><><>::uid://hwmgwkumra7q::::res://Overworld Scenes/Player Scenes/player.tscn<>uid://cd33jeg0w0g2c::::res://main.gd<>uid://cc7vstslog23o::::res://UI Scenes/player_ui.tscn<>uid://te0qb4altvbs::::res://Scripts/camera.gd<>uid://blb7rs1uwuo2s::::res://UI Scenes/pause_menu.tscn
 ::res://AI Modules/::1741652903
 ::res://AI Modules/Detectors/::1741652903
@@ -59,22 +60,28 @@ Z-Key.png::CompressedTexture2D::7149255677445342776::1741652903::1741652955::1::
 ::res://Assets/Shapes/::1741652903
 whitecircle.png::CompressedTexture2D::2488507408932611410::1741652903::1741652903::1::::<><><>259faf53c6ff1a02d66ac6093c0d45fc<>res://.godot/imported/whitecircle.png-2320669c7acc31f1795d807f78f300a7.ctex::
 whitesquare.png::CompressedTexture2D::3808830213380153737::1741652903::1741652903::1::::<><><>0f0e7219b52b729bbfbb7580a02ed0a1<>res://.godot/imported/whitesquare.png-80d74e70602322b358b29729acd3328d.ctex::
-::res://Assets/spritePNGs/::1741652955
+::res://Assets/spritePNGs/::1741879366
 Boss_Clidean.png::CompressedTexture2D::3672628980399226645::1741652903::1741652903::1::::<><><>c23321e4d9d8fd27ccd90d4f21e1c6d3<>res://.godot/imported/Boss_Clidean.png-d363b5341289e5f993962c4a691ad6e8.ctex::
 Cigil_1.0.png::CompressedTexture2D::4186231211040653379::1741652903::1741652903::1::::<><><>f1837e8738f4a5778f0aa5e7a3faf2ec<>res://.godot/imported/Cigil_1.0.png-a4e737786f7fe745a326b5378bfc2bfb.ctex::
 Circle_Bullet_Fast.png::CompressedTexture2D::1547652715311508010::1741652903::1741652903::1::::<><><>e8e440c068ecfe66f776fbc1a09b3a9e<>res://.godot/imported/Circle_Bullet_Fast.png-f821575517736e295a04ffb74b0d2264.ctex::
 Circle_Bullet_N2.0.png::CompressedTexture2D::86834325576795826::1741652903::1741652903::1::::<><><>9dd974ef9255cc780003c038459084c1<>res://.godot/imported/Circle_Bullet_N2.0.png-3e07b706e19e4a7ed72c1ffab0f7d242.ctex::
 Circle_Turret .png::CompressedTexture2D::1136634342712915360::1741652903::1741652903::1::::<><><>670ec8d365b3fb1c108008448efffbd5<>res://.godot/imported/Circle_Turret .png-73bba0605d38c2e04dcc412cd676349e.ctex::
 Enemy_8Shot_Circ.png::CompressedTexture2D::7155498009605647390::1741652903::1741652903::1::::<><><>45ea7be3cf00abf00a504407a3c34815<>res://.godot/imported/Enemy_8Shot_Circ.png-3a93c3805e7632698dbc0c9647148760.ctex::
+Enemy_Assass_Square.png::CompressedTexture2D::8299663417029156478::1741741414::1741907399::1::::<><><>fda0e658cc82cb3938ddab93462b9c29<>res://.godot/imported/Enemy_Assass_Square.png-34c0ce161d7dec1d974bbbf2ffae3fc9.ctex::
 Enemy_Assass_Tri copy.png::CompressedTexture2D::7783682563698606897::1741652903::1741652903::1::::<><><>de50a81132bec078c2bcf72df01e3aba<>res://.godot/imported/Enemy_Assass_Tri copy.png-70416d9274016eb7e19b667c0878891c.ctex::
+Enemy_Barrage_Sqr.png::CompressedTexture2D::2060992521523540991::1741739606::1741907399::1::::<><><>7d459e42aa2666701e3a6b8baa2be502<>res://.godot/imported/Enemy_Barrage_Sqr.png-bb62aa59f238a2b00395958e4708861b.ctex::
 Enemy_Basic_Circ.png::CompressedTexture2D::8290876671900890581::1741652903::1741652903::1::::<><><>2ac193671848935ce064c1d06b01bfbf<>res://.godot/imported/Enemy_Basic_Circ.png-96dc20b7b03984665e5cbdad0d107354.ctex::
+Enemy_Basic_Sqr .png::CompressedTexture2D::2720795651376336935::1741739562::1741907399::1::::<><><>9a87f9c2bdef43ced9724d09170824a3<>res://.godot/imported/Enemy_Basic_Sqr .png-f9a457aee86f88e7d767b49c792a956f.ctex::
 Enemy_Chaser_Circ.png::CompressedTexture2D::5482447808221813239::1741652903::1741652903::1::::<><><>ab5b66f105349b7c82e29dcf3b7e0424<>res://.godot/imported/Enemy_Chaser_Circ.png-c921355f45b451b8c8a9764e3f7ae6f1.ctex::
 Enemy_Corrupted_Circ copy.png::CompressedTexture2D::8385087432465267995::1741652903::1741652903::1::::<><><>6ee584ce363f16be8c1d430201cafe21<>res://.godot/imported/Enemy_Corrupted_Circ copy.png-d9ba1742b31b3da96eb22c3fce0d01d8.ctex::
 Enemy_Corrupted_Circ.png::CompressedTexture2D::8386815375549072732::1741652903::1741652903::1::::<><><>4d06fa22e64279304b8a8927285b7329<>res://.godot/imported/Enemy_Corrupted_Circ.png-0cc589e8fb94438e60d54c41e7ed2f6d.ctex::
 Enemy_Dasher_Tri.png::CompressedTexture2D::6439259088550784930::1741652903::1741652903::1::::<><><>b17f9e6f4ba7e2556ec9327f97bb4d81<>res://.godot/imported/Enemy_Dasher_Tri.png-7f84a18328dbfe528aa730a78ec2f457.ctex::
 Enemy_Ram_Tri.png::CompressedTexture2D::2958991647394690044::1741652903::1741652903::1::::<><><>a1b1d7f4331a186a435c654c0b297049<>res://.godot/imported/Enemy_Ram_Tri.png-359986a50302ac68d917f59c8502d8d5.ctex::
+Enemy_Shield_Sqr.png::CompressedTexture2D::4735146487034681739::1741739517::1741907400::1::::<><><>68cb6737920a220ccc34fc2a86e5a7e6<>res://.godot/imported/Enemy_Shield_Sqr.png-0e2a16f9dc5857c6a4be28cb8f988013.ctex::
 Enemy_Strike_Circ.png::CompressedTexture2D::219789690025020183::1741652903::1741652903::1::::<><><>71bf7ddd61cc39ac8e04b13918b52c5d<>res://.godot/imported/Enemy_Strike_Circ.png-465b72e3f8984923514c5cf17d412b79.ctex::
+Enemy_Strike_Square.png::CompressedTexture2D::9133925798119960341::1741740818::1741907400::1::::<><><>2a0517b6e1a12ab191f1c8e8fa34b7b7<>res://.godot/imported/Enemy_Strike_Square.png-1ea15433153ba4fa8f22108674f4a785.ctex::
 Enemy_Summoner_Tri.png::CompressedTexture2D::5093688946603642703::1741652903::1741652903::1::::<><><>04058c34319eb220d4653a22fc5569c9<>res://.godot/imported/Enemy_Summoner_Tri.png-f73dfdfb1615e2b823beb3b60a10cf8c.ctex::
+Enemy_Warrior_Sqr.png::CompressedTexture2D::9220995229152017862::1741794044::1741907400::1::::<><><>3255ccc28d9762b7759b181f963574fe<>res://.godot/imported/Enemy_Warrior_Sqr.png-4e3d14b0b4662942f7590e39418d2014.ctex::
 Enemy_Warrior_Tri.png::CompressedTexture2D::1337264024950228297::1741652903::1741652903::1::::<><><>7c03660f59c3f85f4df819056356c412<>res://.godot/imported/Enemy_Warrior_Tri.png-e6bcf841a24ec43108e65b5fa05f8199.ctex::
 Enemy_Wave_Circ.png::CompressedTexture2D::5430126016630820668::1741652903::1741652903::1::::<><><>fc71cd28881530e3d57f6cc3b7eef925<>res://.godot/imported/Enemy_Wave_Circ.png-df6983c9a873a8f5ac68db4818200833.ctex::
 Environment_Cir_BHouse .png::CompressedTexture2D::4244235442701838085::1741652903::1741652955::1::::<><><>76810cfa2f72432396d94aeaf8a3aa61<>res://.godot/imported/Environment_Cir_BHouse .png-8cd8ddbe3b2a2f54339547189ef80fc7.ctex::
@@ -82,9 +89,15 @@ Environment_Cir_House.png::CompressedTexture2D::5442922017651323733::1741652903:
 NPC_Circle_Civil copy.png::CompressedTexture2D::3448784217854632375::1741652903::1741652903::1::::<><><>25b7f5af0e4f95b0d7a4b1542feecb10<>res://.godot/imported/NPC_Circle_Civil copy.png-b35bcbeaa823c0e22ae464d855b99f47.ctex::
 NPC_Circle_Guard.png::CompressedTexture2D::7535255937761781158::1741652903::1741652903::1::::<><><>59c1c7192467aa91bf149fc5e9e47781<>res://.godot/imported/NPC_Circle_Guard.png-3c04b25c1eb48225194b1d26e263b87f.ctex::
 Square_Bullet_N.png::CompressedTexture2D::2106094893103869597::1741652903::1741652903::1::::<><><>05ddf276895e934b7fcda1ca1d8ba6dd<>res://.godot/imported/Square_Bullet_N.png-f19bf38e30303092a1665015382d61f6.ctex::
+Square_Shield.png::CompressedTexture2D::3841106291671409853::1741739480::1741907400::1::::<><><>541a8ac69b1fae7a344dbdaa75867678<>res://.godot/imported/Square_Shield.png-074ec774c2f93dcfeacdbe63ea3d0121.ctex::
 Triangle_Bullet_N copy.png::CompressedTexture2D::7892358200316629153::1741652903::1741652903::1::::<><><>da86fa419a79b9b8b4a44bb7d32578f9<>res://.godot/imported/Triangle_Bullet_N copy.png-d35d99ba8d248f8021fe2b3e10140535.ctex::
 Zigzag_Bullet_N.png::CompressedTexture2D::6051827823931333841::1741652903::1741652903::1::::<><><>a89af868ef2f89b3053e709f58e8b6f8<>res://.godot/imported/Zigzag_Bullet_N.png-4ef1482126acc28571a2ac4df14b4594.ctex::
-::res://Assets/UI Sprites/::1741652955
+::res://Assets/UI Sprites/::1741879366
+Bar_Boss_Health.png::CompressedTexture2D::2009468471561462819::1741879366::1741907400::1::::<><><>eae9a6e8fd9f631a42b41c0cc630dd4b<>res://.godot/imported/Bar_Boss_Health.png-125a5513fb80190b57d4960c6d8faa73.ctex::
+Bar_Boss_Overlay.png::CompressedTexture2D::199150687840833968::1741879366::1741907400::1::::<><><>040fab6857bbc7d1a81bc120cf6fdbb3<>res://.godot/imported/Bar_Boss_Overlay.png-9f91417616747067061acd7968c6aea0.ctex::
+Bar_Energy.png::CompressedTexture2D::3212944344656999832::1741879366::1741907400::1::::<><><>094111b5960e50ab72ac0adbe5f18248<>res://.godot/imported/Bar_Energy.png-128bcb3e362ff4e0adb7415f7cbc95c1.ctex::
+Bar_Health.png::CompressedTexture2D::5914772288841122706::1741879366::1741907400::1::::<><><>4a442be957a5f434836fbfe187682516<>res://.godot/imported/Bar_Health.png-88416c09ec62cfa8bc3faf8bc8332afa.ctex::
+Bar_Overlay .png::CompressedTexture2D::286538773210520634::1741879366::1741907400::1::::<><><>8e3369c1a1c3194552fb0d834f764f47<>res://.godot/imported/Bar_Overlay .png-5d8974858c613d4e174102b09e1bbfdc.ctex::
 Icon_3Shot_Circ.png::CompressedTexture2D::1142561904077140256::1741652903::1741652903::1::::<><><>1be02146b9b4414e2010ef6919f6e724<>res://.godot/imported/Icon_3Shot_Circ.png-c0f6ad5cdc627bc3b683cb1d7389dce1.ctex::
 Icon_5Shot_Tri.png::CompressedTexture2D::5095162156217370786::1741652903::1741652903::1::::<><><>346180cd87ce60c3e4145f6d3707f970<>res://.godot/imported/Icon_5Shot_Tri.png-9a71f40e4996923d661cb27a7574176d.ctex::
 Icon_8Shot_Circ.png::CompressedTexture2D::6763041398982536679::1741652903::1741652903::1::::<><><>2f188ee3fa828cd0f4aecb402739a079<>res://.godot/imported/Icon_8Shot_Circ.png-4606f695f188b22ce8b9522de66142f0.ctex::
@@ -98,13 +111,13 @@ Icon_ZigZag.png::CompressedTexture2D::2315911424465131086::1741652903::174165290
 ::res://Combat Scenes/Bullet Scenes/::1741652903
 bullet.tscn::PackedScene::3691372840108496876::1741652903::0::1::::<><><><>::uid://dt6anicttmxex::::res://Scripts/Combat/bullet.gd<>uid://bicfb303bke1::::res://Assets/spritePNGs/Circle_Bullet_N2.0.png
 circle_of_bullets.tscn::PackedScene::2128948507637969857::1741652903::0::1::::<><><><>::uid://dbcsuocoag440::::res://Scripts/Combat/circle_of_bullets.gd<>uid://bsuemvj7deagq::::res://Combat Scenes/Bullet Scenes/bullet.tscn
-::res://Combat Scenes/Enemy Scenes/::1741652903
-enemy_circle_basic.tscn::PackedScene::2053965606329642163::1741652903::0::1::::<><><><>::uid://dqqaq85kumbkl::::res://Scripts/Combat/enemy_circle_basic.gd<>uid://dqefr603pkrej::::res://Assets/spritePNGs/Enemy_Basic_Circ.png<>uid://sus6s80ptul7::::res://AI Modules/Detectors/target_detector.tscn
-enemy_circle_chaser.tscn::PackedScene::8741386318760602809::1741652903::0::1::::<><><><>::uid://dql38fdhmfd83::::res://Scripts/Combat/enemy_circle_chaser.gd<>uid://ckd0d5iusnqbn::::res://Assets/spritePNGs/Enemy_Chaser_Circ.png<>uid://sus6s80ptul7::::res://AI Modules/Detectors/target_detector.tscn
+::res://Combat Scenes/Enemy Scenes/::1741879306
+enemy_circle_basic.tscn::PackedScene::2053965606329642163::1741879306::0::1::::<><><><>::uid://dqqaq85kumbkl::::res://Scripts/Combat/enemy_circle_basic.gd<>uid://dqefr603pkrej::::res://Assets/spritePNGs/Enemy_Basic_Circ.png<>uid://sus6s80ptul7::::res://AI Modules/Detectors/target_detector.tscn
+enemy_circle_chaser.tscn::PackedScene::8741386318760602809::1741879306::0::1::::<><><><>::uid://dql38fdhmfd83::::res://Scripts/Combat/enemy_circle_chaser.gd<>uid://ckd0d5iusnqbn::::res://Assets/spritePNGs/Enemy_Chaser_Circ.png<>uid://sus6s80ptul7::::res://AI Modules/Detectors/target_detector.tscn
 enemy_circle_clidean.tscn::PackedScene::1053781327243729548::1741652903::0::1::::<><><><>::uid://cntnpd2r0f6u5::::res://Scripts/Combat/clidean_ai.gd<>uid://bslbwsd6d0ewb::::res://Assets/spritePNGs/Boss_Clidean.png<>uid://sus6s80ptul7::::res://AI Modules/Detectors/target_detector.tscn
 enemy_circle_corrupted.tscn::PackedScene::6645005598158252593::1741652903::0::1::::<><><><>::uid://cwgm6yoslm6th::::res://Scripts/Combat/enemy_circle_corrupted.gd<>uid://drqvvhiamgfcu::::res://Assets/spritePNGs/Enemy_Corrupted_Circ.png<>uid://sus6s80ptul7::::res://AI Modules/Detectors/target_detector.tscn
-enemy_circle_eightshooter.tscn::PackedScene::7436899927380759565::1741652903::0::1::::<><><><>::uid://y0sw6844jt2k::::res://Scripts/Combat/enemy_circle_eightshooter.gd<>uid://c87gah30r70lu::::res://Assets/spritePNGs/Enemy_8Shot_Circ.png<>uid://sus6s80ptul7::::res://AI Modules/Detectors/target_detector.tscn
-enemy_circle_wave.tscn::PackedScene::4995214636039818170::1741652903::0::1::::<><><><>::uid://bp25vb2ebvwto::::res://Scripts/Combat/enemy_circle_wave.gd<>uid://cjmnm80y4xmca::::res://Assets/spritePNGs/Enemy_Wave_Circ.png<>uid://sus6s80ptul7::::res://AI Modules/Detectors/target_detector.tscn
+enemy_circle_eightshooter.tscn::PackedScene::7436899927380759565::1741879306::0::1::::<><><><>::uid://y0sw6844jt2k::::res://Scripts/Combat/enemy_circle_eightshooter.gd<>uid://c87gah30r70lu::::res://Assets/spritePNGs/Enemy_8Shot_Circ.png<>uid://sus6s80ptul7::::res://AI Modules/Detectors/target_detector.tscn
+enemy_circle_wave.tscn::PackedScene::4995214636039818170::1741879306::0::1::::<><><><>::uid://bp25vb2ebvwto::::res://Scripts/Combat/enemy_circle_wave.gd<>uid://cjmnm80y4xmca::::res://Assets/spritePNGs/Enemy_Wave_Circ.png<>uid://sus6s80ptul7::::res://AI Modules/Detectors/target_detector.tscn
 ::res://Combat Scenes/Solid Scenes/::1741652903
 circle_turret_summon.tscn::PackedScene::6502569589882159689::1741652903::0::1::::<><><><>::uid://gqsurgljuph3::::res://Scripts/Combat/circle_turret_summon.gd<>uid://qgug4aeb1wku::::res://Assets/spritePNGs/Circle_Turret .png<>uid://sus6s80ptul7::::res://AI Modules/Detectors/target_detector.tscn
 ::res://Combat Scenes/System Scenes/::1741652903
@@ -113,33 +126,33 @@ bullet_spawner.tscn::PackedScene::8680883145345190008::1741652903::0::1::::<><><
 solid_patterner.tscn::PackedScene::3579868799478722750::1741652903::0::1::::<><><><>::uid://neadimsb1rfw::::res://Scripts/Combat/solid_patterner.gd
 solid_spawner.tscn::PackedScene::2484852791737106147::1741652903::0::1::::<><><><>::
 ::res://Overworld Scenes/::1741652903
-::res://Overworld Scenes/Object Scenes/::1741652903
+::res://Overworld Scenes/Object Scenes/::1741879306
 exit.tscn::PackedScene::8578358213318671069::1741652903::0::1::::<><><><>::uid://dh5inwk1rfh1f::::res://Scripts/exit.gd
 house_circle.tscn::PackedScene::5597259990996524581::1741652903::0::1::::<><><><>::uid://bbppmat8qe4r3::::res://Assets/Shapes/whitecircle.png
 unlockable.tscn::PackedScene::7793457420829501698::1741652903::0::1::::<><><><>::
-wall_circle.tscn::PackedScene::3247503082540635525::1741652903::0::1::::<><><><>::uid://bbppmat8qe4r3::::res://Assets/Shapes/whitecircle.png
-wall_mantle.tscn::PackedScene::1997833414193736217::1741652903::0::1::::<><><><>::uid://bbppmat8qe4r3::::res://Assets/Shapes/whitecircle.png
+wall_circle.tscn::PackedScene::3247503082540635525::1741879306::0::1::::<><><><>::uid://bw5wba4ai8jeh::::res://Scripts/wall_square.gd<>uid://bbppmat8qe4r3::::res://Assets/Shapes/whitecircle.png
+wall_mantle.tscn::PackedScene::1997833414193736217::1741879306::0::1::::<><><><>::uid://bbppmat8qe4r3::::res://Assets/Shapes/whitecircle.png<>uid://bw5wba4ai8jeh::::res://Scripts/wall_square.gd
 wall_square.tscn::PackedScene::8458494857368978959::1741652903::0::1::::<><><><>::uid://bw5wba4ai8jeh::::res://Scripts/wall_square.gd<>uid://buja428afyam8::::res://Assets/Shapes/whitesquare.png
-::res://Overworld Scenes/Player Scenes/::1741652903
-player.tscn::PackedScene::537478706619329816::1741652903::0::1::::<><><><>::uid://nd5ld3cd0fqo::::res://Scripts/player.gd<>uid://b0v3u7ufltkm2::::res://Assets/spritePNGs/Cigil_1.0.png
+::res://Overworld Scenes/Player Scenes/::1741879306
+player.tscn::PackedScene::537478706619329816::1741879306::0::1::::<><><><>::uid://nd5ld3cd0fqo::::res://Scripts/player.gd<>uid://b0v3u7ufltkm2::::res://Assets/spritePNGs/Cigil_1.0.png
 ::res://Room Scenes/::1741652903
 template_room.tscn::PackedScene::6745130630165545008::1741652903::0::1::::<><><><>::uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn
-::res://Room Scenes/Circle City/::1741721066
+::res://Room Scenes/Circle City/::1741879306
 cigil_room.tscn::PackedScene::2668005533816128570::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn
-circle_corridor.tscn::PackedScene::5764270827928797293::1741721066::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://4i7rpstg74wt::::res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn
-circle_houses_1.tscn::PackedScene::2769744006822376990::1741711167::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://cjsueo0vnhbkv::::res://Assets/spritePNGs/Environment_Cir_House.png
+circle_corridor.tscn::PackedScene::5764270827928797293::1741879306::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://4i7rpstg74wt::::res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn<>uid://c1w5jhxknb674::::res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn
+circle_houses_1.tscn::PackedScene::2769744006822376990::1741879306::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://cjsueo0vnhbkv::::res://Assets/spritePNGs/Environment_Cir_House.png
 circle_houses_2.tscn::PackedScene::8685514583535422549::1741712508::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://cjsueo0vnhbkv::::res://Assets/spritePNGs/Environment_Cir_House.png
 circle_houses_3.tscn::PackedScene::1265089038911840566::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn
-::res://Room Scenes/Circle Mantle/::1741652903
-mantle_00.tscn::PackedScene::6393782624428518876::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn<>uid://c1w5jhxknb674::::res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn
+::res://Room Scenes/Circle Mantle/::1741879306
+mantle_00.tscn::PackedScene::6393782624428518876::1741879306::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn<>uid://c1w5jhxknb674::::res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn
 mantle_02.tscn::PackedScene::3606457651427200704::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn<>uid://cdfypqi8cem6m::::res://Combat Scenes/Enemy Scenes/enemy_circle_wave.tscn<>uid://c1w5jhxknb674::::res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn
-mantle_04.tscn::PackedScene::8047076294796588156::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn<>uid://dd7qwjqktm7b2::::res://Combat Scenes/Enemy Scenes/enemy_circle_eightshooter.tscn
+mantle_04.tscn::PackedScene::8047076294796588156::1741879306::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn<>uid://dd7qwjqktm7b2::::res://Combat Scenes/Enemy Scenes/enemy_circle_eightshooter.tscn
 mantle_05.tscn::PackedScene::593373420337105121::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn<>uid://dd7qwjqktm7b2::::res://Combat Scenes/Enemy Scenes/enemy_circle_eightshooter.tscn<>uid://dwsnmdabrmlo8::::res://Combat Scenes/Enemy Scenes/enemy_circle_chaser.tscn
 mantle_06.tscn::PackedScene::6262889596774291595::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn<>uid://cdfypqi8cem6m::::res://Combat Scenes/Enemy Scenes/enemy_circle_wave.tscn<>uid://dwsnmdabrmlo8::::res://Combat Scenes/Enemy Scenes/enemy_circle_chaser.tscn
 mantle_07.tscn::PackedScene::556855219842544130::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn<>uid://dwsnmdabrmlo8::::res://Combat Scenes/Enemy Scenes/enemy_circle_chaser.tscn<>uid://4i7rpstg74wt::::res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn<>uid://cdfypqi8cem6m::::res://Combat Scenes/Enemy Scenes/enemy_circle_wave.tscn
 mantle_11.tscn::PackedScene::2417177671146647643::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn
 mantle_12.tscn::PackedScene::8009474698669693596::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn
-mantle_14.tscn::PackedScene::6154135906177243354::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn<>uid://c1w5jhxknb674::::res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn
+mantle_14.tscn::PackedScene::6154135906177243354::1741879306::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn<>uid://c1w5jhxknb674::::res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn<>uid://dwsnmdabrmlo8::::res://Combat Scenes/Enemy Scenes/enemy_circle_chaser.tscn
 mantle_18.tscn::PackedScene::130859709252799121::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn<>uid://dd7qwjqktm7b2::::res://Combat Scenes/Enemy Scenes/enemy_circle_eightshooter.tscn<>uid://c1w5jhxknb674::::res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn
 mantle_20.tscn::PackedScene::4041536117656151266::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn
 mantle_24.tscn::PackedScene::3624655079472526511::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn
@@ -149,7 +162,7 @@ mantle_35.tscn::PackedScene::8008017080153383777::1741652903::0::1::::<><><><>::
 mantle_37.tscn::PackedScene::2241339008561984616::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn
 mantle_42.tscn::PackedScene::198560153400114284::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn
 mantle_-15.tscn::PackedScene::5836943126181481988::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn<>uid://c1w5jhxknb674::::res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn<>uid://dd7qwjqktm7b2::::res://Combat Scenes/Enemy Scenes/enemy_circle_eightshooter.tscn<>uid://4i7rpstg74wt::::res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn<>uid://dwsnmdabrmlo8::::res://Combat Scenes/Enemy Scenes/enemy_circle_chaser.tscn
-mantle_-20.tscn::PackedScene::1770281204479978193::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn<>uid://cdfypqi8cem6m::::res://Combat Scenes/Enemy Scenes/enemy_circle_wave.tscn<>uid://dd7qwjqktm7b2::::res://Combat Scenes/Enemy Scenes/enemy_circle_eightshooter.tscn
+mantle_-20.tscn::PackedScene::1770281204479978193::1741879306::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn<>uid://cdfypqi8cem6m::::res://Combat Scenes/Enemy Scenes/enemy_circle_wave.tscn<>uid://c1w5jhxknb674::::res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn
 mantle_-23.tscn::PackedScene::9136417946641255443::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn<>uid://c1w5jhxknb674::::res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn<>uid://4i7rpstg74wt::::res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn
 mantle_-26.tscn::PackedScene::1572947358177699782::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn
 mantle_-27.tscn::PackedScene::4105875361839549087::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://3p1a3i1jkvbd::::res://Overworld Scenes/Object Scenes/wall_mantle.tscn
@@ -162,35 +175,35 @@ mantle_-43.tscn::PackedScene::7095155155408687281::1741652903::0::1::::<><><><>:
 clidean_room.tscn::PackedScene::2587584788021073486::1741652903::0::1::::<><><><>::uid://duhokojc6cecj::::res://Overworld Scenes/Object Scenes/exit.tscn<>uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn<>uid://papvh6mjcv7y::::res://Combat Scenes/Enemy Scenes/enemy_circle_clidean.tscn
 ::res://Room Scenes/Dev/::1741652903
 test_room.tscn::PackedScene::5801820842271364348::1741652903::0::1::::<><><><>::uid://dsrmf6yrx14yl::::res://Overworld Scenes/Object Scenes/wall_square.tscn
-::res://Scripts/::1741721066
+::res://Scripts/::1741879306
 camera.gd::GDScript::-1::1741652903::0::1::::<>Camera2D<><><>::
 exit.gd::GDScript::-1::1741652903::0::1::::<>Area2D<><><>::
-player.gd::GDScript::-1::1741721066::0::1::::<>CharacterBody2D<><><>::
+player.gd::GDScript::-1::1741879306::0::1::::<>CharacterBody2D<><><>::
 wall_square.gd::GDScript::-1::1741652903::0::1::::<>CharacterBody2D<><><>::
-::res://Scripts/Combat/::1741652903
-bullet.gd::GDScript::-1::1741652903::0::1::::<>CharacterBody2D<><><>::
+::res://Scripts/Combat/::1741879306
+bullet.gd::GDScript::-1::1741879306::0::1::::<>CharacterBody2D<><><>::
 bullet_patterner.gd::GDScript::-1::1741652903::0::1::::<>Node2D<><><>::
 circle_of_bullets.gd::GDScript::-1::1741652903::0::1::::<>CharacterBody2D<><><>::
-circle_turret_summon.gd::GDScript::-1::1741652903::0::1::::<>CharacterBody2D<><><>::
-clidean_ai.gd::GDScript::-1::1741652903::0::1::::<>CharacterBody2D<><><>::
-enemy_circle_basic.gd::GDScript::-1::1741652903::0::1::::<>CharacterBody2D<><><>::
-enemy_circle_chaser.gd::GDScript::-1::1741652903::0::1::::<>CharacterBody2D<><><>::
+circle_turret_summon.gd::GDScript::-1::1741879306::0::1::::<>CharacterBody2D<><><>::
+clidean_ai.gd::GDScript::-1::1741879306::0::1::::<>CharacterBody2D<><><>::
+enemy_circle_basic.gd::GDScript::-1::1741879306::0::1::::<>CharacterBody2D<><><>::
+enemy_circle_chaser.gd::GDScript::-1::1741879306::0::1::::<>CharacterBody2D<><><>::
 enemy_circle_corrupted.gd::GDScript::-1::1741652903::0::1::::<>CharacterBody2D<><><>::
-enemy_circle_eightshooter.gd::GDScript::-1::1741652903::0::1::::<>CharacterBody2D<><><>::
+enemy_circle_eightshooter.gd::GDScript::-1::1741879306::0::1::::<>CharacterBody2D<><><>::
 enemy_circle_octoshot.gd::GDScript::-1::1741652903::0::1::::<>CharacterBody2D<><><>::
-enemy_circle_wave.gd::GDScript::-1::1741652903::0::1::::<>CharacterBody2D<><><>::
+enemy_circle_wave.gd::GDScript::-1::1741879306::0::1::::<>CharacterBody2D<><><>::
 solid_patterner.gd::GDScript::-1::1741652903::0::1::::<>Node2D<><><>::
-::res://Scripts/Global/::1741721067
+::res://Scripts/Global/::1741879306
 AttackSpawner.gd::GDScript::-1::1741652903::0::1::::<>Node<><><>::
-RoomLoader.gd::GDScript::-1::1741721067::0::1::::<>Node<><><>::
+RoomLoader.gd::GDScript::-1::1741879306::0::1::::<>Node<><><>::
 transition_screen.gd::GDScript::-1::1741652903::0::1::::<>CanvasLayer<><><>::
-::res://UI Scenes/::1741711168
+::res://UI Scenes/::1741879306
 main_menu.gd::GDScript::-1::1741711168::0::1::::MainMenu<>Control<><><>::
 main_menu.tscn::PackedScene::8851251271669404925::1741653426::0::1::::<><><><>::res://UI Scenes/main_menu.gd<>uid://dygqbwlpf7sx3::::res://UI Scenes/options_menu.tscn
 options_menu.gd::GDScript::-1::1741652903::0::1::::OptionsMenu<>Control<><><>::
 options_menu.tscn::PackedScene::8857154995790651490::1741652903::0::1::::<><><><>::uid://ddvyk82t8r61m::::res://UI Scenes/options_menu.gd
 pause_menu.gd::GDScript::-1::1741652903::0::1::::PauseMenu<>Control<><><>::
 pause_menu.tscn::PackedScene::3162536630254555616::1741652903::0::1::::<><><><>::uid://bu4psw76fl3kt::::res://UI Scenes/pause_menu.gd
-player_ui.gd::GDScript::-1::1741652903::0::1::::<>Control<><><>::
+player_ui.gd::GDScript::-1::1741879306::0::1::::<>Control<><><>::
 player_ui.tscn::PackedScene::4980587370199462178::1741652903::0::1::::<><><><>::uid://b3bwwb3yp2s6r::::res://UI Scenes/player_ui.gd<>uid://c4m82to15c03o::::res://Assets/UI Sprites/Icon_Border.png<>uid://bkmcx2w6oyhds::::res://Assets/UI Sprites/Icon_Single_Circ.png<>uid://qjp3e0fpnfgi::::res://Assets/UI Sprites/Icon_3Shot_Circ.png<>uid://gbfacsfumxad::::res://Assets/leftclickz.png<>uid://c3mcklesdfoax::::res://Assets/UI Sprites/Icon_8Shot_Circ.png<>uid://dsdsy4mxcy3pf::::res://Assets/DarkKeys/E-Key.png<>uid://cf12ploul43cq::::res://Assets/UI Sprites/Icon_SpeedUp_Circ.png<>uid://ted40m5ovrw6::::res://Assets/rightclickz.png<>uid://b4mxva3chakxb::::res://Assets/UI Sprites/Icon_Turret_Circ.png<>uid://2t5ptb6l5vvd::::res://Assets/DarkKeys/Shift-Key.png<>uid://c7sabdv3d8an::::res://Assets/DarkKeys/Q-Key.png
 transition_screen.tscn::PackedScene::5054631213017939648::1741652903::0::1::::<><><><>::uid://dcg5381u0lg8k::::res://Scripts/Global/transition_screen.gd

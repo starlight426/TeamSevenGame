@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4mmimbtolx3t"
-path="res://.godot/imported/Enemy_Barrage_Sqr.png-bb62aa59f238a2b00395958e4708861b.ctex"
+uid="uid://cqjfo2mpx0gc5"
+path="res://.godot/imported/Bar_Health.png-88416c09ec62cfa8bc3faf8bc8332afa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/spritePNGs/Enemy_Barrage_Sqr.png"
-dest_files=["res://.godot/imported/Enemy_Barrage_Sqr.png-bb62aa59f238a2b00395958e4708861b.ctex"]
+source_file="res://Assets/UI Sprites/Bar_Health.png"
+dest_files=["res://.godot/imported/Bar_Health.png-88416c09ec62cfa8bc3faf8bc8332afa.ctex"]
 
 [params]
 
