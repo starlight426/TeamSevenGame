@@ -1,19 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://coeix0ks6w2t2"]
+[gd_scene load_steps=6 format=3 uid="uid://coeix0ks6w2t2"]
 
-[ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_4t8d4"]
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_ds34k"]
 [ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="2_nh6fj"]
 [ext_resource type="PackedScene" uid="uid://4i7rpstg74wt" path="res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn" id="3_axvfw"]
 [ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="4_lem1q"]
 [ext_resource type="PackedScene" uid="uid://c1w5jhxknb674" path="res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn" id="5_ji2d8"]
-[ext_resource type="Texture2D" uid="uid://fd1bo6fne3dc" path="res://Assets/Shapes/Wall_Mantle.png" id="7_y8ie7"]
 
 [node name="TemplateRoom" type="Node2D"]
-
-[node name="Floor" type="Sprite2D" parent="."]
-position = Vector2(-2915, -26769)
-scale = Vector2(4.73318, 18.4793)
-texture = ExtResource("1_4t8d4")
 
 [node name="exit" parent="." instance=ExtResource("1_ds34k")]
 position = Vector2(-10000, -22500)
@@ -124,13 +117,3 @@ target_group = "Circle Mantle"
 
 [node name="EnemyCircleCorrupted" parent="." instance=ExtResource("5_ji2d8")]
 position = Vector2(-2063, -28693)
-
-[node name="WallMantle3" type="Sprite2D" parent="."]
-position = Vector2(-12893, -53312)
-scale = Vector2(4.04, 4.12)
-texture = ExtResource("7_y8ie7")
-
-[node name="WallMantle4" type="Sprite2D" parent="."]
-position = Vector2(9123, -52928)
-scale = Vector2(4.04, 4.12)
-texture = ExtResource("7_y8ie7")

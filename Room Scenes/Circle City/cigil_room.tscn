@@ -1,15 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://beanwqrmn4ka1"]
+[gd_scene load_steps=3 format=3 uid="uid://beanwqrmn4ka1"]
 
-[ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_ip6ev"]
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_yabxm"]
 [ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="2_oigo2"]
 
 [node name="TemplateRoom" type="Node2D"]
-
-[node name="Floor" type="Sprite2D" parent="."]
-position = Vector2(2000, 0)
-scale = Vector2(3.71875, 2.8125)
-texture = ExtResource("1_ip6ev")
 
 [node name="exit" parent="." instance=ExtResource("1_yabxm")]
 position = Vector2(-4000, 0)
@@ -57,7 +51,7 @@ position = Vector2(-4000, -3000)
 scale = Vector2(6, 10)
 
 [node name="WallSquare6" parent="." instance=ExtResource("2_oigo2")]
-position = Vector2(-4750, 3000)
+position = Vector2(-4000, 3000)
 scale = Vector2(6, 10)
 
 [node name="WallSquare4" parent="." instance=ExtResource("2_oigo2")]

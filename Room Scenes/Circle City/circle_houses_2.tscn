@@ -1,15 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dv0lfkuedqrkn"]
+[gd_scene load_steps=4 format=3 uid="uid://dv0lfkuedqrkn"]
 
-[ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_8lmx4"]
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_w2ptu"]
 [ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="2_60dey"]
 [ext_resource type="Texture2D" uid="uid://cjsueo0vnhbkv" path="res://Assets/spritePNGs/Environment_Cir_House.png" id="3_gqqlh"]
 
 [node name="TemplateRoom2" type="Node2D"]
-
-[node name="Floor" type="Sprite2D" parent="."]
-scale = Vector2(2.88, 2.72)
-texture = ExtResource("1_8lmx4")
 
 [node name="exit" parent="." instance=ExtResource("1_w2ptu")]
 position = Vector2(-4000, 0)

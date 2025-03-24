@@ -1,17 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://b4nif1pt6vbt"]
+[gd_scene load_steps=5 format=3 uid="uid://b4nif1pt6vbt"]
 
-[ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_01hf3"]
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_wfm67"]
 [ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="2_d3v04"]
 [ext_resource type="PackedScene" uid="uid://dd7qwjqktm7b2" path="res://Combat Scenes/Enemy Scenes/enemy_circle_eightshooter.tscn" id="3_ap6iu"]
 [ext_resource type="PackedScene" uid="uid://c1w5jhxknb674" path="res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn" id="4_a8y5n"]
 
 [node name="TemplateRoom" type="Node2D"]
-
-[node name="Floor" type="Sprite2D" parent="."]
-position = Vector2(5500, -1500)
-scale = Vector2(5.28, 5.76)
-texture = ExtResource("1_01hf3")
 
 [node name="exit" parent="." instance=ExtResource("1_wfm67")]
 position = Vector2(-4000, 0)
