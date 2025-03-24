@@ -1,10 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://bc4pe41rb62na"]
+[gd_scene load_steps=5 format=3 uid="uid://bc4pe41rb62na"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_7ur5v"]
+[ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_jtw23"]
 [ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="2_m4mpu"]
 [ext_resource type="PackedScene" uid="uid://papvh6mjcv7y" path="res://Combat Scenes/Enemy Scenes/enemy_circle_clidean.tscn" id="3_57x4n"]
 
 [node name="TemplateRoom" type="Node2D"]
+
+[node name="Floor" type="Sprite2D" parent="."]
+position = Vector2(0, -500)
+scale = Vector2(3.84, 5.88)
+texture = ExtResource("1_jtw23")
 
 [node name="exit" parent="." instance=ExtResource("1_7ur5v")]
 position = Vector2(-13000, 1000)
