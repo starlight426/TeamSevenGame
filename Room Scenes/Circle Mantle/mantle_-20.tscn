@@ -9,6 +9,7 @@
 [node name="TemplateRoom" type="Node2D"]
 
 [node name="Floor" type="Sprite2D" parent="."]
+z_index = -10
 position = Vector2(1500, -3250)
 scale = Vector2(4.92, 5.04)
 texture = ExtResource("1_0pxn2")
