@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://coeix0ks6w2t2"]
+[gd_scene load_steps=9 format=3 uid="uid://coeix0ks6w2t2"]
 
 [ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_4t8d4"]
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_ds34k"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://4i7rpstg74wt" path="res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn" id="3_axvfw"]
 [ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="4_lem1q"]
 [ext_resource type="PackedScene" uid="uid://c1w5jhxknb674" path="res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn" id="5_ji2d8"]
+[ext_resource type="Texture2D" uid="uid://djjd7blv11u24" path="res://Assets/Shapes/Wall_CircleCity.png" id="7_qwq7d"]
 [ext_resource type="Texture2D" uid="uid://fd1bo6fne3dc" path="res://Assets/Shapes/Wall_Mantle.png" id="7_y8ie7"]
 
 [node name="TemplateRoom" type="Node2D"]
@@ -126,6 +127,18 @@ target_group = "Circle Mantle"
 [node name="EnemyCircleCorrupted" parent="." instance=ExtResource("5_ji2d8")]
 position = Vector2(-2063, -28693)
 
+[node name="WallCircleCity11" type="Sprite2D" parent="."]
+position = Vector2(-10018, -43922)
+rotation = -1.5708
+scale = Vector2(2.93381, 5.03219)
+texture = ExtResource("7_qwq7d")
+
+[node name="WallCircleCity17" type="Sprite2D" parent="."]
+position = Vector2(5519, -41694)
+rotation = 1.5708
+scale = Vector2(3.46869, 5.03219)
+texture = ExtResource("7_qwq7d")
+
 [node name="WallMantle3" type="Sprite2D" parent="."]
 position = Vector2(-12893, -53312)
 scale = Vector2(4.04, 4.12)
@@ -135,3 +148,93 @@ texture = ExtResource("7_y8ie7")
 position = Vector2(9123, -52928)
 scale = Vector2(4.04, 4.12)
 texture = ExtResource("7_y8ie7")
+
+[node name="WallCircleCity6" type="Sprite2D" parent="."]
+position = Vector2(-2292, 6408)
+rotation = -3.14159
+scale = Vector2(5.30866, 7.81618)
+texture = ExtResource("7_qwq7d")
+
+[node name="WallCircleCity" type="Sprite2D" parent="."]
+position = Vector2(-10004, -210)
+rotation = -1.5708
+scale = Vector2(3.63327, 5.03219)
+texture = ExtResource("7_qwq7d")
+
+[node name="WallCircleCity5" type="Sprite2D" parent="."]
+position = Vector2(5556, -3645.44)
+rotation = 1.5708
+scale = Vector2(3.14609, 5.07334)
+texture = ExtResource("7_qwq7d")
+
+[node name="WallCircleCity12" type="Sprite2D" parent="."]
+position = Vector2(5522, -9947)
+rotation = 1.5708
+scale = Vector2(3.13953, 5.03219)
+texture = ExtResource("7_qwq7d")
+
+[node name="WallCircleCity13" type="Sprite2D" parent="."]
+position = Vector2(5532, -16227)
+rotation = 1.5708
+scale = Vector2(3.13953, 5.03219)
+texture = ExtResource("7_qwq7d")
+
+[node name="WallCircleCity14" type="Sprite2D" parent="."]
+position = Vector2(5533, -22511)
+rotation = 1.5708
+scale = Vector2(3.13953, 5.03219)
+texture = ExtResource("7_qwq7d")
+
+[node name="WallCircleCity15" type="Sprite2D" parent="."]
+position = Vector2(5522, -28806)
+rotation = 1.5708
+scale = Vector2(3.13953, 5.03219)
+texture = ExtResource("7_qwq7d")
+
+[node name="WallCircleCity16" type="Sprite2D" parent="."]
+position = Vector2(5520, -35080)
+rotation = 1.5708
+scale = Vector2(3.13953, 5.03219)
+texture = ExtResource("7_qwq7d")
+
+[node name="WallCircleCity7" type="Sprite2D" parent="."]
+position = Vector2(5499, 5168)
+rotation = 1.5708
+scale = Vector2(4.68925, 5.03219)
+texture = ExtResource("7_qwq7d")
+
+[node name="WallCircleCity2" type="Sprite2D" parent="."]
+position = Vector2(-10001, -6984)
+rotation = -1.5708
+scale = Vector2(3.13953, 5.03219)
+texture = ExtResource("7_qwq7d")
+
+[node name="WallCircleCity3" type="Sprite2D" parent="."]
+position = Vector2(-9999, -13212)
+rotation = -1.5708
+scale = Vector2(3.13953, 5.03219)
+texture = ExtResource("7_qwq7d")
+
+[node name="WallCircleCity4" type="Sprite2D" parent="."]
+position = Vector2(-9999, -19136.7)
+rotation = -1.5708
+scale = Vector2(2.93381, 5.03219)
+texture = ExtResource("7_qwq7d")
+
+[node name="WallCircleCity8" type="Sprite2D" parent="."]
+position = Vector2(-10018, -26411)
+rotation = -1.5708
+scale = Vector2(2.93381, 5.03219)
+texture = ExtResource("7_qwq7d")
+
+[node name="WallCircleCity9" type="Sprite2D" parent="."]
+position = Vector2(-10018, -32271)
+rotation = -1.5708
+scale = Vector2(2.93381, 5.03219)
+texture = ExtResource("7_qwq7d")
+
+[node name="WallCircleCity10" type="Sprite2D" parent="."]
+position = Vector2(-10018, -38131)
+rotation = -1.5708
+scale = Vector2(2.93381, 5.03219)
+texture = ExtResource("7_qwq7d")

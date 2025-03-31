@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://beanwqrmn4ka1"]
+[gd_scene load_steps=5 format=3 uid="uid://beanwqrmn4ka1"]
 
 [ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_ip6ev"]
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_yabxm"]
 [ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="2_oigo2"]
+[ext_resource type="Texture2D" uid="uid://djjd7blv11u24" path="res://Assets/Shapes/Wall_CircleCity.png" id="4_5a3nk"]
 
 [node name="TemplateRoom" type="Node2D"]
 
@@ -58,7 +59,7 @@ position = Vector2(-4000, -3000)
 scale = Vector2(6, 10)
 
 [node name="WallSquare6" parent="." instance=ExtResource("2_oigo2")]
-position = Vector2(-4750, 3000)
+position = Vector2(-4000, 3000)
 scale = Vector2(6, 10)
 
 [node name="WallSquare4" parent="." instance=ExtResource("2_oigo2")]
@@ -107,3 +108,88 @@ theme_override_font_sizes/font_size = 256
 text = "DEV ROOMS
 
 "
+
+[node name="WallCircleCity" type="Sprite2D" parent="."]
+position = Vector2(-1500, -3125)
+scale = Vector2(1, 1.25)
+texture = ExtResource("4_5a3nk")
+
+[node name="WallCircleCity9" type="Sprite2D" parent="."]
+position = Vector2(-1500, 3125)
+rotation = 3.14159
+scale = Vector2(1, 1.25)
+texture = ExtResource("4_5a3nk")
+
+[node name="WallCircleCity6" type="Sprite2D" parent="."]
+position = Vector2(-4000, -1062.5)
+scale = Vector2(1.5, 1.125)
+texture = ExtResource("4_5a3nk")
+
+[node name="WallCircleCity7" type="Sprite2D" parent="."]
+position = Vector2(-4000, 1034.47)
+rotation = 3.14159
+scale = Vector2(1.5, 1.09545)
+texture = ExtResource("4_5a3nk")
+
+[node name="WallCircleCity4" type="Sprite2D" parent="."]
+position = Vector2(5125, -3125)
+scale = Vector2(1.125, 1.25)
+texture = ExtResource("4_5a3nk")
+
+[node name="WallCircleCity5" type="Sprite2D" parent="."]
+position = Vector2(-3181.05, -2657.6)
+rotation = -1.5708
+scale = Vector2(1.0462, 1.35835)
+texture = ExtResource("4_5a3nk")
+
+[node name="WallCircleCity8" type="Sprite2D" parent="."]
+position = Vector2(-3195.83, 2656.43)
+rotation = -1.5708
+scale = Vector2(1.0856, 1.39775)
+texture = ExtResource("4_5a3nk")
+
+[node name="WallCircleCity3" type="Sprite2D" parent="."]
+position = Vector2(2875, -3125)
+scale = Vector2(1.125, 1.25)
+texture = ExtResource("4_5a3nk")
+
+[node name="WallCircleCity2" type="Sprite2D" parent="."]
+position = Vector2(625, -3125)
+scale = Vector2(1.125, 1.25)
+texture = ExtResource("4_5a3nk")
+
+[node name="WallCircleCity10" type="Sprite2D" parent="."]
+position = Vector2(625, 3125)
+rotation = 3.14159
+scale = Vector2(1.125, 1.25)
+texture = ExtResource("4_5a3nk")
+
+[node name="WallCircleCity11" type="Sprite2D" parent="."]
+position = Vector2(2878.05, 3123.12)
+rotation = 3.14159
+scale = Vector2(1.13485, 1.24015)
+texture = ExtResource("4_5a3nk")
+
+[node name="WallCircleCity12" type="Sprite2D" parent="."]
+position = Vector2(5136.73, 3131.8)
+rotation = 3.14159
+scale = Vector2(1.125, 1.24015)
+texture = ExtResource("4_5a3nk")
+
+[node name="WallCircleCity13" type="Sprite2D" parent="."]
+position = Vector2(6960.6, 2602)
+rotation = 1.5708
+scale = Vector2(1.13978, 1.41744)
+texture = ExtResource("4_5a3nk")
+
+[node name="WallCircleCity14" type="Sprite2D" parent="."]
+position = Vector2(6965.53, -30.9685)
+rotation = 1.5708
+scale = Vector2(1.49929, 1.40759)
+texture = ExtResource("4_5a3nk")
+
+[node name="WallCircleCity15" type="Sprite2D" parent="."]
+position = Vector2(6960.6, -2629.47)
+rotation = 1.5708
+scale = Vector2(1.11023, 1.42729)
+texture = ExtResource("4_5a3nk")
