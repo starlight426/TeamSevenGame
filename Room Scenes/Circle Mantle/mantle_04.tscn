@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dmwcf2sm0yl5e"]
+[gd_scene load_steps=6 format=3 uid="uid://dmwcf2sm0yl5e"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_4omew"]
 [ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_ydgku"]
 [ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="2_ekvcn"]
 [ext_resource type="PackedScene" uid="uid://dd7qwjqktm7b2" path="res://Combat Scenes/Enemy Scenes/enemy_circle_eightshooter.tscn" id="3_5vofv"]
+[ext_resource type="Texture2D" uid="uid://fd1bo6fne3dc" path="res://Assets/Shapes/Wall_Mantle.png" id="5_7cg3d"]
 
 [node name="TemplateRoom" type="Node2D"]
 
@@ -120,3 +121,59 @@ scale = Vector2(5, 5)
 
 [node name="EnemyCircleEightShooter" parent="." instance=ExtResource("3_5vofv")]
 position = Vector2(2000, -500)
+
+[node name="WallMantle15" type="Sprite2D" parent="."]
+position = Vector2(-8500, -500)
+texture = ExtResource("5_7cg3d")
+
+[node name="WallMantle16" type="Sprite2D" parent="."]
+position = Vector2(-6000, -3500)
+texture = ExtResource("5_7cg3d")
+
+[node name="WallMantle17" type="Sprite2D" parent="."]
+position = Vector2(-2000, -4500)
+texture = ExtResource("5_7cg3d")
+
+[node name="WallMantle18" type="Sprite2D" parent="."]
+position = Vector2(1500, -5000)
+texture = ExtResource("5_7cg3d")
+
+[node name="WallMantle19" type="Sprite2D" parent="."]
+position = Vector2(4500, -5500)
+texture = ExtResource("5_7cg3d")
+
+[node name="WallMantle20" type="Sprite2D" parent="."]
+position = Vector2(7500, -6000)
+texture = ExtResource("5_7cg3d")
+
+[node name="WallMantle21" type="Sprite2D" parent="."]
+position = Vector2(10500, -6000)
+texture = ExtResource("5_7cg3d")
+
+[node name="WallMantle22" type="Sprite2D" parent="."]
+position = Vector2(-5500, 5000)
+texture = ExtResource("5_7cg3d")
+
+[node name="WallMantle23" type="Sprite2D" parent="."]
+position = Vector2(-3500, 5000)
+texture = ExtResource("5_7cg3d")
+
+[node name="WallMantle24" type="Sprite2D" parent="."]
+position = Vector2(0, 4500)
+texture = ExtResource("5_7cg3d")
+
+[node name="WallMantle25" type="Sprite2D" parent="."]
+position = Vector2(3500, 4000)
+texture = ExtResource("5_7cg3d")
+
+[node name="WallMantle26" type="Sprite2D" parent="."]
+position = Vector2(6000, 3000)
+texture = ExtResource("5_7cg3d")
+
+[node name="WallMantle27" type="Sprite2D" parent="."]
+position = Vector2(8000, 1500)
+texture = ExtResource("5_7cg3d")
+
+[node name="WallMantle28" type="Sprite2D" parent="."]
+position = Vector2(10000, 500)
+texture = ExtResource("5_7cg3d")
