@@ -15,7 +15,7 @@ texture = ExtResource("1_ip6ev")
 
 [node name="exit" parent="." instance=ExtResource("1_yabxm")]
 position = Vector2(-4000, 0)
-target_room = "circle_corridor_1"
+target_room = "circle_corridor"
 target_entrance = "from_right"
 target_group = "Circle City"
 
