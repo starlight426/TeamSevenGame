@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream
 uid="uid://cr7e6thadltlm"
+=======
+uid="uid://bjko85rs4nxgn"
+>>>>>>> Stashed changes
 path="res://.godot/imported/NPC_Survivor copy.png-521a8f69c64c7f98e0efeef73cd1d827.ctex"
 metadata={
 "vram_texture": false

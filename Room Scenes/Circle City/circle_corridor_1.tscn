@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream:Room Scenes/Circle City/circle_corridor.tscn
 [gd_scene load_steps=9 format=3 uid="uid://coeix0ks6w2t2"]
 
 [ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_4t8d4"]
@@ -8,6 +9,16 @@
 [ext_resource type="PackedScene" uid="uid://c1w5jhxknb674" path="res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn" id="5_ji2d8"]
 [ext_resource type="Texture2D" uid="uid://djjd7blv11u24" path="res://Assets/Shapes/Wall_CircleCity.png" id="7_qwq7d"]
 [ext_resource type="Texture2D" uid="uid://fd1bo6fne3dc" path="res://Assets/Shapes/Wall_Mantle.png" id="7_y8ie7"]
+=======
+[gd_scene load_steps=7 format=3 uid="uid://coeix0ks6w2t2"]
+
+[ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_r1juc"]
+[ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="2_luoa6"]
+[ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="3_otn5q"]
+[ext_resource type="PackedScene" uid="uid://4i7rpstg74wt" path="res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn" id="4_wp5cw"]
+[ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="5_038hv"]
+[ext_resource type="Texture2D" uid="uid://fd1bo6fne3dc" path="res://Assets/Shapes/Wall_Mantle.png" id="6_1b8mq"]
+>>>>>>> Stashed changes:Room Scenes/Circle City/circle_corridor_1.tscn
 
 [node name="TemplateRoom" type="Node2D"]
 
@@ -15,55 +26,55 @@
 z_index = -10
 position = Vector2(-2915, -26769)
 scale = Vector2(4.73318, 18.4793)
-texture = ExtResource("1_4t8d4")
+texture = ExtResource("1_r1juc")
 
-[node name="exit" parent="." instance=ExtResource("1_ds34k")]
+[node name="exit" parent="." instance=ExtResource("2_luoa6")]
 position = Vector2(-10000, -22500)
 scale = Vector2(5, 5)
 target_room = "circle_houses_1"
 target_entrance = "from_right"
 target_group = "Circle City"
 
-[node name="exit4" parent="." instance=ExtResource("1_ds34k")]
+[node name="exit4" parent="." instance=ExtResource("2_luoa6")]
 position = Vector2(0, 4000)
 target_room = ""
 target_entrance = "from_top"
 
-[node name="exit3" parent="." instance=ExtResource("1_ds34k")]
+[node name="exit3" parent="." instance=ExtResource("2_luoa6")]
 position = Vector2(4750, 0)
 target_room = "cigil_room"
 target_entrance = "from_left"
 target_group = "Circle City"
 
-[node name="WallSquare7" parent="." instance=ExtResource("2_nh6fj")]
+[node name="WallSquare7" parent="." instance=ExtResource("3_otn5q")]
 position = Vector2(-5250, 4000)
 scale = Vector2(20, 6)
 
-[node name="WallSquare8" parent="." instance=ExtResource("2_nh6fj")]
+[node name="WallSquare8" parent="." instance=ExtResource("3_otn5q")]
 position = Vector2(2000, 4000)
 scale = Vector2(10, 6)
 
-[node name="WallSquare2" parent="." instance=ExtResource("2_nh6fj")]
+[node name="WallSquare2" parent="." instance=ExtResource("3_otn5q")]
 position = Vector2(5500, -13000)
 scale = Vector2(10, 50)
 
-[node name="WallSquare6" parent="." instance=ExtResource("2_nh6fj")]
+[node name="WallSquare6" parent="." instance=ExtResource("3_otn5q")]
 position = Vector2(5500, -28000)
 scale = Vector2(10, 50)
 
-[node name="WallSquare9" parent="." instance=ExtResource("2_nh6fj")]
+[node name="WallSquare9" parent="." instance=ExtResource("3_otn5q")]
 position = Vector2(5500, -36000)
 scale = Vector2(10, 50)
 
-[node name="WallSquare3" parent="." instance=ExtResource("2_nh6fj")]
-position = Vector2(-10000, -9500)
+[node name="WallSquare3" parent="." instance=ExtResource("3_otn5q")]
+position = Vector2(-10000, -12000)
 scale = Vector2(10, 50)
 
-[node name="WallSquare5" parent="." instance=ExtResource("2_nh6fj")]
+[node name="WallSquare5" parent="." instance=ExtResource("3_otn5q")]
 position = Vector2(-10000, -36000)
 scale = Vector2(10, 50)
 
-[node name="WallSquare4" parent="." instance=ExtResource("2_nh6fj")]
+[node name="WallSquare4" parent="." instance=ExtResource("3_otn5q")]
 position = Vector2(4500, 3000)
 scale = Vector2(6, 10)
 
@@ -80,7 +91,7 @@ position = Vector2(3750, 0)
 position = Vector2(0, 3000)
 
 [node name="from_top" type="Marker2D" parent="."]
-position = Vector2(-2000, -51000)
+position = Vector2(-1660, -38463)
 
 [node name="right_camera_limit" type="Marker2D" parent="."]
 position = Vector2(4250, 0)
@@ -91,39 +102,31 @@ position = Vector2(-2000, -52000)
 [node name="bottom_camera_limit" type="Marker2D" parent="."]
 position = Vector2(-2000, 4500)
 
-[node name="EnemyCircleBasic" parent="." instance=ExtResource("3_axvfw")]
-position = Vector2(-4500, -7500)
+[node name="EnemyCircleBasic" parent="." instance=ExtResource("4_wp5cw")]
+position = Vector2(-1500, -9500)
 
-[node name="EnemyCircleBasic2" parent="." instance=ExtResource("3_axvfw")]
-position = Vector2(500, -13678)
+[node name="EnemyCircleBasic2" parent="." instance=ExtResource("4_wp5cw")]
+position = Vector2(2500, -22500)
 
-[node name="EnemyCircleBasic3" parent="." instance=ExtResource("3_axvfw")]
-position = Vector2(-4059, -17444)
+[node name="EnemyCircleBasic3" parent="." instance=ExtResource("4_wp5cw")]
+position = Vector2(-5500, -29500)
 
-[node name="EnemyCircleBasic4" parent="." instance=ExtResource("3_axvfw")]
-position = Vector2(1352, -23826)
-
-[node name="EnemyCircleBasic5" parent="." instance=ExtResource("3_axvfw")]
-position = Vector2(-353, -39968)
-
-[node name="EnemyCircleBasic6" parent="." instance=ExtResource("3_axvfw")]
-position = Vector2(-4207, -38117)
-
-[node name="WallMantle" parent="." instance=ExtResource("4_lem1q")]
+[node name="WallMantle" parent="." instance=ExtResource("5_038hv")]
 position = Vector2(9000, -53000)
 scale = Vector2(20, 20)
 
-[node name="WallMantle2" parent="." instance=ExtResource("4_lem1q")]
+[node name="WallMantle2" parent="." instance=ExtResource("5_038hv")]
 position = Vector2(-13000, -53500)
 scale = Vector2(20, 20)
 
-[node name="exit2" parent="." instance=ExtResource("1_ds34k")]
-position = Vector2(-2000, -53000)
+[node name="exit2" parent="." instance=ExtResource("2_luoa6")]
+position = Vector2(-1708, -41143)
 scale = Vector2(5, 5)
 target_room = "mantle_00"
 target_entrance = "from_bottom"
 target_group = "Circle Mantle"
 
+<<<<<<< Updated upstream:Room Scenes/Circle City/circle_corridor.tscn
 [node name="EnemyCircleCorrupted" parent="." instance=ExtResource("5_ji2d8")]
 position = Vector2(-2063, -28693)
 
@@ -139,14 +142,17 @@ rotation = 1.5708
 scale = Vector2(3.46869, 5.03219)
 texture = ExtResource("7_qwq7d")
 
+=======
+>>>>>>> Stashed changes:Room Scenes/Circle City/circle_corridor_1.tscn
 [node name="WallMantle3" type="Sprite2D" parent="."]
-position = Vector2(-12893, -53312)
+position = Vector2(-13000, -42500)
 scale = Vector2(4.04, 4.12)
-texture = ExtResource("7_y8ie7")
+texture = ExtResource("6_1b8mq")
 
 [node name="WallMantle4" type="Sprite2D" parent="."]
-position = Vector2(9123, -52928)
+position = Vector2(9000, -41500)
 scale = Vector2(4.04, 4.12)
+<<<<<<< Updated upstream:Room Scenes/Circle City/circle_corridor.tscn
 texture = ExtResource("7_y8ie7")
 
 [node name="WallCircleCity6" type="Sprite2D" parent="."]
@@ -238,3 +244,6 @@ position = Vector2(-10018, -38131)
 rotation = -1.5708
 scale = Vector2(2.93381, 5.03219)
 texture = ExtResource("7_qwq7d")
+=======
+texture = ExtResource("6_1b8mq")
+>>>>>>> Stashed changes:Room Scenes/Circle City/circle_corridor_1.tscn

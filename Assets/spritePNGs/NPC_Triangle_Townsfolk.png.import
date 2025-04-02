@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream
 uid="uid://dq820yu412phc"
+=======
+uid="uid://dos8cur83hodb"
+>>>>>>> Stashed changes
 path="res://.godot/imported/NPC_Triangle_Townsfolk.png-1ba722bf722831764e18febc4805fbb0.ctex"
 metadata={
 "vram_texture": false

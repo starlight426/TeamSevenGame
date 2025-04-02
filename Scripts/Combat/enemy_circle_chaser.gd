@@ -12,6 +12,7 @@ var color = "default"
 var type = "default"
 var angle_to_target
 var contact_dmg = 90
+var rng
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -19,6 +20,7 @@ func _ready() -> void:
 	await get_tree().create_timer(0.5).timeout
 	fire_ready = true
 	speed_switcher()
+	rng = RandomNumberGenerator.new()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
@@ -49,7 +51,7 @@ func on_hitbox_entered(body):
 		queue_free()
 func speed_switcher():
 	while(true):
-		await get_tree().create_timer(6).timeout
+		await get_tree().create_timer(4.0 + rng.randf_range(0,4.0)).timeout
 		speed /= 4
 		await get_tree().create_timer(1).timeout
 		speed *= 4

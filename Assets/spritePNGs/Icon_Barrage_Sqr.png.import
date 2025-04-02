@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream
 uid="uid://dn7lbpn40q0m6"
+=======
+uid="uid://buw5d7cdqbyuv"
+>>>>>>> Stashed changes
 path="res://.godot/imported/Icon_Barrage_Sqr.png-1c374d74e61f899304b1b8ed86336fe1.ctex"
 metadata={
 "vram_texture": false
