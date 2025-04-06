@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://byq6fxo46bsq6"]
+[gd_scene load_steps=3 format=3 uid="uid://bjh1201dlhtym"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_bc0yu"]
 [ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="2_0u04c"]

@@ -21,6 +21,7 @@ rotation = -1.5708
 texture = ExtResource("2_amkoj")
 
 [node name="TargetDetector" parent="." instance=ExtResource("3_if2d3")]
+visible = false
 scale = Vector2(30, 30)
 
 [node name="bullet_marker_1" type="Marker2D" parent="."]

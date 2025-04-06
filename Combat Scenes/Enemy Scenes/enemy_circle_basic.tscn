@@ -22,4 +22,5 @@ rotation = -1.5708
 texture = ExtResource("2_cr1ln")
 
 [node name="TargetDetector" parent="." instance=ExtResource("3_bwdb7")]
+visible = false
 scale = Vector2(40, 40)

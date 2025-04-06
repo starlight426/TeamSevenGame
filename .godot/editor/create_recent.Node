@@ -1,3 +1,4 @@
+Marker2D
 CharacterBody2D
 Sprite2D
 HBoxContainer
@@ -12,4 +13,3 @@ Button
 TextureRect
 CanvasLayer
 TextureButton
-Marker2D

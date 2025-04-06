@@ -1,0 +1,96 @@
+[gd_scene load_steps=4 format=3 uid="uid://sa23jm0hevja"]
+
+[ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_n5ri0"]
+[ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="2_i36t0"]
+[ext_resource type="PackedScene" uid="uid://ccm7n1wyyjidx" path="res://Combat Scenes/Enemy Scenes/enemy_circle_striker.tscn" id="3_7n4sg"]
+
+[node name="DevTestRoom" type="Node2D"]
+
+[node name="exit" parent="." instance=ExtResource("1_n5ri0")]
+position = Vector2(-13500, -2000)
+target_room = ""
+target_entrance = "from_right"
+
+[node name="exit4" parent="." instance=ExtResource("1_n5ri0")]
+position = Vector2(0, 4000)
+target_room = "cigil_room"
+target_entrance = "from_top"
+target_group = "Circle City"
+
+[node name="exit2" parent="." instance=ExtResource("1_n5ri0")]
+position = Vector2(-12500, -5000)
+target_room = ""
+target_entrance = "from_bottom"
+
+[node name="exit3" parent="." instance=ExtResource("1_n5ri0")]
+position = Vector2(11000, 5000)
+target_room = "circle_corridor"
+target_entrance = "from_topleft"
+target_group = "Circle City"
+
+[node name="WallSquare" parent="." instance=ExtResource("2_i36t0")]
+position = Vector2(-6000, -11500)
+scale = Vector2(10, 6)
+
+[node name="WallSquare7" parent="." instance=ExtResource("2_i36t0")]
+position = Vector2(-3000, 4000)
+scale = Vector2(10, 6)
+
+[node name="WallSquare8" parent="." instance=ExtResource("2_i36t0")]
+position = Vector2(5500, 4500)
+scale = Vector2(20, 6)
+
+[node name="WallSquare3" parent="." instance=ExtResource("2_i36t0")]
+position = Vector2(6500, -11000)
+scale = Vector2(50, 15)
+
+[node name="WallSquare10" parent="." instance=ExtResource("2_i36t0")]
+position = Vector2(15000, 8000)
+scale = Vector2(50, 20)
+
+[node name="WallSquare2" parent="." instance=ExtResource("2_i36t0")]
+position = Vector2(5500, -15500)
+scale = Vector2(6, 10)
+
+[node name="WallSquare5" parent="." instance=ExtResource("2_i36t0")]
+position = Vector2(-8500, -6500)
+scale = Vector2(12, 40)
+
+[node name="WallSquare9" parent="." instance=ExtResource("2_i36t0")]
+position = Vector2(19500, -2000)
+scale = Vector2(12, 40)
+
+[node name="WallSquare6" parent="." instance=ExtResource("2_i36t0")]
+position = Vector2(-7000, 4000)
+scale = Vector2(6, 10)
+
+[node name="WallSquare4" parent="." instance=ExtResource("2_i36t0")]
+position = Vector2(3000, 6000)
+scale = Vector2(6, 10)
+
+[node name="left_camera_limit" type="Marker2D" parent="."]
+position = Vector2(-5500, -500)
+
+[node name="from_left" type="Marker2D" parent="."]
+position = Vector2(-7500, -4500)
+
+[node name="from_right" type="Marker2D" parent="."]
+position = Vector2(8000, -500)
+
+[node name="from_bottom" type="Marker2D" parent="."]
+position = Vector2(0, 3000)
+
+[node name="from_top" type="Marker2D" parent="."]
+position = Vector2(0, -3000)
+
+[node name="right_camera_limit" type="Marker2D" parent="."]
+position = Vector2(19500, -500)
+
+[node name="top_camera_limit" type="Marker2D" parent="."]
+position = Vector2(0, -7500)
+
+[node name="bottom_camera_limit" type="Marker2D" parent="."]
+position = Vector2(0, 3500)
+
+[node name="EnemyCircleStriker" parent="." instance=ExtResource("3_7n4sg")]
+position = Vector2(3000, -1500)

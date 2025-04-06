@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed = 2000
+@export var speed = 2200
 @export var hp = 200
 @export var max_hp = hp
 @export var energy = 0
@@ -13,7 +13,7 @@ var is_paused = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	scale = Vector2(0.6,0.6)
+	scale = Vector2(0.5,0.5)
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -109,9 +109,9 @@ func move_cooldown(move_num):
 	move_readiness[move_num] = true
 	
 func speedup():
-	speed *= 2.0
+	speed *= 4.0
 	await get_tree().create_timer(3).timeout
-	speed /= 2.0
+	speed /= 4.0
 	
 func add_energy():
 	energy_ready = false

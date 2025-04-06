@@ -33,8 +33,7 @@ func spawn_pattern(passed_pos,passed_dir,pattern,passed_pattern_scale,passed_del
 	shape_to_spawn = passed_shape
 	mod1 = passed_mod1
 	mod2 = passed_mod2
-	mod2 = passed_mod3
-	
+	mod3 = passed_mod3
 	#these variables are passed to the spawn function every time because they change a lot
 	var pos = passed_pos
 	var dir = passed_dir
@@ -119,7 +118,7 @@ func sp(pos,dir,delay_num):
 	new_bullet.mod1 = mod1
 	new_bullet.mod2 = mod2
 	new_bullet.mod3 = mod3
-
+	
 	add_sibling(new_bullet)
 	new_bullet.start_moving()
 	

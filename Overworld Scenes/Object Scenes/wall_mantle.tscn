@@ -15,5 +15,6 @@ script = ExtResource("1_mina3")
 shape = SubResource("CircleShape2D_604i7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.47, 0.47)
+modulate = Color(0.906493, 0.906493, 0.906493, 1)
+scale = Vector2(0.465, 0.465)
 texture = ExtResource("1_jvr7a")

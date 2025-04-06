@@ -1,0 +1,229 @@
+[gd_scene load_steps=7 format=3 uid="uid://dthas5gqr4mhm"]
+
+[ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_enjgl"]
+[ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="2_2x0me"]
+[ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="3_yxd0q"]
+[ext_resource type="PackedScene" uid="uid://dwsnmdabrmlo8" path="res://Combat Scenes/Enemy Scenes/enemy_circle_chaser.tscn" id="5_2x0me"]
+[ext_resource type="Texture2D" uid="uid://fd1bo6fne3dc" path="res://Assets/Shapes/Wall_Mantle.png" id="5_r8qvj"]
+[ext_resource type="PackedScene" uid="uid://cdfypqi8cem6m" path="res://Combat Scenes/Enemy Scenes/enemy_circle_wave.tscn" id="6_yxd0q"]
+
+[node name="TemplateRoom" type="Node2D"]
+
+[node name="Floor" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(-29500, -7500)
+rotation = 3.14159
+scale = Vector2(5.15594, -4.6066)
+texture = ExtResource("1_enjgl")
+
+[node name="exit" parent="." instance=ExtResource("2_2x0me")]
+position = Vector2(-7000, -9000)
+rotation = 0.785398
+scale = Vector2(2, 4)
+target_room = "mantle_-26"
+target_entrance = "from_bottom"
+target_group = "Circle Mantle"
+
+[node name="exit4" parent="." instance=ExtResource("2_2x0me")]
+position = Vector2(-4250, 4000)
+rotation = 0.650689
+scale = Vector2(4, 2)
+target_room = "mantle_-26"
+target_entrance = "from_top"
+target_group = "Circle Mantle"
+
+[node name="exit2" parent="." instance=ExtResource("2_2x0me")]
+position = Vector2(10500, -10750)
+rotation = 0.764454
+scale = Vector2(4, 2)
+target_room = "mantle_18"
+target_entrance = "from_left"
+target_group = "Circle Mantle"
+
+[node name="exit3" parent="." instance=ExtResource("2_2x0me")]
+position = Vector2(10000, 0)
+target_room = ""
+target_entrance = "from_left"
+
+[node name="left_camera_limit" type="Marker2D" parent="."]
+position = Vector2(-5000, 750)
+
+[node name="from_left" type="Marker2D" parent="."]
+position = Vector2(-3500, 3000)
+
+[node name="from_right" type="Marker2D" parent="."]
+position = Vector2(9500, -9750)
+
+[node name="from_bottom" type="Marker2D" parent="."]
+position = Vector2(-3500, 3000)
+
+[node name="from_top" type="Marker2D" parent="."]
+position = Vector2(9500, -9750)
+
+[node name="right_camera_limit" type="Marker2D" parent="."]
+position = Vector2(11750, -9750)
+
+[node name="top_camera_limit" type="Marker2D" parent="."]
+position = Vector2(500, -10500)
+
+[node name="bottom_camera_limit" type="Marker2D" parent="."]
+position = Vector2(0, 4750)
+
+[node name="WallMantle2" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(14500, -3250)
+scale = Vector2(5, 5)
+
+[node name="WallMantle15" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(13500, -8750)
+scale = Vector2(5, 5)
+
+[node name="WallMantle16" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(7500, -13000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle12" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(5000, -11000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle13" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(1750, -8250)
+scale = Vector2(5, 5)
+
+[node name="WallMantle14" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(-1250, -5500)
+scale = Vector2(5, 5)
+
+[node name="WallMantle3" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(6250, 4750)
+scale = Vector2(5, 5)
+
+[node name="WallMantle4" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(4250, 1000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle5" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(11750, -5750)
+scale = Vector2(5, 5)
+
+[node name="WallMantle17" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(9250, -4500)
+scale = Vector2(5, 5)
+
+[node name="WallMantle18" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(10500, 500)
+scale = Vector2(5, 5)
+
+[node name="WallMantle19" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(8250, 2750)
+scale = Vector2(5, 5)
+
+[node name="WallMantle36" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(-3750, 7500)
+scale = Vector2(5, 5)
+
+[node name="WallMantle37" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(-7250, 5250)
+scale = Vector2(5, 5)
+
+[node name="WallMantle34" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(12250, -13750)
+scale = Vector2(5, 5)
+
+[node name="WallMantle35" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(14500, -10750)
+scale = Vector2(5, 5)
+
+[node name="WallMantle6" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(7000, -1000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle7" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(-1000, 5500)
+scale = Vector2(5, 5)
+
+[node name="WallMantle9" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(-6250, 1000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle10" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(-8250, -2750)
+scale = Vector2(5, 5)
+
+[node name="WallMantle11" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(-4000, -2500)
+scale = Vector2(5, 5)
+
+[node name="WallMantle8" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(2500, 3250)
+scale = Vector2(5, 5)
+
+[node name="WallMantle" type="Sprite2D" parent="."]
+position = Vector2(-14500, 11000)
+texture = ExtResource("5_r8qvj")
+
+[node name="WallMantle20" type="Sprite2D" parent="."]
+position = Vector2(-14000, 8500)
+texture = ExtResource("5_r8qvj")
+
+[node name="WallMantle21" type="Sprite2D" parent="."]
+position = Vector2(-17500, 3500)
+texture = ExtResource("5_r8qvj")
+
+[node name="WallMantle22" type="Sprite2D" parent="."]
+position = Vector2(-15000, -3500)
+texture = ExtResource("5_r8qvj")
+
+[node name="WallMantle23" type="Sprite2D" parent="."]
+position = Vector2(-9500, -9250)
+texture = ExtResource("5_r8qvj")
+
+[node name="WallMantle24" type="Sprite2D" parent="."]
+position = Vector2(-8000, -17000)
+texture = ExtResource("5_r8qvj")
+
+[node name="WallMantle25" type="Sprite2D" parent="."]
+position = Vector2(-3000, -17000)
+texture = ExtResource("5_r8qvj")
+
+[node name="WallMantle26" type="Sprite2D" parent="."]
+position = Vector2(2500, -15500)
+texture = ExtResource("5_r8qvj")
+
+[node name="WallMantle27" type="Sprite2D" parent="."]
+position = Vector2(4500, -17000)
+texture = ExtResource("5_r8qvj")
+
+[node name="WallMantle28" type="Sprite2D" parent="."]
+position = Vector2(22250, 1250)
+texture = ExtResource("5_r8qvj")
+
+[node name="WallMantle29" type="Sprite2D" parent="."]
+position = Vector2(22750, -1500)
+texture = ExtResource("5_r8qvj")
+
+[node name="WallMantle30" type="Sprite2D" parent="."]
+position = Vector2(19500, 6500)
+texture = ExtResource("5_r8qvj")
+
+[node name="WallMantle31" type="Sprite2D" parent="."]
+position = Vector2(19500, 5000)
+scale = Vector2(1, 1.1)
+texture = ExtResource("5_r8qvj")
+
+[node name="WallMantle32" type="Sprite2D" parent="."]
+position = Vector2(14000, 7500)
+scale = Vector2(1, 1.1)
+texture = ExtResource("5_r8qvj")
+
+[node name="WallMantle33" type="Sprite2D" parent="."]
+position = Vector2(16500, 10000)
+texture = ExtResource("5_r8qvj")
+
+[node name="EnemyCircleChaser" parent="." instance=ExtResource("5_2x0me")]
+position = Vector2(-250, -500)
+
+[node name="EnemyCircleChaser2" parent="." instance=ExtResource("5_2x0me")]
+position = Vector2(2750, -3250)
+
+[node name="EnemyCircleWave" parent="." instance=ExtResource("6_yxd0q")]
+position = Vector2(6250, -6750)
