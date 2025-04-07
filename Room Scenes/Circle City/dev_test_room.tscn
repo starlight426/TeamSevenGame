@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_n5ri0"]
 [ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="2_i36t0"]
-[ext_resource type="PackedScene" uid="uid://ccm7n1wyyjidx" path="res://Combat Scenes/Enemy Scenes/enemy_circle_striker.tscn" id="3_7n4sg"]
+[ext_resource type="PackedScene" uid="uid://papvh6mjcv7y" path="res://Combat Scenes/Enemy Scenes/enemy_circle_clidean.tscn" id="3_n5ri0"]
 
 [node name="DevTestRoom" type="Node2D"]
 
@@ -29,7 +29,7 @@ target_entrance = "from_topleft"
 target_group = "Circle City"
 
 [node name="WallSquare" parent="." instance=ExtResource("2_i36t0")]
-position = Vector2(-6000, -11500)
+position = Vector2(-6000, -12500)
 scale = Vector2(10, 6)
 
 [node name="WallSquare7" parent="." instance=ExtResource("2_i36t0")]
@@ -41,8 +41,8 @@ position = Vector2(5500, 4500)
 scale = Vector2(20, 6)
 
 [node name="WallSquare3" parent="." instance=ExtResource("2_i36t0")]
-position = Vector2(6500, -11000)
-scale = Vector2(50, 15)
+position = Vector2(6500, -13500)
+scale = Vector2(50, 10)
 
 [node name="WallSquare10" parent="." instance=ExtResource("2_i36t0")]
 position = Vector2(15000, 8000)
@@ -57,7 +57,7 @@ position = Vector2(-8500, -6500)
 scale = Vector2(12, 40)
 
 [node name="WallSquare9" parent="." instance=ExtResource("2_i36t0")]
-position = Vector2(19500, -2000)
+position = Vector2(20500, -2000)
 scale = Vector2(12, 40)
 
 [node name="WallSquare6" parent="." instance=ExtResource("2_i36t0")]
@@ -92,5 +92,5 @@ position = Vector2(0, -7500)
 [node name="bottom_camera_limit" type="Marker2D" parent="."]
 position = Vector2(0, 3500)
 
-[node name="EnemyCircleStriker" parent="." instance=ExtResource("3_7n4sg")]
-position = Vector2(3000, -1500)
+[node name="EnemyCircleClidean" parent="." instance=ExtResource("3_n5ri0")]
+position = Vector2(7500, -5500)

@@ -1,30 +1,40 @@
 [gd_scene load_steps=3 format=3 uid="uid://5ljqalmuef10"]
 
-[ext_resource type="Script" uid="uid://dbcsuocoag440" path="res://Scripts/Combat/circle_of_bullets.gd" id="1_1yeb7"]
+[ext_resource type="Script" uid="uid://dbcsuocoag440" path="res://Scripts/Combat/bullet_collection.gd" id="1_1yeb7"]
 [ext_resource type="PackedScene" uid="uid://bsuemvj7deagq" path="res://Combat Scenes/Bullet Scenes/bullet.tscn" id="1_qb88k"]
 
 [node name="CircleOfBullets" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 0
 script = ExtResource("1_1yeb7")
 
 [node name="Circlebullet" parent="." instance=ExtResource("1_qb88k")]
+position = Vector2(100, 0)
 
 [node name="Circlebullet2" parent="." instance=ExtResource("1_qb88k")]
+position = Vector2(71, 71)
 rotation = 0.785398
 
 [node name="Circlebullet3" parent="." instance=ExtResource("1_qb88k")]
+position = Vector2(0, 100)
 rotation = 1.5708
 
 [node name="Circlebullet4" parent="." instance=ExtResource("1_qb88k")]
+position = Vector2(-71, 71)
 rotation = 2.35619
 
 [node name="Circlebullet5" parent="." instance=ExtResource("1_qb88k")]
+position = Vector2(-100, 0)
 rotation = -3.14159
 
 [node name="Circlebullet6" parent="." instance=ExtResource("1_qb88k")]
+position = Vector2(71, -71)
 rotation = -0.785398
 
 [node name="Circlebullet7" parent="." instance=ExtResource("1_qb88k")]
+position = Vector2(0, -100)
 rotation = -1.5708
 
 [node name="Circlebullet8" parent="." instance=ExtResource("1_qb88k")]
+position = Vector2(-71, -71)
 rotation = -2.35619

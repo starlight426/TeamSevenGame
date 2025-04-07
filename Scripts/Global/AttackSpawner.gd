@@ -1,6 +1,8 @@
 extends Node
 var bullet_patterner_scn = preload("res://Combat Scenes/System Scenes/bullet_patterner.tscn")
 var solid_patterner_scn = preload("res://Combat Scenes/System Scenes/bullet_patterner.tscn")
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -30,6 +32,20 @@ func spawn_bullets(pos,dir,pattern,pattern_scale,pattern_delay,anim,shape,type,s
 	RoomLoader.current_room.add_child(patterner)
 	return patterner.spawn_pattern(pos,dir,pattern,pattern_scale,pattern_delay,anim,shape,type,speed,size,dmg,team,color,mod1,mod2,mod3)
 
+func spawn_bullet_collection(pos,dir,collection,type,speed,team,mod1,mod2,mod3):
+	var new_bullet_collection = load("res://Combat Scenes/Bullet Scenes/" + collection + ".tscn").instantiate()
+	new_bullet_collection.global_position = pos
+	new_bullet_collection.global_rotation = dir
+	new_bullet_collection.type = type
+	new_bullet_collection.speed = speed
+	new_bullet_collection.team = team
+	new_bullet_collection.mod1 = mod1
+	new_bullet_collection.mod2 = mod2
+	new_bullet_collection.mod3 = mod3
+	RoomLoader.current_room.add_child(new_bullet_collection)
+	new_bullet_collection.start_moving()
+	
+	
 
 func spawn_solids(pos,dir,pattern,pattern_scale,shape,type,speed,size,dmg,team,color,mod1,mod2,mod3,hp):
 	var patterner = solid_patterner_scn.instantiate()

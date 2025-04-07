@@ -1,7 +1,7 @@
 extends Node2D
 
 var bullet_scn = preload("res://Combat Scenes/Bullet Scenes/bullet.tscn")
-
+var circle_of_bullets_scn = preload("res://Combat Scenes/Bullet Scenes/circle_of_bullets.tscn")
 var shape_to_spawn #self explanatory
 var type_to_spawn #movement pattern of spawned bullets
 var speed_to_spawn #speed of bullets
@@ -104,8 +104,9 @@ func sp(pos,dir,delay_num):
 	if(anim_to_spawn != "default"):
 		#anim code
 		pass
-		
+	
 	var new_bullet = bullet_scn.instantiate()
+
 	new_bullet.global_position = pos
 	new_bullet.global_rotation = dir
 	new_bullet.shape = shape_to_spawn

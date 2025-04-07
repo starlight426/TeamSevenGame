@@ -1,33 +1,52 @@
 extends CharacterBody2D
 
+#main functionality variables
 @export var hp = 1000
+var max_hp
 @export var team = "circle"
-@export var speed = 600  # Strafe speed
-@export var passive_fire_rate = 4.0  # Time between passive bullet bursts
-@export var strafe_interval = 3.0  # Time before switching strafe direction
-@export var attack_cooldown = 1  # Time between attacks
+@export var speed = 600  #speed
+
+#phase variables
+var phase = "Intro"
+var movement_mode = "slow_strafe"
+
+
+#passive firing variables
+@export var passive_fire_rate = 4.0  #time between passive bullet bursts
+var passive_fire_direction = 0.0
+var passive_fire_ready = true
+var firing_passive_bullets = true
+
+#movement variables
+@export var strafe_interval = 3.0  #time before switching strafe direction
+var strafe_direction = 1  # 1 for clockwise, -1 for counterclockwise
 
 var target = null
-var fire_ready = false
-var strafe_direction = 1  # 1 for clockwise, -1 for counterclockwise
+
 var can_attack = true
+
+var rng = RandomNumberGenerator.new()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$TargetDetector.update_parent_target.connect(update_target)
-	await get_tree().create_timer(0.5).timeout
-	fire_ready = true
-	passive_fire()
+	
+	max_hp = hp
+	passive_fire_cycle()
 	start_strafe_cycle()
 
-# Passive bullet shooting
-func passive_fire():
-	while true:
-		if fire_ready:
-			var angle_offset = randf_range(-PI / 2, PI / 2)
-			AttackSpawner.spawn_bullets(global_position, global_rotation + angle_offset, "circle", 1, 0, "default", "circle", "straight", 2000, 3, 30, "circle", "purple", 0, 0, 0)
-		await get_tree().create_timer(passive_fire_rate).timeout
+func phase_switcher():
+	while(true):
+		if(hp > 3*max_hp/4):
+			
 
+func passive_fire_cycle():
+	while(true):
+		if()
+		passive_fire_direction = passive_fire_direction - PI + rng.randf_range(-2*PI/3,2*PI/3)
+		AttackSpawner.spawn_bullets(global_position,fire_direction,"single",1,0,"default","circle","straight",2000,3,30,"circle","purple",0,0,0)
+		await get_tree().create_timer(1/passive_fire_rate).timeout
+	
 # Strafe behavior
 func start_strafe_cycle():
 	while true:

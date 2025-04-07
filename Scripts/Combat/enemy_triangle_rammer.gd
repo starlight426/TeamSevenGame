@@ -36,6 +36,7 @@ func _physics_process(delta: float) -> void:
 func fire():
 	fire_ready = false
 	AttackSpawner.spawn_bullets($bullet_marker_1.global_position,global_rotation-PI,"single",1,0,"default","triangle","straight",2000,3,10,"triangle","red",0,0,0)
+	
 	await get_tree().create_timer(1/fire_rate).timeout
 	fire_ready = true
 

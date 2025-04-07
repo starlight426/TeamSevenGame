@@ -1,7 +1,6 @@
 extends CharacterBody2D
-
+@export var speed = 600
 @export var team = "none"
-@export var speed = 1000.0
 @export var contact_dmg = 10
 @export var color = "default"
 @export var type = "straight"
@@ -11,6 +10,12 @@ var mod2
 var mod3 
 var decay_time = 30.0
 
+
+var spinning = false
+var spinning_speed = PI/32
+var expanding = true
+var move_dir = 0.0
+
 var rotation_speed = 0
 var is_moving_specially = true
 var time_to_move_specially = 30.0
@@ -18,23 +23,19 @@ var time_to_move_specially = 30.0
 var target = null
 var locked_on_target = false
 
-# Called when the node enters the scene tree for the first time.
-
-func _ready():
-	#$Hitbox.body_entered.connect(on_bullet_hit)
-	match type:
-		"straight":
-			pass
-		"striker":
-			$Sprite2D.modulate = Color(0.7,0.7,1.0,1.0)
-	match color:
-		"cigil":
-			$Sprite2D.modulate = Color.BLACK
-	#play_this_sound()
+func _ready() -> void:
+	move_dir = global_rotation
+	velocity = Vector2(speed,0).rotated(move_dir)
+	if(expanding):
+		for current_child in get_children():
+			current_child.start_moving
+	await get_tree().create_timer(20.0).timeout
+	queue_free()
+	
 
 func start_moving():
 	start_decay()
-	var movement = Vector2(speed,0).rotated(rotation)
+	var movement = Vector2(speed,0).rotated(move_dir)
 	if movement != Vector2.ZERO:
 		movement = movement.normalized()
 	match type:
@@ -45,41 +46,36 @@ func start_moving():
 			rotation_speed = mod1
 			time_to_move_specially = mod2
 		"striker":
-			velocity = Vector2(speed,0).rotated(global_rotation)
+			velocity = movement*speed
 			rotation_speed = mod1
 			target = mod2
 			time_to_move_specially = 7.0
 			
 	moving_specially_timer()
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
 
 func _physics_process(delta):
+	if(spinning):
+		global_rotation += spinning_speed * delta
 	match type:
 		"arc":
 			if(is_moving_specially):
-				global_rotation += rotation_speed * delta
+				move_dir += rotation_speed * delta
 		"striker":
 		#	print("locked: " + str(locked_on_target))
 			#print(rotation_speed)wa
 			#print(mod2)
 			#print(target)
-			if(is_moving_specially):	
+			if(is_moving_specially):
 				if(target):
 					if(is_looking_at(target)):
 						locked_on_target = true
 					if(global_position.distance_to(target.global_position) < 1300):
 						locked_on_target = true
 					if(!locked_on_target):
-						global_rotation = lerp_angle(global_rotation,(target.global_position - global_position).angle(),rotation_speed)
-						velocity = Vector2(speed,0).rotated(global_rotation)
+						move_dir = lerp_angle(global_rotation,(target.global_position - global_position).angle(),rotation_speed)
+						velocity = Vector2(speed,0).rotated(move_dir)
 	move_and_slide()
 
-func on_bullet_hit(target):
-	if(target.team != team):
-		target.take_damage(contact_dmg)
-		queue_free()
 
 func start_decay():
 	await get_tree().create_timer(decay_time).timeout
@@ -91,7 +87,7 @@ func moving_specially_timer():
 	
 func is_looking_at(target: Node2D) -> bool:
 	var tolerance = 0.3
-	var facing_dir = Vector2.RIGHT.rotated(rotation)
+	var facing_dir = Vector2.RIGHT.rotated(move_dir)
 	var to_target = (target.global_position - global_position).normalized()
 	var angle_diff = facing_dir.angle_to(to_target)
 	return abs(angle_diff) <= tolerance
