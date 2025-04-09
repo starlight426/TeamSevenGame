@@ -1,9 +1,12 @@
-[gd_scene load_steps=13 format=3 uid="uid://cc7vstslog23o"]
+[gd_scene load_steps=16 format=3 uid="uid://cc7vstslog23o"]
 
 [ext_resource type="Script" uid="uid://b3bwwb3yp2s6r" path="res://UI Scenes/player_ui.gd" id="1_8wq4l"]
 [ext_resource type="Texture2D" uid="uid://c4m82to15c03o" path="res://Assets/UI Sprites/Icon_Border.png" id="1_k4ew6"]
+[ext_resource type="Texture2D" uid="uid://ec2itabd6tiw" path="res://Assets/UI Sprites/Bar_Overlay .png" id="2_kyl3c"]
+[ext_resource type="Texture2D" uid="uid://bl1myu4ymgrt5" path="res://Assets/UI Sprites/Bar_Energy.png" id="3_7ibre"]
 [ext_resource type="Texture2D" uid="uid://bkmcx2w6oyhds" path="res://Assets/UI Sprites/Icon_Single_Circ.png" id="3_nul7f"]
 [ext_resource type="Texture2D" uid="uid://qjp3e0fpnfgi" path="res://Assets/UI Sprites/Icon_3Shot_Circ.png" id="4_2cns7"]
+[ext_resource type="Texture2D" uid="uid://cqjfo2mpx0gc5" path="res://Assets/UI Sprites/Bar_Health.png" id="4_8x4gh"]
 [ext_resource type="Texture2D" uid="uid://gbfacsfumxad" path="res://Assets/leftclickz.png" id="4_ope4c"]
 [ext_resource type="Texture2D" uid="uid://c3mcklesdfoax" path="res://Assets/UI Sprites/Icon_8Shot_Circ.png" id="5_0ct5d"]
 [ext_resource type="Texture2D" uid="uid://dsdsy4mxcy3pf" path="res://Assets/DarkKeys/E-Key.png" id="6_0ct5d"]
@@ -15,58 +18,82 @@
 
 [node name="PlayerUI" type="Control"]
 layout_mode = 3
-anchors_preset = 0
-offset_left = -2880.0
-offset_top = -1620.0
-offset_right = 2880.0
-offset_bottom = 1620.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_8wq4l")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-layout_mode = 0
-offset_left = 3243.0
-offset_top = 2150.0
-offset_right = 3667.0
-offset_bottom = 2170.0
-alignment = 2
-
-[node name="EnergyBar" type="TextureProgressBar" parent="HBoxContainer"]
-layout_mode = 2
-
-[node name="EnergyLabel" type="Label" parent="HBoxContainer"]
-layout_mode = 2
-text = "Energy: 0/500"
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="."]
-layout_mode = 0
-offset_left = 3243.0
-offset_top = 2115.0
-offset_right = 3667.0
-offset_bottom = 2138.0
-alignment = 2
-
-[node name="HealthBar" type="TextureProgressBar" parent="HBoxContainer2"]
-layout_mode = 2
-
-[node name="HealthLabel" type="Label" parent="HBoxContainer2"]
-layout_mode = 2
-text = "Health: 100/100"
-
-[node name="MoveIconsBar" type="HBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 7
+anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 363.0
-offset_top = -1060.0
-offset_right = 1423.0
-offset_bottom = -860.0
+offset_left = -210.0
+offset_top = -160.0
+offset_right = 1808.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.22, 0.22)
+
+[node name="EnergyBar" type="TextureProgressBar" parent="HBoxContainer"]
+layout_mode = 2
+max_value = 500.0
+value = 40.0
+texture_under = ExtResource("2_kyl3c")
+texture_progress = ExtResource("3_7ibre")
+
+[node name="EnergyLabel" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "Energy: 0/500"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -210.0
+offset_top = -180.0
+offset_right = 1865.0
+offset_bottom = -80.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.22, 0.22)
+
+[node name="HealthBar" type="TextureProgressBar" parent="HBoxContainer2"]
+layout_mode = 2
+max_value = 200.0
+texture_under = ExtResource("2_kyl3c")
+texture_progress = ExtResource("4_8x4gh")
+
+[node name="HealthLabel" type="Label" parent="HBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "Health: 100/100"
+
+[node name="MoveIconsBar" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_top = 60.0
+offset_right = 635.0
+offset_bottom = 75.0
 grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(0.4, 0.4)
 theme_override_constants/separation = 15
+alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Action1" type="TextureProgressBar" parent="MoveIconsBar"]
 layout_mode = 2
