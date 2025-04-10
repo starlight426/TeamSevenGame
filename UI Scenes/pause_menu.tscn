@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://blb7rs1uwuo2s"]
 
-[ext_resource type="Script" uid="uid://bu4psw76fl3kt" path="res://UI Scenes/pause_menu.gd" id="1_to0ni"]
+[ext_resource type="Script" path="res://UI Scenes/pause_menu.gd" id="1_to0ni"]
 
 [node name="PauseMenu" type="Control"]
 top_level = true
@@ -169,6 +169,23 @@ horizontal_alignment = 1
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
+
+[node name="Load_Button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(400, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+action_mode = 0
+text = "Load"
+
+[node name="Save_Button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(400, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+action_mode = 0
+text = "Save
+"
 
 [node name="Resume_Button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(400, 25)
