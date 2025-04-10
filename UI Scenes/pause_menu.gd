@@ -1,18 +1,15 @@
 class_name PauseMenu
 extends Control
 
-@onready var main = preload("res://main.tscn")
-@onready var pause_menu: PauseMenu = $"."
-@onready var resume_button: Button = $MarginContainer/VBoxContainer/HBoxContainer/Resume_Button
-@onready var quit_button: Button = $MarginContainer/VBoxContainer/HBoxContainer/Quit_Button
+@onready var resume_button = $MarginContainer/VBoxContainer/HBoxContainer/Resume_Button
+@onready var quit_button = $MarginContainer/VBoxContainer/HBoxContainer/Quit_Button
+@onready var save_button = $MarginContainer/VBoxContainer/HBoxContainer/Save_Button
+@onready var load_button = $MarginContainer/VBoxContainer/HBoxContainer/Load_Button
 
 func _ready():
-	resume_button.button_down.connect(on_resume_pressed)
-	quit_button.button_down.connect(on_quit_pressed)
-	set_process(false)
-
-func on_resume_pressed() -> void:
-	get_parent().get_parent().pauseMenu()
-
-func on_quit_pressed() -> void:
-	get_tree().quit()
+	# Connect all buttons to main.gd
+	resume_button.button_down.connect(get_parent().get_parent()._on_Resume_Button_pressed)
+	quit_button.button_down.connect(get_parent().get_parent()._on_Quit_Button_pressed)
+	save_button.button_down.connect(get_parent().get_parent()._on_Save_Button_pressed)
+	load_button.button_down.connect(get_parent().get_parent()._on_Load_Button_pressed)
+	set_process(false)  
