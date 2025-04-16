@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://biq3jqr8mofb7"
-path="res://.godot/imported/Boss_WorldShaper.png-844a2137b84b46c9210019811130e216.ctex"
+uid="uid://dygvfvrjxm5ov"
+path="res://.godot/imported/Triangle_Rammer.png-c708facb2bd534a8fbb383e472013514.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/spritePNGs/Boss_WorldShaper.png"
-dest_files=["res://.godot/imported/Boss_WorldShaper.png-844a2137b84b46c9210019811130e216.ctex"]
+source_file="res://Assets/spritePNGs/Triangle_Rammer.png"
+dest_files=["res://.godot/imported/Triangle_Rammer.png-c708facb2bd534a8fbb383e472013514.ctex"]
 
 [params]
 

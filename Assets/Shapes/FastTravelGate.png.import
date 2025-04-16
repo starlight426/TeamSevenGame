@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://biq3jqr8mofb7"
-path="res://.godot/imported/Boss_WorldShaper.png-844a2137b84b46c9210019811130e216.ctex"
+uid="uid://df677rmfbi28q"
+path="res://.godot/imported/FastTravelGate.png-8005bfe74663b517aafe9ba3eb52aa28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/spritePNGs/Boss_WorldShaper.png"
-dest_files=["res://.godot/imported/Boss_WorldShaper.png-844a2137b84b46c9210019811130e216.ctex"]
+source_file="res://Assets/Shapes/FastTravelGate.png"
+dest_files=["res://.godot/imported/FastTravelGate.png-8005bfe74663b517aafe9ba3eb52aa28.ctex"]
 
 [params]
 
