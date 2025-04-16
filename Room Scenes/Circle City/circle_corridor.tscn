@@ -35,10 +35,6 @@ target_room = "cigil_room"
 target_entrance = "from_left"
 target_group = "Circle City"
 
-[node name="WallSquare7" parent="." instance=ExtResource("2_nh6fj")]
-position = Vector2(-5250, 4000)
-scale = Vector2(20, 6)
-
 [node name="WallSquare8" parent="." instance=ExtResource("2_nh6fj")]
 position = Vector2(2000, 4000)
 scale = Vector2(10, 6)

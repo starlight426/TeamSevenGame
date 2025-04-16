@@ -41,10 +41,12 @@ scale = Vector2(10, 6)
 
 [node name="WallSquare7" parent="." instance=ExtResource("2_oigo2")]
 position = Vector2(-750, 4000)
+rotation = -3.14159
 scale = Vector2(10, 6)
 
 [node name="WallSquare8" parent="." instance=ExtResource("2_oigo2")]
 position = Vector2(3750, 4000)
+rotation = -3.14159
 scale = Vector2(10, 6)
 
 [node name="WallSquare3" parent="." instance=ExtResource("2_oigo2")]
@@ -52,8 +54,8 @@ position = Vector2(5500, -4000)
 scale = Vector2(15, 6)
 
 [node name="WallSquare2" parent="." instance=ExtResource("2_oigo2")]
-position = Vector2(7750, -2250)
-scale = Vector2(6, 10)
+position = Vector2(7808, -2709)
+scale = Vector2(6.2, 11.16)
 
 [node name="WallSquare5" parent="." instance=ExtResource("2_oigo2")]
 position = Vector2(-4000, -3000)
@@ -61,11 +63,13 @@ scale = Vector2(6, 10)
 
 [node name="WallSquare6" parent="." instance=ExtResource("2_oigo2")]
 position = Vector2(-4000, 3000)
+rotation = -3.14159
 scale = Vector2(6, 10)
 
 [node name="WallSquare4" parent="." instance=ExtResource("2_oigo2")]
-position = Vector2(7750, 2000)
-scale = Vector2(6, 10)
+position = Vector2(7807, 2728)
+rotation = -3.14159
+scale = Vector2(6.27451, 11.1065)
 
 [node name="left_camera_limit" type="Marker2D" parent="."]
 position = Vector2(-3500, 0)
@@ -122,7 +126,7 @@ scale = Vector2(1.5, 1.125)
 texture = ExtResource("4_5a3nk")
 
 [node name="WallCircleCity4" type="Sprite2D" parent="."]
-position = Vector2(6750, -5750)
+position = Vector2(6577, -8111)
 scale = Vector2(1.125, 1.25)
 texture = ExtResource("4_5a3nk")
 
