@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://cechbe32lmpdg"
+=======
+uid="uid://bfbenkrfea3g1"
+>>>>>>> 0bab5fb98893ec4611428318f637afd04eb3aa11
 path="res://.godot/imported/Cigil2.0.png-33e2c671efc56d2eed4eda68008e76d9.ctex"
 metadata={
 "vram_texture": false

@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://dud0rtk6d3bwr"
+=======
+uid="uid://dbjrg252uw5l1"
+>>>>>>> 0bab5fb98893ec4611428318f637afd04eb3aa11
 path="res://.godot/imported/Boss_WorldShaper.png-844a2137b84b46c9210019811130e216.ctex"
 metadata={
 "vram_texture": false
