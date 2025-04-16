@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://brm83igiv1exc"]
+[gd_scene load_steps=5 format=3 uid="uid://brm83igiv1exc"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_tommf"]
 [ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_up7v8"]
 [ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="2_6glk7"]
 [ext_resource type="PackedScene" uid="uid://c1w5jhxknb674" path="res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn" id="4_5jl8u"]
-[ext_resource type="Texture2D" uid="uid://fd1bo6fne3dc" path="res://Assets/Shapes/Wall_Mantle.png" id="6_ujdud"]
 
 [node name="TemplateRoom" type="Node2D"]
 
@@ -151,48 +150,6 @@ scale = Vector2(5, 5)
 [node name="WallMantle29" parent="." instance=ExtResource("2_6glk7")]
 position = Vector2(-5000, 18000)
 scale = Vector2(5, 5)
-
-[node name="WallMantle11" type="Sprite2D" parent="."]
-position = Vector2(-18000, 9000)
-texture = ExtResource("6_ujdud")
-
-[node name="WallMantle12" type="Sprite2D" parent="."]
-position = Vector2(-13000, 7000)
-scale = Vector2(1, 1.1)
-texture = ExtResource("6_ujdud")
-
-[node name="WallMantle13" type="Sprite2D" parent="."]
-position = Vector2(-11000, 8000)
-texture = ExtResource("6_ujdud")
-
-[node name="WallMantle14" type="Sprite2D" parent="."]
-position = Vector2(21000, 3500)
-texture = ExtResource("6_ujdud")
-
-[node name="WallMantle15" type="Sprite2D" parent="."]
-position = Vector2(19500, 3000)
-texture = ExtResource("6_ujdud")
-
-[node name="WallMantle16" type="Sprite2D" parent="."]
-position = Vector2(21000, 1000)
-texture = ExtResource("6_ujdud")
-
-[node name="WallMantle17" type="Sprite2D" parent="."]
-position = Vector2(30500, -5500)
-texture = ExtResource("6_ujdud")
-
-[node name="WallMantle18" type="Sprite2D" parent="."]
-position = Vector2(9000, -11000)
-scale = Vector2(1.1, 1)
-texture = ExtResource("6_ujdud")
-
-[node name="WallMantle19" type="Sprite2D" parent="."]
-position = Vector2(-2000, -7500)
-texture = ExtResource("6_ujdud")
-
-[node name="WallMantle20" type="Sprite2D" parent="."]
-position = Vector2(-9000, -8000)
-texture = ExtResource("6_ujdud")
 
 [node name="EnemyCircleCorrupted2" parent="." instance=ExtResource("4_5jl8u")]
 position = Vector2(1000, 6000)

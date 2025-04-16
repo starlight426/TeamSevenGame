@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://hwmgwkumra7q"]
 
-[ext_resource type="Script" uid="uid://nd5ld3cd0fqo" path="res://Scripts/player.gd" id="1_2lqq4"]
-[ext_resource type="Texture2D" uid="uid://b0v3u7ufltkm2" path="res://Assets/spritePNGs/Cigil_1.0.png" id="2_drssv"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_2lqq4"]
+[ext_resource type="Texture2D" uid="uid://ccj2jx5itxah7" path="res://Assets/spritePNGs/Cigil2.0.png" id="2_e5fwu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_w0ggq"]
 radius = 385.519
@@ -15,6 +15,7 @@ script = ExtResource("1_2lqq4")
 shape = SubResource("CircleShape2D_w0ggq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(0, 0, 0, 1)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_drssv")
+modulate = Color(0.505344, 0.505344, 0.505344, 1)
+position = Vector2(2.00003, 4.52995e-05)
+scale = Vector2(1.532, 1.54)
+texture = ExtResource("2_e5fwu")

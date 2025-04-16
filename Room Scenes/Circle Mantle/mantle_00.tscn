@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cxdgwvr6qy5pg"]
+[gd_scene load_steps=4 format=3 uid="uid://cxdgwvr6qy5pg"]
 
 [ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_tx17u"]
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_x8nhq"]
 [ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="2_lptlu"]
-[ext_resource type="Texture2D" uid="uid://fd1bo6fne3dc" path="res://Assets/Shapes/Wall_Mantle.png" id="5_xifah"]
 
 [node name="TemplateRoom" type="Node2D"]
 
@@ -104,49 +103,3 @@ scale = Vector2(5, 5)
 [node name="WallMantle8" parent="." instance=ExtResource("2_lptlu")]
 position = Vector2(3000, 4000)
 scale = Vector2(5, 5)
-
-[node name="WallMantle11" type="Sprite2D" parent="."]
-position = Vector2(-6250, -10000)
-texture = ExtResource("5_xifah")
-
-[node name="WallMantle12" type="Sprite2D" parent="."]
-position = Vector2(-2000, -9500)
-texture = ExtResource("5_xifah")
-
-[node name="WallMantle13" type="Sprite2D" parent="."]
-position = Vector2(-2250, -11750)
-texture = ExtResource("5_xifah")
-
-[node name="WallMantle14" type="Sprite2D" parent="."]
-position = Vector2(2000, -8250)
-scale = Vector2(1.05, 1.025)
-texture = ExtResource("5_xifah")
-
-[node name="WallMantle15" type="Sprite2D" parent="."]
-position = Vector2(17000, -5250)
-texture = ExtResource("5_xifah")
-
-[node name="WallMantle16" type="Sprite2D" parent="."]
-position = Vector2(13000, -3250)
-texture = ExtResource("5_xifah")
-
-[node name="WallMantle17" type="Sprite2D" parent="."]
-position = Vector2(12500, 1000)
-scale = Vector2(1.05, 1)
-texture = ExtResource("5_xifah")
-
-[node name="WallMantle18" type="Sprite2D" parent="."]
-position = Vector2(13250, 5000)
-texture = ExtResource("5_xifah")
-
-[node name="WallMantle19" type="Sprite2D" parent="."]
-position = Vector2(-8500, 11000)
-texture = ExtResource("5_xifah")
-
-[node name="WallMantle20" type="Sprite2D" parent="."]
-position = Vector2(-10750, 7500)
-texture = ExtResource("5_xifah")
-
-[node name="WallMantle21" type="Sprite2D" parent="."]
-position = Vector2(-13500, 7250)
-texture = ExtResource("5_xifah")
