@@ -1,0 +1,200 @@
+[gd_scene load_steps=7 format=3 uid="uid://df7b0wlqqq5pw"]
+
+[ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_18nwx"]
+[ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="2_bx0w6"]
+[ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="3_xrtxp"]
+[ext_resource type="Texture2D" uid="uid://bk1e6pjrfkice" path="res://Assets/Shapes/Wall_Temple.png" id="4_lo211"]
+[ext_resource type="PackedScene" uid="uid://bmjd5v53b4g8t" path="res://Overworld Scenes/Object Scenes/wall_circle.tscn" id="5_ux3jp"]
+[ext_resource type="PackedScene" uid="uid://ccm7n1wyyjidx" path="res://Combat Scenes/Enemy Scenes/enemy_circle_striker.tscn" id="6_3gxoe"]
+
+[node name="TemplateRoom" type="Node2D"]
+scale = Vector2(1.1, 1.1)
+
+[node name="Floor" type="Sprite2D" parent="."]
+position = Vector2(25250, -11250)
+scale = Vector2(3.84, 5.88)
+texture = ExtResource("1_18nwx")
+
+[node name="exit" parent="." instance=ExtResource("2_bx0w6")]
+position = Vector2(-5674.55, -1210)
+target_room = "temple_-11"
+target_entrance = "from_bottom"
+target_group = "Circle Temple"
+
+[node name="exit4" parent="." instance=ExtResource("2_bx0w6")]
+position = Vector2(92.7273, 8600.91)
+target_room = "temple_0-1"
+target_entrance = "from_top"
+target_group = "Circle Temple"
+
+[node name="exit2" parent="." instance=ExtResource("2_bx0w6")]
+position = Vector2(-14500, -3500)
+target_room = ""
+target_entrance = "from_bottom"
+
+[node name="exit3" parent="." instance=ExtResource("2_bx0w6")]
+position = Vector2(6421.82, -837.273)
+target_room = "temple_11"
+target_entrance = "from_bottom"
+target_group = "Circle Temple"
+
+[node name="WallSquare" parent="." instance=ExtResource("3_xrtxp")]
+position = Vector2(-17500, -8500)
+scale = Vector2(10, 6)
+
+[node name="WallSquare6" parent="." instance=ExtResource("3_xrtxp")]
+position = Vector2(-19000, 6000)
+scale = Vector2(6, 10)
+
+[node name="left_camera_limit" type="Marker2D" parent="."]
+position = Vector2(-5500, -1000)
+
+[node name="from_left" type="Marker2D" parent="."]
+position = Vector2(-4619.09, -662.727)
+
+[node name="from_right" type="Marker2D" parent="."]
+position = Vector2(5221.82, -398.182)
+
+[node name="from_bottom" type="Marker2D" parent="."]
+position = Vector2(123.636, 7552.73)
+
+[node name="from_top" type="Marker2D" parent="."]
+position = Vector2(0, -5500)
+
+[node name="right_camera_limit" type="Marker2D" parent="."]
+position = Vector2(6250, -750)
+
+[node name="top_camera_limit" type="Marker2D" parent="."]
+position = Vector2(0, -3000)
+
+[node name="bottom_camera_limit" type="Marker2D" parent="."]
+position = Vector2(108.182, 8263.64)
+
+[node name="WallTemple" type="Sprite2D" parent="."]
+position = Vector2(242.727, -1527.27)
+texture = ExtResource("4_lo211")
+
+[node name="WallTemple2" type="Sprite2D" parent="."]
+position = Vector2(3742.73, 4166.36)
+rotation = 2.16175
+texture = ExtResource("4_lo211")
+
+[node name="WallTemple3" type="Sprite2D" parent="."]
+position = Vector2(-3181.82, 3863.64)
+rotation = -2.06702
+texture = ExtResource("4_lo211")
+
+[node name="WallCircle" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(-6000, 4250)
+scale = Vector2(3, 3)
+
+[node name="WallCircle3" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(-6500, 3000)
+scale = Vector2(3, 3)
+
+[node name="WallCircle4" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(-6750, 1750)
+scale = Vector2(3, 3)
+
+[node name="WallCircle5" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(-6750, 500)
+scale = Vector2(3, 3)
+
+[node name="WallCircle6" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(-4545.45, -2954.55)
+scale = Vector2(3, 3)
+
+[node name="WallCircle7" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(-3000, -3750)
+scale = Vector2(3, 3)
+
+[node name="WallCircle8" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(-1500, -4250)
+scale = Vector2(3, 3)
+
+[node name="WallCircle9" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(0, -4250)
+scale = Vector2(3, 3)
+
+[node name="WallCircle10" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(1770.91, -4042.73)
+scale = Vector2(3, 3)
+
+[node name="WallCircle11" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(3595.45, -3563.64)
+scale = Vector2(3, 3)
+
+[node name="WallCircle12" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(5230, -3090)
+scale = Vector2(3, 3)
+
+[node name="WallCircle13" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(7632.73, 1300.91)
+scale = Vector2(3, 3)
+
+[node name="WallCircle14" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(7454.55, 2300.91)
+scale = Vector2(3, 3)
+
+[node name="WallCircle15" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(6967.27, 3742.73)
+scale = Vector2(3, 3)
+
+[node name="WallCircle16" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(6179.09, 5352.73)
+scale = Vector2(3, 3)
+
+[node name="WallCircle17" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(5204.54, 6628.18)
+scale = Vector2(3, 3)
+
+[node name="WallCircle18" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(3954.54, 7903.64)
+scale = Vector2(3, 3)
+
+[node name="WallCircle19" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(2679.09, 8691.82)
+scale = Vector2(3, 3)
+
+[node name="WallCircle20" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(-5250, 5750)
+scale = Vector2(3, 3)
+
+[node name="WallCircle21" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(-4250, 7000)
+rotation = -0.0736596
+scale = Vector2(3, 3)
+
+[node name="WallCircle22" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(-3250, 8250)
+scale = Vector2(3, 3)
+
+[node name="WallCircle23" parent="." instance=ExtResource("5_ux3jp")]
+z_index = -1
+position = Vector2(-2272.73, 8863.64)
+scale = Vector2(3, 3)
+
+[node name="EnemyCircleStriker" parent="." instance=ExtResource("6_3gxoe")]
+position = Vector2(77.2727, 1676.36)
+rotation = 1.5635

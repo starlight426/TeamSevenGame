@@ -6,6 +6,7 @@ var player_node
 var should_load_game = false
 
 func _ready() -> void:
+
 	player_node = get_node("Player")
 	pause_menu.hide()
 	
@@ -14,6 +15,7 @@ func _ready() -> void:
 	else:
 		load_game()
 		should_load_game = false
+		
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_released("pause"):

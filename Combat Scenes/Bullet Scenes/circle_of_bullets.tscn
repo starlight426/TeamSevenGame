@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bsuemvj7deagq" path="res://Combat Scenes/Bullet Scenes/bullet.tscn" id="1_qb88k"]
 
 [node name="CircleOfBullets" type="CharacterBody2D"]
+scale = Vector2(3, 3)
 collision_layer = 0
 collision_mask = 0
 script = ExtResource("1_1yeb7")

@@ -18,7 +18,6 @@ func player_die():
 	#await TransitionScreen.on_transition_finished
 	load_room_from_exit(last_group,last_room,last_entrance)
 	
-
 func load_room_from_exit(target_group,target_room,target_entrance):
 	print(target_group,target_room,target_entrance)
 	last_entrance = target_entrance

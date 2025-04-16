@@ -15,7 +15,6 @@ team = null
 speed = null
 passive_fire_rate = null
 strafe_interval = null
-attack_cooldown = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_fybhy")

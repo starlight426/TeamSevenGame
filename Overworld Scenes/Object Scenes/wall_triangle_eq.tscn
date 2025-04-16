@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4c578xkhgapt"]
+
+[ext_resource type="Script" uid="uid://bw5wba4ai8jeh" path="res://Scripts/wall_square.gd" id="1_gnbwv"]
+[ext_resource type="Texture2D" uid="uid://d7kn3i26wblq" path="res://Assets/Shapes/Wall_Triangle1.png" id="2_gnbwv"]
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_3grsr"]
+points = PackedVector2Array(0, -969, 962, 971, -933, 971)
+
+[node name="WallTriangleEq" type="CharacterBody2D"]
+collision_layer = 3
+collision_mask = 0
+script = ExtResource("1_gnbwv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("ConvexPolygonShape2D_3grsr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(15, 0)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_gnbwv")

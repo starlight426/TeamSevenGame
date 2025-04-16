@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqag8vg5edhsj"]
+
+[ext_resource type="Script" uid="uid://k6i4sycfnf2o" path="res://Scripts/bullet_shooter.gd" id="1_j2fw7"]
+
+[node name="BulletShooter" type="Node2D"]
+script = ExtResource("1_j2fw7")

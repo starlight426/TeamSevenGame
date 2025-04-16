@@ -11,8 +11,8 @@ var mod3
 var decay_time = 30.0
 
 
-var spinning = false
-var spinning_speed = PI/32
+var spinning = true
+var spinning_speed = PI
 var expanding = true
 var move_dir = 0.0
 
@@ -26,6 +26,9 @@ var locked_on_target = false
 func _ready() -> void:
 	move_dir = global_rotation
 	velocity = Vector2(speed,0).rotated(move_dir)
+	
+	for current_child in get_children():
+		current_child.team = team
 	if(expanding):
 		for current_child in get_children():
 			current_child.start_moving
@@ -60,6 +63,7 @@ func _physics_process(delta):
 		"arc":
 			if(is_moving_specially):
 				move_dir += rotation_speed * delta
+				velocity = Vector2(speed,0).rotated(move_dir)
 		"striker":
 		#	print("locked: " + str(locked_on_target))
 			#print(rotation_speed)wa

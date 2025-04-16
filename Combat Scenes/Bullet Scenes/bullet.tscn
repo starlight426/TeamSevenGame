@@ -1,10 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://bsuemvj7deagq"]
+[gd_scene load_steps=10 format=3 uid="uid://bsuemvj7deagq"]
 
 [ext_resource type="Script" uid="uid://dt6anicttmxex" path="res://Scripts/Combat/bullet.gd" id="1_kvwl7"]
 [ext_resource type="Texture2D" uid="uid://bicfb303bke1" path="res://Assets/spritePNGs/Circle_Bullet_N2.0.png" id="2_2enel"]
+[ext_resource type="Texture2D" uid="uid://dkpd8smjbsw1v" path="res://Assets/spritePNGs/Triangle_Bullet_N copy.png" id="3_115jd"]
+[ext_resource type="Texture2D" uid="uid://cshsyqn54s3pd" path="res://Assets/spritePNGs/Zigzag_Bullet_N.png" id="4_1lvql"]
+[ext_resource type="Texture2D" uid="uid://5ahcs6ctfwk0" path="res://Assets/spritePNGs/Square_Bullet_N.png" id="5_q4oxu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_su7xf"]
 radius = 27.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_115jd"]
+size = Vector2(23.75, 39)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1lvql"]
+size = Vector2(44.2143, 43.4638)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ovupw"]
 radius = 27.0
@@ -13,18 +22,49 @@ radius = 27.0
 light_mask = 2
 visibility_layer = 2
 z_index = -1
+scale = Vector2(0.8, 1)
 collision_layer = 0
 collision_mask = 0
 script = ExtResource("1_kvwl7")
+team = null
+speed = null
+contact_dmg = null
+color = null
+type = null
 
-[node name="Hitbox" type="Area2D" parent="."]
+[node name="CircleHitbox" type="Area2D" parent="."]
 visible = false
 collision_layer = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CircleHitbox"]
 shape = SubResource("CircleShape2D_su7xf")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="TriangleHitbox" type="Area2D" parent="."]
+visible = false
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TriangleHitbox"]
+position = Vector2(-6.875, -1.5)
+shape = SubResource("RectangleShape2D_115jd")
+
+[node name="ZigZagHitbox" type="Area2D" parent="."]
+visible = false
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZigZagHitbox"]
+shape = SubResource("CircleShape2D_su7xf")
+
+[node name="SquareHitbox" type="Area2D" parent="."]
+visible = false
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SquareHitbox"]
+position = Vector2(1, 9.53674e-07)
+rotation = 0.793958
+shape = SubResource("RectangleShape2D_1lvql")
+
+[node name="CircleSprite" type="Sprite2D" parent="."]
+visible = false
 light_mask = 2
 visibility_layer = 2
 texture_filter = 1
@@ -33,8 +73,40 @@ rotation = 1.5708
 scale = Vector2(0.492, 0.372)
 texture = ExtResource("2_2enel")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="TriangleSprite" type="Sprite2D" parent="."]
 visible = false
+light_mask = 2
+visibility_layer = 2
+texture_filter = 1
+position = Vector2(9, -1)
+rotation = 1.5708
+scale = Vector2(0.492, 0.372)
+texture = ExtResource("3_115jd")
+
+[node name="ZigZagSprite" type="Sprite2D" parent="."]
+visible = false
+light_mask = 2
+visibility_layer = 2
+texture_filter = 1
+position = Vector2(0, -1.19209e-07)
+rotation = 1.5708
+scale = Vector2(0.492, 0.372)
+texture = ExtResource("4_1lvql")
+
+[node name="SquareSprite" type="Sprite2D" parent="."]
+visible = false
+light_mask = 2
+visibility_layer = 2
+texture_filter = 1
+position = Vector2(1, -1.19209e-07)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("5_q4oxu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ovupw")
 
-[connection signal="body_entered" from="Hitbox" to="." method="on_bullet_hit"]
+[connection signal="body_entered" from="CircleHitbox" to="." method="on_bullet_hit"]
+[connection signal="body_entered" from="TriangleHitbox" to="." method="on_bullet_hit"]
+[connection signal="body_entered" from="ZigZagHitbox" to="." method="on_bullet_hit"]
+[connection signal="body_entered" from="SquareHitbox" to="." method="on_bullet_hit"]

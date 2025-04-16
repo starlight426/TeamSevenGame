@@ -18,18 +18,40 @@ var time_to_move_specially = 30.0
 var target = null
 var locked_on_target = false
 
+var current_sprite
+
 # Called when the node enters the scene tree for the first time.
 
 func _ready():
 	#$Hitbox.body_entered.connect(on_bullet_hit)
+	
+	match shape:
+		"circle":
+			$CircleHitbox.body_entered.connect(on_bullet_hit)
+			$CircleSprite.show()
+			current_sprite = $CircleSprite
+		"triangle":
+			$TriangleHitbox.body_entered.connect(on_bullet_hit)
+			$TriangleSprite.show()
+			current_sprite = $TriangleSprite
+		"zigzag":
+			$ZigZagHitbox.body_entered.connect(on_bullet_hit)
+			$ZigZagSprite.show()
+			current_sprite = $ZigZagSprite
+		"square":
+			$SquareHitbox.body_entered.connect(on_bullet_hit)
+			$SquareSprite.show()
+			current_sprite = $SquareSprite
+			
 	match type:
 		"straight":
 			pass
 		"striker":
-			$Sprite2D.modulate = Color(0.7,0.7,1.0,1.0)
+			current_sprite.modulate = Color(0.7,0.7,1.0,1.0)
+		
 	match color:
 		"cigil":
-			$Sprite2D.modulate = Color.BLACK
+			current_sprite.modulate = Color.BLACK
 	#play_this_sound()
 
 func start_moving():
