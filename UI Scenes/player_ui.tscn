@@ -8,13 +8,13 @@
 [ext_resource type="Texture2D" uid="uid://qjp3e0fpnfgi" path="res://Assets/UI Sprites/Icon_3Shot_Circ.png" id="4_2cns7"]
 [ext_resource type="Texture2D" uid="uid://cqjfo2mpx0gc5" path="res://Assets/UI Sprites/Bar_Health.png" id="4_8x4gh"]
 [ext_resource type="Texture2D" uid="uid://gbfacsfumxad" path="res://Assets/leftclickz.png" id="4_ope4c"]
-[ext_resource type="Texture2D" uid="uid://c3mcklesdfoax" path="res://Assets/UI Sprites/Icon_8Shot_Circ.png" id="5_0ct5d"]
 [ext_resource type="Texture2D" uid="uid://dsdsy4mxcy3pf" path="res://Assets/DarkKeys/E-Key.png" id="6_0ct5d"]
 [ext_resource type="Texture2D" uid="uid://cf12ploul43cq" path="res://Assets/UI Sprites/Icon_SpeedUp_Circ.png" id="6_57t0v"]
 [ext_resource type="Texture2D" uid="uid://ted40m5ovrw6" path="res://Assets/rightclickz.png" id="6_rutr5"]
 [ext_resource type="Texture2D" uid="uid://b4mxva3chakxb" path="res://Assets/UI Sprites/Icon_Turret_Circ.png" id="7_07fkh"]
 [ext_resource type="Texture2D" uid="uid://2t5ptb6l5vvd" path="res://Assets/DarkKeys/Shift-Key.png" id="8_07fkh"]
 [ext_resource type="Texture2D" uid="uid://c7sabdv3d8an" path="res://Assets/DarkKeys/Q-Key.png" id="8_57t0v"]
+[ext_resource type="Texture2D" uid="uid://b3d8i5fnv2ujc" path="res://Assets/UI Sprites/Icon_FastShot_Circ.png" id="10_kyl3c"]
 
 [node name="PlayerUI" type="Control"]
 layout_mode = 3
@@ -124,7 +124,7 @@ layout_mode = 2
 value = 100.0
 fill_mode = 4
 texture_under = ExtResource("1_k4ew6")
-texture_progress = ExtResource("5_0ct5d")
+texture_progress = ExtResource("10_kyl3c")
 
 [node name="Sprite2D" type="Sprite2D" parent="MoveIconsBar/Action3"]
 z_index = -1
