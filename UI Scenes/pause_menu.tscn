@@ -1,14 +1,19 @@
-[gd_scene load_steps=13 format=3 uid="uid://blb7rs1uwuo2s"]
+[gd_scene load_steps=17 format=3 uid="uid://blb7rs1uwuo2s"]
 
 [ext_resource type="Script" uid="uid://bu4psw76fl3kt" path="res://UI Scenes/pause_menu.gd" id="1_to0ni"]
 [ext_resource type="Texture2D" uid="uid://bkmcx2w6oyhds" path="res://Assets/UI Sprites/Icon_Single_Circ.png" id="2_s3syd"]
 [ext_resource type="Script" uid="uid://c602hdqumdjcd" path="res://UI Scenes/inventoryLabel.gd" id="3_5nmen"]
 [ext_resource type="Texture2D" uid="uid://qjp3e0fpnfgi" path="res://Assets/UI Sprites/Icon_3Shot_Circ.png" id="3_gupsn"]
-[ext_resource type="Texture2D" uid="uid://c3mcklesdfoax" path="res://Assets/UI Sprites/Icon_8Shot_Circ.png" id="4_5nmen"]
+[ext_resource type="Texture2D" uid="uid://b3d8i5fnv2ujc" path="res://Assets/UI Sprites/Icon_FastShot_Circ.png" id="5_lsscg"]
 [ext_resource type="Texture2D" uid="uid://cf12ploul43cq" path="res://Assets/UI Sprites/Icon_SpeedUp_Circ.png" id="5_usb3c"]
 [ext_resource type="Texture2D" uid="uid://b4mxva3chakxb" path="res://Assets/UI Sprites/Icon_Turret_Circ.png" id="6_2onaw"]
 [ext_resource type="Texture2D" uid="uid://c4m82to15c03o" path="res://Assets/UI Sprites/Icon_Border.png" id="7_5nydq"]
 [ext_resource type="Shader" uid="uid://vj0w6rny8lby" path="res://UI Scenes/grayscale.gdshader" id="7_gupsn"]
+[ext_resource type="Texture2D" uid="uid://dcwyfue8fh185" path="res://Assets/UI Sprites/Icon_2Shot_Triangle.png" id="9_8cbhb"]
+[ext_resource type="Texture2D" uid="uid://ceuetug57xwny" path="res://Assets/UI Sprites/Icon_5Shot_Tri.png" id="10_2lnu8"]
+[ext_resource type="Texture2D" uid="uid://783yttanqfbi" path="res://Assets/UI Sprites/Icon_ZigZag.png" id="11_pgvv8"]
+[ext_resource type="Texture2D" uid="uid://f3juf6clnp7d" path="res://Assets/UI Sprites/Icon_Dash.png" id="12_lwgsy"]
+[ext_resource type="Texture2D" uid="uid://dxkv40tpvpai7" path="res://Assets/UI Sprites/Icon_Summon_Tri.png" id="13_k7mho"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_usb3c"]
 bg_color = Color(0.184314, 0.184314, 0.184314, 1)
@@ -17,9 +22,6 @@ border_width_top = 10
 border_width_right = 10
 border_width_bottom = 10
 border_color = Color(0.376471, 0.376471, 0.376471, 1)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_5nmen"]
-shader = ExtResource("7_gupsn")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_usb3c"]
 shader = ExtResource("7_gupsn")
@@ -156,20 +158,20 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Single Shot
-Cooldown 0.1s
-Energy 10
+text = "3 Shot Spread
+Cooldown 0.3s
+Energy 20
 "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="8ShotCirc" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/StartingActions"]
+[node name="Striker" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/StartingActions"]
 use_parent_material = true
 layout_mode = 2
-texture = ExtResource("4_5nmen")
+texture = ExtResource("5_lsscg")
 script = ExtResource("3_5nmen")
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/StartingActions/8ShotCirc"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/StartingActions/Striker"]
 visible = false
 z_index = 2
 layout_mode = 1
@@ -185,7 +187,7 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Single Shot
+text = "Striker
 Cooldown 0.1s
 Energy 10
 "
@@ -214,9 +216,9 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Single Shot
-Cooldown 0.1s
-Energy 10
+text = "Speed Up
+Cooldown 3s
+Energy 300
 "
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -243,25 +245,24 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Single Shot
-Cooldown 0.1s
-Energy 10
+text = "Turret
+Cooldown 5s
+Energy 80
 "
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="SecondStageActions" type="HBoxContainer" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer"]
-material = SubResource("ShaderMaterial_5nmen")
 layout_mode = 2
 theme_override_constants/separation = 60
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions"]
+[node name="2Shot Tri" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions"]
 use_parent_material = true
 layout_mode = 2
-texture = ExtResource("7_5nydq")
+texture = ExtResource("9_8cbhb")
 script = ExtResource("3_5nmen")
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions/TextureRect"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions/2Shot Tri"]
 visible = false
 z_index = 2
 layout_mode = 1
@@ -274,23 +275,23 @@ offset_right = 25.0
 offset_bottom = 25.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.705882, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Single Shot
-Cooldown 0.1s
-Energy 10
+text = "Double Shot
+Locked Upgrade
+for Single Shot
 "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureRect2" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions"]
+[node name="5Shot Tri" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions"]
 use_parent_material = true
 layout_mode = 2
-texture = ExtResource("7_5nydq")
+texture = ExtResource("10_2lnu8")
 script = ExtResource("3_5nmen")
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions/TextureRect2"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions/5Shot Tri"]
 visible = false
 z_index = 2
 layout_mode = 1
@@ -303,23 +304,23 @@ offset_right = 25.0
 offset_bottom = 25.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.705882, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Single Shot
-Cooldown 0.1s
-Energy 10
+text = "5 Shot Spread
+Locked Upgrade
+for 3 Shot Spread
 "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureRect3" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions"]
+[node name="Zigzag" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions"]
 use_parent_material = true
 layout_mode = 2
-texture = ExtResource("7_5nydq")
+texture = ExtResource("11_pgvv8")
 script = ExtResource("3_5nmen")
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions/TextureRect3"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions/Zigzag"]
 visible = false
 z_index = 2
 layout_mode = 1
@@ -332,23 +333,23 @@ offset_right = 25.0
 offset_bottom = 25.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.705882, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Single Shot
-Cooldown 0.1s
-Energy 10
+text = "Zigzag
+Locked Upgrade
+for Striker
 "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureRect4" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions"]
+[node name="Dash" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions"]
 use_parent_material = true
 layout_mode = 2
-texture = ExtResource("7_5nydq")
+texture = ExtResource("12_lwgsy")
 script = ExtResource("3_5nmen")
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions/TextureRect4"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions/Dash"]
 visible = false
 z_index = 2
 layout_mode = 1
@@ -361,23 +362,23 @@ offset_right = 25.0
 offset_bottom = 25.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.705882, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Single Shot
-Cooldown 0.1s
-Energy 10
+text = "Dash
+Locked Upgrade
+for Speed Up
 "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureRect5" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions"]
+[node name="Summon Tri" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions"]
 use_parent_material = true
 layout_mode = 2
-texture = ExtResource("7_5nydq")
+texture = ExtResource("13_k7mho")
 script = ExtResource("3_5nmen")
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions/TextureRect5"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions/Summon Tri"]
 visible = false
 z_index = 2
 layout_mode = 1
@@ -390,12 +391,12 @@ offset_right = 25.0
 offset_bottom = 25.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(0.705882, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Single Shot
-Cooldown 0.1s
-Energy 10
+text = "Rammer
+Locked Upgrade
+for Turret
 "
 horizontal_alignment = 1
 vertical_alignment = 1
