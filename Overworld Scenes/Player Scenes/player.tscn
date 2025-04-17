@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://hwmgwkumra7q"]
 
-[ext_resource type="Script" path="res://Scripts/player.gd" id="1_2lqq4"]
+[ext_resource type="Script" uid="uid://nd5ld3cd0fqo" path="res://Scripts/player.gd" id="1_2lqq4"]
 [ext_resource type="Texture2D" uid="uid://ccj2jx5itxah7" path="res://Assets/spritePNGs/Cigil2.0.png" id="2_e5fwu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_w0ggq"]
