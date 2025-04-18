@@ -42,18 +42,22 @@ scale = Vector2(10, 6)
 
 [node name="WallSquare8" parent="." instance=ExtResource("2_m4mpu")]
 position = Vector2(3000, 8500)
+rotation = 3.14159
 scale = Vector2(10, 10)
 
 [node name="WallSquare9" parent="." instance=ExtResource("2_m4mpu")]
 position = Vector2(5000, 8500)
+rotation = 3.14159
 scale = Vector2(10, 10)
 
 [node name="WallSquare10" parent="." instance=ExtResource("2_m4mpu")]
 position = Vector2(-3000, 8500)
+rotation = 3.14159
 scale = Vector2(10, 10)
 
 [node name="WallSquare11" parent="." instance=ExtResource("2_m4mpu")]
 position = Vector2(-8000, 8500)
+rotation = 3.14159
 scale = Vector2(10, 10)
 
 [node name="WallSquare12" parent="." instance=ExtResource("2_m4mpu")]
@@ -62,26 +66,40 @@ scale = Vector2(10, 10)
 
 [node name="WallSquare13" parent="." instance=ExtResource("2_m4mpu")]
 position = Vector2(-9000, 3500)
+rotation = -1.5708
 scale = Vector2(10, 10)
 
 [node name="WallSquare14" parent="." instance=ExtResource("2_m4mpu")]
 position = Vector2(-9000, -3.05176e-05)
+rotation = -1.5708
 scale = Vector2(10, 10)
 
 [node name="WallSquare15" parent="." instance=ExtResource("2_m4mpu")]
-position = Vector2(-9000, -5000)
+position = Vector2(-16000, -5000)
+rotation = -1.5708
 scale = Vector2(10, 10)
 
 [node name="WallSquare16" parent="." instance=ExtResource("2_m4mpu")]
-position = Vector2(-9000, -7000)
-scale = Vector2(10, 10)
+position = Vector2(-9000, -5500)
+rotation = -1.5708
+scale = Vector2(14, 10)
+
+[node name="WallSquare17" parent="." instance=ExtResource("2_m4mpu")]
+position = Vector2(8000, -5000)
+rotation = 1.5708
+scale = Vector2(16, 10)
+
+[node name="WallSquare18" parent="." instance=ExtResource("2_m4mpu")]
+position = Vector2(8000, 2500)
+rotation = 1.5708
+scale = Vector2(16, 10)
 
 [node name="WallSquare3" parent="." instance=ExtResource("2_m4mpu")]
 position = Vector2(1500, -9500)
 scale = Vector2(50, 6)
 
 [node name="WallSquare2" parent="." instance=ExtResource("2_m4mpu")]
-position = Vector2(8000, -4500)
+position = Vector2(11500, -4500)
 scale = Vector2(6, 50)
 
 [node name="WallSquare5" parent="." instance=ExtResource("2_m4mpu")]
@@ -93,7 +111,7 @@ position = Vector2(-19000, 6000)
 scale = Vector2(6, 10)
 
 [node name="WallSquare4" parent="." instance=ExtResource("2_m4mpu")]
-position = Vector2(8000, 500)
+position = Vector2(11000, 500)
 scale = Vector2(6, 10)
 
 [node name="left_camera_limit" type="Marker2D" parent="."]

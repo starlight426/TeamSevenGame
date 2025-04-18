@@ -35,7 +35,7 @@ target_entrance = "from_bottom"
 position = Vector2(14000, 2500)
 scale = Vector2(4, 4)
 target_room = "mantle_14"
-target_entrance = "from_top"
+target_entrance = "from_topleft"
 target_group = "Circle Mantle"
 
 [node name="left_camera_limit" type="Marker2D" parent="."]

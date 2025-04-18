@@ -53,6 +53,7 @@ func movement_mode_switcher():
 		strafe_direction = randi()%2 * 2 - 1
 		movement_mode = STRAFING
 		await get_tree().create_timer(3.0).timeout
+		
 func update_target(body):
 	target = body
 	

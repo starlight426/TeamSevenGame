@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_n5ri0"]
 [ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="2_i36t0"]
-[ext_resource type="PackedScene" uid="uid://cpejrgftjtg1h" path="res://Combat Scenes/Enemy Scenes/enemy_triangle_basic.tscn" id="3_n5ri0"]
+[ext_resource type="PackedScene" uid="uid://papvh6mjcv7y" path="res://Combat Scenes/Enemy Scenes/enemy_circle_clidean.tscn" id="3_n5ri0"]
 
 [node name="DevTestRoom" type="Node2D"]
 
@@ -92,5 +92,5 @@ position = Vector2(0, -7500)
 [node name="bottom_camera_limit" type="Marker2D" parent="."]
 position = Vector2(0, 3500)
 
-[node name="EnemyTriangleBasic" parent="." instance=ExtResource("3_n5ri0")]
-position = Vector2(3000, -500)
+[node name="EnemyCircleClidean" parent="." instance=ExtResource("3_n5ri0")]
+position = Vector2(4500, -2500)

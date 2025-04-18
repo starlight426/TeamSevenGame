@@ -100,6 +100,7 @@ func _physics_process(delta):
 
 func on_bullet_hit(target):
 	if(target.team != team):
+		#print("took" + str(contact_dmg) + " damage")
 		target.take_damage(contact_dmg)
 		queue_free()
 
