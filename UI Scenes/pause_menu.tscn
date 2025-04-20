@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://blb7rs1uwuo2s"]
+[gd_scene load_steps=18 format=3 uid="uid://blb7rs1uwuo2s"]
 
 [ext_resource type="Script" uid="uid://bu4psw76fl3kt" path="res://UI Scenes/pause_menu.gd" id="1_to0ni"]
 [ext_resource type="Texture2D" uid="uid://bkmcx2w6oyhds" path="res://Assets/UI Sprites/Icon_Single_Circ.png" id="2_s3syd"]
@@ -22,6 +22,9 @@ border_width_top = 10
 border_width_right = 10
 border_width_bottom = 10
 border_color = Color(0.376471, 0.376471, 0.376471, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5nmen"]
+shader = ExtResource("7_gupsn")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_usb3c"]
 shader = ExtResource("7_gupsn")
@@ -253,6 +256,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="SecondStageActions" type="HBoxContainer" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer"]
+material = SubResource("ShaderMaterial_5nmen")
 layout_mode = 2
 theme_override_constants/separation = 60
 
