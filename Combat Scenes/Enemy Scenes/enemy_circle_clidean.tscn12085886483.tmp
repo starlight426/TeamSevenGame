@@ -24,9 +24,8 @@ scale = Vector2(20, 20)
 
 [node name="hp_tracker" type="Label" parent="."]
 offset_left = -504.0
-offset_top = 72.0
 offset_right = -464.0
-offset_bottom = 95.0
+offset_bottom = 23.0
 rotation = -1.5708
-scale = Vector2(4, 4)
+scale = Vector2(2, 2)
 text = "1000"

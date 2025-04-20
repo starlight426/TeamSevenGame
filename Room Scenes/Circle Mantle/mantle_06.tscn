@@ -31,7 +31,7 @@ target_group = "Circle Mantle"
 position = Vector2(3000, -8500)
 rotation = -1.18857
 scale = Vector2(3, 3)
-target_room = "mantle_07"
+target_room = "mantle_17"
 target_entrance = "from_bottom"
 target_group = "Circle Mantle"
 

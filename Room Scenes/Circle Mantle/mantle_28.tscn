@@ -28,7 +28,7 @@ target_group = "Circle Mantle"
 [node name="exit2" parent="." instance=ExtResource("2_xorah")]
 position = Vector2(3000, -12000)
 target_room = "clidean_room"
-target_entrance = "from_right"
+target_entrance = "from_bottom"
 target_group = "Circle Temple"
 
 [node name="exit3" parent="." instance=ExtResource("2_xorah")]
