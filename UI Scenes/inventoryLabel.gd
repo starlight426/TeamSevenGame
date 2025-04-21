@@ -1,4 +1,4 @@
-extends TextureRect
+extends Control
 
 func _ready():
 	connect("mouse_entered", Callable(self, "_on_mouse_entered"))
