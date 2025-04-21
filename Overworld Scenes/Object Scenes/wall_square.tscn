@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dsrmf6yrx14yl"]
 
-[ext_resource type="Script" path="res://Scripts/wall_square.gd" id="1_50iou"]
+[ext_resource type="Script" uid="uid://bw5wba4ai8jeh" path="res://Scripts/wall_square.gd" id="1_50iou"]
 [ext_resource type="Texture2D" uid="uid://djjd7blv11u24" path="res://Assets/Shapes/Wall_CircleCity.png" id="2_v6o3l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_830on"]

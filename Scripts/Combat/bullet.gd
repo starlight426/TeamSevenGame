@@ -113,7 +113,7 @@ func moving_specially_timer():
 	is_moving_specially = false
 	
 func is_looking_at(target: Node2D) -> bool:
-	var tolerance = 0.3
+	var tolerance = 0.1
 	var facing_dir = Vector2.RIGHT.rotated(rotation)
 	var to_target = (target.global_position - global_position).normalized()
 	var angle_diff = facing_dir.angle_to(to_target)

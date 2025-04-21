@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://dthas5gqr4mhm"]
+[gd_scene load_steps=7 format=3 uid="uid://dthas5gqr4mhm"]
 
 [ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_enjgl"]
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="2_2x0me"]
 [ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="3_yxd0q"]
 [ext_resource type="PackedScene" uid="uid://dwsnmdabrmlo8" path="res://Combat Scenes/Enemy Scenes/enemy_circle_chaser.tscn" id="5_2x0me"]
+[ext_resource type="PackedScene" uid="uid://4i7rpstg74wt" path="res://Combat Scenes/Enemy Scenes/enemy_circle_basic.tscn" id="6_2x0me"]
 [ext_resource type="PackedScene" uid="uid://cdfypqi8cem6m" path="res://Combat Scenes/Enemy Scenes/enemy_circle_wave.tscn" id="6_yxd0q"]
 
 [node name="TemplateRoom" type="Node2D"]
@@ -81,15 +82,59 @@ position = Vector2(7500, -13000)
 scale = Vector2(5, 5)
 
 [node name="WallMantle12" parent="." instance=ExtResource("3_yxd0q")]
-position = Vector2(5000, -11000)
+position = Vector2(4750, -12000)
 scale = Vector2(5, 5)
 
 [node name="WallMantle13" parent="." instance=ExtResource("3_yxd0q")]
-position = Vector2(1750, -8250)
+position = Vector2(1750, -9000)
 scale = Vector2(5, 5)
 
 [node name="WallMantle14" parent="." instance=ExtResource("3_yxd0q")]
-position = Vector2(-1250, -5500)
+position = Vector2(-1500, -6000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle20" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(-5500, -6000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle21" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(-1250, -9750)
+scale = Vector2(5, 5)
+
+[node name="WallMantle22" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(-3500, -9250)
+scale = Vector2(5, 5)
+
+[node name="WallMantle23" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(1250, -13000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle24" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(-250, 9500)
+scale = Vector2(5, 5)
+
+[node name="WallMantle25" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(2750, 7000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle26" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(13250, -1500)
+scale = Vector2(5, 5)
+
+[node name="WallMantle27" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(15750, -6000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle28" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(-9750, 249.999)
+scale = Vector2(5, 5)
+
+[node name="WallMantle29" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(-10250, 2500)
+scale = Vector2(5, 5)
+
+[node name="WallMantle30" parent="." instance=ExtResource("3_yxd0q")]
+position = Vector2(9750, -16500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle3" parent="." instance=ExtResource("3_yxd0q")]
@@ -97,7 +142,7 @@ position = Vector2(6250, 4750)
 scale = Vector2(5, 5)
 
 [node name="WallMantle4" parent="." instance=ExtResource("3_yxd0q")]
-position = Vector2(4250, 1000)
+position = Vector2(6000, 1500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle5" parent="." instance=ExtResource("3_yxd0q")]
@@ -105,7 +150,7 @@ position = Vector2(11750, -5750)
 scale = Vector2(5, 5)
 
 [node name="WallMantle17" parent="." instance=ExtResource("3_yxd0q")]
-position = Vector2(9250, -4500)
+position = Vector2(10000, -4000)
 scale = Vector2(5, 5)
 
 [node name="WallMantle18" parent="." instance=ExtResource("3_yxd0q")]
@@ -133,7 +178,7 @@ position = Vector2(14500, -10750)
 scale = Vector2(5, 5)
 
 [node name="WallMantle6" parent="." instance=ExtResource("3_yxd0q")]
-position = Vector2(7000, -1000)
+position = Vector2(8000, -1750)
 scale = Vector2(5, 5)
 
 [node name="WallMantle7" parent="." instance=ExtResource("3_yxd0q")]
@@ -153,14 +198,17 @@ position = Vector2(-4000, -2500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle8" parent="." instance=ExtResource("3_yxd0q")]
-position = Vector2(2500, 3250)
+position = Vector2(2500, 3750)
 scale = Vector2(5, 5)
-
-[node name="EnemyCircleChaser" parent="." instance=ExtResource("5_2x0me")]
-position = Vector2(-250, -500)
 
 [node name="EnemyCircleChaser2" parent="." instance=ExtResource("5_2x0me")]
 position = Vector2(2750, -3250)
 
 [node name="EnemyCircleWave" parent="." instance=ExtResource("6_yxd0q")]
-position = Vector2(6250, -6750)
+position = Vector2(5750, -6250)
+
+[node name="EnemyCircleBasic" parent="." instance=ExtResource("6_2x0me")]
+position = Vector2(4750, -4750)
+
+[node name="EnemyCircleBasic2" parent="." instance=ExtResource("6_2x0me")]
+position = Vector2(7250, -7500)

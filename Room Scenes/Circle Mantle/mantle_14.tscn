@@ -1,20 +1,23 @@
-[gd_scene load_steps=5 format=3 uid="uid://ctxdyppf7t0hq"]
+[gd_scene load_steps=7 format=3 uid="uid://ctxdyppf7t0hq"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_ev6ru"]
 [ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_scb6r"]
 [ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="2_q2mjc"]
+[ext_resource type="PackedScene" uid="uid://cdfypqi8cem6m" path="res://Combat Scenes/Enemy Scenes/enemy_circle_wave.tscn" id="5_6uuog"]
 [ext_resource type="Texture2D" uid="uid://fd1bo6fne3dc" path="res://Assets/Shapes/Wall_Mantle.png" id="6_70nn7"]
+[ext_resource type="PackedScene" uid="uid://dwsnmdabrmlo8" path="res://Combat Scenes/Enemy Scenes/enemy_circle_chaser.tscn" id="6_wltl1"]
 
 [node name="TemplateRoom" type="Node2D"]
 
 [node name="Floor" type="Sprite2D" parent="."]
 z_index = -10
-position = Vector2(25500, -19500)
+position = Vector2(-2500, -6000)
 scale = Vector2(6.32, 6)
 texture = ExtResource("1_scb6r")
 
 [node name="exit" parent="." instance=ExtResource("1_ev6ru")]
-position = Vector2(-7000, -14500)
+position = Vector2(-7000, -15000)
+rotation = 0.673336
 scale = Vector2(4, 6)
 target_room = "mantle_05"
 target_entrance = "from_right"
@@ -55,7 +58,7 @@ position = Vector2(5000, -13000)
 [node name="from_bottomright" type="Marker2D" parent="."]
 position = Vector2(5500, 0)
 
-[node name="from_bottomleft" type="Marker2D" parent="."]
+[node name="from_bottom" type="Marker2D" parent="."]
 position = Vector2(-5500, -500)
 
 [node name="from_topleft" type="Marker2D" parent="."]
@@ -75,7 +78,7 @@ position = Vector2(-5500, -8500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle2" parent="." instance=ExtResource("2_q2mjc")]
-position = Vector2(-1000, -15500)
+position = Vector2(500, -17000)
 scale = Vector2(5, 5)
 
 [node name="WallMantle10" parent="." instance=ExtResource("2_q2mjc")]
@@ -83,7 +86,7 @@ position = Vector2(-4000, -17000)
 scale = Vector2(5, 5)
 
 [node name="WallMantle16" parent="." instance=ExtResource("2_q2mjc")]
-position = Vector2(-2500, -18000)
+position = Vector2(-1000, -16500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle45" parent="." instance=ExtResource("2_q2mjc")]
@@ -99,7 +102,7 @@ position = Vector2(1500, -15500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle44" parent="." instance=ExtResource("2_q2mjc")]
-position = Vector2(9000, -16500)
+position = Vector2(5500, -13000)
 scale = Vector2(5, 5)
 
 [node name="WallMantle18" parent="." instance=ExtResource("2_q2mjc")]
@@ -135,7 +138,7 @@ position = Vector2(9500, -3500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle42" parent="." instance=ExtResource("2_q2mjc")]
-position = Vector2(11500, -1000)
+position = Vector2(7000, 500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle43" parent="." instance=ExtResource("2_q2mjc")]
@@ -143,7 +146,7 @@ position = Vector2(9500, 4500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle7" parent="." instance=ExtResource("2_q2mjc")]
-position = Vector2(6500, 4000)
+position = Vector2(6000, 3500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle9" parent="." instance=ExtResource("2_q2mjc")]
@@ -160,6 +163,10 @@ scale = Vector2(5, 5)
 
 [node name="WallMantle19" parent="." instance=ExtResource("2_q2mjc")]
 position = Vector2(-10000, -4000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle47" parent="." instance=ExtResource("2_q2mjc")]
+position = Vector2(-12000, -500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle20" parent="." instance=ExtResource("2_q2mjc")]
@@ -254,3 +261,9 @@ texture = ExtResource("6_70nn7")
 [node name="WallMantle41" type="Sprite2D" parent="."]
 position = Vector2(20500, -10000)
 texture = ExtResource("6_70nn7")
+
+[node name="EnemyCircleWave" parent="." instance=ExtResource("5_6uuog")]
+position = Vector2(1500, -9500)
+
+[node name="EnemyCircleChaser" parent="." instance=ExtResource("6_wltl1")]
+position = Vector2(3000, -3000)

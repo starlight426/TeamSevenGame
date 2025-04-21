@@ -1,4 +1,4 @@
-extends AudioStreamPlayer
+extends AudioStreamPlayer2D
 var level_music = preload("res://Assets/Audio Files/SI_Exploration_theme1_finalised.mp3")
 var boss_music = preload("res://Assets/Audio Files/SI_Boss_Fight_theme1_finalised.mp3")
 

@@ -1,0 +1,325 @@
+[gd_scene load_steps=7 format=3 uid="uid://b1ao5s7l0lg2s"]
+
+[ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_qf0v4"]
+[ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="2_27bhq"]
+[ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="3_4dfv0"]
+[ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="5_ce6xg"]
+[ext_resource type="Texture2D" uid="uid://djjd7blv11u24" path="res://Assets/Shapes/Wall_CircleCity.png" id="7_qkkj2"]
+[ext_resource type="Texture2D" uid="uid://fd1bo6fne3dc" path="res://Assets/Shapes/Wall_Mantle.png" id="8_bb3fm"]
+
+[node name="TemplateRoom2" type="Node2D"]
+
+[node name="Floor" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(-2250, -29000)
+scale = Vector2(4.73318, 18.4793)
+texture = ExtResource("1_qf0v4")
+
+[node name="exit" parent="." instance=ExtResource("2_27bhq")]
+position = Vector2(-10000, -22500)
+scale = Vector2(5, 5)
+target_room = "circle_houses_1"
+target_entrance = "from_right"
+target_group = "Circle City"
+
+[node name="exit4" parent="." instance=ExtResource("2_27bhq")]
+position = Vector2(0, 4000)
+target_room = ""
+target_entrance = "from_top"
+
+[node name="exit3" parent="." instance=ExtResource("2_27bhq")]
+position = Vector2(4750, 0)
+target_room = "cigil_room"
+target_entrance = "from_left"
+target_group = "Circle City"
+
+[node name="WallSquare8" parent="." instance=ExtResource("3_4dfv0")]
+position = Vector2(2000, 4000)
+scale = Vector2(10, 6)
+
+[node name="WallSquare2" parent="." instance=ExtResource("3_4dfv0")]
+position = Vector2(5500, -13000)
+scale = Vector2(10, 50)
+
+[node name="WallSquare6" parent="." instance=ExtResource("3_4dfv0")]
+position = Vector2(5500, -28000)
+scale = Vector2(10, 50)
+
+[node name="WallSquare9" parent="." instance=ExtResource("3_4dfv0")]
+position = Vector2(5500, -36000)
+scale = Vector2(10, 50)
+
+[node name="WallSquare10" parent="." instance=ExtResource("3_4dfv0")]
+position = Vector2(4000, -55000)
+scale = Vector2(20, 40)
+
+[node name="WallSquare11" parent="." instance=ExtResource("3_4dfv0")]
+z_index = 1
+position = Vector2(-8000, -55000)
+scale = Vector2(20, 40)
+
+[node name="WallSquare3" parent="." instance=ExtResource("3_4dfv0")]
+position = Vector2(-10000, -9500)
+scale = Vector2(10, 50)
+
+[node name="WallSquare5" parent="." instance=ExtResource("3_4dfv0")]
+position = Vector2(-10000, -34500)
+scale = Vector2(10, 50)
+
+[node name="WallSquare4" parent="." instance=ExtResource("3_4dfv0")]
+position = Vector2(4500, 3000)
+scale = Vector2(6, 10)
+
+[node name="WallSquare7" parent="." instance=ExtResource("3_4dfv0")]
+position = Vector2(7500, 750)
+scale = Vector2(6, 10)
+
+[node name="WallSquare12" parent="." instance=ExtResource("3_4dfv0")]
+position = Vector2(-2000, -52750)
+scale = Vector2(6, 10)
+
+[node name="left_camera_limit" type="Marker2D" parent="."]
+position = Vector2(-8750, 0)
+
+[node name="from_left" type="Marker2D" parent="."]
+position = Vector2(-7273, -22683)
+
+[node name="from_right" type="Marker2D" parent="."]
+position = Vector2(3250, 0)
+
+[node name="from_bottom" type="Marker2D" parent="."]
+position = Vector2(0, 3000)
+
+[node name="from_top" type="Marker2D" parent="."]
+position = Vector2(-2000, -44250)
+
+[node name="right_camera_limit" type="Marker2D" parent="."]
+position = Vector2(4250, 0)
+
+[node name="top_camera_limit" type="Marker2D" parent="."]
+position = Vector2(-2000, -45500)
+
+[node name="bottom_camera_limit" type="Marker2D" parent="."]
+position = Vector2(-2000, 4500)
+
+[node name="WallMantle" parent="." instance=ExtResource("5_ce6xg")]
+position = Vector2(20750, -54750)
+scale = Vector2(20, 20)
+
+[node name="WallMantle2" parent="." instance=ExtResource("5_ce6xg")]
+position = Vector2(-24500, -51750)
+scale = Vector2(20, 20)
+
+[node name="exit2" parent="." instance=ExtResource("2_27bhq")]
+position = Vector2(-1750, -46750)
+scale = Vector2(5, 5)
+target_room = "circle_corridor"
+target_entrance = "from_bottom"
+target_group = "Circle City"
+
+[node name="WallCircleCity11" type="Sprite2D" parent="."]
+position = Vector2(-10000, -42250)
+rotation = -1.5708
+scale = Vector2(2.93381, 5.03219)
+texture = ExtResource("7_qkkj2")
+
+[node name="WallCircleCity17" type="Sprite2D" parent="."]
+position = Vector2(5519, -41694)
+rotation = 1.5708
+scale = Vector2(3.46869, 5.03219)
+texture = ExtResource("7_qkkj2")
+
+[node name="WallMantle3" type="Sprite2D" parent="."]
+position = Vector2(-33169, -56118)
+scale = Vector2(4.04, 4.12)
+texture = ExtResource("8_bb3fm")
+
+[node name="WallMantle4" type="Sprite2D" parent="."]
+position = Vector2(24335, -53098)
+scale = Vector2(4.04, 4.12)
+texture = ExtResource("8_bb3fm")
+
+[node name="WallCircleCity6" type="Sprite2D" parent="."]
+position = Vector2(-2250, 4750)
+rotation = -3.14159
+scale = Vector2(5.30866, 7.81618)
+texture = ExtResource("7_qkkj2")
+
+[node name="WallCircleCity" type="Sprite2D" parent="."]
+position = Vector2(-10004, -210)
+rotation = -1.5708
+scale = Vector2(3.63327, 5.03219)
+texture = ExtResource("7_qkkj2")
+
+[node name="WallCircleCity5" type="Sprite2D" parent="."]
+position = Vector2(5556, -3645.44)
+rotation = 1.5708
+scale = Vector2(3.14609, 5.07334)
+texture = ExtResource("7_qkkj2")
+
+[node name="WallCircleCity12" type="Sprite2D" parent="."]
+position = Vector2(5522, -9947)
+rotation = 1.5708
+scale = Vector2(3.13953, 5.03219)
+texture = ExtResource("7_qkkj2")
+
+[node name="WallCircleCity13" type="Sprite2D" parent="."]
+position = Vector2(5532, -16227)
+rotation = 1.5708
+scale = Vector2(3.13953, 5.03219)
+texture = ExtResource("7_qkkj2")
+
+[node name="WallCircleCity14" type="Sprite2D" parent="."]
+position = Vector2(5533, -22511)
+rotation = 1.5708
+scale = Vector2(3.13953, 5.03219)
+texture = ExtResource("7_qkkj2")
+
+[node name="WallCircleCity15" type="Sprite2D" parent="."]
+position = Vector2(5522, -28806)
+rotation = 1.5708
+scale = Vector2(3.13953, 5.03219)
+texture = ExtResource("7_qkkj2")
+
+[node name="WallCircleCity16" type="Sprite2D" parent="."]
+position = Vector2(5520, -35080)
+rotation = 1.5708
+scale = Vector2(3.13953, 5.03219)
+texture = ExtResource("7_qkkj2")
+
+[node name="WallCircleCity7" type="Sprite2D" parent="."]
+position = Vector2(13250, 6000)
+rotation = 1.5708
+scale = Vector2(4.68925, 5.03219)
+texture = ExtResource("7_qkkj2")
+
+[node name="WallCircleCity18" type="Sprite2D" parent="."]
+position = Vector2(5750, 5250)
+rotation = 1.5708
+scale = Vector2(4.68925, 5.03219)
+texture = ExtResource("7_qkkj2")
+
+[node name="WallCircleCity2" type="Sprite2D" parent="."]
+position = Vector2(-10001, -6984)
+rotation = -1.5708
+scale = Vector2(3.13953, 5.03219)
+texture = ExtResource("7_qkkj2")
+
+[node name="WallCircleCity3" type="Sprite2D" parent="."]
+position = Vector2(-9999, -13212)
+rotation = -1.5708
+scale = Vector2(3.13953, 5.03219)
+texture = ExtResource("7_qkkj2")
+
+[node name="WallCircleCity4" type="Sprite2D" parent="."]
+position = Vector2(-9999, -19136.7)
+rotation = -1.5708
+scale = Vector2(2.93381, 5.03219)
+texture = ExtResource("7_qkkj2")
+
+[node name="WallCircleCity8" type="Sprite2D" parent="."]
+position = Vector2(-10000, -25000)
+rotation = -1.5708
+scale = Vector2(2.93381, 5.03219)
+texture = ExtResource("7_qkkj2")
+
+[node name="WallCircleCity9" type="Sprite2D" parent="."]
+position = Vector2(-10000, -30750)
+rotation = -1.5708
+scale = Vector2(2.93381, 5.03219)
+texture = ExtResource("7_qkkj2")
+
+[node name="WallCircleCity10" type="Sprite2D" parent="."]
+position = Vector2(-10000, -36500)
+rotation = -1.5708
+scale = Vector2(2.93381, 5.03219)
+texture = ExtResource("7_qkkj2")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -3750.0
+offset_top = -2500.0
+offset_right = 52.0
+offset_bottom = -2151.0
+theme_override_font_sizes/font_size = 256
+text = "Welcome to Shape Escape (V1) "
+
+[node name="Label2" type="Label" parent="."]
+offset_left = -5500.0
+offset_top = -5000.0
+offset_right = 1292.0
+offset_bottom = -4651.0
+theme_override_font_sizes/font_size = 256
+text = "You must escape this world using its residents' attacks."
+
+[node name="Label3" type="Label" parent="."]
+offset_left = -6750.0
+offset_top = -16750.0
+offset_right = 2330.0
+offset_bottom = -16049.0
+theme_override_font_sizes/font_size = 256
+text = "When your HP reaches 0, you are sent back to the beginning of the room. 
+You regenerate HP."
+horizontal_alignment = 1
+
+[node name="Label8" type="Label" parent="."]
+offset_left = -6750.0
+offset_top = -8500.0
+offset_right = 2330.0
+offset_bottom = -7799.0
+theme_override_font_sizes/font_size = 256
+text = "Find your way through to the end of each area by clearing rooms."
+horizontal_alignment = 1
+
+[node name="Label10" type="Label" parent="."]
+offset_left = -6750.0
+offset_top = -12750.0
+offset_right = 2330.0
+offset_bottom = -12049.0
+theme_override_font_sizes/font_size = 256
+text = "You need to clear every enemy in a room before advancing."
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="."]
+offset_left = -7500.0
+offset_top = -21000.0
+offset_right = 2905.0
+offset_bottom = -20299.0
+theme_override_font_sizes/font_size = 256
+text = "Every one of your moves has an energy cost and a cooldown, indicated by your HUD."
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="."]
+offset_left = -7500.0
+offset_top = -29750.0
+offset_right = 2905.0
+offset_bottom = -29049.0
+theme_override_font_sizes/font_size = 256
+text = "Energy regenerates faster the less you have, so make sure to attack frequently!"
+horizontal_alignment = 1
+
+[node name="Label7" type="Label" parent="."]
+offset_left = -7500.0
+offset_top = -34000.0
+offset_right = 2905.0
+offset_bottom = -33299.0
+theme_override_font_sizes/font_size = 256
+text = "When you enter a new area, your moves will attune to a new shape."
+horizontal_alignment = 1
+
+[node name="Label9" type="Label" parent="."]
+offset_left = -7250.0
+offset_top = -41250.0
+offset_right = 3155.0
+offset_bottom = -40549.0
+theme_override_font_sizes/font_size = 256
+text = "good luck!"
+horizontal_alignment = 1
+
+[node name="Label6" type="Label" parent="."]
+offset_left = -7500.0
+offset_top = -25500.0
+offset_right = 2905.0
+offset_bottom = -24799.0
+theme_override_font_sizes/font_size = 256
+text = "Check your inventory in the settings menu for more info."
+horizontal_alignment = 1

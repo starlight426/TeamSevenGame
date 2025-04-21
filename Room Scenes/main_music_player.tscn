@@ -1,7 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://cosws5qx6e3vh"]
 
+<<<<<<< Updated upstream
 [ext_resource type="Script" uid="uid://cp086c87anjtu" path="res://Scripts/Global/audio.gd" id="1_7pi76"]
 [ext_resource type="AudioStream" uid="uid://wmw5ddxvyiy6" path="res://Assets/Audio Files/SI_Exploration_theme1_finalised.mp3" id="2_yy5sc"]
+=======
+[ext_resource type="Script" uid="uid://dc0ssnpet2rii" path="res://Scripts/Global/audio.gd" id="1_7pi76"]
+>>>>>>> Stashed changes
 
 [sub_resource type="AudioStreamMP3" id="AudioStreamMP3_i6qar"]
 

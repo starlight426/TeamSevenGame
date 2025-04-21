@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://brovcchuaua3m"]
+
+[ext_resource type="Script" uid="uid://dm4lxmng3guac" path="res://Scripts/Combat/enemy_triangle_warrior.gd" id="1_pivjt"]
+[ext_resource type="Texture2D" uid="uid://tb1sp3tcpwo4" path="res://Assets/spritePNGs/Enemy_Warrior_Tri.png" id="2_pivjt"]
+[ext_resource type="PackedScene" uid="uid://sus6s80ptul7" path="res://AI Modules/Detectors/target_detector.tscn" id="3_ekqwa"]
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_b5y0u"]
+points = PackedVector2Array(284.286, 0, -190, 250, -190, -250)
+
+[node name="EnemyTriangleWarrior" type="CharacterBody2D"]
+scale = Vector2(0.7, 0.7)
+collision_mask = 2
+script = ExtResource("1_pivjt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.42857, 0)
+shape = SubResource("ConvexPolygonShape2D_b5y0u")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(22.8571, -2.85714)
+rotation = -1.5708
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_pivjt")
+
+[node name="TargetDetector" parent="." instance=ExtResource("3_ekqwa")]
+visible = false
+scale = Vector2(40, 40)
+
+[node name="bullet_marker_1" type="Marker2D" parent="."]
+position = Vector2(642.857, -2.71051e-20)
+
+[node name="bullet_marker_2" type="Marker2D" parent="."]
+position = Vector2(214.286, 428.571)
+
+[node name="bullet_marker_3" type="Marker2D" parent="."]
+position = Vector2(214.286, -428.571)
+
+[node name="bullet_marker_4" type="Marker2D" parent="."]
+position = Vector2(-214.286, 785.714)
+
+[node name="bullet_marker_5" type="Marker2D" parent="."]
+position = Vector2(-214.286, -785.714)
+
+[node name="DodgeDetector2" parent="." instance=ExtResource("3_ekqwa")]
+visible = false
+scale = Vector2(3, 3)

@@ -25,18 +25,20 @@ target_entrance = "from_right"
 target_group = "Circle City"
 
 [node name="exit4" parent="." instance=ExtResource("1_ds34k")]
-position = Vector2(0, 4000)
-target_room = ""
+position = Vector2(-2500, 4000)
+scale = Vector2(3, 3)
+target_room = "circle_tutorial"
 target_entrance = "from_top"
+target_group = "Circle City"
 
 [node name="exit3" parent="." instance=ExtResource("1_ds34k")]
-position = Vector2(4750, 0)
+position = Vector2(5500, 4500)
 target_room = "cigil_room"
 target_entrance = "from_left"
 target_group = "Circle City"
 
 [node name="WallSquare8" parent="." instance=ExtResource("2_nh6fj")]
-position = Vector2(2000, 4000)
+position = Vector2(5500, 1000)
 scale = Vector2(10, 6)
 
 [node name="WallSquare2" parent="." instance=ExtResource("2_nh6fj")]
@@ -56,12 +58,18 @@ position = Vector2(-10000, -9500)
 scale = Vector2(10, 50)
 
 [node name="WallSquare5" parent="." instance=ExtResource("2_nh6fj")]
-position = Vector2(-10000, -36000)
+position = Vector2(-10000, -34500)
 scale = Vector2(10, 50)
 
 [node name="WallSquare4" parent="." instance=ExtResource("2_nh6fj")]
-position = Vector2(4500, 3000)
-scale = Vector2(6, 10)
+position = Vector2(2000, 5500)
+rotation = 3.14159
+scale = Vector2(15, 10)
+
+[node name="WallSquare7" parent="." instance=ExtResource("2_nh6fj")]
+position = Vector2(-7000, 5500)
+rotation = 3.14159
+scale = Vector2(15, 10)
 
 [node name="left_camera_limit" type="Marker2D" parent="."]
 position = Vector2(-8750, 0)
@@ -73,7 +81,7 @@ position = Vector2(-7273, -22683)
 position = Vector2(3750, 0)
 
 [node name="from_bottom" type="Marker2D" parent="."]
-position = Vector2(0, 3000)
+position = Vector2(-2500, 2500)
 
 [node name="from_top" type="Marker2D" parent="."]
 position = Vector2(-2000, -47500)
@@ -85,7 +93,7 @@ position = Vector2(4250, 0)
 position = Vector2(-2000, -48500)
 
 [node name="bottom_camera_limit" type="Marker2D" parent="."]
-position = Vector2(-2000, 4500)
+position = Vector2(-2500, 3500)
 
 [node name="EnemyCircleBasic" parent="." instance=ExtResource("3_axvfw")]
 position = Vector2(-4500, -7500)
@@ -106,11 +114,11 @@ position = Vector2(-353, -39968)
 position = Vector2(-4207, -38117)
 
 [node name="WallMantle" parent="." instance=ExtResource("4_lem1q")]
-position = Vector2(9000, -53000)
+position = Vector2(9000, -50000)
 scale = Vector2(20, 20)
 
 [node name="WallMantle2" parent="." instance=ExtResource("4_lem1q")]
-position = Vector2(-13000, -53500)
+position = Vector2(-13000, -51000)
 scale = Vector2(20, 20)
 
 [node name="exit2" parent="." instance=ExtResource("1_ds34k")]
@@ -124,13 +132,13 @@ target_group = "Circle Mantle"
 position = Vector2(-2063, -28693)
 
 [node name="WallCircleCity11" type="Sprite2D" parent="."]
-position = Vector2(-10018, -43922)
+position = Vector2(-10000, -36000)
 rotation = -1.5708
 scale = Vector2(2.93381, 5.03219)
 texture = ExtResource("7_qwq7d")
 
 [node name="WallCircleCity17" type="Sprite2D" parent="."]
-position = Vector2(5519, -41694)
+position = Vector2(5500, -41000)
 rotation = 1.5708
 scale = Vector2(3.46869, 5.03219)
 texture = ExtResource("7_qwq7d")
@@ -145,12 +153,6 @@ position = Vector2(24335, -53098)
 scale = Vector2(4.04, 4.12)
 texture = ExtResource("7_y8ie7")
 
-[node name="WallCircleCity6" type="Sprite2D" parent="."]
-position = Vector2(-2292, 6408)
-rotation = -3.14159
-scale = Vector2(5.30866, 7.81618)
-texture = ExtResource("7_qwq7d")
-
 [node name="WallCircleCity" type="Sprite2D" parent="."]
 position = Vector2(-10004, -210)
 rotation = -1.5708
@@ -158,9 +160,9 @@ scale = Vector2(3.63327, 5.03219)
 texture = ExtResource("7_qwq7d")
 
 [node name="WallCircleCity5" type="Sprite2D" parent="."]
-position = Vector2(5556, -3645.44)
+position = Vector2(5556, -3663.35)
 rotation = 1.5708
-scale = Vector2(3.14609, 5.07334)
+scale = Vector2(3.164, 5.07334)
 texture = ExtResource("7_qwq7d")
 
 [node name="WallCircleCity12" type="Sprite2D" parent="."]
@@ -182,21 +184,21 @@ scale = Vector2(3.13953, 5.03219)
 texture = ExtResource("7_qwq7d")
 
 [node name="WallCircleCity15" type="Sprite2D" parent="."]
-position = Vector2(5522, -28806)
+position = Vector2(5500, -28500)
 rotation = 1.5708
 scale = Vector2(3.13953, 5.03219)
 texture = ExtResource("7_qwq7d")
 
 [node name="WallCircleCity16" type="Sprite2D" parent="."]
-position = Vector2(5520, -35080)
+position = Vector2(5500, -34500)
 rotation = 1.5708
 scale = Vector2(3.13953, 5.03219)
 texture = ExtResource("7_qwq7d")
 
 [node name="WallCircleCity7" type="Sprite2D" parent="."]
-position = Vector2(5499, 5168)
+position = Vector2(5500.01, 1526.98)
 rotation = 1.5708
-scale = Vector2(4.68925, 5.03219)
+scale = Vector2(2.21623, 5.03219)
 texture = ExtResource("7_qwq7d")
 
 [node name="WallCircleCity2" type="Sprite2D" parent="."]
@@ -218,19 +220,19 @@ scale = Vector2(2.93381, 5.03219)
 texture = ExtResource("7_qwq7d")
 
 [node name="WallCircleCity8" type="Sprite2D" parent="."]
-position = Vector2(-10018, -26411)
+position = Vector2(-10000, -25000)
 rotation = -1.5708
 scale = Vector2(2.93381, 5.03219)
 texture = ExtResource("7_qwq7d")
 
 [node name="WallCircleCity9" type="Sprite2D" parent="."]
-position = Vector2(-10018, -32271)
+position = Vector2(-10000, -30500)
 rotation = -1.5708
 scale = Vector2(2.93381, 5.03219)
 texture = ExtResource("7_qwq7d")
 
 [node name="WallCircleCity10" type="Sprite2D" parent="."]
-position = Vector2(-10018, -38131)
+position = Vector2(-10000, -41500)
 rotation = -1.5708
 scale = Vector2(2.93381, 5.03219)
 texture = ExtResource("7_qwq7d")

@@ -53,11 +53,11 @@ position = Vector2(0, -3500)
 position = Vector2(1000, 5000)
 
 [node name="WallMantle" parent="." instance=ExtResource("2_jynao")]
-position = Vector2(-4000, -1500)
+position = Vector2(-4000, -2500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle2" parent="." instance=ExtResource("2_jynao")]
-position = Vector2(-3.05176e-05, -2500)
+position = Vector2(-4.33681e-19, -4000)
 scale = Vector2(5, 5)
 
 [node name="WallMantle3" parent="." instance=ExtResource("2_jynao")]
@@ -65,7 +65,7 @@ position = Vector2(-6500, 6000)
 scale = Vector2(5, 5)
 
 [node name="WallMantle4" parent="." instance=ExtResource("2_jynao")]
-position = Vector2(-6.10352e-05, 5500)
+position = Vector2(500, 6500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle5" parent="." instance=ExtResource("2_jynao")]
@@ -97,7 +97,7 @@ position = Vector2(6000, 2000)
 scale = Vector2(5, 5)
 
 [node name="WallMantle10" parent="." instance=ExtResource("2_jynao")]
-position = Vector2(4000, 4000)
+position = Vector2(4500, 4500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle9" parent="." instance=ExtResource("2_jynao")]
@@ -105,8 +105,8 @@ position = Vector2(-7000, -3.05176e-05)
 scale = Vector2(5, 5)
 
 [node name="WallMantle8" parent="." instance=ExtResource("2_jynao")]
-position = Vector2(-3000, 6500)
+position = Vector2(-3000, 7000)
 scale = Vector2(5, 5)
 
 [node name="EnemyCircleWave" parent="." instance=ExtResource("3_l0cxj")]
-position = Vector2(0, 1000)
+position = Vector2(500, 1500)

@@ -1,9 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://beanwqrmn4ka1"]
+[gd_scene load_steps=15 format=3 uid="uid://beanwqrmn4ka1"]
 
 [ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_ip6ev"]
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_yabxm"]
 [ext_resource type="PackedScene" uid="uid://dsrmf6yrx14yl" path="res://Overworld Scenes/Object Scenes/wall_square.tscn" id="2_oigo2"]
 [ext_resource type="Texture2D" uid="uid://djjd7blv11u24" path="res://Assets/Shapes/Wall_CircleCity.png" id="4_5a3nk"]
+[ext_resource type="Texture2D" uid="uid://bejfbmgqkxmln" path="res://Assets/DarkKeys/A-Key.png" id="5_78fpv"]
+[ext_resource type="Texture2D" uid="uid://32vp1lkdsic7" path="res://Assets/DarkKeys/D-Key.png" id="6_sykii"]
+[ext_resource type="Texture2D" uid="uid://2kn8vbegqsyx" path="res://Assets/DarkKeys/S-Key.png" id="7_qeiaj"]
+[ext_resource type="Texture2D" uid="uid://ccw1ymir8fd0s" path="res://Assets/DarkKeys/W-Key.png" id="8_y7r7b"]
+[ext_resource type="Texture2D" uid="uid://2t5ptb6l5vvd" path="res://Assets/DarkKeys/Shift-Key.png" id="9_y7r7b"]
+[ext_resource type="Texture2D" uid="uid://dsdsy4mxcy3pf" path="res://Assets/DarkKeys/E-Key.png" id="10_26sc8"]
+[ext_resource type="Texture2D" uid="uid://c7sabdv3d8an" path="res://Assets/DarkKeys/Q-Key.png" id="11_yjdpd"]
+[ext_resource type="Texture2D" uid="uid://gbfacsfumxad" path="res://Assets/leftclickz.png" id="12_yjdpd"]
+[ext_resource type="Texture2D" uid="uid://ted40m5ovrw6" path="res://Assets/rightclickz.png" id="13_3qxgc"]
+[ext_resource type="Texture2D" uid="uid://cjsueo0vnhbkv" path="res://Assets/spritePNGs/Environment_Cir_House.png" id="14_3qxgc"]
 
 [node name="TemplateRoom" type="Node2D"]
 
@@ -15,7 +25,7 @@ texture = ExtResource("1_ip6ev")
 
 [node name="exit" parent="." instance=ExtResource("1_yabxm")]
 position = Vector2(-4000, 0)
-target_room = "circle_corridor"
+target_room = "circle_tutorial"
 target_entrance = "from_right"
 target_group = "Circle City"
 
@@ -36,7 +46,7 @@ target_room = ""
 target_entrance = "from_left"
 
 [node name="WallSquare" parent="." instance=ExtResource("2_oigo2")]
-position = Vector2(-1750, -4000)
+position = Vector2(-1250, -4166.67)
 scale = Vector2(10, 6)
 
 [node name="WallSquare7" parent="." instance=ExtResource("2_oigo2")]
@@ -45,16 +55,22 @@ rotation = -3.14159
 scale = Vector2(10, 6)
 
 [node name="WallSquare8" parent="." instance=ExtResource("2_oigo2")]
+<<<<<<< Updated upstream
 position = Vector2(5136, 3978)
 rotation = -3.14159
 scale = Vector2(13.6872, 5.88122)
+=======
+position = Vector2(5500, 4000)
+rotation = -3.14159
+scale = Vector2(15, 6)
+>>>>>>> Stashed changes
 
 [node name="WallSquare3" parent="." instance=ExtResource("2_oigo2")]
-position = Vector2(5500, -4000)
+position = Vector2(4791.67, -4166.67)
 scale = Vector2(15, 6)
 
 [node name="WallSquare2" parent="." instance=ExtResource("2_oigo2")]
-position = Vector2(7808, -2709)
+position = Vector2(9000, -2750)
 scale = Vector2(6.2, 11.16)
 
 [node name="WallSquare5" parent="." instance=ExtResource("2_oigo2")]
@@ -67,7 +83,11 @@ rotation = -3.14159
 scale = Vector2(6, 10)
 
 [node name="WallSquare4" parent="." instance=ExtResource("2_oigo2")]
+<<<<<<< Updated upstream
 position = Vector2(7829, 2817)
+=======
+position = Vector2(9000, 2750)
+>>>>>>> Stashed changes
 rotation = -3.14159
 scale = Vector2(6.27451, 11.1065)
 
@@ -78,7 +98,7 @@ position = Vector2(-3500, 0)
 position = Vector2(-3000, 0)
 
 [node name="from_right" type="Marker2D" parent="."]
-position = Vector2(2620, -30)
+position = Vector2(2000, -1000)
 
 [node name="from_bottom" type="Marker2D" parent="."]
 position = Vector2(0, 3000)
@@ -87,7 +107,7 @@ position = Vector2(0, 3000)
 position = Vector2(1250, -3000)
 
 [node name="right_camera_limit" type="Marker2D" parent="."]
-position = Vector2(6500, 0)
+position = Vector2(7500, 0)
 
 [node name="top_camera_limit" type="Marker2D" parent="."]
 position = Vector2(1250, -3500)
@@ -103,6 +123,7 @@ offset_bottom = 509.0
 theme_override_font_sizes/font_size = 256
 text = "DEVICE HERE
 "
+metadata/_edit_use_anchors_ = true
 
 [node name="DEV ROOMS" type="Label" parent="."]
 offset_left = 3593.0
@@ -113,6 +134,7 @@ theme_override_font_sizes/font_size = 256
 text = "DEV ROOMS
 
 "
+metadata/_edit_use_anchors_ = true
 
 [node name="WallCircleCity9" type="Sprite2D" parent="."]
 position = Vector2(-4750, 5750)
@@ -164,3 +186,46 @@ position = Vector2(10500, -5750)
 rotation = 1.5708
 scale = Vector2(1.11023, 1.42729)
 texture = ExtResource("4_5a3nk")
+
+[node name="A-key" type="Sprite2D" parent="."]
+position = Vector2(-208.333, 1666.67)
+texture = ExtResource("5_78fpv")
+
+[node name="D-key" type="Sprite2D" parent="."]
+position = Vector2(1041.67, 1666.67)
+texture = ExtResource("6_sykii")
+
+[node name="S-key" type="Sprite2D" parent="."]
+position = Vector2(416.667, 1666.67)
+texture = ExtResource("7_qeiaj")
+
+[node name="W-key" type="Sprite2D" parent="."]
+position = Vector2(416.667, 1041.67)
+texture = ExtResource("8_y7r7b")
+
+[node name="Shift-key" type="Sprite2D" parent="."]
+position = Vector2(4791.67, 1666.67)
+texture = ExtResource("9_y7r7b")
+
+[node name="E-key" type="Sprite2D" parent="."]
+position = Vector2(4791.67, 1041.67)
+texture = ExtResource("10_26sc8")
+
+[node name="Q-key" type="Sprite2D" parent="."]
+position = Vector2(4791.67, 416.667)
+texture = ExtResource("11_yjdpd")
+
+[node name="Leftclickz" type="Sprite2D" parent="."]
+position = Vector2(4791.67, -1458.33)
+scale = Vector2(5, 5)
+texture = ExtResource("12_yjdpd")
+
+[node name="Rightclickz" type="Sprite2D" parent="."]
+position = Vector2(4791.67, -416.667)
+scale = Vector2(5, 5)
+texture = ExtResource("13_3qxgc")
+
+[node name="EnvironmentCirHouse" type="Sprite2D" parent="."]
+position = Vector2(2000, -2000)
+scale = Vector2(3, 2.80102)
+texture = ExtResource("14_3qxgc")

@@ -52,7 +52,7 @@ func _physics_process(delta: float) -> void:
 		if Input.is_action_pressed("right_click"):
 			use_attack(attack_shape + "_wave")
 		if Input.is_action_pressed("e_press"):
-			use_attack(attack_shape + "_basic")
+			use_attack(attack_shape + "_special")
 		if Input.is_action_pressed("shift_press"):
 			match attack_shape:
 				"circle":
@@ -81,8 +81,8 @@ func use_attack(attack):
 					energy -= 30
 		"circle_special":
 			if(energy >= 45 && move_readiness[2]):
-					AttackSpawner.spawn_bullets(global_position,global_rotation+PI/6,"single",1,0,"default","circle","striker",3000,3,10,"cigil","purple",PI/50,target,0)
-					AttackSpawner.spawn_bullets(global_position,global_rotation-PI/6,"single",1,0,"default","circle","striker",3000,3,10,"cigil","purple",PI/50,target,0)
+					AttackSpawner.spawn_bullets(global_position,global_rotation+PI/3,"single",1,0,"default","circle","striker",3000,3,10,"cigil","purple",PI/50,target,0)
+					AttackSpawner.spawn_bullets(global_position,global_rotation-PI/3,"single",1,0,"default","circle","striker",3000,3,10,"cigil","purple",PI/50,target,0)
 					move_cooldown(2)
 					energy -= 45
 		"speedup":

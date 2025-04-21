@@ -195,4 +195,7 @@ position = Vector2(-9000, -8000)
 texture = ExtResource("6_ujdud")
 
 [node name="EnemyCircleCorrupted2" parent="." instance=ExtResource("4_5jl8u")]
-position = Vector2(1000, 6000)
+position = Vector2(1000, 7000)
+
+[node name="EnemyCircleCorrupted3" parent="." instance=ExtResource("4_5jl8u")]
+position = Vector2(1000, 2500)

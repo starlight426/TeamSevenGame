@@ -22,4 +22,4 @@ scale = Vector2(1.532, 1.54)
 texture = ExtResource("2_e5fwu")
 
 [node name="TargetDetector" parent="." instance=ExtResource("3_g2sqi")]
-scale = Vector2(80, 80)
+scale = Vector2(300, 300)

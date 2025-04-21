@@ -1,0 +1,260 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkhtqfgjxgxuh"]
+
+[ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_p08ij"]
+[ext_resource type="PackedScene" uid="uid://c4c578xkhgapt" path="res://Overworld Scenes/Object Scenes/wall_triangle_eq.tscn" id="2_hc21f"]
+[ext_resource type="PackedScene" uid="uid://d4nujuxr18io" path="res://Overworld Scenes/Object Scenes/wall_triangle_ac.tscn" id="3_fi5fa"]
+[ext_resource type="PackedScene" uid="uid://dc16pauw32gjv" path="res://Overworld Scenes/Object Scenes/wall_triangle_ob.tscn" id="4_xowod"]
+
+[node name="TemplateRoom" type="Node2D"]
+rotation = -0.00546142
+
+[node name="exit" parent="." instance=ExtResource("1_p08ij")]
+position = Vector2(5320.92, -12971.1)
+rotation = 0.260901
+scale = Vector2(4, 4)
+target_room = "town_-14"
+target_entrance = "from_bottom"
+target_group = "Triangle Town"
+
+[node name="exit5" parent="." instance=ExtResource("1_p08ij")]
+position = Vector2(-4784.06, 6223.96)
+rotation = 0.602406
+scale = Vector2(4, 4)
+target_room = "town_00"
+target_entrance = "from_right"
+target_group = "Triangle Town"
+
+[node name="exit4" parent="." instance=ExtResource("1_p08ij")]
+position = Vector2(-17500, 2000)
+target_room = ""
+target_entrance = "from_top"
+
+[node name="exit2" parent="." instance=ExtResource("1_p08ij")]
+position = Vector2(12500, -19250)
+target_room = ""
+target_entrance = "from_bottom"
+
+[node name="exit3" parent="." instance=ExtResource("1_p08ij")]
+position = Vector2(14250, -1500)
+rotation = 0.0378768
+scale = Vector2(4, 4)
+target_room = "town_02"
+target_entrance = "from_left"
+target_group = "Triangle Town"
+
+[node name="left_camera_limit" type="Marker2D" parent="."]
+position = Vector2(-7473.95, -4790.89)
+
+[node name="from_left" type="Marker2D" parent="."]
+position = Vector2(-8250, -6500)
+
+[node name="from_right" type="Marker2D" parent="."]
+position = Vector2(11750, -1750)
+
+[node name="from_bottom" type="Marker2D" parent="."]
+position = Vector2(-3270.43, 3732.19)
+
+[node name="from_top" type="Marker2D" parent="."]
+position = Vector2(3555.93, -10230.7)
+
+[node name="right_camera_limit" type="Marker2D" parent="."]
+position = Vector2(10008, -1445.36)
+
+[node name="top_camera_limit" type="Marker2D" parent="."]
+position = Vector2(2570.96, -12986.2)
+
+[node name="bottom_camera_limit" type="Marker2D" parent="."]
+position = Vector2(-3279.99, 5482.17)
+
+[node name="WallTriangleEq" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(8088.63, -16206.1)
+rotation = 2.11242
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq34" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(8088.63, -16206.1)
+rotation = 2.12682
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq35" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(-6811.34, 11213)
+rotation = 2.17296
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq6" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(13750, 7250)
+rotation = 2.22239
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq10" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(17000, -5500)
+rotation = 2.22239
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq11" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(13490.2, 1823.7)
+rotation = 2.22239
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq12" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(11237.5, 2311.41)
+rotation = 2.22239
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq13" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(10059.9, -10945.2)
+rotation = 2.02571
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq14" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(9500, -9000)
+rotation = -0.619939
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq15" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(11029.9, -5439.84)
+rotation = 0.174335
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq28" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(-8000, -12000)
+rotation = 0.174335
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq29" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(12536.7, -6681.63)
+rotation = 0.174335
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq33" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(12536.7, -6681.63)
+rotation = 0.174335
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq16" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(-4000, -19000)
+rotation = -0.134745
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq17" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(-250, -16750)
+rotation = -0.134745
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq18" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(4475.36, 4524.51)
+rotation = 0.413622
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq30" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(10000, 6750)
+rotation = -0.134745
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq19" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(-4750, -14750)
+rotation = -0.105491
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq20" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(-3693.96, -10270.3)
+rotation = 0.693829
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq21" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(9.15527e-05, -12250)
+rotation = 2.97469
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq22" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(-9500, -16250)
+rotation = 6.55415
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq23" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(-4250, -15500)
+rotation = 6.81227
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq24" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(-16500, -6750)
+rotation = 6.02648
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq25" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(-9458.9, -7551.77)
+rotation = 5.02253
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq31" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(-13229.3, -3822.31)
+rotation = 5.02253
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq7" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(1446.73, 9758.05)
+rotation = 2.32044
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq3" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(9969.81, 5554.53)
+rotation = 1.5708
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq4" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(-3049.11, 8983.48)
+rotation = -2.1782
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq5" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(1250, 11000)
+rotation = -1.5708
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq2" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(7493.06, 1290.94)
+rotation = -2.53596
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq8" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(-8000, 7000)
+rotation = -3.21562
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq26" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(-11500, 5750)
+rotation = -2.53596
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq27" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(-11750, 3000)
+rotation = -2.53596
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq9" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(-10258, 1444)
+rotation = -1.83651
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq32" parent="." instance=ExtResource("2_hc21f")]
+position = Vector2(3706.25, 8020.36)
+rotation = -1.83651
+scale = Vector2(4, 4)
+
+[node name="WallTriangleAc" parent="." instance=ExtResource("3_fi5fa")]
+position = Vector2(-17500, -6000)
+rotation = 1.59098
+scale = Vector2(7, 7)
+
+[node name="WallTriangleAc2" parent="." instance=ExtResource("3_fi5fa")]
+position = Vector2(-13000, -9750)
+rotation = 3.43531
+scale = Vector2(7, 7)
+
+[node name="WallTriangleOb" parent="." instance=ExtResource("4_xowod")]
+position = Vector2(-10817, 5482)
+
+[node name="WallTriangleOb2" parent="." instance=ExtResource("4_xowod")]
+position = Vector2(-8223.94, -4794.98)
+rotation = -1.03818
+scale = Vector2(6, 6)
