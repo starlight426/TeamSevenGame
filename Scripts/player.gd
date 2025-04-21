@@ -5,6 +5,7 @@ extends CharacterBody2D
 @export var max_hp = hp
 @export var energy = 0
 @export var team = "cigil"
+var attack_shape = "circle"
 var move_readiness = [true,true,true,true,true]
 var move_cooldowns = [0.4,0.6,0.8,3.0,5.0]
 var move_cooldown_percentages = [100, 100, 100, 100, 100]
@@ -47,15 +48,21 @@ func _physics_process(delta: float) -> void:
 			movement = movement.normalized()
 		velocity = movement * speed
 		if Input.is_action_pressed("left_click"):
-			use_attack("circle_basic")
+			use_attack(attack_shape + "_basic")
 		if Input.is_action_pressed("right_click"):
-			use_attack("circle_wave")
+			use_attack(attack_shape + "_wave")
 		if Input.is_action_pressed("e_press"):
-			use_attack("circle_special")
+			use_attack(attack_shape + "_basic")
 		if Input.is_action_pressed("shift_press"):
-			use_attack("speedup")
+			match attack_shape:
+				"circle":
+					use_attack("speedup")
+				"triangle":
+					use_attack("short_dash")
+				"square":
+					use_attack("long_dash")
 		if Input.is_action_pressed("q_press"):
-			use_attack("circle_summon")
+			use_attack(attack_shape + "_summon")
 		move_and_slide()
 	
 func use_attack(attack):
@@ -91,6 +98,27 @@ func use_attack(attack):
 				RoomLoader.current_room.add_child(new_summon)
 				move_cooldown(4)
 				energy -= 80
+		"triangle_basic":
+			pass
+		"triangle_wave":
+			pass
+		"triangle_special":
+			pass
+		"short_dash":
+			pass
+		"triangle_summon":
+			pass
+		"square_basic":
+			pass
+		"square_wave":
+			pass
+		"square_special":
+			pass
+		"long_dash":
+			pass
+		"square_shield":
+			pass
+		
 			
 func move_cooldown(move_num):
 	move_readiness[move_num] = false
@@ -108,6 +136,9 @@ func speedup():
 	speed *= 2.0
 	await get_tree().create_timer(3).timeout
 	speed /= 2.0
+
+func unlock(unlock_type):
+	attack_shape = unlock_type
 	
 func add_energy():
 	energy_ready = false

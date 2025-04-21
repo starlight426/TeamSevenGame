@@ -1,0 +1,94 @@
+[gd_scene load_steps=3 format=3 uid="uid://ukdfiojlnki"]
+
+[ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_akdf1"]
+[ext_resource type="PackedScene" uid="uid://bk5wwtyrst4he" path="res://Overworld Scenes/Object Scenes/wall_square_tile.tscn" id="2_urv4e"]
+
+[node name="TemplateRoom" type="Node2D"]
+
+[node name="exit" parent="." instance=ExtResource("1_akdf1")]
+position = Vector2(-4000, 0)
+target_room = ""
+target_entrance = "from_right"
+
+[node name="exit4" parent="." instance=ExtResource("1_akdf1")]
+position = Vector2(0, 4250)
+target_room = ""
+target_entrance = "from_top"
+
+[node name="exit2" parent="." instance=ExtResource("1_akdf1")]
+position = Vector2(0, -4000)
+target_room = "fortress_01"
+target_entrance = "from_bottom"
+target_group = "Square Fortress"
+
+[node name="exit3" parent="." instance=ExtResource("1_akdf1")]
+position = Vector2(4000, 0)
+target_room = ""
+target_entrance = "from_left"
+
+[node name="left_camera_limit" type="Marker2D" parent="."]
+position = Vector2(-3500, 0)
+
+[node name="from_left" type="Marker2D" parent="."]
+position = Vector2(-3000, 0)
+
+[node name="from_right" type="Marker2D" parent="."]
+position = Vector2(3000, 0)
+
+[node name="from_bottom" type="Marker2D" parent="."]
+position = Vector2(0, 3250)
+
+[node name="from_top" type="Marker2D" parent="."]
+position = Vector2(0, -3000)
+
+[node name="right_camera_limit" type="Marker2D" parent="."]
+position = Vector2(3500, 0)
+
+[node name="top_camera_limit" type="Marker2D" parent="."]
+position = Vector2(0, -3500)
+
+[node name="bottom_camera_limit" type="Marker2D" parent="."]
+position = Vector2(0, 3750)
+
+[node name="WallSquare" parent="." instance=ExtResource("2_urv4e")]
+position = Vector2(-5750, -3000)
+rotation = 1.5708
+scale = Vector2(10, 10)
+
+[node name="WallSquare4" parent="." instance=ExtResource("2_urv4e")]
+position = Vector2(-5750, -2000)
+rotation = 1.5708
+scale = Vector2(10, 10)
+
+[node name="WallSquare8" parent="." instance=ExtResource("2_urv4e")]
+position = Vector2(5750, -2000)
+rotation = -1.5708
+scale = Vector2(10, 10)
+
+[node name="WallSquare9" parent="." instance=ExtResource("2_urv4e")]
+position = Vector2(5750, 3000)
+rotation = -1.5708
+scale = Vector2(10, 10)
+
+[node name="WallSquare5" parent="." instance=ExtResource("2_urv4e")]
+position = Vector2(-5750, 3000)
+rotation = 1.5708
+scale = Vector2(10, 10)
+
+[node name="WallSquare2" parent="." instance=ExtResource("2_urv4e")]
+position = Vector2(-3000, -5750)
+rotation = 3.14159
+scale = Vector2(10, 10)
+
+[node name="WallSquare6" parent="." instance=ExtResource("2_urv4e")]
+position = Vector2(-3000, 6000)
+scale = Vector2(10, 10)
+
+[node name="WallSquare7" parent="." instance=ExtResource("2_urv4e")]
+position = Vector2(3000, 6000)
+scale = Vector2(10, 10)
+
+[node name="WallSquare3" parent="." instance=ExtResource("2_urv4e")]
+position = Vector2(3000, -5750)
+rotation = 3.14159
+scale = Vector2(10, 10)

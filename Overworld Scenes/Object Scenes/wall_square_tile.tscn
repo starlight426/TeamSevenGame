@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bk5wwtyrst4he"]
+
+[ext_resource type="Script" uid="uid://bw5wba4ai8jeh" path="res://Scripts/wall_square.gd" id="1_5as0o"]
+[ext_resource type="Texture2D" uid="uid://bdqu1qa4y41gx" path="res://Assets/Shapes/Wall_Square.png" id="2_5as0o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_830on"]
+size = Vector2(500, 500)
+
+[node name="WallSquare" type="CharacterBody2D"]
+collision_layer = 3
+collision_mask = 0
+script = ExtResource("1_5as0o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_830on")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3, 1.19209e-06)
+scale = Vector2(0.137, 0.1325)
+texture = ExtResource("2_5as0o")
