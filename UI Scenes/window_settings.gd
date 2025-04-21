@@ -1,6 +1,6 @@
 extends HBoxContainer
 
-@onready var option_button: OptionButton = $OptionButton
+@onready var option_button: OptionButton = $OptionButton as OptionButton
 
 const WINDOW_MODE_ARRAY : Array[String] = [
 	"Window Mode",
@@ -10,7 +10,12 @@ const WINDOW_MODE_ARRAY : Array[String] = [
 ]
 
 func _ready():
+	add_window_mode_items()
 	option_button.item_selected.connect(on_mode_selected)
+
+func add_window_mode_items() -> void:
+	for window_mode in WINDOW_MODE_ARRAY:
+		option_button.add_item(window_mode)
 
 func on_mode_selected(index : int) -> void:
 	match index:
