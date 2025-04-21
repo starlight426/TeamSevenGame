@@ -8,6 +8,7 @@ var should_load_game = false
 func _ready() -> void:
 
 	player_node = get_node("Player")
+	MainMusicPlayer._play_music()
 	pause_menu.hide()
 	
 	if not should_load_game:
