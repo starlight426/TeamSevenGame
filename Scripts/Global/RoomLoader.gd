@@ -7,6 +7,7 @@ signal room_has_loaded
 var last_entrance = "from_left"
 var last_group = "Circle City"
 var last_room = "cigil_room.tscn"
+
 func set_checkpoint(passed_checkpoint):
 	# change this later
 	load_room(passed_checkpoint.get_parent().get_path())

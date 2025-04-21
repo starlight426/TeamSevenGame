@@ -45,9 +45,9 @@ rotation = -3.14159
 scale = Vector2(10, 6)
 
 [node name="WallSquare8" parent="." instance=ExtResource("2_oigo2")]
-position = Vector2(3750, 4000)
+position = Vector2(5136, 3978)
 rotation = -3.14159
-scale = Vector2(10, 6)
+scale = Vector2(13.6872, 5.88122)
 
 [node name="WallSquare3" parent="." instance=ExtResource("2_oigo2")]
 position = Vector2(5500, -4000)
@@ -67,7 +67,7 @@ rotation = -3.14159
 scale = Vector2(6, 10)
 
 [node name="WallSquare4" parent="." instance=ExtResource("2_oigo2")]
-position = Vector2(7807, 2728)
+position = Vector2(7829, 2817)
 rotation = -3.14159
 scale = Vector2(6.27451, 11.1065)
 
