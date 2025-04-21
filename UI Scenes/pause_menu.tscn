@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://blb7rs1uwuo2s"]
+[gd_scene load_steps=29 format=3 uid="uid://blb7rs1uwuo2s"]
 
 [ext_resource type="Script" uid="uid://bu4psw76fl3kt" path="res://UI Scenes/pause_menu.gd" id="1_to0ni"]
 [ext_resource type="Texture2D" uid="uid://bkmcx2w6oyhds" path="res://Assets/UI Sprites/Icon_Single_Circ.png" id="2_s3syd"]
@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cf12ploul43cq" path="res://Assets/UI Sprites/Icon_SpeedUp_Circ.png" id="5_usb3c"]
 [ext_resource type="Texture2D" uid="uid://b4mxva3chakxb" path="res://Assets/UI Sprites/Icon_Turret_Circ.png" id="6_2onaw"]
 [ext_resource type="Shader" uid="uid://vj0w6rny8lby" path="res://UI Scenes/grayscale.gdshader" id="7_gupsn"]
-[ext_resource type="Texture2D" uid="uid://dcwyfue8fh185" path="res://Assets/UI Sprites/Icon_2Shot_Triangle.png" id="9_8cbhb"]
+[ext_resource type="Texture2D" uid="uid://cw6gfbw8dfued" path="res://Assets/UI Sprites/Icon_2Shot_Tri.png" id="9_k7mho"]
 [ext_resource type="Texture2D" uid="uid://ceuetug57xwny" path="res://Assets/UI Sprites/Icon_5Shot_Tri.png" id="10_2lnu8"]
 [ext_resource type="Texture2D" uid="uid://783yttanqfbi" path="res://Assets/UI Sprites/Icon_ZigZag.png" id="11_pgvv8"]
 [ext_resource type="Texture2D" uid="uid://f3juf6clnp7d" path="res://Assets/UI Sprites/Icon_Dash.png" id="12_lwgsy"]
@@ -17,22 +17,8 @@
 [ext_resource type="Script" uid="uid://cdd2qaxwf6lvv" path="res://UI Scenes/audio_slider.gd" id="15_8cbhb"]
 [ext_resource type="Texture2D" uid="uid://dn7lbpn40q0m6" path="res://Assets/spritePNGs/Icon_Barrage_Sqr.png" id="15_dxkgf"]
 [ext_resource type="Script" uid="uid://c3r0ipwgk1dbm" path="res://UI Scenes/window_settings.gd" id="16_2lnu8"]
-[ext_resource type="Texture2D" uid="uid://doswly5mfvnra" path="res://Assets/UI Sprites/Icon_Crusher_Sqr.png" id="16_7ucd1"]
+[ext_resource type="Texture2D" uid="uid://d2srxejg71qpj" path="res://Assets/UI Sprites/Icon_Crusher_Sqr.png" id="16_7ucd1"]
 [ext_resource type="Texture2D" uid="uid://haqa7hvkoefg" path="res://Assets/spritePNGs/Icon_Shield_Square.png" id="17_c0jvs"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_usb3c"]
-bg_color = Color(0.184314, 0.184314, 0.184314, 1)
-border_width_left = 10
-border_width_top = 10
-border_width_right = 10
-border_width_bottom = 10
-border_color = Color(0.376471, 0.376471, 0.376471, 1)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_5nmen"]
-shader = ExtResource("7_gupsn")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_usb3c"]
-shader = ExtResource("7_gupsn")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k7mho"]
 bg_color = Color(0.184314, 0.184314, 0.184314, 1)
@@ -42,9 +28,6 @@ border_width_right = 5
 border_width_bottom = 5
 border_color = Color(0.376471, 0.376471, 0.376471, 1)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_dxkgf"]
-shader = ExtResource("7_gupsn")
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_7ucd1"]
 shader = ExtResource("7_gupsn")
 
@@ -52,9 +35,6 @@ shader = ExtResource("7_gupsn")
 shader = ExtResource("7_gupsn")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_s8ohf"]
-shader = ExtResource("7_gupsn")
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_uyn6w"]
 shader = ExtResource("7_gupsn")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_j3qq6"]
@@ -140,465 +120,6 @@ theme_override_constants/margin_left = 12
 theme_override_constants/margin_top = 12
 theme_override_constants/margin_right = 12
 theme_override_constants/margin_bottom = 12
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer"]
-visible = false
-layout_mode = 2
-theme_override_constants/separation = 56
-
-[node name="Spacer" type="Control" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="StartingActions" type="HBoxContainer" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 60
-
-[node name="SingleCirc" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/StartingActions"]
-z_index = 1
-use_parent_material = true
-layout_mode = 2
-mouse_filter = 0
-texture = ExtResource("2_s3syd")
-script = ExtResource("3_5nmen")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/StartingActions/SingleCirc"]
-visible = false
-z_index = 2
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -25.0
-offset_top = -25.0
-offset_right = 25.0
-offset_bottom = 25.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Single Shot
-Cooldown 0.1s
-Energy 10
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="3ShotCirc" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/StartingActions"]
-use_parent_material = true
-layout_mode = 2
-texture = ExtResource("3_gupsn")
-script = ExtResource("3_5nmen")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/StartingActions/3ShotCirc"]
-visible = false
-z_index = 2
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -25.0
-offset_top = -25.0
-offset_right = 25.0
-offset_bottom = 25.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "3 Shot Spread
-Cooldown 0.3s
-Energy 20
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Striker" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/StartingActions"]
-use_parent_material = true
-layout_mode = 2
-texture = ExtResource("5_lsscg")
-script = ExtResource("3_5nmen")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/StartingActions/Striker"]
-visible = false
-z_index = 2
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -25.0
-offset_top = -25.0
-offset_right = 25.0
-offset_bottom = 25.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Striker
-Cooldown 0.1s
-Energy 10
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="SpeedUp" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/StartingActions"]
-use_parent_material = true
-layout_mode = 2
-texture = ExtResource("5_usb3c")
-script = ExtResource("3_5nmen")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/StartingActions/SpeedUp"]
-visible = false
-z_index = 2
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -25.0
-offset_top = -25.0
-offset_right = 25.0
-offset_bottom = 25.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Speed Up
-Cooldown 3s
-Energy 300
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="TurretCirc" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/StartingActions"]
-use_parent_material = true
-layout_mode = 2
-texture = ExtResource("6_2onaw")
-script = ExtResource("3_5nmen")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/StartingActions/TurretCirc"]
-visible = false
-z_index = 2
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -25.0
-offset_top = -25.0
-offset_right = 25.0
-offset_bottom = 25.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Turret
-Cooldown 5s
-Energy 80
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="SecondStageActions" type="HBoxContainer" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer"]
-material = SubResource("ShaderMaterial_5nmen")
-layout_mode = 2
-theme_override_constants/separation = 60
-
-[node name="2Shot Tri" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions"]
-use_parent_material = true
-layout_mode = 2
-texture = ExtResource("9_8cbhb")
-script = ExtResource("3_5nmen")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions/2Shot Tri"]
-visible = false
-z_index = 2
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -25.0
-offset_top = -25.0
-offset_right = 25.0
-offset_bottom = 25.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0.705882, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Double Shot
-Locked Upgrade
-for Single Shot
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="5Shot Tri" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions"]
-use_parent_material = true
-layout_mode = 2
-texture = ExtResource("10_2lnu8")
-script = ExtResource("3_5nmen")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions/5Shot Tri"]
-visible = false
-z_index = 2
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -25.0
-offset_top = -25.0
-offset_right = 25.0
-offset_bottom = 25.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0.705882, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "5 Shot Spread
-Locked Upgrade
-for 3 Shot Spread
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Zigzag" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions"]
-use_parent_material = true
-layout_mode = 2
-texture = ExtResource("11_pgvv8")
-script = ExtResource("3_5nmen")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions/Zigzag"]
-visible = false
-z_index = 2
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -25.0
-offset_top = -25.0
-offset_right = 25.0
-offset_bottom = 25.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0.705882, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Zigzag
-Locked Upgrade
-for Striker
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Dash" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions"]
-use_parent_material = true
-layout_mode = 2
-texture = ExtResource("12_lwgsy")
-script = ExtResource("3_5nmen")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions/Dash"]
-visible = false
-z_index = 2
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -25.0
-offset_top = -25.0
-offset_right = 25.0
-offset_bottom = 25.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0.705882, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Dash
-Locked Upgrade
-for Speed Up
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Summon Tri" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions"]
-use_parent_material = true
-layout_mode = 2
-texture = ExtResource("13_k7mho")
-script = ExtResource("3_5nmen")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/SecondStageActions/Summon Tri"]
-visible = false
-z_index = 2
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -25.0
-offset_top = -25.0
-offset_right = 25.0
-offset_bottom = 25.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0.705882, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Summon
-Locked Upgrade
-for Turret
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="ThirdStageActions" type="HBoxContainer" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer"]
-material = SubResource("ShaderMaterial_usb3c")
-layout_mode = 2
-theme_override_constants/separation = 60
-
-[node name="3Shot Square" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/ThirdStageActions"]
-use_parent_material = true
-layout_mode = 2
-texture = ExtResource("14_k7mho")
-script = ExtResource("3_5nmen")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/ThirdStageActions/3Shot Square"]
-visible = false
-z_index = 2
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -25.0
-offset_top = -25.0
-offset_right = 25.0
-offset_bottom = 25.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0.705882, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Triple Shot
-Locked Upgrade
-for Double Shot
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Barrage Sqr" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/ThirdStageActions"]
-use_parent_material = true
-layout_mode = 2
-texture = ExtResource("15_dxkgf")
-script = ExtResource("3_5nmen")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/ThirdStageActions/Barrage Sqr"]
-visible = false
-z_index = 2
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -25.0
-offset_top = -25.0
-offset_right = 25.0
-offset_bottom = 25.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0.705882, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Barrage
-Locked Upgrade
-for 5 Shot Spread
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Crusher Sqr" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/ThirdStageActions"]
-use_parent_material = true
-layout_mode = 2
-texture = ExtResource("16_7ucd1")
-script = ExtResource("3_5nmen")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/ThirdStageActions/Crusher Sqr"]
-visible = false
-z_index = 2
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -25.0
-offset_top = -25.0
-offset_right = 25.0
-offset_bottom = 25.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0.705882, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Crusher
-Locked Upgrade
-for Zigzag
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="TextureRect4" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/ThirdStageActions"]
-use_parent_material = true
-layout_mode = 2
-texture = ExtResource("12_lwgsy")
-script = ExtResource("3_5nmen")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/ThirdStageActions/TextureRect4"]
-visible = false
-z_index = 2
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -25.0
-offset_top = -25.0
-offset_right = 25.0
-offset_bottom = 25.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0.705882, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Long Dash
-Locked Upgrade
-for Dash
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Shield" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/ThirdStageActions"]
-use_parent_material = true
-layout_mode = 2
-texture = ExtResource("17_c0jvs")
-script = ExtResource("3_5nmen")
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/VBoxContainer/ThirdStageActions/Shield"]
-visible = false
-z_index = 2
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -25.0
-offset_top = -25.0
-offset_right = 25.0
-offset_bottom = 25.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0.705882, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_usb3c")
-text = "Shield
-Locked Upgrade
-for Rammer
-"
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer"]
 layout_mode = 2
@@ -794,18 +315,18 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="2Shot Tri" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/2Shot Tri"]
-material = SubResource("ShaderMaterial_dxkgf")
-use_parent_material = true
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/2Shot Tri"]
+material = SubResource("ShaderMaterial_7ucd1")
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("9_8cbhb")
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("9_k7mho")
 expand_mode = 3
-script = ExtResource("3_5nmen")
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/2Shot Tri"]
 visible = false
@@ -942,18 +463,18 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Summon Tri" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/Summon Tri"]
-material = SubResource("ShaderMaterial_uyn6w")
-use_parent_material = true
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/Summon Tri"]
+material = SubResource("ShaderMaterial_7ucd1")
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 texture = ExtResource("13_k7mho")
 expand_mode = 3
-script = ExtResource("3_5nmen")
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/Summon Tri"]
 visible = false
