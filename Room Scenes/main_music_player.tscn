@@ -1,19 +1,19 @@
 [gd_scene load_steps=4 format=3 uid="uid://cosws5qx6e3vh"]
 
 [ext_resource type="Script" path="res://Scripts/Global/audio.gd" id="1_7pi76"]
+[ext_resource type="AudioStream" uid="uid://wmw5ddxvyiy6" path="res://Assets/Audio Files/SI_Exploration_theme1_finalised.mp3" id="2_yy5sc"]
 
 [sub_resource type="AudioStreamMP3" id="AudioStreamMP3_i6qar"]
 
-[sub_resource type="AudioStreamMP3" id="AudioStreamMP3_6636x"]
-loop = true
-
-[node name="MainMusicPlayer" type="AudioStreamPlayer2D"]
+[node name="MainMusicPlayer" type="AudioStreamPlayer"]
 stream = SubResource("AudioStreamMP3_i6qar")
+autoplay = true
 parameters/looping = true
 script = ExtResource("1_7pi76")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="."]
-stream = SubResource("AudioStreamMP3_6636x")
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_yy5sc")
+volume_db = 3.748
 autoplay = true
 parameters/looping = false
 script = ExtResource("1_7pi76")
