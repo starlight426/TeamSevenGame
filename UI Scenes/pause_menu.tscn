@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://blb7rs1uwuo2s"]
+[gd_scene load_steps=20 format=3 uid="uid://blb7rs1uwuo2s"]
 
 [ext_resource type="Script" uid="uid://bu4psw76fl3kt" path="res://UI Scenes/pause_menu.gd" id="1_to0ni"]
 [ext_resource type="Texture2D" uid="uid://bkmcx2w6oyhds" path="res://Assets/UI Sprites/Icon_Single_Circ.png" id="2_s3syd"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://f3juf6clnp7d" path="res://Assets/UI Sprites/Icon_Dash.png" id="12_lwgsy"]
 [ext_resource type="Texture2D" uid="uid://dxkv40tpvpai7" path="res://Assets/UI Sprites/Icon_Summon_Tri.png" id="13_k7mho"]
 [ext_resource type="Script" uid="uid://cdd2qaxwf6lvv" path="res://UI Scenes/audio_slider.gd" id="15_8cbhb"]
+[ext_resource type="Script" uid="uid://c3r0ipwgk1dbm" path="res://UI Scenes/window_settings.gd" id="16_2lnu8"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_usb3c"]
 bg_color = Color(0.184314, 0.184314, 0.184314, 1)
@@ -610,6 +611,25 @@ layout_mode = 2
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 text = "50"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Settings/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 46
+script = ExtResource("16_2lnu8")
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Settings/MarginContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Window Mode"
+horizontal_alignment = 2
+
+[node name="VSeparator" type="VSeparator" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Settings/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Settings/MarginContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
