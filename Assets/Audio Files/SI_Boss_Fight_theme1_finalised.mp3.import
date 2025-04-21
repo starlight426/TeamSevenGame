@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://df7dunvrv1rho"
+path="res://.godot/imported/SI_Boss_Fight_theme1_finalised.mp3-5eed6f87fd354f53314c59dce9a7cc61.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio Files/SI_Boss_Fight_theme1_finalised.mp3"
+dest_files=["res://.godot/imported/SI_Boss_Fight_theme1_finalised.mp3-5eed6f87fd354f53314c59dce9a7cc61.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

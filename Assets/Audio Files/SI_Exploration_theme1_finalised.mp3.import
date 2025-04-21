@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wmw5ddxvyiy6"
+path="res://.godot/imported/SI_Exploration_theme1_finalised.mp3-ff6e92c0aa08bd50b44f0d5b0871cc27.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio Files/SI_Exploration_theme1_finalised.mp3"
+dest_files=["res://.godot/imported/SI_Exploration_theme1_finalised.mp3-ff6e92c0aa08bd50b44f0d5b0871cc27.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

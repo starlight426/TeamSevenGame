@@ -32,7 +32,7 @@ var rng = RandomNumberGenerator.new()
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$TargetDetector.update_parent_target.connect(update_target)
-	
+	MainMusicPlayer._play_boss_music()
 	max_hp = hp
 	phase_switcher()
 	intro_phase_cycle()

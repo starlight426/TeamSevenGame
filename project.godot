@@ -20,6 +20,7 @@ config/icon="res://Assets/icon.svg"
 AttackSpawner="*res://Scripts/Global/AttackSpawner.gd"
 RoomLoader="*res://Scripts/Global/RoomLoader.gd"
 TransitionScreen="*res://UI Scenes/transition_screen.tscn"
+MainMusicPlayer="*res://Room Scenes/main_music_player.tscn"
 
 [input]
 

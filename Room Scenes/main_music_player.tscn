@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cosws5qx6e3vh"]
+
+[ext_resource type="Script" path="res://Scripts/Global/audio.gd" id="1_7pi76"]
+
+[sub_resource type="AudioStreamMP3" id="AudioStreamMP3_htpgo"]
+
+[node name="MainMusicPlayer" type="AudioStreamPlayer2D"]
+stream = SubResource("AudioStreamMP3_htpgo")
+script = ExtResource("1_7pi76")

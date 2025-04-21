@@ -37,6 +37,7 @@ func load_room(room_to_load):
 		return
 		
 	new_room_loaded = load(room_to_load).instantiate()
+	MainMusicPlayer._play_music()
 	
 	if(current_room): 
 		current_room.queue_free() 

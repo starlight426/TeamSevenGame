@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://cmcabksd0f3yj"]
 
 [ext_resource type="PackedScene" uid="uid://hwmgwkumra7q" path="res://Overworld Scenes/Player Scenes/player.tscn" id="1_fmlmq"]
-[ext_resource type="Script" uid="uid://cd33jeg0w0g2c" path="res://main.gd" id="1_ipmiu"]
+[ext_resource type="Script" path="res://main.gd" id="1_ipmiu"]
 [ext_resource type="PackedScene" uid="uid://cc7vstslog23o" path="res://UI Scenes/player_ui.tscn" id="4_1bvp3"]
-[ext_resource type="Script" uid="uid://te0qb4altvbs" path="res://Scripts/camera.gd" id="4_w7dd5"]
+[ext_resource type="Script" path="res://Scripts/camera.gd" id="4_w7dd5"]
 [ext_resource type="PackedScene" uid="uid://blb7rs1uwuo2s" path="res://UI Scenes/pause_menu.tscn" id="5_lquwl"]
 
 [node name="Main" type="Node2D"]

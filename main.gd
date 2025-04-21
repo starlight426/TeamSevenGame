@@ -77,7 +77,6 @@ func load_game():
 				if ResourceLoader.exists(room_path):
 					RoomLoader.load_room(room_path)
 					await RoomLoader.room_has_loaded 
-					
 					player_node.position = Vector2(save_data["player_position_x"], save_data["player_position_y"])
 					player_node.hp = save_data["player_hp"]
 					player_node.energy = save_data["player_energy"]
