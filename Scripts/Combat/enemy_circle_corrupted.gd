@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var hp = 50
+@export var hp = 100
 @export var team = "circle"
 @export var speed = 1000
 var target = null
@@ -53,7 +53,7 @@ func _physics_process(delta: float) -> void:
 func fire():
 	fire_ready = false
 	fire_direction = fire_direction - PI + rng.randf_range(-2*PI/3,2*PI/3)
-	AttackSpawner.spawn_bullets(global_position,fire_direction,"single",1,0,"default","circle","straight",2000,3,30,"circle","purple",0,0,0)
+	AttackSpawner.spawn_bullets(global_position,fire_direction,"single",1,0,"default","circle","straight",2000,3,20,"circle","purple",0,0,0)
 	await get_tree().create_timer(1/fire_rate).timeout
 	fire_ready = true
 

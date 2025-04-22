@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3 uid="uid://8oogbqjg1vt7"]
+
+[ext_resource type="Script" uid="uid://b43513ii8bik0" path="res://Scripts/Combat/enemy_triangle_rammer.gd" id="1_8qgmv"]
+[ext_resource type="Texture2D" uid="uid://bifmfpdkd7ts3" path="res://Assets/spritePNGs/Enemy_Ram_Tri.png" id="2_bm88o"]
+[ext_resource type="PackedScene" uid="uid://sus6s80ptul7" path="res://AI Modules/Detectors/target_detector.tscn" id="3_k47bh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fybhy"]
+radius = 304.081
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gy7nl"]
+radius = 150.0
+
+[node name="EnemyTriangleRammer" type="CharacterBody2D"]
+collision_mask = 2
+script = ExtResource("1_8qgmv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10, 0)
+scale = Vector2(0.53, 0.53)
+shape = SubResource("CircleShape2D_fybhy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(50, 0)
+rotation = -1.5708
+texture = ExtResource("2_bm88o")
+
+[node name="TargetDetector" parent="." instance=ExtResource("3_k47bh")]
+visible = false
+scale = Vector2(25, 25)
+
+[node name="bullet_marker_1" type="Marker2D" parent="."]
+position = Vector2(-100, -140)
+
+[node name="bullet_marker_2" type="Marker2D" parent="."]
+position = Vector2(200, 0)
+
+[node name="bullet_marker_3" type="Marker2D" parent="."]
+position = Vector2(-100, 140)
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(250, 0)
+shape = SubResource("CircleShape2D_gy7nl")
+
+[connection signal="body_entered" from="Hitbox" to="." method="on_hitbox_entered"]

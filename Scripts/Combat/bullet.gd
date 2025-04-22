@@ -18,6 +18,8 @@ var time_to_move_specially = 30.0
 var target = null
 var locked_on_target = false
 
+var zigzag_direction = 1
+
 var current_sprite
 
 # Called when the node enters the scene tree for the first time.
@@ -48,10 +50,16 @@ func _ready():
 			pass
 		"striker":
 			current_sprite.modulate = Color(0.7,0.7,1.0,1.0)
+		"zigzag":
+			pass
 		
 	match color:
 		"cigil":
 			current_sprite.modulate = Color.BLACK
+	
+	if(type == "zigzag"):
+		zigzag_direction_switcher()
+	
 	#play_this_sound()
 
 func start_moving():
@@ -70,7 +78,7 @@ func start_moving():
 			velocity = Vector2(speed,0).rotated(global_rotation)
 			rotation_speed = mod1
 			target = mod2
-			time_to_move_specially = 7.0
+			time_to_move_specially = mod3
 			
 	moving_specially_timer()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -89,18 +97,21 @@ func _physics_process(delta):
 			#print(target)
 			if(is_moving_specially):	
 				if(target):
-					if(is_looking_at(target)):
-						locked_on_target = true
-					if(global_position.distance_to(target.global_position) < 1300):
+					#if(is_looking_at(target)):
+					#	locked_on_target = true
+					if(global_position.distance_to(target.global_position) < 900):
 						locked_on_target = true
 					if(!locked_on_target):
 						global_rotation = lerp_angle(global_rotation,(target.global_position - global_position).angle(),rotation_speed)
 						velocity = Vector2(speed,0).rotated(global_rotation)
+		"zigzag":
+			velocity = Vector2(speed,0).rotated(global_rotation + PI/4*zigzag_direction)
+			
 	move_and_slide()
 
 func on_bullet_hit(target):
 	if(target.team != team):
-		#print("took" + str(contact_dmg) + " damage")
+		#print(str(target.team) + "took" + str(contact_dmg) + " damage")
 		target.take_damage(contact_dmg)
 		queue_free()
 
@@ -118,5 +129,10 @@ func is_looking_at(target: Node2D) -> bool:
 	var to_target = (target.global_position - global_position).normalized()
 	var angle_diff = facing_dir.angle_to(to_target)
 	return abs(angle_diff) <= tolerance
+	
+func zigzag_direction_switcher():
+	while(true):
+		await get_tree().create_timer(0.2).timeout
+		zigzag_direction *= -1
 	
 	

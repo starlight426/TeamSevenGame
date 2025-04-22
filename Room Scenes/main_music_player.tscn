@@ -15,5 +15,5 @@ script = ExtResource("1_7pi76")
 stream = ExtResource("2_yy5sc")
 volume_db = 3.748
 autoplay = true
-parameters/looping = false
+parameters/looping = true
 script = ExtResource("1_7pi76")

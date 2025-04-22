@@ -12,7 +12,9 @@ func _ready() -> void:
 	pause_menu.hide()
 	
 	if not should_load_game:
-		RoomLoader.load_room_from_exit("Circle City", "cigil_room", "from_right")
+		#RoomLoader.load_room_from_exit("Circle City", "cigil_room", "from_right")
+		#RoomLoader.load_room_from_exit("Triangle Town", "town_0-1","from_bottom")
+		RoomLoader.load_room_from_exit("Circle Temple", "clidean_room", "from_bottom")
 	else:
 		load_game()
 		should_load_game = false

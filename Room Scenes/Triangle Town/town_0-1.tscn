@@ -18,14 +18,16 @@ target_entrance = "from_right"
 
 [node name="exit4" parent="." instance=ExtResource("1_kjdiq")]
 position = Vector2(0, 5000)
-target_room = ""
+target_room = "clidean_room"
 target_entrance = "from_top"
+target_group = "Circle Temple"
 
 [node name="exit2" parent="." instance=ExtResource("1_kjdiq")]
 position = Vector2(250, -12750)
 scale = Vector2(4, 4)
-target_room = ""
+target_room = "town_00"
 target_entrance = "from_bottom"
+target_group = "Triangle Town"
 
 [node name="exit3" parent="." instance=ExtResource("1_kjdiq")]
 position = Vector2(12250, -10000)
@@ -94,12 +96,12 @@ rotation = -2.05949
 scale = Vector2(8, 8)
 
 [node name="WallTriangleEq29" parent="." instance=ExtResource("2_0x6an")]
-position = Vector2(-13000, -10250)
+position = Vector2(-11500, -7750)
 rotation = -1.11024
 scale = Vector2(8, 8)
 
 [node name="WallTriangleEq30" parent="." instance=ExtResource("2_0x6an")]
-position = Vector2(12750, -10000)
+position = Vector2(11500, -8000)
 rotation = 1.11003
 scale = Vector2(8, 8)
 

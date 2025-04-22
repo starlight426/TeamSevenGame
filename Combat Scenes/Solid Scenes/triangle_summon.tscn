@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://ee2apewfacwd"]
+
+[ext_resource type="Texture2D" uid="uid://bifmfpdkd7ts3" path="res://Assets/spritePNGs/Enemy_Ram_Tri.png" id="1_ad7dj"]
+[ext_resource type="Script" uid="uid://ckminpyafpjc8" path="res://Scripts/Combat/triangle_summon.gd" id="1_prjcd"]
+[ext_resource type="PackedScene" uid="uid://sus6s80ptul7" path="res://AI Modules/Detectors/target_detector.tscn" id="3_dc1id"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fybhy"]
+radius = 107.143
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ad7dj"]
+radius = 107.143
+
+[node name="TriangleSummon" type="CharacterBody2D"]
+scale = Vector2(1.4, 1.4)
+collision_mask = 2
+script = ExtResource("1_prjcd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-35.7143, 0)
+shape = SubResource("CircleShape2D_fybhy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.407056, 0.407056, 0.407056, 1)
+position = Vector2(35.7143, 6.27551e-12)
+rotation = -1.5708
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_ad7dj")
+
+[node name="TargetDetector" parent="." instance=ExtResource("3_dc1id")]
+visible = false
+scale = Vector2(40, 40)
+
+[node name="DodgeDetector2" parent="." instance=ExtResource("3_dc1id")]
+visible = false
+scale = Vector2(40, 40)
+
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(71.4286, 0)
+shape = SubResource("CircleShape2D_ad7dj")

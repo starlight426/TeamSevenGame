@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://b7kvclguuokbq"]
+
+[ext_resource type="Script" uid="uid://p6ab2iubud6o" path="res://Scripts/Combat/enemy_square_basic.gd" id="1_ep3a7"]
+[ext_resource type="Texture2D" uid="uid://4mmimbtolx3t" path="res://Assets/spritePNGs/Enemy_Barrage_Sqr.png" id="2_ep3a7"]
+[ext_resource type="PackedScene" uid="uid://sus6s80ptul7" path="res://AI Modules/Detectors/target_detector.tscn" id="3_av24e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v2vms"]
+size = Vector2(500, 428.571)
+
+[node name="EnemySquareBarrager" type="CharacterBody2D"]
+scale = Vector2(0.7, 0.7)
+collision_mask = 2
+script = ExtResource("1_ep3a7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-75.7143, 5.71429)
+shape = SubResource("RectangleShape2D_v2vms")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(22.8571, -2.85714)
+rotation = -1.5708
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_ep3a7")
+
+[node name="TargetDetector" parent="." instance=ExtResource("3_av24e")]
+visible = false
+scale = Vector2(40, 40)
+
+[node name="bullet_marker_1" type="Marker2D" parent="."]
+position = Vector2(-9.09495e-13, -857.143)
+
+[node name="bullet_marker_2" type="Marker2D" parent="."]
+position = Vector2(-1.81899e-12, 857.143)
+
+[node name="bullet_marker_3" type="Marker2D" parent="."]
+position = Vector2(-1142.86, -1714.29)
+
+[node name="bullet_marker_4" type="Marker2D" parent="."]
+position = Vector2(-1142.86, 5.16988e-26)
+
+[node name="bullet_marker_5" type="Marker2D" parent="."]
+position = Vector2(-1142.86, 1714.29)
+
+[node name="DodgeDetector2" parent="." instance=ExtResource("3_av24e")]
+visible = false
+scale = Vector2(4, 4)
