@@ -1,6 +1,7 @@
-[gd_scene load_steps=29 format=3 uid="uid://blb7rs1uwuo2s"]
+[gd_scene load_steps=30 format=3 uid="uid://blb7rs1uwuo2s"]
 
 [ext_resource type="Script" uid="uid://bu4psw76fl3kt" path="res://UI Scenes/pause_menu.gd" id="1_to0ni"]
+[ext_resource type="Script" uid="uid://h3ohaxarat72" path="res://UI Scenes/Inventory.gd" id="2_dxkgf"]
 [ext_resource type="Texture2D" uid="uid://bkmcx2w6oyhds" path="res://Assets/UI Sprites/Icon_Single_Circ.png" id="2_s3syd"]
 [ext_resource type="Script" uid="uid://c602hdqumdjcd" path="res://UI Scenes/inventoryLabel.gd" id="3_5nmen"]
 [ext_resource type="Texture2D" uid="uid://qjp3e0fpnfgi" path="res://Assets/UI Sprites/Icon_3Shot_Circ.png" id="3_gupsn"]
@@ -126,6 +127,7 @@ layout_mode = 2
 theme_override_constants/h_separation = 20
 theme_override_constants/v_separation = 20
 columns = 5
+script = ExtResource("2_dxkgf")
 
 [node name="Single Shot" type="Control" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer"]
 layout_mode = 2
@@ -158,8 +160,8 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_k7mho")
 text = "Single Shot
-Cooldown 0.1s
-Energy 10
+Cooldown 0.4s
+Energy 20
 "
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -195,8 +197,8 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_k7mho")
 text = "3 Shot Spread
-Cooldown 0.3s
-Energy 20
+Cooldown 0.6s
+Energy 30
 "
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -232,8 +234,8 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_k7mho")
 text = "Striker
-Cooldown 0.1s
-Energy 10
+Cooldown 0.8s
+Energy 45
 "
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -242,6 +244,7 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("3_5nmen")
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/Speed Up"]
 layout_mode = 1
@@ -269,7 +272,7 @@ theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_k7mho")
 text = "Speed Up
 Cooldown 3s
-Energy 300
+Energy 100
 "
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -278,6 +281,7 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("3_5nmen")
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/Turret Circ"]
 layout_mode = 1
@@ -314,6 +318,7 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("3_5nmen")
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/2Shot Tri"]
 material = SubResource("ShaderMaterial_7ucd1")
@@ -351,6 +356,7 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("3_5nmen")
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/5Shot Tri"]
 material = SubResource("ShaderMaterial_7ucd1")
@@ -388,6 +394,7 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("3_5nmen")
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/Zigzag"]
 material = SubResource("ShaderMaterial_c0jvs")
@@ -425,6 +432,7 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("3_5nmen")
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/Dash"]
 material = SubResource("ShaderMaterial_s8ohf")
@@ -458,12 +466,13 @@ for Speed Up
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Summon Tri" type="Control" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer"]
+[node name="Rammer" type="Control" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("3_5nmen")
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/Summon Tri"]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/Rammer"]
 material = SubResource("ShaderMaterial_7ucd1")
 layout_mode = 1
 anchors_preset = 15
@@ -476,7 +485,7 @@ size_flags_vertical = 3
 texture = ExtResource("13_k7mho")
 expand_mode = 3
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/Summon Tri"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/Rammer"]
 visible = false
 z_index = 2
 layout_mode = 1
@@ -499,6 +508,7 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("3_5nmen")
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/3Shot Sqr"]
 material = SubResource("ShaderMaterial_j3qq6")
@@ -536,6 +546,7 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("3_5nmen")
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/Barrage"]
 material = SubResource("ShaderMaterial_4e8kb")
@@ -573,6 +584,7 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("3_5nmen")
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/Crusher"]
 material = SubResource("ShaderMaterial_ry4tw")
@@ -610,6 +622,7 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("3_5nmen")
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/Long Dash"]
 material = SubResource("ShaderMaterial_wmxxo")
@@ -647,6 +660,7 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("3_5nmen")
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/Shield Sqr"]
 material = SubResource("ShaderMaterial_vcg37")
