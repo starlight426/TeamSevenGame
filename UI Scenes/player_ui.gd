@@ -8,7 +8,7 @@ func _ready() -> void:
 	player_node = get_parent().get_parent().get_node("Player")
 	
 func _physics_process(delta: float) -> void:
-	if triangle_flag && player_node.attack_shape == "triange":
+	if triangle_flag && player_node.attack_shape == "triangle":
 		triangle_flag = false
 		$MoveIconsBar/Action1.texture_progress = load("res://Assets/UI Sprites/Icon_2Shot_Tri.png")
 		$MoveIconsBar/Action2.texture_progress = load("res://Assets/UI Sprites/Icon_5Shot_Tri.png")
