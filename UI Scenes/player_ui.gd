@@ -39,23 +39,11 @@ func _physics_process(delta: float) -> void:
 	else:
 		$HBoxContainer/EnergyLabel.text = "Energy:    " + str(player_node.energy) + "/500"
 	$HBoxContainer/EnergyBar.value = player_node.energy
-	if player_node.attack_shape == "circle":
-		$MoveIconsBar/Action1.value = player_node.move_cooldown_percentages[0]
-		$MoveIconsBar/Action2.value = player_node.move_cooldown_percentages[1]
-		$MoveIconsBar/Action3.value = player_node.move_cooldown_percentages[2]
-		$MoveIconsBar/Action4.value = player_node.move_cooldown_percentages[3]
-		$MoveIconsBar/Action5.value = player_node.move_cooldown_percentages[4]
-	elif player_node.attack_shape == "triangle":
-		$MoveIconsBar/Action1.value = player_node.move_cooldown_percentages[5]
-		$MoveIconsBar/Action2.value = player_node.move_cooldown_percentages[6]
-		$MoveIconsBar/Action3.value = player_node.move_cooldown_percentages[7]
-		$MoveIconsBar/Action4.value = player_node.move_cooldown_percentages[8]
-		$MoveIconsBar/Action5.value = player_node.move_cooldown_percentages[9]
-	else:
-		$MoveIconsBar/Action1.value = player_node.move_cooldown_percentages[10]
-		$MoveIconsBar/Action2.value = player_node.move_cooldown_percentages[11]
-		$MoveIconsBar/Action3.value = player_node.move_cooldown_percentages[12]
-		$MoveIconsBar/Action4.value = player_node.move_cooldown_percentages[13]
-		$MoveIconsBar/Action5.value = player_node.move_cooldown_percentages[14]
+	
+	$MoveIconsBar/Action1.value = player_node.move_cooldown_percentages[0]
+	$MoveIconsBar/Action2.value = player_node.move_cooldown_percentages[1]
+	$MoveIconsBar/Action3.value = player_node.move_cooldown_percentages[2]
+	$MoveIconsBar/Action4.value = player_node.move_cooldown_percentages[3]
+	$MoveIconsBar/Action5.value = player_node.move_cooldown_percentages[4]
 	
 	

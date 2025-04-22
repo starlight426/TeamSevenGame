@@ -49,6 +49,7 @@ func save_game():
 		"player_hp": player_node.hp,
 		"player_energy": player_node.energy,
 		"player_speed": player_node.speed,
+		"attack_shape": player_node.attack_shape,
 		"move_readiness": player_node.move_readiness,
 		"move_cooldown_percentages": player_node.move_cooldown_percentages,
 		"room_group": RoomLoader.last_group,
@@ -82,6 +83,7 @@ func load_game():
 					player_node.hp = save_data["player_hp"]
 					player_node.energy = save_data["player_energy"]
 					player_node.speed = save_data["player_speed"]
+					player_node.attack_shape = save_data["attack_shape"]
 					player_node.move_readiness = save_data["move_readiness"]
 					player_node.move_cooldown_percentages = save_data["move_cooldown_percentages"]
 					
