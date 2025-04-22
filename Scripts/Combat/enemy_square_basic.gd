@@ -1,12 +1,13 @@
+
 extends CharacterBody2D
 
 @export var hp = 150
 @export var team = "triangle"
-@export var speed = 700
+@export var speed = 700.0
 var target = null
 var closest_danger = null
 var fire_ready = false
-@export var fire_rate = 2.0
+@export var fire_rate = 3.0
 var rotation_speed = PI/32
 var color = "default"
 var type = "default"
@@ -39,9 +40,9 @@ func _physics_process(delta: float) -> void:
 	else:
 		if(target):
 			if(chase_direction == 1):
-				velocity = Vector2(speed,speed * strafe_direction).rotated(global_rotation) 
+				velocity = Vector2(speed/2,speed * strafe_direction).rotated(global_rotation) 
 			if(chase_direction == -1):
-				velocity = Vector2(speed,speed * strafe_direction).rotated(global_rotation + PI)
+				velocity = Vector2(speed/2,speed * strafe_direction).rotated(global_rotation + PI)
 			
 	move_and_slide()
 	

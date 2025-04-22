@@ -3,9 +3,12 @@ extends GridContainer
 var player_node
 var triangle_flag = true
 var square_flag = true 
-
+#var debug_ready = false
 func _ready() -> void:
-	player_node = get_parent().get_parent().get_node("Player")
+	#get_tree().create_timer(0.5).timeout
+	player_node = get_tree().root.get_node("Main").get_node("Player")
+	#debug_ready = true
+
 
 func _physics_process(delta: float) -> void:
 	if triangle_flag && player_node.attack_shape == "triangle":

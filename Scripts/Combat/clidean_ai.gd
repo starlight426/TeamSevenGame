@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 #main functionality variables
-@export var hp = 4000
+@export var hp = 10
 var max_hp
 @export var team = "circle"
 @export var speed = 600  #speed
@@ -95,9 +95,15 @@ func aggressive_phase_cycle():
 		if(phase == "aggressive"):
 			movement_mode = "slow_chase"
 			passive_fire_rate = 9.0
+			await get_tree().create_timer(1.0).timeout
+			do_phase_action("aggressive","aggressive_orbiting_circle")
+			await get_tree().create_timer(1.0).timeout
+			do_phase_action("aggressive","aggressive_orbiting_circle")
 			await get_tree().create_timer(4.0).timeout
 			do_phase_action("aggressive","aggressive_striker_burst")
 			await get_tree().create_timer(3.0).timeout
+			do_phase_action("aggressive","aggressive_orbiting_circle")
+			await get_tree().create_timer(1.0).timeout
 			do_phase_action("aggressive","aggressive_orbiting_circle")
 			await get_tree().create_timer(2.0).timeout
 			do_phase_action("aggressive","aggressive_bullet_burst")
@@ -133,25 +139,25 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func intro_circles_attack():
-	AttackSpawner.spawn_bullet_collection(global_position,global_rotation,"circle_of_bullets","straight",2000,"circle",0,0,0)
+	AttackSpawner.spawn_bullet_collection(global_position,global_rotation,"circle_of_bullets","straight",4000,"circle",0,0,0)
 	await get_tree().create_timer(0.7).timeout
-	AttackSpawner.spawn_bullet_collection(global_position,global_rotation,"circle_of_bullets","straight",2000,"circle",0,0,0)
+	AttackSpawner.spawn_bullet_collection(global_position,global_rotation,"circle_of_bullets","straight",4000,"circle",0,0,0)
 	await get_tree().create_timer(0.7).timeout
-	AttackSpawner.spawn_bullet_collection(global_position,global_rotation,"circle_of_bullets","straight",2000,"circle",0,0,0)
+	AttackSpawner.spawn_bullet_collection(global_position,global_rotation,"circle_of_bullets","straight",4000,"circle",0,0,0)
 
 func intro_striker_attack():
 	for i in range(0,5):
-		AttackSpawner.spawn_bullets(global_position,global_rotation-PI/2,"single",1,0,"default","circle","striker",2500,3,10,"circle","purple",PI/150,target,0)
-		AttackSpawner.spawn_bullets(global_position,global_rotation+PI/2,"single",1,0,"default","circle","striker",2500,3,10,"circle","purple",PI/150,target,0)
+		AttackSpawner.spawn_bullets(global_position,global_rotation-PI/2,"single",1,0,"default","circle","striker",2500,3,10,"circle","purple",PI/150,target,5.0)
+		AttackSpawner.spawn_bullets(global_position,global_rotation+PI/2,"single",1,0,"default","circle","striker",2500,3,10,"circle","purple",PI/150,target,5.0)
 		await get_tree().create_timer(0.8).timeout
 		
 func aggressive_striker_burst():
 	for i in range(0,5):
-		AttackSpawner.spawn_bullets(global_position + Vector2(rng.randf_range(-30,30),rng.randf_range(-30,30)),global_rotation+(PI/2 + (rng.randi_range(0,1)*2-1)),"single",1,0,"default","circle","striker",2800,3,10,"circle","purple",PI/100,target,0)
+		AttackSpawner.spawn_bullets(global_position + Vector2(rng.randf_range(-30,30),rng.randf_range(-30,30)),global_rotation+(PI/2 + (rng.randi_range(0,1)*2-1)),"single",1,0,"default","circle","striker",2800,3,10,"circle","purple",PI/50,target,4.0)
 		await get_tree().create_timer(0.1).timeout
 	
 func aggressive_orbiting_circle():
-	AttackSpawner.spawn_bullet_collection(global_position,global_rotation,"circle_of_bullets","arc",2000,"circle",PI/3,10.0,0)
+	AttackSpawner.spawn_bullet_collection(global_position,global_rotation,"circle_of_bullets","arc",2000,"circle",PI/3,15.0,0)
 
 func aggressive_bullet_burst():
 	for i in range(0,6):
@@ -164,7 +170,7 @@ func artillery_summon():
 	add_sibling(new_striker)
 
 func artillery_bullet_circle():
-	AttackSpawner.spawn_bullet_collection(global_position,global_rotation,"circle_of_bullets","striker",2000,"circle",PI/3,10.0,0)
+	AttackSpawner.spawn_bullet_collection(global_position, rng.randf_range(0,2*PI),"circle_of_bullets","striker",2000,"circle",PI/3,10.0,0)
 	
 func update_target(body):
 	target = body

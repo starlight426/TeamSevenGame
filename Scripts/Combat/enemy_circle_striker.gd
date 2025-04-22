@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var hp = 250
+@export var hp = 140
 @export var team = "circle"
 @export var speed = 500
 var target = null
@@ -42,8 +42,8 @@ func _physics_process(delta: float) -> void:
 	
 func fire():
 	fire_ready = false
-	AttackSpawner.spawn_bullets($bullet_marker_1.global_position,global_rotation-3*PI/4,"single",1,0,"default","circle","striker",2000,3,10,"circle","purple",PI/100,target,0)
-	AttackSpawner.spawn_bullets($bullet_marker_2.global_position,global_rotation+3*PI/4,"single",1,0,"default","circle","striker",2000,3,10,"circle","purple",PI/100,target,0)
+	AttackSpawner.spawn_bullets($bullet_marker_1.global_position,global_rotation-3*PI/4,"single",1,0,"default","circle","striker",2000,3,40,"circle","purple",PI/100,target,4.0)
+	AttackSpawner.spawn_bullets($bullet_marker_2.global_position,global_rotation+3*PI/4,"single",1,0,"default","circle","striker",2000,3,40,"circle","purple",PI/100,target,4.0)
 	await get_tree().create_timer(1/fire_rate).timeout
 	fire_ready = true
 	
