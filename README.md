@@ -3,7 +3,7 @@ Shape Escape is a bullet hell available on Windows in its current release. It ta
 Credits:
 - Made using Godot
 - The members of Team 7
-    - Katie: lead story developer & AI specialist
+    - John Paul: lead story developer & AI specialist
     - Kaitlyn: sprite artist & outreach manager
     - Ben: lead UI developer
     - Adam: assistant UI developer
