@@ -1,11 +1,29 @@
 extends Control
 
 var player_node 
+var triangle_flag = true
+var square_flag = true
 
 func _ready() -> void:
 	player_node = get_parent().get_parent().get_node("Player")
 	
 func _physics_process(delta: float) -> void:
+	if triangle_flag && player_node.attack_shape == "triange":
+		triangle_flag = false
+		$MoveIconsBar/Action1.texture_progress = load("res://Assets/UI Sprites/Icon_2Shot_Tri.png")
+		$MoveIconsBar/Action2.texture_progress = load("res://Assets/UI Sprites/Icon_5Shot_Tri.png")
+		$MoveIconsBar/Action3.texture_progress = load("res://Assets/UI Sprites/Icon_ZigZag.png")
+		$MoveIconsBar/Action4.texture_progress = load("res://Assets/UI Sprites/Icon_Dash .png")
+		$MoveIconsBar/Action5.texture_progress = load("res://Assets/UI Sprites/Icon_Summon_Tri.png")
+	
+	if square_flag && player_node.attack_shape == "square":
+		square_flag = false
+		$MoveIconsBar/Action1.texture_progress = load("res://Assets/spritePNGs/Icon_3Shot_Sqr.png")
+		$MoveIconsBar/Action2.texture_progress = load("res://Assets/spritePNGs/Icon_Barrage_Sqr.png")
+		$MoveIconsBar/Action3.texture_progress = load("res://Assets/UI Sprites/Icon_Crusher_Sqr.png")
+		$MoveIconsBar/Action4.texture_progress = load("res://Assets/UI Sprites/Icon_LongDash.png")
+		$MoveIconsBar/Action5.texture_progress = load("res://Assets/spritePNGs/Icon_Shield_Square.png")
+	
 	if (player_node.hp >= 100):
 		$HBoxContainer2/HealthLabel.text = "Health: " + str(player_node.hp) + "/200"
 	elif (player_node.hp >= 10):
@@ -21,8 +39,23 @@ func _physics_process(delta: float) -> void:
 	else:
 		$HBoxContainer/EnergyLabel.text = "Energy:    " + str(player_node.energy) + "/500"
 	$HBoxContainer/EnergyBar.value = player_node.energy
-	$MoveIconsBar/Action1.value = player_node.move_cooldown_percentages[0]
-	$MoveIconsBar/Action2.value = player_node.move_cooldown_percentages[1]
-	$MoveIconsBar/Action3.value = player_node.move_cooldown_percentages[2]
-	$MoveIconsBar/Action4.value = player_node.move_cooldown_percentages[3]
-	$MoveIconsBar/Action5.value = player_node.move_cooldown_percentages[4]
+	if player_node.attack_shape == "circle":
+		$MoveIconsBar/Action1.value = player_node.move_cooldown_percentages[0]
+		$MoveIconsBar/Action2.value = player_node.move_cooldown_percentages[1]
+		$MoveIconsBar/Action3.value = player_node.move_cooldown_percentages[2]
+		$MoveIconsBar/Action4.value = player_node.move_cooldown_percentages[3]
+		$MoveIconsBar/Action5.value = player_node.move_cooldown_percentages[4]
+	elif player_node.attack_shape == "triangle":
+		$MoveIconsBar/Action1.value = player_node.move_cooldown_percentages[5]
+		$MoveIconsBar/Action2.value = player_node.move_cooldown_percentages[6]
+		$MoveIconsBar/Action3.value = player_node.move_cooldown_percentages[7]
+		$MoveIconsBar/Action4.value = player_node.move_cooldown_percentages[8]
+		$MoveIconsBar/Action5.value = player_node.move_cooldown_percentages[9]
+	else:
+		$MoveIconsBar/Action1.value = player_node.move_cooldown_percentages[10]
+		$MoveIconsBar/Action2.value = player_node.move_cooldown_percentages[11]
+		$MoveIconsBar/Action3.value = player_node.move_cooldown_percentages[12]
+		$MoveIconsBar/Action4.value = player_node.move_cooldown_percentages[13]
+		$MoveIconsBar/Action5.value = player_node.move_cooldown_percentages[14]
+	
+	

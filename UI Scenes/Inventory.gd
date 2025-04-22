@@ -8,7 +8,7 @@ func _ready() -> void:
 	player_node = get_parent().get_parent().get_node("Player")
 
 func _physics_process(delta: float) -> void:
-	if triangle_flag && player_node.attack_type == "triangle":
+	if triangle_flag && player_node.attack_shape == "triangle":
 		triangle_flag = false
 		$"2Shot Tri/TextureRect".material = null
 		$"2Shot Tri/Label".text = "Double Shot\nCooldown 0.4s\nEnergy 20\n"
@@ -30,7 +30,7 @@ func _physics_process(delta: float) -> void:
 		$"Rammer/Label".text = "Rammer\nCooldown 5s\nEnergy 80\n"
 		$"Rammer/Label".add_theme_color_override("font_color", Color("ffffff"))
 	
-	if square_flag && player_node.attack_type == "square":
+	if square_flag && player_node.attack_shape == "square":
 		square_flag = false
 		$"3Shot Sqr/TextureRect".material = null
 		$"3Shot Sqr/Label".text = "Triple Shot\nCooldown 0.4s\nEnergy 20\n"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://blb7rs1uwuo2s"]
+[gd_scene load_steps=31 format=3 uid="uid://blb7rs1uwuo2s"]
 
 [ext_resource type="Script" uid="uid://bu4psw76fl3kt" path="res://UI Scenes/pause_menu.gd" id="1_to0ni"]
 [ext_resource type="Script" uid="uid://h3ohaxarat72" path="res://UI Scenes/Inventory.gd" id="2_dxkgf"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://ceuetug57xwny" path="res://Assets/UI Sprites/Icon_5Shot_Tri.png" id="10_2lnu8"]
 [ext_resource type="Texture2D" uid="uid://783yttanqfbi" path="res://Assets/UI Sprites/Icon_ZigZag.png" id="11_pgvv8"]
 [ext_resource type="Texture2D" uid="uid://f3juf6clnp7d" path="res://Assets/UI Sprites/Icon_Dash.png" id="12_lwgsy"]
+[ext_resource type="Texture2D" uid="uid://bluadhl5xwhyd" path="res://Assets/UI Sprites/Icon_Dash .png" id="13_7ucd1"]
 [ext_resource type="Texture2D" uid="uid://dxkv40tpvpai7" path="res://Assets/UI Sprites/Icon_Summon_Tri.png" id="13_k7mho"]
 [ext_resource type="Texture2D" uid="uid://dta3mkrfo1eww" path="res://Assets/spritePNGs/Icon_3Shot_Sqr.png" id="14_k7mho"]
 [ext_resource type="Script" uid="uid://cdd2qaxwf6lvv" path="res://UI Scenes/audio_slider.gd" id="15_8cbhb"]
@@ -444,7 +445,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource("2_s3syd")
+texture = ExtResource("13_7ucd1")
 expand_mode = 3
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/SettingsTabContainer/TabContainer/Inventory/MarginContainer/GridContainer/Dash"]
