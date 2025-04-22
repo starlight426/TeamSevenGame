@@ -23,7 +23,7 @@ texture = ExtResource("2_rxuwt")
 
 [node name="TargetDetector" parent="." instance=ExtResource("3_sjeog")]
 visible = false
-scale = Vector2(40, 40)
+scale = Vector2(150, 150)
 
 [node name="bullet_marker_1" type="Marker2D" parent="."]
 position = Vector2(104.286, -95.7143)

@@ -1,16 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://cph0bowhas4hi"]
+[gd_scene load_steps=6 format=3 uid="uid://cph0bowhas4hi"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_r0c6y"]
 [ext_resource type="PackedScene" uid="uid://c4c578xkhgapt" path="res://Overworld Scenes/Object Scenes/wall_triangle_eq.tscn" id="2_ughqf"]
 [ext_resource type="PackedScene" uid="uid://d4nujuxr18io" path="res://Overworld Scenes/Object Scenes/wall_triangle_ac.tscn" id="3_6e1dk"]
 [ext_resource type="PackedScene" uid="uid://dc16pauw32gjv" path="res://Overworld Scenes/Object Scenes/wall_triangle_ob.tscn" id="4_q0iv1"]
+[ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="5_usepk"]
 
 [node name="TemplateRoom" type="Node2D"]
 
 [node name="exit" parent="." instance=ExtResource("1_r0c6y")]
 position = Vector2(-2000, -24000)
 rotation = 0.0424873
-scale = Vector2(4, 4)
+scale = Vector2(6, 4)
 target_room = "town_-16"
 target_entrance = "from_bottom"
 target_group = "Triangle Town"
@@ -136,8 +137,8 @@ rotation = 0.532325
 scale = Vector2(10, 10)
 
 [node name="WallTriangleEq32" parent="." instance=ExtResource("2_ughqf")]
-position = Vector2(17500, -1500)
-rotation = 1.5444
+position = Vector2(16250, -250)
+rotation = 1.71395
 scale = Vector2(10, 10)
 
 [node name="WallTriangleEq38" parent="." instance=ExtResource("2_ughqf")]
@@ -201,7 +202,7 @@ rotation = 1.52752
 scale = Vector2(4, 4)
 
 [node name="WallTriangleEq12" parent="." instance=ExtResource("2_ughqf")]
-position = Vector2(7000, 9250)
+position = Vector2(6000, 9000)
 rotation = 1.55756
 scale = Vector2(4, 4)
 
@@ -227,6 +228,11 @@ scale = Vector2(4, 4)
 
 [node name="WallTriangleEq36" parent="." instance=ExtResource("2_ughqf")]
 position = Vector2(13500, 7750)
+rotation = 2.17232
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq43" parent="." instance=ExtResource("2_ughqf")]
+position = Vector2(11000, 7750)
 rotation = 2.17232
 scale = Vector2(4, 4)
 
@@ -282,3 +288,9 @@ position = Vector2(-23010, 13964)
 position = Vector2(-22957, -22769)
 rotation = -2.18278
 scale = Vector2(6, 6)
+
+[node name="Floor" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(-4192.03, -4800)
+scale = Vector2(6.02898, -11.85)
+texture = ExtResource("5_usepk")

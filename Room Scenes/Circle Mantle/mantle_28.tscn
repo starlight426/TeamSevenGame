@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://b4nif1pt6vbt"]
+[gd_scene load_steps=8 format=3 uid="uid://b4nif1pt6vbt"]
 
 [ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="1_4k4qo"]
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="2_xorah"]
@@ -6,12 +6,13 @@
 [ext_resource type="PackedScene" uid="uid://dd7qwjqktm7b2" path="res://Combat Scenes/Enemy Scenes/enemy_circle_eightshooter.tscn" id="4_nciuj"]
 [ext_resource type="PackedScene" uid="uid://c1w5jhxknb674" path="res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn" id="5_4k4qo"]
 [ext_resource type="PackedScene" uid="uid://ccm7n1wyyjidx" path="res://Combat Scenes/Enemy Scenes/enemy_circle_striker.tscn" id="6_xorah"]
+[ext_resource type="PackedScene" uid="uid://cdfypqi8cem6m" path="res://Combat Scenes/Enemy Scenes/enemy_circle_wave.tscn" id="7_xorah"]
 
 [node name="TemplateRoom" type="Node2D"]
 
 [node name="Floor" type="Sprite2D" parent="."]
 z_index = -10
-position = Vector2(27500, -18500)
+position = Vector2(4500, -3000)
 scale = Vector2(5.28, 5.76)
 texture = ExtResource("1_4k4qo")
 
@@ -157,17 +158,17 @@ scale = Vector2(5, 5)
 position = Vector2(-0.00012207, 7000)
 scale = Vector2(5, 5)
 
-[node name="EnemyCircleEightShooter3" parent="." instance=ExtResource("4_nciuj")]
-position = Vector2(10500, -5000)
-
 [node name="EnemyCircleEightShooter4" parent="." instance=ExtResource("4_nciuj")]
 position = Vector2(5500, -7000)
 
 [node name="EnemyCircleCorrupted" parent="." instance=ExtResource("5_4k4qo")]
 position = Vector2(8500, -2000)
 
-[node name="EnemyCircleCorrupted2" parent="." instance=ExtResource("5_4k4qo")]
-position = Vector2(4500, -3500)
-
 [node name="EnemyCircleStriker" parent="." instance=ExtResource("6_xorah")]
 position = Vector2(9000, -7000)
+
+[node name="EnemyCircleWave" parent="." instance=ExtResource("7_xorah")]
+position = Vector2(4500, -3500)
+
+[node name="EnemyCircleWave2" parent="." instance=ExtResource("7_xorah")]
+position = Vector2(9000, -4500)

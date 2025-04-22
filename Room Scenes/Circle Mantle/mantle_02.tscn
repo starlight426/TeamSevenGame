@@ -10,8 +10,8 @@
 
 [node name="Floor" type="Sprite2D" parent="."]
 z_index = -10
-position = Vector2(25000, -13500)
-scale = Vector2(4.43297, -3.44999)
+position = Vector2(-1000, 5199.99)
+scale = Vector2(4.43297, -6.85)
 texture = ExtResource("1_up7v8")
 
 [node name="exit" parent="." instance=ExtResource("1_tommf")]
@@ -81,7 +81,15 @@ position = Vector2(-3500, 6500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle5" parent="." instance=ExtResource("2_6glk7")]
-position = Vector2(4000, -5500)
+position = Vector2(4500, -2500)
+scale = Vector2(5, 5)
+
+[node name="WallMantle39" parent="." instance=ExtResource("2_6glk7")]
+position = Vector2(-9000, -7000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle40" parent="." instance=ExtResource("2_6glk7")]
+position = Vector2(-9500, 18000)
 scale = Vector2(5, 5)
 
 [node name="WallMantle6" parent="." instance=ExtResource("2_6glk7")]
@@ -100,6 +108,30 @@ scale = Vector2(5, 5)
 position = Vector2(-7500, 1000)
 scale = Vector2(5, 5)
 
+[node name="WallMantle33" parent="." instance=ExtResource("2_6glk7")]
+position = Vector2(-7000, 4500)
+scale = Vector2(5, 5)
+
+[node name="WallMantle34" parent="." instance=ExtResource("2_6glk7")]
+position = Vector2(-7000, 7500)
+scale = Vector2(5, 5)
+
+[node name="WallMantle35" parent="." instance=ExtResource("2_6glk7")]
+position = Vector2(-10000, 10000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle36" parent="." instance=ExtResource("2_6glk7")]
+position = Vector2(-10500, 1000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle37" parent="." instance=ExtResource("2_6glk7")]
+position = Vector2(-10500, 3000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle38" parent="." instance=ExtResource("2_6glk7")]
+position = Vector2(-10500, 6000)
+scale = Vector2(5, 5)
+
 [node name="WallMantle32" parent="." instance=ExtResource("2_6glk7")]
 position = Vector2(-10000, -2500)
 scale = Vector2(5, 5)
@@ -109,7 +141,7 @@ position = Vector2(10000, -1500)
 scale = Vector2(5, 5)
 
 [node name="WallMantle22" parent="." instance=ExtResource("2_6glk7")]
-position = Vector2(7000, -6000)
+position = Vector2(6000, -3000)
 scale = Vector2(5, 5)
 
 [node name="WallMantle8" parent="." instance=ExtResource("2_6glk7")]

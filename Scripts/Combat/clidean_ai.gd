@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 #main functionality variables
-@export var hp = 10
+@export var hp = 2000
 var max_hp
 @export var team = "circle"
 @export var speed = 600  #speed

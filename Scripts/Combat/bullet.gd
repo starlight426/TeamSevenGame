@@ -132,7 +132,7 @@ func is_looking_at(target: Node2D) -> bool:
 	
 func zigzag_direction_switcher():
 	while(true):
-		await get_tree().create_timer(0.2).timeout
+		await get_tree().create_timer(0.25).timeout
 		zigzag_direction *= -1
 	
 	

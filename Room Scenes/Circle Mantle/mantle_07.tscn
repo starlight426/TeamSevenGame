@@ -11,7 +11,7 @@
 
 [node name="Floor" type="Sprite2D" parent="."]
 z_index = -10
-position = Vector2(37000, -10500)
+position = Vector2(-2000, -8000)
 scale = Vector2(5.76, 6.52)
 texture = ExtResource("1_x782r")
 

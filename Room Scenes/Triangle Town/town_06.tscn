@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://g08b1vw6ytny"]
+[gd_scene load_steps=11 format=3 uid="uid://g08b1vw6ytny"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_pmvo7"]
 [ext_resource type="PackedScene" uid="uid://c4c578xkhgapt" path="res://Overworld Scenes/Object Scenes/wall_triangle_eq.tscn" id="2_71uxs"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://brovcchuaua3m" path="res://Combat Scenes/Enemy Scenes/enemy_triangle_warrior.tscn" id="7_tgil0"]
 [ext_resource type="PackedScene" uid="uid://8oogbqjg1vt7" path="res://Combat Scenes/Enemy Scenes/enemy_triangle_rammer.tscn" id="8_ofxh0"]
 [ext_resource type="PackedScene" uid="uid://cpejrgftjtg1h" path="res://Combat Scenes/Enemy Scenes/enemy_triangle_basic.tscn" id="9_fyixj"]
+[ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="10_tgil0"]
 
 [node name="TemplateRoom" type="Node2D"]
 
@@ -16,7 +17,7 @@
 position = Vector2(1250, -14250)
 rotation = 0.0424873
 scale = Vector2(8, 4)
-target_room = "triagon_room"
+target_room = "credits_room"
 target_entrance = "from_bottom"
 target_group = "Triangle Town"
 
@@ -357,3 +358,9 @@ position = Vector2(1000, -7000)
 
 [node name="EnemyTriangleRammer2" parent="." instance=ExtResource("8_ofxh0")]
 position = Vector2(-3750, -4750)
+
+[node name="Floor" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(2875, 2575)
+scale = Vector2(6.4375, -8.1625)
+texture = ExtResource("10_tgil0")

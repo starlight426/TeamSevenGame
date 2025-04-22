@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bxt0rk30qip3o"]
+[gd_scene load_steps=5 format=3 uid="uid://bxt0rk30qip3o"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_nbhpb"]
 [ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="2_eoqwk"]
 [ext_resource type="PackedScene" uid="uid://cdfypqi8cem6m" path="res://Combat Scenes/Enemy Scenes/enemy_circle_wave.tscn" id="3_bs4vd"]
+[ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="4_8vdum"]
 
 [node name="TemplateRoom" type="Node2D"]
 
@@ -104,3 +105,9 @@ scale = Vector2(5, 5)
 
 [node name="EnemyCircleWave" parent="." instance=ExtResource("3_bs4vd")]
 position = Vector2(0, -500)
+
+[node name="Floor" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(-2500, -6000)
+scale = Vector2(6.32, 6)
+texture = ExtResource("4_8vdum")

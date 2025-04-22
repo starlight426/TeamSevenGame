@@ -130,7 +130,7 @@ func use_attack(attack):
 				move_cooldown(2)
 				energy -= 45
 		"short_dash":
-			if(energy >= 10 && move_readiness[3]):
+			if(energy >= 20 && move_readiness[3]):
 				short_dash()
 				move_cooldown(3)
 				energy -= 10

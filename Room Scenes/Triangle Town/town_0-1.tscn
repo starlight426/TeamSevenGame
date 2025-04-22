@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://n1amg8tgyqoe"]
+[gd_scene load_steps=8 format=3 uid="uid://n1amg8tgyqoe"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_kjdiq"]
 [ext_resource type="PackedScene" uid="uid://c4c578xkhgapt" path="res://Overworld Scenes/Object Scenes/wall_triangle_eq.tscn" id="2_0x6an"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dc16pauw32gjv" path="res://Overworld Scenes/Object Scenes/wall_triangle_ob.tscn" id="4_anyvx"]
 [ext_resource type="PackedScene" uid="uid://djbhdtqf1igv7" path="res://Overworld Scenes/Object Scenes/unlockable.tscn" id="5_33dy6"]
 [ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="6_anyvx"]
+[ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="7_anyvx"]
 
 [node name="TemplateRoom" type="Node2D"]
 
@@ -249,3 +250,9 @@ scale = Vector2(6, 6)
 [node name="WallMantle3" parent="." instance=ExtResource("6_anyvx")]
 position = Vector2(0.000244141, 9250)
 scale = Vector2(6, 6)
+
+[node name="Floor" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(-1000, 74.9946)
+scale = Vector2(4.43297, -9.4125)
+texture = ExtResource("7_anyvx")

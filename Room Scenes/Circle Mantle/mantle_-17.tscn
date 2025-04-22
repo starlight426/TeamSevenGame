@@ -212,3 +212,9 @@ position = Vector2(4750, -4750)
 
 [node name="EnemyCircleBasic2" parent="." instance=ExtResource("6_2x0me")]
 position = Vector2(7250, -7500)
+
+[node name="Floor2" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(4000, -4000)
+scale = Vector2(6.32, 6)
+texture = ExtResource("1_enjgl")

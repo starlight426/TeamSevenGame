@@ -10,6 +10,7 @@ func _get_music(music: AudioStream, volume = 0.0): # starts new music
 		set_volume_db(volume)
 		stream.loop = true
 		
+		
 func _play_music(): # for general adventure music
 	_get_music(level_music)
 	

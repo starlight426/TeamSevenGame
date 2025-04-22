@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://7ny6y1efosex"]
+[gd_scene load_steps=6 format=3 uid="uid://7ny6y1efosex"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_f8t4e"]
 [ext_resource type="PackedScene" uid="uid://3p1a3i1jkvbd" path="res://Overworld Scenes/Object Scenes/wall_mantle.tscn" id="2_8rsg6"]
 [ext_resource type="PackedScene" uid="uid://cdfypqi8cem6m" path="res://Combat Scenes/Enemy Scenes/enemy_circle_wave.tscn" id="3_ne8gl"]
 [ext_resource type="PackedScene" uid="uid://c1w5jhxknb674" path="res://Combat Scenes/Enemy Scenes/enemy_circle_corrupted.tscn" id="4_7syjc"]
+[ext_resource type="Texture2D" uid="uid://dvc1e15b5u8v8" path="res://Assets/Shapes/Floor.png" id="5_7syjc"]
 
 [node name="TemplateRoom" type="Node2D"]
 
@@ -99,3 +100,9 @@ position = Vector2(1500, -500)
 
 [node name="EnemyCircleCorrupted" parent="." instance=ExtResource("4_7syjc")]
 position = Vector2(-2000, 0)
+
+[node name="Floor" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(-2500, -6000)
+scale = Vector2(6.32, 6)
+texture = ExtResource("5_7syjc")

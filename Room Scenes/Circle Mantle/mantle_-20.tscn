@@ -9,7 +9,7 @@
 
 [node name="Floor" type="Sprite2D" parent="."]
 z_index = -10
-position = Vector2(29750, -10000)
+position = Vector2(1500, -4250)
 scale = Vector2(4.92, 5.04)
 texture = ExtResource("1_0pxn2")
 
@@ -64,6 +64,42 @@ scale = Vector2(5, 5)
 
 [node name="WallMantle11" parent="." instance=ExtResource("2_lptlu")]
 position = Vector2(-2500, -9750)
+scale = Vector2(5, 5)
+
+[node name="WallMantle18" parent="." instance=ExtResource("2_lptlu")]
+position = Vector2(-750, -13000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle19" parent="." instance=ExtResource("2_lptlu")]
+position = Vector2(-3750, -12000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle20" parent="." instance=ExtResource("2_lptlu")]
+position = Vector2(-5750, -11000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle21" parent="." instance=ExtResource("2_lptlu")]
+position = Vector2(-9000, -8000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle22" parent="." instance=ExtResource("2_lptlu")]
+position = Vector2(-9250, -5000)
+scale = Vector2(5, 5)
+
+[node name="WallMantle23" parent="." instance=ExtResource("2_lptlu")]
+position = Vector2(-9250, -1500)
+scale = Vector2(5, 5)
+
+[node name="WallMantle24" parent="." instance=ExtResource("2_lptlu")]
+position = Vector2(-8250, 1750)
+scale = Vector2(5, 5)
+
+[node name="WallMantle25" parent="." instance=ExtResource("2_lptlu")]
+position = Vector2(-4750, 5500)
+scale = Vector2(5, 5)
+
+[node name="WallMantle26" parent="." instance=ExtResource("2_lptlu")]
+position = Vector2(-6000, 4750)
 scale = Vector2(5, 5)
 
 [node name="WallMantle12" parent="." instance=ExtResource("2_lptlu")]
@@ -137,3 +173,10 @@ position = Vector2(750, -3750)
 
 [node name="EnemyCircleBasic3" parent="." instance=ExtResource("6_8nnlq")]
 position = Vector2(0, -7500)
+
+[node name="Floor2" type="Sprite2D" parent="."]
+visible = false
+z_index = -10
+position = Vector2(1250, -5500)
+scale = Vector2(6.32, 6)
+texture = ExtResource("1_0pxn2")
