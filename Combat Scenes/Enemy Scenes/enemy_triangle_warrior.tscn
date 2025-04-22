@@ -41,6 +41,7 @@ position = Vector2(-214.286, 785.714)
 [node name="bullet_marker_5" type="Marker2D" parent="."]
 position = Vector2(-214.286, -785.714)
 
-[node name="DodgeDetector2" parent="." instance=ExtResource("3_ekqwa")]
-visible = false
-scale = Vector2(3, 3)
+[node name="DodgeDetector" parent="." instance=ExtResource("3_ekqwa")]
+scale = Vector2(6, 6)
+collision_layer = 0
+collision_mask = 16

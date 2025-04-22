@@ -88,7 +88,7 @@ position = Vector2(-3500, 0)
 position = Vector2(-3000, 0)
 
 [node name="from_right" type="Marker2D" parent="."]
-position = Vector2(2000, -1000)
+position = Vector2(3500, -2250)
 
 [node name="from_bottom" type="Marker2D" parent="."]
 position = Vector2(0, 3000)
@@ -216,6 +216,6 @@ scale = Vector2(5, 5)
 texture = ExtResource("13_3qxgc")
 
 [node name="EnvironmentCirHouse" type="Sprite2D" parent="."]
-position = Vector2(2000, -2000)
+position = Vector2(3500, -3250)
 scale = Vector2(3, 2.80102)
 texture = ExtResource("14_3qxgc")

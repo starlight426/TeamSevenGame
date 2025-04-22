@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cv2u1a44axc16"]
+[gd_scene load_steps=5 format=3 uid="uid://cv2u1a44axc16"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_lvd3b"]
 [ext_resource type="PackedScene" uid="uid://c4c578xkhgapt" path="res://Overworld Scenes/Object Scenes/wall_triangle_eq.tscn" id="2_mfnwv"]
+[ext_resource type="PackedScene" uid="uid://6aeqqfyoksxp" path="res://Combat Scenes/Enemy Scenes/enemy_triangle_triagon.tscn" id="4_lpimt"]
 [ext_resource type="Texture2D" uid="uid://c1xnk3q8o6tel" path="res://Assets/Shapes/Wall_Triangle3.png" id="5_foctr"]
 
 [node name="TemplateRoom" type="Node2D"]
@@ -10,9 +11,9 @@
 position = Vector2(1750, -18250)
 rotation = 0.0424873
 scale = Vector2(8, 4)
-target_room = "fortress_00"
+target_room = "credits_room"
 target_entrance = "from_bottom"
-target_group = "Square Fortress"
+target_group = "Triangle Town"
 
 [node name="exit5" parent="." instance=ExtResource("1_lvd3b")]
 position = Vector2(2000, 11750)
@@ -205,3 +206,6 @@ z_index = -1
 position = Vector2(-36250, -11750)
 rotation = 3.14159
 texture = ExtResource("5_foctr")
+
+[node name="EnemyCircleClidean" parent="." instance=ExtResource("4_lpimt")]
+position = Vector2(-1000, -4000)

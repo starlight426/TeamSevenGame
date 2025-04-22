@@ -6,7 +6,7 @@ extends CharacterBody2D
 var target = null
 var closest_danger = null
 var fire_ready = false
-@export var fire_rate = 2.0
+@export var fire_rate = 0.5
 var rotation_speed = PI/32
 var color = "default"
 var type = "default"
@@ -34,14 +34,14 @@ func _physics_process(delta: float) -> void:
 		# fires if target exists
 		if(fire_ready):
 			fire()
-	if(closest_danger):
-		velocity = Vector2(speed,0).rotated((target.global_position - global_position).angle()+PI)
-	else:
-		if(target):
-			if(chase_direction == 1):
-				velocity = Vector2(speed,speed * strafe_direction).rotated(global_rotation) 
-			if(chase_direction == -1):
-				velocity = Vector2(speed,speed * strafe_direction).rotated(global_rotation + PI)
+	#if(closest_danger):
+	#	velocity = Vector2(speed,0).rotated((target.global_position - global_position).angle()+PI)
+	#else:
+	if(target):
+		if(chase_direction == 1):
+			velocity = Vector2(speed,speed * strafe_direction).rotated(global_rotation) 
+		if(chase_direction == -1):
+			velocity = Vector2(speed,speed * strafe_direction).rotated(global_rotation + PI)
 			
 	move_and_slide()
 	
@@ -71,9 +71,9 @@ func chase_direction_switcher():
 func dash_cycle():
 	while(true):
 		await get_tree().create_timer(float(randi()%5)).timeout
-		speed *= 3
-		await get_tree().create_timer(0.3).timeout
-		speed /= 3
+		speed *= 4
+		await get_tree().create_timer(0.4).timeout
+		speed /= 4
 	
 func update_target(body):
 	target = body

@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://6aeqqfyoksxp"]
+
+[ext_resource type="Script" uid="uid://cntnpd2r0f6u5" path="res://Scripts/Combat/clidean_ai.gd" id="1_67o51"]
+[ext_resource type="Texture2D" uid="uid://bslbwsd6d0ewb" path="res://Assets/spritePNGs/Boss_Clidean.png" id="2_1irl8"]
+[ext_resource type="PackedScene" uid="uid://sus6s80ptul7" path="res://AI Modules/Detectors/target_detector.tscn" id="3_uobuv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fybhy"]
+radius = 410.814
+
+[node name="EnemyCircleClidean" type="CharacterBody2D"]
+collision_mask = 2
+script = ExtResource("1_67o51")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_fybhy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = -1.5708
+texture = ExtResource("2_1irl8")
+
+[node name="TargetDetector" parent="." instance=ExtResource("3_uobuv")]
+visible = false
+scale = Vector2(20, 20)
+
+[node name="hp_tracker" type="Label" parent="."]
+offset_left = -504.0
+offset_top = 72.0
+offset_right = -464.0
+offset_bottom = 95.0
+rotation = -1.5708
+scale = Vector2(4, 4)
+text = "1000"

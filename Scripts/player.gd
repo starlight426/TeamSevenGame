@@ -7,7 +7,7 @@ extends CharacterBody2D
 @export var team = "cigil"
 var attack_shape = "circle"
 var move_readiness = [true,true,true,true,true]
-var move_cooldowns = [0.4,0.6,0.8,3.0,5.0,0.5,0.5,3.0,0.3,8.0,0.5,1.0,3.0,0.8,10.0]
+var move_cooldowns = [0.4,0.6,0.8,3.0,5.0,0.5,0.5,0.3,0.3,8.0,0.5,1.0,3.0,0.8,10.0]
 var move_cooldown_percentages = [100, 100, 100, 100, 100]
 var energy_ready = true
 var is_paused = false
@@ -23,7 +23,6 @@ func _ready() -> void:
 	$TargetDetector.update_parent_target.connect(update_target)
 	hp_regen()
 	
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
 	if(hp <= 0):
@@ -118,8 +117,8 @@ func use_attack(attack):
 			if(energy >= 30 && move_readiness[1]):
 				AttackSpawner.spawn_bullets($fiveshotmarker1.global_position,global_rotation,"single",1,0,"default","triangle","straight",3000,3,10,"cigil","cigil",0,0,0)
 				AttackSpawner.spawn_bullets($fiveshotmarker2.global_position,global_rotation+PI/4,"single",1,0,"default","triangle","straight",3000,3,10,"cigil","cigil",0,0,0)
-				AttackSpawner.spawn_bullets($fiveshotmarker3.global_position,global_rotation-PI/4,"single",1,0,"default","triangle","straight",3000,3,10,"cigil","cigil",0,0,0)
-				AttackSpawner.spawn_bullets($fiveshotmarker4.global_position,global_rotation+PI/2,"single",1,0,"default","triangle","straight",3000,3,10,"cigil","cigil",0,0,0)
+				AttackSpawner.spawn_bullets($fiveshotmarker4.global_position,global_rotation-PI/4,"single",1,0,"default","triangle","straight",3000,3,10,"cigil","cigil",0,0,0)
+				AttackSpawner.spawn_bullets($fiveshotmarker3.global_position,global_rotation+PI/2,"single",1,0,"default","triangle","straight",3000,3,10,"cigil","cigil",0,0,0)
 				AttackSpawner.spawn_bullets($fiveshotmarker5.global_position,global_rotation-PI/2,"single",1,0,"default","triangle","straight",3000,3,10,"cigil","cigil",0,0,0)
 				move_cooldown(1)
 				energy -= 30
@@ -163,7 +162,7 @@ func move_cooldown(move_num):
 		move_shape_offset = 1
 	if(attack_shape == "square"):
 		move_shape_offset = 2
-	print(move_shape_offset)
+	
 	move_readiness[move_num] = false
 	var timer = get_tree().create_timer(move_cooldowns[move_num+move_shape_offset*5])
 	var percentage_completed = 0.0
@@ -176,9 +175,9 @@ func move_cooldown(move_num):
 	move_readiness[move_num] = true
 	
 func speedup():
-	speed *= 8.0
+	speed *= 2.0
 	await get_tree().create_timer(3).timeout
-	speed /= 8.0
+	speed /= 2.0
 
 func short_dash():
 	dash_direction = velocity.angle()

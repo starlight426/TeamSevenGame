@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://b5eue0a6mbldi"]
+[gd_scene load_steps=7 format=3 uid="uid://b5eue0a6mbldi"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_i8d3n"]
 [ext_resource type="PackedScene" uid="uid://c4c578xkhgapt" path="res://Overworld Scenes/Object Scenes/wall_triangle_eq.tscn" id="2_l27k3"]
 [ext_resource type="PackedScene" uid="uid://d4nujuxr18io" path="res://Overworld Scenes/Object Scenes/wall_triangle_ac.tscn" id="3_gm500"]
 [ext_resource type="PackedScene" uid="uid://dc16pauw32gjv" path="res://Overworld Scenes/Object Scenes/wall_triangle_ob.tscn" id="4_uhssw"]
 [ext_resource type="Texture2D" uid="uid://c1xnk3q8o6tel" path="res://Assets/Shapes/Wall_Triangle3.png" id="5_3af74"]
+[ext_resource type="PackedScene" uid="uid://eep41r5sbfbv" path="res://Combat Scenes/Enemy Scenes/enemy_triangle_wizard.tscn" id="6_l27k3"]
 
 [node name="TemplateRoom" type="Node2D"]
 
@@ -330,3 +331,12 @@ z_index = -1
 position = Vector2(-7500, -11750)
 rotation = 3.14159
 texture = ExtResource("5_3af74")
+
+[node name="EnemyTriangleWizard" parent="." instance=ExtResource("6_l27k3")]
+position = Vector2(-4500, -6250)
+
+[node name="EnemyTriangleWizard2" parent="." instance=ExtResource("6_l27k3")]
+position = Vector2(7250, -4000)
+
+[node name="EnemyTriangleWizard3" parent="." instance=ExtResource("6_l27k3")]
+position = Vector2(-750, 2000)

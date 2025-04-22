@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://eep41r5sbfbv"]
 
 [ext_resource type="Script" uid="uid://b5ethocqvjufx" path="res://Scripts/Combat/enemy_triangle_wizard.gd" id="1_31uij"]
-[ext_resource type="Texture2D" uid="uid://cx0hwk2gfoe0a" path="res://Assets/spritePNGs/Enemy_Dasher_Tri.png" id="2_25as1"]
+[ext_resource type="Texture2D" uid="uid://co6y1u02ay55v" path="res://Assets/spritePNGs/Enemy_LightningWiz_Tri.png" id="2_31uij"]
 [ext_resource type="PackedScene" uid="uid://sus6s80ptul7" path="res://AI Modules/Detectors/target_detector.tscn" id="3_pxxvo"]
 
 [sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_b5y0u"]
@@ -19,23 +19,23 @@ shape = SubResource("ConvexPolygonShape2D_b5y0u")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(50, 0)
 rotation = -1.5708
-texture = ExtResource("2_25as1")
+texture = ExtResource("2_31uij")
 
 [node name="TargetDetector" parent="." instance=ExtResource("3_pxxvo")]
 visible = false
 scale = Vector2(40, 40)
 
 [node name="bullet_marker_1" type="Marker2D" parent="."]
-position = Vector2(428.571, -7.62939e-06)
+position = Vector2(-642.857, -4.54747e-13)
 
 [node name="bullet_marker_2" type="Marker2D" parent="."]
-position = Vector2(428.571, -285.714)
+position = Vector2(-642.857, -642.857)
 
 [node name="bullet_marker_3" type="Marker2D" parent="."]
-position = Vector2(428.571, 285.714)
+position = Vector2(500, 285.714)
 
 [node name="bullet_marker_4" type="Marker2D" parent="."]
-position = Vector2(-285.714, -214.286)
+position = Vector2(500, -285.714)
 
 [node name="bullet_marker_5" type="Marker2D" parent="."]
-position = Vector2(-285.714, 214.286)
+position = Vector2(-642.857, 642.857)

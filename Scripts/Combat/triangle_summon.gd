@@ -15,6 +15,7 @@ var contact_dmg = 150
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	#$Hitbox.body_entered.connect(on_hitbox_)
 	$TargetDetector.update_parent_target.connect(update_target)
 	await get_tree().create_timer(0.5).timeout
 	fire_ready = true

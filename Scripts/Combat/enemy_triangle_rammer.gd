@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @export var hp = 100
 @export var team = "triangle"
-@export var speed = 1300
+@export var speed = 2000
 var target = null
 var closest_danger = null
 var fire_ready = false
@@ -11,19 +11,19 @@ var rotation_speed = PI/128
 var color = "default"
 var type = "default"
 var angle_to_target
-var contact_dmg = 150
+var contact_dmg = 170
 
 var dash_ready = true
 var dashing = false
 var dash_direction = 0
-var dash_speed = 4000
+var dash_speed = 8000
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$TargetDetector.update_parent_target.connect(update_target)
 	await get_tree().create_timer(0.5).timeout
 	fire_ready = true
-	speed_switcher()
+	#speed_switcher()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
@@ -45,7 +45,7 @@ func _physics_process(delta: float) -> void:
 func dash():
 	dash_direction = velocity.angle()
 	dashing = true
-	await get_tree().create_timer(0.5).timeout
+	await get_tree().create_timer(0.8).timeout
 	dashing = false
 
 func dash_cooldown():

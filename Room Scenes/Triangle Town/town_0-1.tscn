@@ -151,8 +151,13 @@ rotation = 6.55415
 scale = Vector2(4, 4)
 
 [node name="WallTriangleEq23" parent="." instance=ExtResource("2_0x6an")]
-position = Vector2(-12250, -17000)
-rotation = 5.52267
+position = Vector2(-6000, -12000)
+rotation = 8.12937
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq31" parent="." instance=ExtResource("2_0x6an")]
+position = Vector2(6000, -12000)
+rotation = 10.794
 scale = Vector2(4, 4)
 
 [node name="WallTriangleEq24" parent="." instance=ExtResource("2_0x6an")]

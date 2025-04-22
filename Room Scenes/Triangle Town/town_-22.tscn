@@ -1,15 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://bbtmk60gxo2th"]
+[gd_scene load_steps=7 format=3 uid="uid://bbtmk60gxo2th"]
 
 [ext_resource type="PackedScene" uid="uid://duhokojc6cecj" path="res://Overworld Scenes/Object Scenes/exit.tscn" id="1_1t62n"]
 [ext_resource type="PackedScene" uid="uid://c4c578xkhgapt" path="res://Overworld Scenes/Object Scenes/wall_triangle_eq.tscn" id="2_wi6bc"]
 [ext_resource type="PackedScene" uid="uid://d4nujuxr18io" path="res://Overworld Scenes/Object Scenes/wall_triangle_ac.tscn" id="3_g0vcb"]
 [ext_resource type="PackedScene" uid="uid://dc16pauw32gjv" path="res://Overworld Scenes/Object Scenes/wall_triangle_ob.tscn" id="4_p1c7l"]
-[ext_resource type="PackedScene" uid="uid://cpejrgftjtg1h" path="res://Combat Scenes/Enemy Scenes/enemy_triangle_basic.tscn" id="5_8ju5e"]
+[ext_resource type="PackedScene" uid="uid://brovcchuaua3m" path="res://Combat Scenes/Enemy Scenes/enemy_triangle_warrior.tscn" id="5_wi6bc"]
+[ext_resource type="PackedScene" uid="uid://8oogbqjg1vt7" path="res://Combat Scenes/Enemy Scenes/enemy_triangle_rammer.tscn" id="6_g0vcb"]
 
 [node name="TemplateRoom" type="Node2D"]
 
 [node name="exit" parent="." instance=ExtResource("1_1t62n")]
-position = Vector2(5000, -13500)
+position = Vector2(3000, -10000)
 rotation = 0.260901
 scale = Vector2(4, 4)
 target_room = "town_-13"
@@ -43,7 +44,7 @@ target_entrance = "from_left"
 target_group = "Triangle Town"
 
 [node name="left_camera_limit" type="Marker2D" parent="."]
-position = Vector2(-7250, -4750)
+position = Vector2(-3750, -2500)
 
 [node name="from_left" type="Marker2D" parent="."]
 position = Vector2(-8250, -6500)
@@ -55,13 +56,13 @@ position = Vector2(11750, -1750)
 position = Vector2(1000, 3750)
 
 [node name="from_top" type="Marker2D" parent="."]
-position = Vector2(3750, -11250)
+position = Vector2(2500, -7500)
 
 [node name="right_camera_limit" type="Marker2D" parent="."]
 position = Vector2(12750, -1500)
 
 [node name="top_camera_limit" type="Marker2D" parent="."]
-position = Vector2(3250, -13000)
+position = Vector2(1500, -10250)
 
 [node name="bottom_camera_limit" type="Marker2D" parent="."]
 position = Vector2(1000, 4000)
@@ -147,7 +148,42 @@ rotation = -0.105491
 scale = Vector2(4, 4)
 
 [node name="WallTriangleEq21" parent="." instance=ExtResource("2_wi6bc")]
-position = Vector2(9.15527e-05, -12250)
+position = Vector2(-1750, -9250)
+rotation = 3.2057
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq35" parent="." instance=ExtResource("2_wi6bc")]
+position = Vector2(500, -11500)
+rotation = 2.97469
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq37" parent="." instance=ExtResource("2_wi6bc")]
+position = Vector2(5500, -13750)
+rotation = 2.08997
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq36" parent="." instance=ExtResource("2_wi6bc")]
+position = Vector2(17750, -1250)
+rotation = 3.44154
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq31" parent="." instance=ExtResource("2_wi6bc")]
+position = Vector2(-3500, -4500)
+rotation = 2.97469
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq32" parent="." instance=ExtResource("2_wi6bc")]
+position = Vector2(-4500, -750)
+rotation = 2.97469
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq33" parent="." instance=ExtResource("2_wi6bc")]
+position = Vector2(-6250, -3750)
+rotation = 2.97469
+scale = Vector2(4, 4)
+
+[node name="WallTriangleEq34" parent="." instance=ExtResource("2_wi6bc")]
+position = Vector2(-5000, -7750)
 rotation = 2.97469
 scale = Vector2(4, 4)
 
@@ -234,8 +270,11 @@ position = Vector2(-10000, -5750)
 rotation = -2.18278
 scale = Vector2(6, 6)
 
-[node name="EnemyTriangleBasic" parent="." instance=ExtResource("5_8ju5e")]
-position = Vector2(4250, -4500)
+[node name="EnemyTriangleWarrior" parent="." instance=ExtResource("5_wi6bc")]
+position = Vector2(3000, -4750)
 
-[node name="EnemyTriangleBasic2" parent="." instance=ExtResource("5_8ju5e")]
-position = Vector2(500, -1750)
+[node name="EnemyTriangleRammer" parent="." instance=ExtResource("6_g0vcb")]
+position = Vector2(5500, -3250)
+
+[node name="EnemyTriangleRammer2" parent="." instance=ExtResource("6_g0vcb")]
+position = Vector2(1250, -2500)

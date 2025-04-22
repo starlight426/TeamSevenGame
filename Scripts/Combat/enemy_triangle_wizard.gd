@@ -2,11 +2,11 @@ extends CharacterBody2D
 
 @export var hp = 120
 @export var team = "triangle"
-@export var speed = 300
+@export var speed = 500
 var target = null
 var closest_danger = null
 var fire_ready = false
-@export var fire_rate = 1.0
+@export var fire_rate = 0.4
 var rotation_speed = PI/32
 var color = "default"
 var type = "default"
@@ -41,11 +41,13 @@ func _physics_process(delta: float) -> void:
 	
 func fire():
 	fire_ready = false
-	AttackSpawner.spawn_bullets($bullet_marker_1.global_position,global_rotation,"single",1,0,"default","zigzag","zigzag",2000,3,10,"triangle","purple",0,0,0)
-	AttackSpawner.spawn_bullets($bullet_marker_2.global_position,global_rotation,"single",1,0,"default","zigzag","zigzag",2000,3,10,"triangle","purple",0,0,0)
-	AttackSpawner.spawn_bullets($bullet_marker_3.global_position,global_rotation,"single",1,0,"default","zigzag","zigzag",2000,3,10,"triangle","purple",0,0,0)
-	AttackSpawner.spawn_bullets($bullet_marker_4.global_position,global_rotation,"single",1,0,"default","zigzag","zigzag",2000,3,10,"triangle","purple",0,0,0)
-	AttackSpawner.spawn_bullets($bullet_marker_5.global_position,global_rotation,"single",1,0,"default","zigzag","zigzag",2000,3,10,"triangle","purple",0,0,0)
+	#for i in range(0,5):
+	#	AttackSpawner.spawn_bullets(get_node("bullet_marker_" + str(randi_range(1,6))).global_position,global_rotation,"single",1,0,"default","zigzag","zigzag",2000,3,10,"triangle","purple",0,0,0)
+	AttackSpawner.spawn_bullets($bullet_marker_1.global_position,global_rotation,"single",1,0,"default","zigzag","zigzag",3000,3,10,"triangle","purple",0,0,0)
+	AttackSpawner.spawn_bullets($bullet_marker_2.global_position,global_rotation-PI/8,"single",1,0,"default","zigzag","zigzag",3000,3,10,"triangle","purple",0,0,0)
+	AttackSpawner.spawn_bullets($bullet_marker_3.global_position,global_rotation+PI/16,"single",1,0,"default","zigzag","zigzag",3000,3,10,"triangle","purple",0,0,0)
+	AttackSpawner.spawn_bullets($bullet_marker_4.global_position,global_rotation-PI/16,"single",1,0,"default","zigzag","zigzag",3000,3,10,"triangle","purple",0,0,0)
+	AttackSpawner.spawn_bullets($bullet_marker_5.global_position,global_rotation+PI/8,"single",1,0,"default","zigzag","zigzag",3000,3,10,"triangle","purple",0,0,0)
 	await get_tree().create_timer(1/fire_rate).timeout
 	fire_ready = true
 	
@@ -65,9 +67,9 @@ func chase_direction_switcher():
 func dash_cycle():
 	while(true):
 		await get_tree().create_timer(float(randi()%5)).timeout
-		speed *= 6
+		speed *= 8
 		await get_tree().create_timer(0.3).timeout
-		speed /= 6
+		speed /= 8
 	
 func update_target(body):
 	target = body

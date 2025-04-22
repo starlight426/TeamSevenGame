@@ -8,7 +8,7 @@
 radius = 304.081
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gy7nl"]
-radius = 150.0
+radius = 200.0
 
 [node name="EnemyTriangleRammer" type="CharacterBody2D"]
 collision_mask = 2
@@ -41,7 +41,7 @@ position = Vector2(-100, 140)
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
-position = Vector2(250, 0)
+position = Vector2(150, 0)
 shape = SubResource("CircleShape2D_gy7nl")
 
 [connection signal="body_entered" from="Hitbox" to="." method="on_hitbox_entered"]
