@@ -19,8 +19,7 @@ rotation = -1.5708
 texture = ExtResource("2_kbrtf")
 
 [node name="TargetDetector" parent="." instance=ExtResource("3_vp02h")]
-visible = false
-scale = Vector2(20, 20)
+scale = Vector2(100, 100)
 
 [node name="hp_tracker" type="Label" parent="."]
 offset_left = -504.0

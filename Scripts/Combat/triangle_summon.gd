@@ -11,7 +11,7 @@ var rotation_speed = PI/100
 var color = "default"
 var type = "default"
 var angle_to_target
-var contact_dmg = 150
+var contact_dmg = 100
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

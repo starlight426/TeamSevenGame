@@ -35,10 +35,10 @@ target_room = ""
 target_entrance = "from_top"
 
 [node name="exit2" parent="." instance=ExtResource("1_yabxm")]
-position = Vector2(1250, -4000)
-target_room = "dev_test_room"
+position = Vector2(500, -5500)
+target_room = "triagon_room"
 target_entrance = "from_bottom"
-target_group = "Circle City"
+target_group = "Triangle Town"
 
 [node name="exit3" parent="." instance=ExtResource("1_yabxm")]
 position = Vector2(10250, 4000)
@@ -46,8 +46,8 @@ target_room = ""
 target_entrance = "from_left"
 
 [node name="WallSquare" parent="." instance=ExtResource("2_oigo2")]
-position = Vector2(-1250, -4166.67)
-scale = Vector2(10, 6)
+position = Vector2(-2671, -4166)
+scale = Vector2(15, 6)
 
 [node name="WallSquare7" parent="." instance=ExtResource("2_oigo2")]
 position = Vector2(-750, 4000)

@@ -20,6 +20,6 @@ func _process(delta):
 #target room and group are separate for convenience in the editor
 func _on_body_entered(body):
 	if(exit_ready):
-		#if(!body.target):
+		if(!body.target):
 			RoomLoader.load_room_from_exit(target_group,target_room,target_entrance)
 		

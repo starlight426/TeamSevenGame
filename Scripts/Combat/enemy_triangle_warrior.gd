@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var hp = 150
+@export var hp = 200
 @export var team = "triangle"
 @export var speed = 700
 var target = null

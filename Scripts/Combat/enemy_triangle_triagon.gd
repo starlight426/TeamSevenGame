@@ -1,10 +1,10 @@
 extends CharacterBody2D
 
 #main functionality variables
-@export var hp = 1000
+@export var hp = 1500
 var max_hp
-@export var team = "circle"
-@export var speed = 800  #speed
+@export var team = "triangle"
+@export var speed = 1100 #speed
 
 #phase variables
 var phase = "intro"
@@ -12,7 +12,7 @@ var movement_mode = "slow_strafe"
 
 
 #passive firing variables
-@export var passive_fire_rate = 4.0  #time between passive bullet bursts
+@export var passive_fire_rate = 0.5  #time between passive bullet bursts
 var passive_fire_direction = 0.0
 var passive_fire_ready = true
 var firing_passive_bullets = true
@@ -38,7 +38,14 @@ func _ready() -> void:
 	intro_phase_cycle()
 	aggressive_phase_cycle()
 	passive_fire_cycle()
+	dash_cycle()
 	
+func dash_cycle():
+	while(true):
+		await get_tree().create_timer(float(randi()%6 + 1)).timeout
+		speed *= 4
+		await get_tree().create_timer(0.4).timeout
+		speed /= 4
 
 func phase_switcher():
 	await get_tree().create_timer(1.0).timeout
@@ -69,11 +76,10 @@ func do_phase_action(passed_phase,action):
 				intro_circles_attack()
 			"intro_striker_attack":
 				intro_striker_attack()
-			"aggressive_striker_burst":
-				aggressive_striker_burst()
+		
 			"aggressive_orbiting_circle":
 				aggressive_orbiting_circle()
-			"aggresive_bullet_burst":
+			"aggressive_bullet_burst":
 				aggressive_bullet_burst()
 			
 		
@@ -82,7 +88,7 @@ func intro_phase_cycle():
 	await get_tree().create_timer(1.0).timeout
 	while(true):
 		if(phase == "intro"):
-			passive_fire_rate = 6.0
+			passive_fire_rate = 0.8
 			await get_tree().create_timer(4.0).timeout
 			do_phase_action("intro","intro_circles_attack")
 			await get_tree().create_timer(4.0).timeout
@@ -94,19 +100,15 @@ func aggressive_phase_cycle():
 	while(true):
 		if(phase == "aggressive"):
 			movement_mode = "slow_chase"
-			passive_fire_rate = 9.0
-			await get_tree().create_timer(1.0).timeout
-			do_phase_action("aggressive","aggressive_orbiting_circle")
-			await get_tree().create_timer(1.0).timeout
-			do_phase_action("aggressive","aggressive_orbiting_circle")
-			await get_tree().create_timer(4.0).timeout
-			do_phase_action("aggressive","aggressive_striker_burst")
-			await get_tree().create_timer(3.0).timeout
-			do_phase_action("aggressive","aggressive_orbiting_circle")
-			await get_tree().create_timer(1.0).timeout
-			do_phase_action("aggressive","aggressive_orbiting_circle")
-			await get_tree().create_timer(2.0).timeout
+			passive_fire_rate = 0.9
+			
+			
+			await get_tree().create_timer(5.0).timeout
 			do_phase_action("aggressive","aggressive_bullet_burst")
+			await get_tree().create_timer(5.0).timeout
+			do_phase_action("aggressive","aggressive_bullet_burst")
+			await get_tree().create_timer(5.0).timeout
+			do_phase_action("aggressive","aggressive_orbiting_circle")
 		await get_tree().create_timer(0.3).timeout
 
 func artillery_phase_cycle():
@@ -119,8 +121,11 @@ func artillery_phase_cycle():
 func passive_fire_cycle():
 	await get_tree().create_timer(1.0).timeout
 	while(true):
-		passive_fire_direction = passive_fire_direction - PI + rng.randf_range(-2*PI/3,2*PI/3)
-		AttackSpawner.spawn_bullets(global_position,passive_fire_direction,"single",1,0,"default","circle","straight",2000,2,20,"circle","purple",0,0,0)
+		AttackSpawner.spawn_bullets($passive_marker_1.global_position,global_rotation,"single",1,0,"default","triangle","straight",2600,3,10,"triangle","purple",0,0,0)
+		AttackSpawner.spawn_bullets($passive_marker_2.global_position,global_rotation-PI/6,"single",1,0,"default","triangle","straight",2600,3,10,"triangle","purple",0,0,0)
+		AttackSpawner.spawn_bullets($passive_marker_3.global_position,global_rotation+PI/6,"single",1,0,"default","triangle","straight",2600,3,10,"triangle","purple",0,0,0)
+		AttackSpawner.spawn_bullets($passive_marker_4.global_position,global_rotation-PI/3,"single",1,0,"default","triangle","straight",2600,3,10,"triangle","purple",0,0,0)
+		AttackSpawner.spawn_bullets($passive_marker_5.global_position,global_rotation+PI/3,"single",1,0,"default","triangle","straight",2600,3,10,"triangle","purple",0,0,0)
 		await get_tree().create_timer(1/passive_fire_rate).timeout
 	
 func _physics_process(delta: float) -> void:
@@ -139,29 +144,35 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func intro_circles_attack():
-	AttackSpawner.spawn_bullet_collection(global_position,global_rotation,"circle_of_bullets","straight",4000,"circle",0,0,0)
-	await get_tree().create_timer(0.7).timeout
-	AttackSpawner.spawn_bullet_collection(global_position,global_rotation,"circle_of_bullets","straight",4000,"circle",0,0,0)
-	await get_tree().create_timer(0.7).timeout
-	AttackSpawner.spawn_bullet_collection(global_position,global_rotation,"circle_of_bullets","straight",4000,"circle",0,0,0)
+	#print("did triangle attack")
+	for i in range(0,3):
+		AttackSpawner.spawn_bullets($passive_marker_1.global_position,global_rotation,"single",1,0,"default","triangle","straight",3000,3,10,"triangle","purple",0,0,0)
+		AttackSpawner.spawn_bullets($passive_marker_2.global_position,global_rotation,"single",1,0,"default","triangle","straight",3000,3,10,"triangle","purple",0,0,0)
+		AttackSpawner.spawn_bullets($passive_marker_3.global_position,global_rotation,"single",1,0,"default","triangle","straight",3000,3,10,"triangle","purple",0,0,0)
+		AttackSpawner.spawn_bullets($passive_marker_4.global_position,global_rotation,"single",1,0,"default","triangle","straight",3000,3,10,"triangle","purple",0,0,0)
+		AttackSpawner.spawn_bullets($passive_marker_5.global_position,global_rotation,"single",1,0,"default","triangle","straight",3000,3,10,"triangle","purple",0,0,0)
+		await get_tree().create_timer(0.4).timeout
 
 func intro_striker_attack():
-	for i in range(0,5):
-		AttackSpawner.spawn_bullets(global_position,global_rotation-PI/2,"single",1,0,"default","circle","striker",2500,3,10,"circle","purple",PI/150,target,5.0)
-		AttackSpawner.spawn_bullets(global_position,global_rotation+PI/2,"single",1,0,"default","circle","striker",2500,3,10,"circle","purple",PI/150,target,5.0)
-		await get_tree().create_timer(0.8).timeout
-		
-func aggressive_striker_burst():
-	for i in range(0,5):
-		AttackSpawner.spawn_bullets(global_position + Vector2(rng.randf_range(-30,30),rng.randf_range(-30,30)),global_rotation+(PI/2 + (rng.randi_range(0,1)*2-1)),"single",1,0,"default","circle","striker",2800,3,10,"circle","purple",PI/50,target,4.0)
+	#print("did lightning attack")
+	for i in range(0,11):
+		AttackSpawner.spawn_bullets(global_position,global_rotation,"single",1,0,"default","zigzag","zigzag",4500,3,15,"triangle","purple",0,0,0)
 		await get_tree().create_timer(0.1).timeout
+		
+		
 	
 func aggressive_orbiting_circle():
-	AttackSpawner.spawn_bullet_collection(global_position,global_rotation,"circle_of_bullets","arc",2000,"circle",PI/3,15.0,0)
+	#print("did rammer attack")
+	var new_summon = load("res://Combat Scenes/Enemy Scenes/enemy_triangle_rammer.tscn").instantiate()
+	new_summon.global_position = global_position
+	new_summon.global_rotation = global_rotation
+	new_summon.hp = 70
+	RoomLoader.current_room.add_child(new_summon)
 
 func aggressive_bullet_burst():
-	for i in range(0,6):
-		AttackSpawner.spawn_bullets(global_position,global_rotation,"single",1,0,"default","circle","straight",2000,3,20,"circle","purple",0,0,0)
+	#print("did zigzag bursta attack")
+	for i in range(0,9):
+		AttackSpawner.spawn_bullets(global_position,global_rotation+rng.randf_range(-1*PI/6,1*PI/6),"single",1,0,"default","zigzag","zigzag",4000,3,20,"triangle","purple",0,0,0)
 		await get_tree().create_timer(0.1).timeout
 		
 func artillery_summon():
@@ -172,7 +183,6 @@ func artillery_summon():
 func artillery_bullet_circle():
 	AttackSpawner.spawn_bullet_collection(global_position, rng.randf_range(0,2*PI),"circle_of_bullets","striker",2000,"circle",PI/3,10.0,0)
 	
-
 func update_target(body):
 	target = body
 

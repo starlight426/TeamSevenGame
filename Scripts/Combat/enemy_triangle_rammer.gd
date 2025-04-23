@@ -13,7 +13,7 @@ var type = "default"
 var angle_to_target
 var contact_dmg = 170
 
-var dash_ready = true
+var dash_ready = false
 var dashing = false
 var dash_direction = 0
 var dash_speed = 8000
@@ -24,6 +24,8 @@ func _ready() -> void:
 	await get_tree().create_timer(0.5).timeout
 	fire_ready = true
 	#speed_switcher()
+	await get_tree().create_timer(2.0).timeout
+	dash_ready = true
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:

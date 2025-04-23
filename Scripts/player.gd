@@ -7,7 +7,7 @@ extends CharacterBody2D
 @export var team = "cigil"
 var attack_shape = "circle"
 var move_readiness = [true,true,true,true,true]
-var move_cooldowns = [0.4,0.6,0.8,3.0,5.0,0.5,0.5,0.3,0.3,8.0,0.5,1.0,3.0,0.8,10.0]
+var move_cooldowns = [0.4,0.6,0.8,3.0,5.0,0.6,0.5,0.3,0.3,8.0,0.5,1.0,3.0,0.8,10.0]
 var move_cooldown_percentages = [100, 100, 100, 100, 100]
 var energy_ready = true
 var is_paused = false
@@ -133,7 +133,7 @@ func use_attack(attack):
 			if(energy >= 20 && move_readiness[3]):
 				short_dash()
 				move_cooldown(3)
-				energy -= 10
+				energy -= 20
 		"triangle_summon":
 			if(energy >= 80 && move_readiness[4]):
 				var new_summon = load("res://Combat Scenes/Solid Scenes/triangle_summon.tscn").instantiate()
